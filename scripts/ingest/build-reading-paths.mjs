@@ -103,7 +103,7 @@ async function main() {
       description: "Every reading unit in source order, with optional guide layers available but no abridgment.",
       goals: [
         "Preserve the complete source text.",
-        "Make all abridged-path omissions reversible.",
+        "Keep every abridged-path omission recoverable — nothing is deleted.",
         "Keep prefatory matter, chapters, epilogue, and source order visible."
       ],
       omission_rationale: "Nothing is omitted in this path."

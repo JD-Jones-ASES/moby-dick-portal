@@ -3,8 +3,8 @@ import "../styles/portal.css";
 import coverImage from "../../vendor/standard-ebooks/herman-melville_moby-dick-master/images/cover.jpg";
 import { withBase } from "../lib/site.js";
 
-const { title, description = "A reversible student edition of Herman Melville's Moby-Dick.", current = "" } = Astro.props;
-const fullTitle = title ? `${title} — Moby-Dick Portal` : "Moby-Dick — A Reversible Student Edition";
+const { title, description = "A guided student edition of Herman Melville's Moby-Dick — read it at the depth you choose.", current = "" } = Astro.props;
+const fullTitle = title ? `${title} — Moby-Dick Portal` : "Moby-Dick — A Student Edition";
 
 const nav = [
   { id: "read", label: "Read", href: withBase("chapters/") },
@@ -55,7 +55,7 @@ const nav = [
     <footer class="site-footer">
       <div class="wrap">
         <p>
-          <strong>Moby-Dick: A Reversible Student Edition.</strong>
+          <strong>Moby-Dick: A Student Edition.</strong>
           Full text from <a href="https://standardebooks.org/ebooks/herman-melville/moby-dick" rel="noopener">Standard Ebooks</a> (public domain).
           Study notes are source-cited and student-reviewed.
         </p>

@@ -8,52 +8,67 @@ const waypoints = [...(data.voyageMap.waypoints ?? [])].sort(
   (a, b) => (a.chapter_start ?? 0) - (b.chapter_start ?? 0)
 );
 
-// Simple equirectangular plot of display-anchor coordinates [lon, lat].
-const W = 960, H = 480;
-const pts = waypoints
-  .filter((w) => Array.isArray(w.coordinates))
-  .map((w) => ({
-    ...w,
-    x: ((w.coordinates[0] + 180) / 360) * W,
-    y: ((90 - w.coordinates[1]) / 180) * H
-  }));
+// Honest "stage guide": lay the ordered stages along a serpentine voyage line.
+// No geographic coordinates implied — just sequence, evenly spaced so nothing collides.
+const cols = 6;
+const W = 960;
+const padX = 70;
+const padY = 54;
+const rowH = 82;
+const step = (W - padX * 2) / (cols - 1);
+const rows = Math.ceil(waypoints.length / cols);
+const H = padY * 2 + (rows - 1) * rowH;
+
+const nodes = waypoints.map((w, i) => {
+  const row = Math.floor(i / cols);
+  const inRow = i % cols;
+  const col = row % 2 === 0 ? inRow : cols - 1 - inRow; // serpentine
+  return {
+    n: i + 1,
+    label: w.label,
+    x: padX + col * step,
+    y: padY + row * rowH
+  };
+});
+const linePoints = nodes.map((p) => `${p.x},${p.y}`).join(" ");
+const first = nodes[0];
+const last = nodes[nodes.length - 1];
 ---
 
-<Layout title="Voyage map" current="map" description="The Pequod's voyage as a stage guide — display anchors, not a charted route.">
+<Layout title="Voyage map" current="map" description="The Pequod's voyage as an ordered stage guide.">
   <div class="wrap">
     <div class="page-head">
       <p class="eyebrow">Trace</p>
       <h1>Voyage map</h1>
       <p class="lede">
-        A stage guide to the Pequod's path from Manhattan out to the Pacific. These dots are
-        <strong>display anchors</strong> for orientation, not verified route coordinates — the novel
-        rarely fixes an exact position.
+        The Pequod's path as a <strong>stage guide</strong> — the voyage in order, from the Manhattan
+        shore out to the killing grounds of the Pacific. The novel rarely fixes an exact position, so
+        these are sequence markers, not charted coordinates.
       </p>
     </div>
 
-    <div class="map-figure" style="padding:0.5rem;">
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="Approximate voyage stages plotted on a world grid">
-        <rect x="0" y="0" width={W} height={H} style="fill: color-mix(in srgb, var(--accent) 6%, var(--paper-raised))" />
-        {[0.25, 0.5, 0.75].map((f) => <line x1="0" y1={H * f} x2={W} y2={H * f} style="stroke: var(--line); stroke-width:1" />)}
-        {[0.25, 0.5, 0.75].map((f) => <line x1={W * f} y1="0" x2={W * f} y2={H} style="stroke: var(--line); stroke-width:1" />)}
-        {pts.length > 1 && (
-          <polyline
-            points={pts.map((p) => `${p.x},${p.y}`).join(" ")}
-            style="fill:none; stroke: var(--accent-soft); stroke-width:2; stroke-dasharray:5 5; opacity:0.7" />
-        )}
-        {pts.map((p, i) => (
+    <div class="map-figure" style="padding:0.75rem;">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="The ordered stages of the Pequod's voyage, connected as a line">
+        <rect x="0" y="0" width={W} height={H} rx="10" style="fill: color-mix(in srgb, var(--accent) 8%, var(--paper-raised))" />
+        <polyline points={linePoints} style="fill:none; stroke: var(--accent-soft); stroke-width:2.5; stroke-dasharray:2 7; stroke-linecap:round; opacity:0.85" />
+        {nodes.map((p) => (
           <Fragment>
-            <circle cx={p.x} cy={p.y} r="6" style="fill: var(--gold); stroke: var(--paper-raised); stroke-width:2" />
-            <text x={p.x + 9} y={p.y + 4} style="font-size:13px; fill: var(--ink-soft); font-family: var(--sans)">{i + 1}</text>
+            <circle cx={p.x} cy={p.y} r={p.n === 1 || p.n === nodes.length ? 9 : 6}
+              style={`fill: ${p.n === 1 || p.n === nodes.length ? "var(--accent)" : "var(--gold)"}; stroke: var(--paper-raised); stroke-width:2.5`}>
+              <title>{`${p.n}. ${p.label}`}</title>
+            </circle>
+            <text x={p.x} y={p.y - 13} text-anchor="middle" style="font-size:12px; font-weight:700; fill: var(--ink-soft); font-family: var(--sans)">{p.n}</text>
           </Fragment>
         ))}
+        <text x={first.x} y={first.y + 26} text-anchor="middle" style="font-size:11px; fill: var(--ink-faint); font-family: var(--sans)">start</text>
+        <text x={last.x} y={last.y + 26} text-anchor="middle" style="font-size:11px; fill: var(--ink-faint); font-family: var(--sans)">end</text>
       </svg>
     </div>
 
     <h2 class="section-h">Stages</h2>
     {waypoints.map((w, i) => (
       <div class="waypoint">
-        <div class="wlabel">{Array.isArray(w.coordinates) ? `${i + 1}. ` : ""}{w.label}</div>
+        <div class="wlabel"><span style="color:var(--gold); font-weight:700;">{i + 1}.</span> {w.label}</div>
         <div class="wmeta">
           {w.chapter_start ? (w.chapter_end && w.chapter_end !== w.chapter_start ? `Chapters ${w.chapter_start}–${w.chapter_end}` : `Chapter ${w.chapter_start}`) : ""}
         </div>

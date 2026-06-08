@@ -1,14 +1,14 @@
-# Moby-Dick — A Reversible Student Edition
+# Moby-Dick — A Student Edition
 
 **Live site → https://jd-jones-ases.github.io/moby-dick-portal/**
 
-A data-first student edition of Herman Melville's *Moby-Dick; or, The Whale*, designed around reversible abridgment.
+A data-first student edition of Herman Melville's *Moby-Dick; or, The Whale* that lets a reader choose how much of the book to take on at once.
 
 The project goal is not to make one shortened edition. It is to preserve the full public-domain source while building metadata, reading paths, summaries, glossary help, and contextual annotations that let a student choose a manageable route through the book.
 
 ## What Makes It Different
 
-- **Reversible abridgment**: short paths are generated from metadata, not by deleting the full text.
+- **Choose your length**: short paths are generated from metadata, not by deleting the full text — nothing is cut.
 - **Student-first context**: whaling labor, nautical language, biblical/classical allusions, race, empire, and 19th-century publishing context are explained at the point of need.
 - **Multiple reading modes**: narrative core, classroom standard, thematic trails, and full text can all coexist.
 - **Source discipline**: the Standard Ebooks text is vendored as a read-only source, and interpretive claims should carry citations.
