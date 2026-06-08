@@ -181,6 +181,7 @@ function noteCitations(a) {
       // click (mark or card) and should survive pointer-leave until Escape / outside / another open.
       let openMark = null;
       let pinned = false;
+      let popHovered = false;
       function hideAllPops() {
         document.querySelectorAll(".gloss-pop:not([hidden])").forEach((p) => {
           p.hidden = true;
@@ -189,6 +190,7 @@ function noteCitations(a) {
         document.querySelectorAll(".gloss-mark.active, .gloss.active").forEach((el) => el.classList.remove("active"));
         openMark = null;
         pinned = false;
+        popHovered = false;
       }
       function placePop(mark, pop) {
         pop.hidden = false;
@@ -216,9 +218,9 @@ function noteCitations(a) {
           showGloss(id, false);
         });
         mark.addEventListener("mouseleave", () => {
-          // defer so a move into the popover (which sets its own hover) can cancel the close
+          // defer so a move into the popover (which sets popHovered) can cancel the close
           setTimeout(() => {
-            if (openMark === id && !pinned && !(pop && pop.matches(":hover"))) hideAllPops();
+            if (openMark === id && !pinned && !popHovered) hideAllPops();
           }, 90);
         });
         mark.addEventListener("focus", () => { if (openMark !== id) { hideAllPops(); showGloss(id, false); } });
@@ -229,8 +231,8 @@ function noteCitations(a) {
           else { hideAllPops(); showGloss(id, false); pinned = true; }
         });
         if (pop) {
-          pop.addEventListener("mouseenter", () => { openMark = id; });
-          pop.addEventListener("mouseleave", () => { if (openMark === id && !pinned) hideAllPops(); });
+          pop.addEventListener("mouseenter", () => { popHovered = true; openMark = id; });
+          pop.addEventListener("mouseleave", () => { popHovered = false; if (openMark === id && !pinned) hideAllPops(); });
         }
       });
       document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
