@@ -382,6 +382,7 @@ function initKeyboardNav() {
   document.addEventListener("keydown", (e) => {
     if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
     if (isTyping(document.activeElement)) return;
+    if (document.querySelector("#search-overlay.open")) return; // don't navigate behind the open palette
     if (e.key === "j" || e.key === "ArrowRight") {
       if (nextA) { e.preventDefault(); window.location.href = nextA.href; }
     } else if (e.key === "k" || e.key === "ArrowLeft") {

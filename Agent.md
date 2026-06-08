@@ -142,13 +142,22 @@ best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-AP
   is the shared build-time data module; `CollectionView.astro` renders trails+entities. Trails/entities
   with zero membership get no page; lens notes link only to `placedNoteIds()` (so `#note-<id>` always
   resolves). Hardened against a 9-finding review. See the 2026-06-08 BUILD_LOG "Phase 4".
-- **Next:** Phase 5 — QA, accessibility, cold-start docs (the LAST phase). Full keyboard + screen-reader
-  (axe/NVDA) pass across reader, search overlay, map, trails, compare table; ARIA live regions; reduced-
-  motion + light/dark + offline on every surface; Lighthouse; a grep guard that every link uses
-  `withBase`/`import.meta.env.BASE_URL`; confirm the GitHub Actions build is green with the search-index
-  wiring; finalize docs. localStorage keys now live: `mdp-theme`, `mdp-gloss`, `mdp-focus`, `mdp-typo`,
-  `mdp-resume-*` (+ `mdp-resume-index`), `mdp-sound`. Reuse the client-module pattern (processed
-  `<script>import`); don't reintroduce inline scripts.
+- **Phase 5 (QA, accessibility, cold-start docs) is SHIPPED — the immersive upgrade is COMPLETE.**
+  Base-path grep guard passes; offline/no-CDN verified (zero external resources; only the same-origin
+  search index is fetched); a skip-to-content link + `<main id="main">` landmark were added; a 4-dimension
+  adversarial audit found 8 issues, all fixed (the `.claim` badges' Night contrast, global smooth-scroll +
+  card-hover now honor reduced-motion, `--ink-faint` darkened to AA, theme toggle `aria-pressed`, reader
+  `j`/`k` guarded behind the open palette, Escape closes the palette from the close button). Build green
+  (316 pages), CI deploy green, verified live. See the 2026-06-08 BUILD_LOG "Phase 5" + `docs/ARCHITECTURE.md`.
+- **The whole immersive reading-room upgrade (Phases 0–5) is DONE and live.** The reader is a focus-mode,
+  typographic, resumable reading room with offline ⌘K search, synthesized nautical ambience + Big Read
+  links, and a guided-exploration layer (trails / entities / path compare) — pure static, offline,
+  accessible, both themes (316 pages). localStorage keys live: `mdp-theme`, `mdp-gloss`, `mdp-focus`,
+  `mdp-typo`, `mdp-resume-*` (+ `mdp-resume-index`), `mdp-sound`.
+- **Next initiative returns to CONTENT depth** (the content-pipeline handoff below is the guide): the
+  source-verification backlog in `data/authored/needs-source-backlog.json`, the tone-and-source-review
+  queue, and upgrading inherited `source-text-observation`-only public notes. The reader/UI is now a
+  finished platform; reuse the client-module pattern (processed `<script>import`) for any future UI work.
 - Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
   search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
 

@@ -6,7 +6,7 @@
 
   --ink: #1c1a17;
   --ink-soft: #4a453d;
-  --ink-faint: #7a7468;
+  --ink-faint: #6e685c;
   --paper: #f6f1e7;
   --paper-raised: #fffdf8;
   --line: #e0d8c8;
@@ -34,7 +34,7 @@
 :root[data-theme="night"] {
   --ink: #e9e3d6;
   --ink-soft: #b9b1a1;
-  --ink-faint: #8a8474;
+  --ink-faint: #968f7d;
   --paper: #14181c;
   --paper-raised: #1c2229;
   --line: #2b333c;
@@ -276,6 +276,9 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .claim.nautical { background: var(--c-nautical); }
 .claim.lexical { background: var(--c-lexical); }
 .claim.textual { background: var(--c-textual); }
+/* Night's --c-* tokens are LIGHT, so white badge text fails contrast — dark ink on them instead
+   (mirrors the .sr-type / .st-req / .typo-seg fixes). */
+:root[data-theme="night"] .claim { color: var(--paper); }
 
 /* Summary callout */
 .summary-card {
@@ -554,6 +557,8 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }            /* native fragment-link clicks jump, don't animate */
+  a.card:hover { transform: none; transition: none; }  /* keep the border cue, drop the lift */
   .wp-dot, .gloss-mark { transition: none; }
   .reading-progress .bar { will-change: auto; }
 }
@@ -568,6 +573,17 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
+
+/* Skip-to-content link: off-screen until keyboard-focused, then pinned top-left above everything. */
+.skip-link {
+  position: fixed; top: 0.5rem; left: 0.5rem; z-index: 300;
+  transform: translateY(-250%);
+  background: var(--accent); color: #fff; padding: 0.5rem 0.9rem; border-radius: 8px;
+  font-weight: 600; box-shadow: var(--shadow);
+}
+.skip-link:focus { transform: none; text-decoration: none; }
+main:focus { outline: none; }
+@media (prefers-reduced-motion: reduce) { .skip-link { transition: none; } }
 
 /* ---- Deep Search palette (Phase 2) ---- */
 .search-btn {

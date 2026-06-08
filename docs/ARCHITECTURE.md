@@ -46,26 +46,36 @@ Astro is the required platform for the final product. The first page should rema
 
 Do not migrate the reader wholesale to React before the content scale-up. Astro should stay the shell for static text, indexed data, and fast page output. React can be introduced later as isolated Astro islands for genuinely stateful visualization surfaces: faceted search, graph/network exploration, map filtering, annotation-density heatmaps, and teacher review dashboards.
 
-## Current build (as shipped) and the planned upgrade
+## Current build (as shipped — the immersive upgrade, Phases 0–4 complete)
 
-The site is now a live multi-page Astro static build deployed to GitHub Pages. Current shape:
+The site is a live multi-page Astro static build on GitHub Pages (base `/moby-dick-portal/`,
+`trailingSlash: "always"`), **316 pages**, deployed by `.github/workflows/deploy.yml` (Node 22,
+`npm ci` + `npx astro build` — **no** `prepare:data` step). The immersive reading-room upgrade
+(`docs/UPGRADE_ROADMAP.md`) is built through Phase 4; only Phase 5 (QA/docs) remains.
 
-- **Pages:** `src/pages/index.astro` (landing dashboard), `src/pages/read/[unit].astro` (per-chapter
-  reader — server-rendered prose with inline source-cited Study marks + glossary marks and a notes
-  sidebar), `chapters/`, `paths/`, `glossary/`, `sources/`, `map/`, `about/`.
-- **Lib:** `src/lib/guide-data.js` (build-time data load — units+plain_text, public glossary/refs/
-  annotations, annotationIndex, voyageMap), `src/lib/render.js` (unified non-overlapping annotation +
-  glossary span pass → inline marks), `src/lib/site.js` (base-aware hrefs, claim metadata, source
-  lookups), `src/lib/voyage-map.js` (build-time equirectangular SVG world map from `world-atlas`).
-- **Shell/style:** `src/components/Layout.astro` (nav + Paper/Night theme), `src/styles/portal.css`
-  (variable-driven themes). CI: `.github/workflows/deploy.yml` (Node 22, `npm ci` + `npx astro build`).
-
-**Planned new routes/modules (see [UPGRADE_ROADMAP.md](UPGRADE_ROADMAP.md), the active plan):**
-`src/lib/reader-ui.js` (focus mode, typography, progress, resume — shared by the reader),
-`src/lib/in-page-find.js`, `src/components/SearchOverlay.astro` + `scripts/ingest/build-search-index.mjs`
-→ `data/search/search-index.json` (⌘K offline full-text search), `src/components/ChapterFlourish.astro`
-+ `src/components/AmbientSound.astro` (Web Audio ambience), `data/references/big-read-links.json`
-(external narration links), and exploration routes `src/pages/trails/*`, `src/pages/entity/[id].astro`,
-`src/pages/explorer/*`, `src/pages/paths/compare/index.astro`. Vanilla-first; at most one small Preact
-island (for search) via `@astrojs/preact`. The search index must be built during the Astro build (CI
-runs only `npx astro build`).
+- **Pages:** `index.astro` (landing), `read/[unit].astro` (per-chapter reader), `chapters/`, `paths/`,
+  `paths/compare/` (142×3 path-status table), `glossary/`, `sources/`, `map/`, `about/`, `explorer/`
+  (hub) + `explorer/characters/` + `explorer/places/`, `trails/` + `trails/[id]/` (45 covered trails),
+  `entity/[id]/` (117 entities). Plus the build-time JSON endpoint `search-index.json.js`.
+- **Build-time lib:** `guide-data.js` (loads units+plain_text + public glossary/refs/annotations +
+  annotationIndex + voyageMap), `render.js` (unified non-overlapping annotation+glossary span pass →
+  inline marks; **load-bearing, do not refactor**), `site.js` (base-aware hrefs `withBase`/`unitHref`,
+  claim metadata, `cap`), `voyage-map.js` (equirectangular SVG map from `world-atlas`), `explore.js`
+  (tag-grounded trail/entity membership, `coveredTrails`/`coveredEntities`, `relatedByOverlap`,
+  `lensesForUnit`, `placedNoteIds`), `search-index.js` (`buildSearchIndex` → the endpoint),
+  `search-tokenize.js` (shared by build + client).
+- **Client lib (processed `<script>import`, bundled once & shared — the repo's client-module pattern):**
+  `reader-ui.js` (focus mode, live typography, progress bar, resume, j/k nav, glossary popovers; shared
+  across all 142 reader pages), `in-page-find.js` (search→prose deep-link highlight), `ambient-sound.js`
+  (off-by-default Web Audio ambience), `search-ui.js` (⌘K command palette over the lazy-loaded index).
+- **Components:** `Layout.astro` (shell: nav + Paper/Night theme + skip link + global search mount),
+  `SearchOverlay.astro`, `ChapterFlourish.astro`, `AmbientSound.astro`, `CollectionView.astro` (shared
+  trail/entity renderer), `EntityRegistry.astro`. **Styles:** `src/styles/portal.css` (token-driven
+  themes + the aged-chart atmosphere).
+- **Data added by the upgrade:** `data/references/big-read-links.json` (external Big Read audio links,
+  link-out only); the search index is **generated during the build** by the `search-index.json.js`
+  endpoint (never stale, no committed artifact).
+- **Client policy:** vanilla-first, no framework island was needed (the search palette is plain JS); no
+  new npm deps beyond `astro`/`world-atlas`/`topojson-client`; fully offline (zero external resources);
+  the only runtime fetch is the same-origin search index. localStorage: `mdp-theme`, `mdp-gloss`,
+  `mdp-focus`, `mdp-typo`, `mdp-resume-*` (+ `mdp-resume-index`), `mdp-sound`.

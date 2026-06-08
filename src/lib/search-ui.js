@@ -60,6 +60,9 @@ export function initSearch() {
   // Focus trap: only the input and the close button are tabbable inside the dialog (options are
   // tabindex=-1), so cycle Tab between them and never let focus leak to the page behind the modal.
   overlay.addEventListener("keydown", (e) => {
+    // Escape closes from ANY focused element in the dialog (input handles its own too; this covers the
+    // close button and any future focusables).
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); close(); return; }
     if (e.key !== "Tab") return;
     const stops = [els.input, overlay.querySelector(".search-close")].filter(Boolean);
     if (stops.length < 2) return;

@@ -1,10 +1,12 @@
 # Upgrade Roadmap — The Immersive Moby-Dick Reader
 
-> **Status:** active plan. Phases 0–4 are **shipped** — the hover page-jump fix, **Phase 1 (the
-> Immersive Reading Room)**, **Phase 2 (the Deep Search ⌘K palette)**, **Phase 3 (nautical immersion +
-> optional audio)**, and **Phase 4 (guided exploration: trails, entities, path compare)**. **Phase 5
-> (QA, accessibility, cold-start docs)** is the last one. This is **not a content pass** — the scholarly
-> content pipeline is separate (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
+> **Status: COMPLETE — all phases (0–5) shipped.** The immersive reading-room upgrade is done: the
+> hover page-jump fix, **Phase 1 (the Immersive Reading Room)**, **Phase 2 (the Deep Search ⌘K palette)**,
+> **Phase 3 (nautical immersion + optional audio)**, **Phase 4 (guided exploration: trails, entities,
+> path compare)**, and **Phase 5 (QA, accessibility, cold-start docs)** are all live. Each phase was
+> implemented → adversarially reviewed → fixed → verified in-browser → deployed. This was **not a content
+> pass** — the scholarly content pipeline is separate (see the older `Agent.md` handoff +
+> `docs/CONTENT_STANDARDS.md`). Future work returns to content depth (the source-verification backlog).
 
 ## North star
 
@@ -160,7 +162,18 @@ entity renderer. Hardened against a 9-finding adversarial review. See the 2026-0
 - Index trails/entities into the Phase-2 search index. No graph/network/force-directed viz.
 - ~175 new static HTML files (no GitHub Pages limit). All links via `withBase`/`unitHref`.
 
-### Phase 5 — QA, accessibility, cold-start documentation
+### Phase 5 — QA, accessibility, cold-start documentation  ✅ SHIPPED
+Cross-surface QA + accessibility pass. **Base-path grep guard passes** (6,886 links all base-prefixed;
+zero hardcoded base / root-absolute in-app links). **Offline/no-CDN verified**: zero external
+`<link>`/`<script>`/`<img>` resources, no web fonts, no trackers — the only runtime fetch is the
+same-origin search index. Added a **skip-to-content link** + `<main id="main">` landmark. A 4-dimension
+adversarial audit (whole product, not a diff) confirmed **8 findings** (0 rejected), all fixed: the
+`.claim` study-note badges had the same white-on-light-Night-token contrast trap already fixed for the
+other badge families (now dark ink in Night); global `scroll-behavior: smooth` and the card-hover lift are
+now disabled under `prefers-reduced-motion`; `--ink-faint` darkened to clear AA on muted/breadcrumb text;
+the theme toggle now exposes `aria-pressed`; reader `j`/`k` nav no longer fires behind the open search
+palette; and Escape closes the palette from the close button too. Build green (316 pages), CI deploy
+green, verified live. See the 2026-06-08 BUILD_LOG "Phase 5" entry.
 - Full keyboard + screen-reader (axe/NVDA) pass across reader, search overlay, map, trails; ARIA live
   regions for dynamic state. `prefers-reduced-motion`, light+dark, offline on every new surface; Lighthouse.
 - Grep guard: every link uses `withBase`/`import.meta.env.BASE_URL` (no absolute hrefs).

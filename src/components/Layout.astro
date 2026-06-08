@@ -49,6 +49,7 @@ const nav = [
     </script>
   </head>
   <body class={reader ? "reader-page" : undefined}>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap nav">
         <a class="brand" href={withBase("")}>
@@ -67,12 +68,12 @@ const nav = [
             <span class="search-btn-txt">Search</span>
             <kbd>Ctrl K</kbd>
           </button>
-          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">◐</button>
+          <button class="theme-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark theme" title="Toggle theme">◐</button>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
       <slot />
     </main>
 
@@ -101,10 +102,13 @@ const nav = [
       (function () {
         const btn = document.getElementById("theme-toggle");
         if (!btn) return;
+        const root = document.documentElement;
+        // Reflect the applied theme (set pre-paint by the no-flash head script) as toggle state.
+        btn.setAttribute("aria-pressed", String(root.dataset.theme === "night"));
         btn.addEventListener("click", function () {
-          const root = document.documentElement;
           const next = root.dataset.theme === "night" ? "paper" : "night";
           root.dataset.theme = next;
+          btn.setAttribute("aria-pressed", String(next === "night"));
           try { localStorage.setItem("mdp-theme", next); } catch (e) {}
         });
       })();

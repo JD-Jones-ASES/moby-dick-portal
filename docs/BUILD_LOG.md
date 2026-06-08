@@ -1348,3 +1348,40 @@
   `src/lib/site.js` (`cap`), `src/lib/search-index.js`, `src/lib/search-ui.js`,
   `src/components/Layout.astro` (Explore nav), `src/pages/read/[unit].astro` (breadcrumb),
   `src/styles/portal.css`; docs `UPGRADE_ROADMAP.md` (Phase 4 ✅), `Agent.md`.
+- Shipped: committed `2e83c5d` and pushed to `main` (autonomy granted); GitHub Actions deploy succeeded
+  and all seven new route types serve 200 live (the live search index carries 45 trails + 117 entities).
+
+## 2026-06-08 - Phase 5: QA, accessibility, cold-start docs (shipped — upgrade COMPLETE)
+
+- Final phase of `docs/UPGRADE_ROADMAP.md`: a whole-product QA + accessibility pass (not a single diff).
+  The immersive reading-room upgrade is now complete end to end.
+- **Automated guards:** base-path grep guard **passes** — every in-app link uses `withBase`/`unitHref`
+  (6,886 base-prefixed links in dist; zero hardcoded `/moby-dick-portal` and zero root-absolute in-app
+  hrefs in source; only external GitHub/Standard-Ebooks/Big-Read/Gutenberg content links are absolute).
+  **Offline/no-CDN verified:** zero external `<link>`/`<script>`/`<img>` resources in the build, no
+  `@font-face`/Google-Fonts/CDN/analytics — fonts are system stacks; the only runtime fetch is the
+  same-origin lazy search index. The site loads and runs fully offline once cached.
+- **Skip link:** added `<a class="skip-link" href="#main">Skip to content</a>` as the first focusable
+  element (off-screen until focused) + `<main id="main" tabindex="-1">` landmark in `Layout.astro`.
+- **Adversarial audit** (4-dimension Workflow: a11y-structure / keyboard-offline / motion-themes-polish →
+  find → independently verify) confirmed **8 findings** (0 rejected), all fixed:
+  - **(major)** the `.claim` study-note badges hardcoded white text on the `--c-*` tokens, which are LIGHT
+    in Night (2.0–2.7:1) — the exact trap already fixed for `.sr-type`/`.st-req`/`.typo-seg` but missed for
+    `.claim`; added `:root[data-theme="night"] .claim { color: var(--paper) }` (dark ink, ~6–9:1). Affected
+    every reader/trail/entity page in dark mode.
+  - **(major)** global `html { scroll-behavior: smooth }` was never disabled under `prefers-reduced-motion`,
+    so native fragment-link clicks (skip link, anno-marks, note quotes) animated; added a reduced-motion
+    `html { scroll-behavior: auto }` override (the JS scroll paths already opted out).
+  - `--ink-faint` was below AA (4.1–4.3:1) on muted/breadcrumb text → darkened (Paper `#6e685c`, Night
+    `#968f7d`); the card-hover lift is now `transform:none` under reduced motion; the theme toggle exposes
+    `aria-pressed` (synced on load + click); reader `j`/`k`/arrow nav now bails when `#search-overlay.open`
+    (no page jump behind the palette); and Escape now closes the palette from the close button (handled at
+    the overlay level, not just the input).
+- Build green (316 pages), verified in-browser (Paper + Night, clean console). Files: modified
+  `src/styles/portal.css`, `src/components/Layout.astro`, `src/lib/reader-ui.js`, `src/lib/search-ui.js`;
+  docs `UPGRADE_ROADMAP.md` (Status: COMPLETE), `docs/ARCHITECTURE.md` (shipped shape), `Agent.md`.
+- **The immersive reading-room upgrade (Phases 0–5) is complete and live.** The reader is a focus-mode,
+  typographic, resumable reading room with offline ⌘K search, a synthesized nautical ambience + Big Read
+  links, and a guided-exploration layer (trails, entities, path compare) — pure static, offline,
+  accessible, both themes. Next initiative returns to **content depth** (the source-verification backlog
+  in `data/authored/needs-source-backlog.json` + the tone-and-source queue).
