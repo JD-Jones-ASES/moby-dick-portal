@@ -19,6 +19,7 @@ The full Standard Ebooks text remains intact. Abridgment is expressed as metadat
 
 | Path | Read this when... |
 |---|---|
+| **[docs/UPGRADE_ROADMAP.md](docs/UPGRADE_ROADMAP.md)** | **ACTIVE PLAN.** You are building the immersive reader upgrade (reading room, ⌘K search, nautical immersion, trails/entity pages). Read this first. |
 | **[docs/BUILDOUT_PLAN.md](docs/BUILDOUT_PLAN.md)** | You are continuing the initial buildout or deciding what to build next. |
 | **[docs/ABRIDGMENT_MODEL.md](docs/ABRIDGMENT_MODEL.md)** | You are classifying chapters, designing reading paths, or changing inclusion rules. |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | You need the intended project structure and data flow. |
@@ -95,6 +96,28 @@ Completed:
 - The project hit a quality crisis after expansion. Many annotations are draft scaffolds, source-index notes, generic floor prose, or review hooks rather than publishable scholarship. Treat the current annotation mass as raw material, not product copy.
 - `docs/ACADEMIC_RECOVERY_PLAN.md` records the strategic reset: freeze content expansion, purge or hide weak annotations, pilot scholarly review on representative chapters, and scale only after the notes meet the Shakespeare Portal standard.
 - The reader now shows public Study cards only for annotations with `display.surfaces` including `reader`, `status.content_status: "student-ready"`, and verified citations. Public glossary and reference cards are gated the same way. Current audit truth: 2,234 total annotations, 285 public Study annotations, 114 public glossary entries, 80 public reference cards, 24 public source records, 24 public sources ready, 0 public sources needing bibliographic review, 0 blocked public sources, 0 teacher packets in the public payload, 0 public draft leaks, 0 public glossary unit gaps, 0 public reference unit gaps, 0 ordinary public annotation promotion candidates, and 0 overlapping public Study anchors.
+
+## Session Handoff — 2026-06-08 (ACTIVE PLAN: the immersive reader upgrade)
+
+**Read `docs/UPGRADE_ROADMAP.md` first — it is the active plan.** The portal is live and content is at
+the bar; the current initiative is a **reading-first immersive upgrade** (not a content pass) into the
+best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-API / no-hosted-audio.
+
+- **Phase 0 is SHIPPED:** hovering a glossary term or map dot no longer scrolls the page (the on-hover
+  `scrollIntoView` was removed; context reveals in place; `showGloss(id, fromCard, scroll=false)` in
+  `src/pages/read/[unit].astro` and the map `highlight()` hover callers pass no-scroll). Only an
+  explicit click scrolls.
+- **Next:** Phase 1 (Immersive Reading Room) → Phase 2 (Deep Search ⌘K palette) → Phase 3 (nautical
+  immersion + in-browser ambience + Big Read external link) → Phase 4 (trails/entity/explorer/path-compare)
+  → Phase 5 (QA + docs). One phase per session where practical. See the roadmap for file map, the
+  **localStorage key registry**, and two load-bearing caveats: **(1)** `deploy.yml` runs only
+  `npx astro build` (not `prepare:data`), so the Phase-2 search index must be built during the Astro
+  build / committed / or added as a prebuild step; **(2)** only 14/55 trails have public notes, so build
+  trail/entity pages on **chapter-level membership**, never gate on public-note presence.
+- Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
+  search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
+
+The content-pipeline handoff below remains valid for any future content work.
 
 ## Session Handoff — 2026-06-08 (Phase 2 shipped: the portal is LIVE)
 

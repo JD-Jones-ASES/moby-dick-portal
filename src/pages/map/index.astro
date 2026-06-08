@@ -111,8 +111,9 @@ const stages = data.voyageMap.waypoints
 
       document.querySelectorAll(".wp-hit").forEach((hit) => {
         const id = hit.dataset.card;
-        hit.addEventListener("mouseenter", () => highlight(id, true));
-        hit.addEventListener("focus", () => highlight(id, true));
+        // Hover/focus highlights the matching stage row IN PLACE — never scrolls the page.
+        hit.addEventListener("mouseenter", () => highlight(id, false));
+        hit.addEventListener("focus", () => highlight(id, false));
         hit.addEventListener("click", () => go(hit.dataset.href));
         hit.addEventListener("keydown", (e) => {
           if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(hit.dataset.href); }

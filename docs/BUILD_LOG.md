@@ -1129,3 +1129,28 @@
   abaft→aft fix, 0 dot overlaps, the popover hover-bridge, and Escape/outside dismissal. 149 pages
   build green; deploys succeeded. Per the user, the map + glossary completing brings the portal to
   its intended bar. Stray `..npm-cache` blobs (a mangled cache-flag) were removed and ignored.
+
+## 2026-06-08 - Phase 0 Page-Jump Fix + Immersive-Reader Upgrade Roadmap
+
+- User flagged a fundamental UX flaw: HOVERING a glossary term or a map dot scrolled the matching
+  sidebar item into view, yanking the page. Then asked to plan a larger "show-off" upgrade into an
+  immersive in-browser Moby-Dick reader (still pure-static / GitHub-Pages / no-API / no-hosted-audio),
+  with the big build to START IN A NEW SESSION from updated docs. Ran an ultracode plan-mode pass:
+  clarifying questions (ambitious-immersive; reading > search > guided exploration; nautical aesthetic;
+  off-by-default in-browser ambience + external Big Read link, no self-hosting) → a 6-agent ideation/
+  feasibility Workflow → an approved plan.
+- **Phase 0 shipped (the fix):** root cause was `showGloss()` calling `scrollIntoView` from the
+  hover/focus path (`src/pages/read/[unit].astro`) and the map `highlight()` scrolling the stage list on
+  hover (`src/pages/map/index.astro`). The glossary popover already renders in place, so the fix was to
+  gate scrolling: `showGloss(id, fromCard, scroll=false)` — hover/focus highlight + show popover with NO
+  scroll; only a sidebar-card click scrolls the word into the prose. Map hover/focus callers now pass
+  `scrollList:false`. ~6 lines across two files, no new deps; build green.
+- **Roadmap docs written to seed a fresh session:** new `docs/UPGRADE_ROADMAP.md` (north star, 3
+  signature features, phases 0-5 with file map, the localStorage key registry, and two load-bearing
+  caveats — deploy.yml runs only `npx astro build` so the search index must be built at build time;
+  only 14/55 trails have public notes so build trail/entity pages on chapter-level membership). Updated
+  `Agent.md` (new top handoff + Repo Map row) and `docs/ARCHITECTURE.md` (current shape + planned
+  routes/modules). The Big Read narration target was verified live (per-chapter URLs like
+  `/chapter-1-loomings/`, not-for-profit → link out only, never embed).
+- Phases 1-5 (Immersive Reading Room → ⌘K Deep Search → nautical immersion + ambience → trails/entity/
+  explorer/path-compare → QA+docs) are intentionally deferred to subsequent sessions per the user.

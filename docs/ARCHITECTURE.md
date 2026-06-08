@@ -45,3 +45,27 @@ The first screen of the future site should be the usable reading experience: pat
 Astro is the required platform for the final product. The first page should remain the reader itself, with reusable components and content collections added when they reduce complexity or strengthen validation.
 
 Do not migrate the reader wholesale to React before the content scale-up. Astro should stay the shell for static text, indexed data, and fast page output. React can be introduced later as isolated Astro islands for genuinely stateful visualization surfaces: faceted search, graph/network exploration, map filtering, annotation-density heatmaps, and teacher review dashboards.
+
+## Current build (as shipped) and the planned upgrade
+
+The site is now a live multi-page Astro static build deployed to GitHub Pages. Current shape:
+
+- **Pages:** `src/pages/index.astro` (landing dashboard), `src/pages/read/[unit].astro` (per-chapter
+  reader — server-rendered prose with inline source-cited Study marks + glossary marks and a notes
+  sidebar), `chapters/`, `paths/`, `glossary/`, `sources/`, `map/`, `about/`.
+- **Lib:** `src/lib/guide-data.js` (build-time data load — units+plain_text, public glossary/refs/
+  annotations, annotationIndex, voyageMap), `src/lib/render.js` (unified non-overlapping annotation +
+  glossary span pass → inline marks), `src/lib/site.js` (base-aware hrefs, claim metadata, source
+  lookups), `src/lib/voyage-map.js` (build-time equirectangular SVG world map from `world-atlas`).
+- **Shell/style:** `src/components/Layout.astro` (nav + Paper/Night theme), `src/styles/portal.css`
+  (variable-driven themes). CI: `.github/workflows/deploy.yml` (Node 22, `npm ci` + `npx astro build`).
+
+**Planned new routes/modules (see [UPGRADE_ROADMAP.md](UPGRADE_ROADMAP.md), the active plan):**
+`src/lib/reader-ui.js` (focus mode, typography, progress, resume — shared by the reader),
+`src/lib/in-page-find.js`, `src/components/SearchOverlay.astro` + `scripts/ingest/build-search-index.mjs`
+→ `data/search/search-index.json` (⌘K offline full-text search), `src/components/ChapterFlourish.astro`
++ `src/components/AmbientSound.astro` (Web Audio ambience), `data/references/big-read-links.json`
+(external narration links), and exploration routes `src/pages/trails/*`, `src/pages/entity/[id].astro`,
+`src/pages/explorer/*`, `src/pages/paths/compare/index.astro`. Vanilla-first; at most one small Preact
+island (for search) via `@astrojs/preact`. The search index must be built during the Astro build (CI
+runs only `npx astro build`).

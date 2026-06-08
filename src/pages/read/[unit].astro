@@ -198,15 +198,20 @@ function noteCitations(a) {
         if (mark.getBoundingClientRect().top < 150) pop.classList.add("below");
         if (pop.getBoundingClientRect().right > window.innerWidth - 8) pop.classList.add("flip-left");
       }
-      function showGloss(id, fromCard) {
+      // scroll defaults to false: hovering/focusing a term reveals its popover and highlights its
+      // sidebar card IN PLACE and never moves the page. Only an explicit click scrolls (a sidebar
+      // card click brings its word into view in the prose).
+      function showGloss(id, fromCard, scroll = false) {
         const mark = document.getElementById("gmark-" + id);
         const pop = document.getElementById("gpop-" + id);
         const card = document.getElementById("gcard-" + id);
         if (mark) mark.classList.add("active");
         if (card) card.classList.add("active");
         if (mark && pop) placePop(mark, pop);
-        if (fromCard && mark) mark.scrollIntoView(scrollOpts);
-        else if (!fromCard && card) card.scrollIntoView(scrollOpts);
+        if (scroll) {
+          if (fromCard && mark) mark.scrollIntoView(scrollOpts);
+          else if (!fromCard && card) card.scrollIntoView(scrollOpts);
+        }
         openMark = id;
       }
       document.querySelectorAll(".gloss-mark").forEach((mark) => {
@@ -237,9 +242,10 @@ function noteCitations(a) {
       });
       document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
         const id = card.dataset.gloss;
-        const act = () => { if (openMark === id) return; hideAllPops(); showGloss(id, true); pinned = true; };
-        card.addEventListener("click", act);
-        card.addEventListener("focus", act);
+        // Click a card -> scroll its word into view in the prose (explicit "find it"); focus alone
+        // (keyboard tab) only highlights, no scroll.
+        card.addEventListener("click", () => { hideAllPops(); showGloss(id, true, true); pinned = true; });
+        card.addEventListener("focus", () => { if (openMark === id) return; hideAllPops(); showGloss(id, true, false); pinned = true; });
       });
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") hideAllPops(); });
       document.addEventListener("click", (e) => {
