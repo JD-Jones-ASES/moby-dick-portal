@@ -126,15 +126,24 @@ best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-AP
   token fallback), glossary → `/glossary/#g-<id>`, notes → `#note-<id>`. Vanilla; `search-ui.js` imports
   only `search-tokenize.js` (never `site.js`, to keep build-only JSON out of the client). Hardened
   against a 9-finding adversarial review. See the 2026-06-08 BUILD_LOG "Phase 2" entry.
-- **Next:** Phase 3 (nautical immersion + in-browser synthesized ambience + Big Read external link) →
-  Phase 4 (trails/entity/explorer/path-compare) → Phase 5 (QA + docs). One phase per session where
+- **Phase 3 (nautical immersion + optional audio) is SHIPPED:** a subtle aged-chart atmosphere (two
+  fixed low-opacity layers — vignette + inline-SVG-noise grain, readability untouched), a chapter
+  compass-star flourish (chapters + epilogue, reduced-motion-guarded), an **off-by-default synthesized**
+  ocean ambience (`src/lib/ambient-sound.js` + a dock toggle — Web Audio only, zero files; removed under
+  `prefers-reduced-motion`/no-WebAudio; created on a gesture; **suspends when off**; `mdp-sound`), and a
+  **link-out-only** Big Read "Listen" link per chapter/epilogue (`data/references/big-read-links.json` —
+  the Big Read's own verified slugs, which differ from ours). Hardened against a 7-finding review. See the
+  2026-06-08 BUILD_LOG "Phase 3" entry.
+- **Next:** Phase 4 (trails/entity/explorer/path-compare — ~175 static pages) → Phase 5 (QA + docs +
+  full a11y/Lighthouse pass + confirm the search-index build wiring is green). One phase per session where
   practical. See the roadmap for the file map and the **localStorage key registry**. Two load-bearing
-  notes still apply: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`) — the Phase-2
-  search index already honors this via the build-time endpoint; reuse that pattern for any new generated
-  artifact; **(2)** only 14/55 trails have public notes, so build Phase-4 trail/entity pages on
-  **chapter-level membership**, never gate on public-note presence, and add `trail`/`entity` records to
-  `buildSearchIndex` only once those pages exist. Reuse the client-module pattern (processed
-  `<script>import`); don't reintroduce inline scripts.
+  notes: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`) — the Phase-2 search index
+  honors this via its build-time endpoint; reuse that pattern for any new generated artifact; **(2)** only
+  14/55 trails have public notes, so build Phase-4 trail/entity pages on **chapter-level membership**
+  (`data/indexes/annotations-by-trail.json`/`annotations-by-entity.json` `.units[]`), never gate on
+  public-note presence, and add `trail`/`entity` records to `buildSearchIndex` (src/lib/search-index.js)
+  only once `/trails/[id]/` + `/entity/[id]/` exist. Reuse the client-module pattern (processed
+  `<script>import`); don't reintroduce inline scripts. `mdp-sound` (Phase 3) joins the localStorage keys.
 - Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
   search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
 

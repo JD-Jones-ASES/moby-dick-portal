@@ -1263,3 +1263,45 @@
   modified `src/components/Layout.astro`, `src/lib/reader-ui.js`, `src/styles/portal.css`,
   `src/pages/glossary/index.astro`; docs `UPGRADE_ROADMAP.md` (Phase 2 ✅ + build-wiring decision),
   `Agent.md`. Trails/entities deferred to Phase 4 (no pages yet → would be dead links).
+- Shipped: committed `42c4958` and pushed to `main` (autonomy granted); GitHub Actions deploy succeeded
+  and the live site serves the index (708 records) + the palette on every page.
+
+## 2026-06-08 - Phase 3: Nautical immersion + optional audio (shipped)
+
+- Built Phase 3 of `docs/UPGRADE_ROADMAP.md` autonomously, with an ultracode adversarial review between
+  implementation and ship. Pure vanilla, no new deps, no hosted/embedded audio; build green (149 pages),
+  verified in-browser in Paper + Night (and mobile) with a clean console. **Readability stayed the #1
+  priority** throughout.
+- **Design-system pass (`portal.css`):** an "aged-chart" atmosphere = two fixed pseudo-element layers —
+  `body::before` a themed warm/cool vignette (`color-mix` on `--accent`/`--gold`), `body::after` a faint
+  inline **SVG-noise** grain (data URI, ~150px tile, opacity 0.035 Paper / 0.05 Night). Both are
+  deliberately barely-there so they add depth without reducing text contrast (a reviewer measured no
+  readability hit). Plus a touch of `letter-spacing` on the big display serifs.
+- **Chapter flourish (`src/components/ChapterFlourish.astro`):** a small gold compass-star + a rule
+  fading right, aligned to the title's left edge, above the kicker on chapters + the epilogue only;
+  CSS fade-in with a `prefers-reduced-motion` guard. Decorative (`aria-hidden`).
+- **Ambient soundscape (`src/lib/ambient-sound.js` + `src/components/AmbientSound.astro`, a third dock
+  toggle):** **fully synthesized** ocean ambience — a looping normalized brown-noise buffer (waves)
+  through a lowpass whose cutoff drifts on a slow LFO (swell), plus a quiet low sine (hull) — through a
+  master gain that ramps in/out. **Zero audio files, nothing hosted/streamed.** OFF by default; the
+  control is **removed entirely** under `prefers-reduced-motion` or when Web Audio is absent; the
+  `AudioContext` is created only on a user gesture and **suspended when toggled off** (≈0 CPU/battery);
+  `mdp-sound` persists, and continuity resumes on the first gesture of a new page. (Audio quality can't be
+  auto-QA'd headless; the synthesis params are gentle and the control/state were verified.)
+- **Big Read links (`data/references/big-read-links.json`):** a subtle sidebar "Listen — Hear this
+  chapter read aloud ↗" external link per chapter + the epilogue. **Link out only, never embed/host.**
+  Critical finding: the Big Read's slugs differ from ours (their `the-carpet-bag` vs our `the-carpetbag`,
+  original 1851 titling), so slugs can't be derived from our titles — pulled the Big Read's own 135
+  chapter slugs + epilogue from their homepage and **HTTP-verified a sample (incl. the dup `knights-
+  squires` for ch 26/27, the long ch-120 slug, the apostrophe-stripped ones)**; all 200. The reader maps
+  `unit.number`→slug (epilogue special-cased, frontmatter → no link).
+- **Adversarial review** (4-dimension Workflow → find → verify) confirmed **7 findings** (0 rejected; two
+  were the same suspend-on-off issue). All fixed: (1/major) suspend the `AudioContext` after the off-fade
+  so OFF costs ~0 CPU; (2) the resume listener now ignores a first gesture that targets the toggle (no
+  on→off swell); (3) the toggle no longer claims `aria-pressed=true` on load before audio actually
+  resumes; (4) the Big Read link announces the new tab via an `sr-only` span + `rel="noopener noreferrer"`;
+  (5) a state-neutral toggle `title` (can't go stale); (6/7) 44px dock touch targets on mobile.
+- Files: new `src/lib/ambient-sound.js`, `src/components/AmbientSound.astro`,
+  `src/components/ChapterFlourish.astro`, `data/references/big-read-links.json`; modified
+  `src/pages/read/[unit].astro`, `src/lib/reader-ui.js`, `src/styles/portal.css`; docs
+  `UPGRADE_ROADMAP.md` (Phase 3 ✅), `Agent.md`.

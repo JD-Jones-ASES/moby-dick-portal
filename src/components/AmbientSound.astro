@@ -1,0 +1,11 @@
+---
+// Off-by-default ocean-ambience toggle for the reader dock. Synthesis: src/lib/ambient-sound.js
+// (removed entirely at runtime under prefers-reduced-motion or when Web Audio is unavailable).
+---
+<button type="button" class="dock-btn" id="ambient-toggle" aria-pressed="false" title="Toggle ocean ambience (synthesized — no audio files)">
+  <svg class="dock-ico" viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M1 8 C 3 5, 5 5, 7 8 S 11 11, 13 8 S 17 5, 19 8"></path>
+    <path d="M1 13 C 3 10, 5 10, 7 13 S 11 16, 13 13 S 17 10, 19 13" opacity="0.55"></path>
+  </svg>
+  <span class="dock-txt">Sound</span>
+</button>

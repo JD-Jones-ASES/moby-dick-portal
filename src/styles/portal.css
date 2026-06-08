@@ -548,8 +548,9 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
   .reader-dock { right: 0.6rem; bottom: 0.6rem; }
   .dock-btn .dock-txt { display: none; }
   .typo-panel { width: min(280px, 86vw); }
-  /* Comfortable touch targets where the panel is the primary control surface. */
+  /* Comfortable touch targets on phones for every explicit control. */
   .typo-panel button { min-height: 44px; min-width: 44px; }
+  .reader-dock .dock-btn { min-height: 44px; min-width: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -650,6 +651,67 @@ mark.find-hit { background: color-mix(in srgb, var(--gold) 42%, transparent); co
 
 @media (prefers-reduced-motion: reduce) {
   .search-backdrop, .search-dialog { transition: none; }
+}
+
+/* ---- Nautical immersion (Phase 3) ---- */
+
+/* Aged-chart atmosphere: a warm/cool vignette + a barely-there paper grain behind all content.
+   Two fixed layers, kept very subtle (readability first) and adaptive to both themes. */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+body::before {
+  z-index: -2;
+  background:
+    radial-gradient(130% 90% at 50% -20%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 55%),
+    radial-gradient(120% 95% at 50% 120%, color-mix(in srgb, var(--gold) 5%, transparent), transparent 55%);
+}
+body::after {
+  z-index: -1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 150px 150px;
+}
+:root[data-theme="night"] body::after { opacity: 0.05; }
+
+/* A touch of tracking on the big display serifs for a more set, printed feel. */
+.reader-title, .hero h1, .page-head h1 { letter-spacing: -0.012em; }
+
+/* Chapter-opening flourish: compass star + a rule fading to the right, aligned to the title. */
+.chapter-flourish {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--gold);
+  margin: 0.25rem 0 0.7rem;
+  opacity: 0;
+  animation: cf-fade-in 0.7s ease 0.05s forwards;
+}
+.chapter-flourish .cf-star { flex: none; }
+.chapter-flourish .cf-rule {
+  height: 1px;
+  width: clamp(34px, 32%, 130px);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 55%, transparent), transparent);
+}
+@keyframes cf-fade-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+
+/* Big Read external "Listen" affordance in the reader sidebar. Link out only. */
+.notes.big-read { margin-bottom: 1.75rem; }
+.big-read-link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--serif); font-size: 1rem; color: var(--accent);
+  border: 1px solid var(--line-strong); border-radius: 9px;
+  padding: 0.55rem 0.8rem; background: var(--paper-raised);
+}
+.big-read-link:hover { text-decoration: none; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--paper-raised)); }
+.big-read-link .ext { color: var(--ink-faint); font-size: 0.85rem; }
+.big-read-note { font-size: 0.8rem; color: var(--ink-faint); margin: 0.5rem 0 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .chapter-flourish { animation: none; opacity: 1; }
 }
 
 /* ---- Responsive ---- */

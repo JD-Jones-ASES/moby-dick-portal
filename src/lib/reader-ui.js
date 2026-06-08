@@ -16,6 +16,7 @@
 // module on a page without a reader is harmless.
 
 import { runInPageFind } from "./in-page-find.js";
+import { initAmbient } from "./ambient-sound.js";
 
 const REDUCE = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -32,6 +33,7 @@ export function initReader() {
   initProgressBar();
   initResume();
   initKeyboardNav();
+  initAmbient();
 
   // Deep-link from the search palette: scroll+highlight a prose term on load and on later
   // same-page #find= changes.

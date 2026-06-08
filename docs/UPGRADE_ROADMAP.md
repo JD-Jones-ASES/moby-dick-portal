@@ -1,10 +1,10 @@
 # Upgrade Roadmap — The Immersive Moby-Dick Reader
 
 > **Status:** active plan. Phase 0 (the hover page-jump fix), **Phase 1 (the Immersive Reading Room)**,
-> and **Phase 2 (the Deep Search ⌘K palette)** are **shipped**. Phases 3–5 are the rest of the
-> reading-first immersive upgrade and are intended to be executed in fresh sessions, one phase per
-> session where practical. This is **not a content pass** — the scholarly content pipeline is separate
-> (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
+> **Phase 2 (the Deep Search ⌘K palette)**, and **Phase 3 (nautical immersion + optional audio)** are
+> **shipped**. Phases 4–5 are the rest of the reading-first immersive upgrade and are intended to be
+> executed in fresh sessions, one phase per session where practical. This is **not a content pass** —
+> the scholarly content pipeline is separate (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
 
 ## North star
 
@@ -110,7 +110,19 @@ Hardened against a 9-finding adversarial review. See the 2026-06-08 BUILD_LOG "P
 - Files: `scripts/ingest/build-search-index.mjs`, `src/components/SearchOverlay.astro` (or vanilla module),
   `src/lib/in-page-find.js`, `Layout.astro`. Record gzipped index size + first-open latency in BUILD_LOG.
 
-### Phase 3 — Nautical immersion + optional audio  (vanilla)
+### Phase 3 — Nautical immersion + optional audio  (vanilla)  ✅ SHIPPED
+All four sub-features shipped, hardened against a 7-finding adversarial review. Readability stayed the
+priority — the atmosphere is two fixed, very-low-opacity layers (a themed vignette + a faint inline
+SVG-noise grain) that don't touch text contrast. The chapter flourish is a decorative compass-star
+dingbat (chapters + epilogue only), fading in under reduced-motion guard. The **ambient soundscape**
+(`src/lib/ambient-sound.js` + `src/components/AmbientSound.astro`, a dock toggle) is **off by default**,
+**removed entirely under `prefers-reduced-motion`** or without Web Audio, **created only on a user
+gesture**, and **suspends the AudioContext when off** (≈0 CPU). It synthesizes everything — brown-noise
+waves + a low hull sine through a master gain — **zero audio files**. `mdp-sound` persists; the toggle
+never claims "on" before audio actually resumes. The **Big Read** link is **external, link-out only**
+(`target=_blank rel="noopener noreferrer"`, announces the new tab) using the Big Read's own verified
+slugs in `data/references/big-read-links.json` (their titling differs from ours, e.g. `the-carpet-bag`).
+See the 2026-06-08 BUILD_LOG "Phase 3" entry.
 - **Design system pass** in `portal.css`: refined `--sea-deep`/`--sea-mid`/`--brass`/`--ivory`/`--parchment`
   tokens, subtle CSS/SVG aged-chart texture (2–3 layers max), depth shadows, heading letter-spacing — for
   **both** Paper and Night themes. Readability + perf first; test on low-end.

@@ -5,6 +5,19 @@ import { renderUnit } from "../../lib/render.js";
 import {
   unitHref, unitKicker, pathMeta, primaryClaim, claimInfo, externalCitations, sourceInfo
 } from "../../lib/site.js";
+import ChapterFlourish from "../../components/ChapterFlourish.astro";
+import AmbientSound from "../../components/AmbientSound.astro";
+import bigRead from "../../../data/references/big-read-links.json";
+
+// External Big Read audio link for this unit (chapter or epilogue), or null. Link out only.
+function bigReadUrl(unit) {
+  if (unit.section_type === "epilogue") return `${bigRead.base}/${bigRead.epilogue_slug}/`;
+  if (unit.section_type === "chapter" && unit.number != null) {
+    const slug = bigRead.slugs[String(unit.number)];
+    if (slug) return `${bigRead.base}/chapter-${unit.number}-${slug}/`;
+  }
+  return null;
+}
 
 export async function getStaticPaths() {
   const data = await loadGuideData();
@@ -40,6 +53,7 @@ export async function getStaticPaths() {
 
 const { unit, html, notes, glossary, references, prev, next } = Astro.props;
 const kicker = unitKicker(unit);
+const bigReadLink = bigReadUrl(unit);
 const paths = Object.entries(pathMeta)
   .map(([id, meta]) => ({ id, meta, status: unit.paths?.[id] }))
   .filter((p) => p.status && p.status !== "excluded");
@@ -59,6 +73,7 @@ function noteCitations(a) {
   <div class="wrap">
     <article class="reader" data-unit-id={unit.unit_id}>
       <div class="reader-main">
+        {(unit.section_type === "chapter" || unit.section_type === "epilogue") && <ChapterFlourish />}
         <p class="reader-kicker">{kicker}</p>
         <h1 class="reader-title">{unit.title}</h1>
         <div class="path-badges">
@@ -108,6 +123,21 @@ function noteCitations(a) {
       </div>
 
       <aside class="reader-side">
+        {bigReadLink && (
+          <div class="notes big-read">
+            <h2>Listen</h2>
+            <a class="big-read-link" href={bigReadLink} rel="noopener noreferrer" target="_blank">
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 8 L4 12 L7 12 L11 15 L11 5 L7 8 Z" stroke-linejoin="round"></path>
+                <path d="M14 7 Q16 10 14 13" stroke-linecap="round"></path>
+              </svg>
+              <span>Hear this chapter read aloud</span>
+              <span class="ext" aria-hidden="true">↗</span>
+              <span class="sr-only">(opens the Moby-Dick Big Read in a new tab)</span>
+            </a>
+            <p class="big-read-note">A free recording from the <em>Moby-Dick Big Read</em> — a different voice for every chapter. Opens in a new tab.</p>
+          </div>
+        )}
         {notes.length > 0 && (
           <div class="notes">
             <h2>Study notes</h2>
@@ -160,6 +190,7 @@ function noteCitations(a) {
     <button type="button" class="dock-btn" id="focus-toggle" aria-pressed="false" title="Focus mode — hide the sidebar (Esc to exit)">
       <span class="dock-ico" aria-hidden="true">⤢</span><span class="dock-txt">Focus</span>
     </button>
+    <AmbientSound />
     <details class="dock-panel" id="typo-details">
       <summary class="dock-btn" title="Reading typography" aria-label="Typography settings">Aa</summary>
       <div class="typo-panel" role="group" aria-label="Typography">
