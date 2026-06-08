@@ -1,0 +1,1162 @@
+{
+  "id": "narrative_core",
+  "title": "Narrative Core",
+  "audience": "Students who need the shortest coherent first pass through the story.",
+  "description": "A fast route through the opening shore chapters, the Pequod's departure, Ahab's declared hunt, major warnings, late conflict, and the final chase.",
+  "goals": [
+    "Keep the plot understandable without permanent cuts.",
+    "Preserve Ishmael and Queequeg's bond, Ahab's quest, the voyage's warnings, and the ending.",
+    "Represent skipped chapters by summary so students can reenter the full text."
+  ],
+  "scope": {
+    "required_units": 59,
+    "recommended_units": 0,
+    "optional_units": 0,
+    "summary_only_units": 79,
+    "deferred_units": 4,
+    "word_count_required": 95888
+  },
+  "unit_rules": [
+    {
+      "unit_id": "frontmatter-titlepage",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Moby Dick",
+      "level": "defer",
+      "rationale": "This source unit is kept available without interrupting the selected path."
+    },
+    {
+      "unit_id": "frontmatter-imprint",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Imprint",
+      "level": "defer",
+      "rationale": "This source unit is kept available without interrupting the selected path."
+    },
+    {
+      "unit_id": "frontmatter-dedication",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Dedication",
+      "level": "defer",
+      "rationale": "This source unit is kept available without interrupting the selected path."
+    },
+    {
+      "unit_id": "frontmatter-etymology",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Etymology",
+      "level": "summary-only",
+      "rationale": "This prefatory unit can be summarized for a fast plot route while remaining recoverable."
+    },
+    {
+      "unit_id": "frontmatter-extracts",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Extracts",
+      "level": "summary-only",
+      "rationale": "This prefatory unit can be summarized for a fast plot route while remaining recoverable."
+    },
+    {
+      "unit_id": "frontmatter-halftitlepage",
+      "section_type": "frontmatter",
+      "number": null,
+      "title": "Moby Dick",
+      "level": "defer",
+      "rationale": "This source unit is kept available without interrupting the selected path."
+    },
+    {
+      "unit_id": "chapter-001-loomings",
+      "section_type": "chapter",
+      "number": 1,
+      "title": "Loomings",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-002-the-carpetbag",
+      "section_type": "chapter",
+      "number": 2,
+      "title": "The Carpetbag",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-003-the-spouter-inn",
+      "section_type": "chapter",
+      "number": 3,
+      "title": "The Spouter-Inn",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-004-the-counterpane",
+      "section_type": "chapter",
+      "number": 4,
+      "title": "The Counterpane",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-005-breakfast",
+      "section_type": "chapter",
+      "number": 5,
+      "title": "Breakfast",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-006-the-street",
+      "section_type": "chapter",
+      "number": 6,
+      "title": "The Street",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-007-the-chapel",
+      "section_type": "chapter",
+      "number": 7,
+      "title": "The Chapel",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-008-the-pulpit",
+      "section_type": "chapter",
+      "number": 8,
+      "title": "The Pulpit",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-009-the-sermon",
+      "section_type": "chapter",
+      "number": 9,
+      "title": "The Sermon",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-010-a-bosom-friend",
+      "section_type": "chapter",
+      "number": 10,
+      "title": "A Bosom Friend",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-011-nightgown",
+      "section_type": "chapter",
+      "number": 11,
+      "title": "Nightgown",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-012-biographical",
+      "section_type": "chapter",
+      "number": 12,
+      "title": "Biographical",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-013-wheelbarrow",
+      "section_type": "chapter",
+      "number": 13,
+      "title": "Wheelbarrow",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-014-nantucket",
+      "section_type": "chapter",
+      "number": 14,
+      "title": "Nantucket",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-015-chowder",
+      "section_type": "chapter",
+      "number": 15,
+      "title": "Chowder",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-016-the-ship",
+      "section_type": "chapter",
+      "number": 16,
+      "title": "The Ship",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-017-the-ramadan",
+      "section_type": "chapter",
+      "number": 17,
+      "title": "The Ramadan",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-018-his-mark",
+      "section_type": "chapter",
+      "number": 18,
+      "title": "His Mark",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-019-the-prophet",
+      "section_type": "chapter",
+      "number": 19,
+      "title": "The Prophet",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-020-all-astir",
+      "section_type": "chapter",
+      "number": 20,
+      "title": "All Astir",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-021-going-aboard",
+      "section_type": "chapter",
+      "number": 21,
+      "title": "Going Aboard",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-022-merry-christmas",
+      "section_type": "chapter",
+      "number": 22,
+      "title": "Merry Christmas",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-023-the-lee-shore",
+      "section_type": "chapter",
+      "number": 23,
+      "title": "The Lee Shore",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-024-the-advocate",
+      "section_type": "chapter",
+      "number": 24,
+      "title": "The Advocate",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-025-postscript",
+      "section_type": "chapter",
+      "number": 25,
+      "title": "Postscript",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-026-knights-and-squires",
+      "section_type": "chapter",
+      "number": 26,
+      "title": "Knights and Squires",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-027-knights-and-squires",
+      "section_type": "chapter",
+      "number": 27,
+      "title": "Knights and Squires",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-028-ahab",
+      "section_type": "chapter",
+      "number": 28,
+      "title": "Ahab",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+      "section_type": "chapter",
+      "number": 29,
+      "title": "Enter Ahab; To Him, Stubb",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-030-the-pipe",
+      "section_type": "chapter",
+      "number": 30,
+      "title": "The Pipe",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-031-queen-mab",
+      "section_type": "chapter",
+      "number": 31,
+      "title": "Queen Mab",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-032-cetology",
+      "section_type": "chapter",
+      "number": 32,
+      "title": "Cetology",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-033-the-specksnyder",
+      "section_type": "chapter",
+      "number": 33,
+      "title": "The Specksnyder",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-034-the-cabin-table",
+      "section_type": "chapter",
+      "number": 34,
+      "title": "The Cabin-Table",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-035-the-masthead",
+      "section_type": "chapter",
+      "number": 35,
+      "title": "The Masthead",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-036-the-quarterdeck",
+      "section_type": "chapter",
+      "number": 36,
+      "title": "The Quarterdeck",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-037-sunset",
+      "section_type": "chapter",
+      "number": 37,
+      "title": "Sunset",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-038-dusk",
+      "section_type": "chapter",
+      "number": 38,
+      "title": "Dusk",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-039-first-night-watch",
+      "section_type": "chapter",
+      "number": 39,
+      "title": "First Night-Watch",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-040-midnight-forecastle",
+      "section_type": "chapter",
+      "number": 40,
+      "title": "Midnight, Forecastle",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-041-moby-dick",
+      "section_type": "chapter",
+      "number": 41,
+      "title": "Moby Dick",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-042-the-whiteness-of-the-whale",
+      "section_type": "chapter",
+      "number": 42,
+      "title": "The Whiteness of the Whale",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-043-hark",
+      "section_type": "chapter",
+      "number": 43,
+      "title": "Hark!",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-044-the-chart",
+      "section_type": "chapter",
+      "number": 44,
+      "title": "The Chart",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-045-the-affidavit",
+      "section_type": "chapter",
+      "number": 45,
+      "title": "The Affidavit",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-046-surmises",
+      "section_type": "chapter",
+      "number": 46,
+      "title": "Surmises",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-047-the-mat-maker",
+      "section_type": "chapter",
+      "number": 47,
+      "title": "The Mat-Maker",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-048-the-first-lowering",
+      "section_type": "chapter",
+      "number": 48,
+      "title": "The First Lowering",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-049-the-hyena",
+      "section_type": "chapter",
+      "number": 49,
+      "title": "The Hyena",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-050-ahab-s-boat-and-crew-fedallah",
+      "section_type": "chapter",
+      "number": 50,
+      "title": "Ahab’s Boat and Crew. Fedallah",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-051-the-spirit-spout",
+      "section_type": "chapter",
+      "number": 51,
+      "title": "The Spirit-Spout",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-052-the-albatross",
+      "section_type": "chapter",
+      "number": 52,
+      "title": "The Albatross",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-053-the-gam",
+      "section_type": "chapter",
+      "number": 53,
+      "title": "The Gam",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "section_type": "chapter",
+      "number": 54,
+      "title": "The Town-Ho ’s Story",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+      "section_type": "chapter",
+      "number": 55,
+      "title": "Of the Monstrous Pictures of Whales",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes",
+      "section_type": "chapter",
+      "number": 56,
+      "title": "Of the Less Erroneous Pictures of Whales, and the True Pictures of Whaling Scenes",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+      "section_type": "chapter",
+      "number": 57,
+      "title": "Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-058-brit",
+      "section_type": "chapter",
+      "number": 58,
+      "title": "Brit",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-059-squid",
+      "section_type": "chapter",
+      "number": 59,
+      "title": "Squid",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-060-the-line",
+      "section_type": "chapter",
+      "number": 60,
+      "title": "The Line",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-061-stubb-kills-a-whale",
+      "section_type": "chapter",
+      "number": 61,
+      "title": "Stubb Kills a Whale",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-062-the-dart",
+      "section_type": "chapter",
+      "number": 62,
+      "title": "The Dart",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-063-the-crotch",
+      "section_type": "chapter",
+      "number": 63,
+      "title": "The Crotch",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-064-stubb-s-supper",
+      "section_type": "chapter",
+      "number": 64,
+      "title": "Stubb’s Supper",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-065-the-whale-as-a-dish",
+      "section_type": "chapter",
+      "number": 65,
+      "title": "The Whale as a Dish",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-066-the-shark-massacre",
+      "section_type": "chapter",
+      "number": 66,
+      "title": "The Shark Massacre",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-067-cutting-in",
+      "section_type": "chapter",
+      "number": 67,
+      "title": "Cutting In",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-068-the-blanket",
+      "section_type": "chapter",
+      "number": 68,
+      "title": "The Blanket",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-069-the-funeral",
+      "section_type": "chapter",
+      "number": 69,
+      "title": "The Funeral",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-070-the-sphynx",
+      "section_type": "chapter",
+      "number": 70,
+      "title": "The Sphynx",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-071-the-jeroboam-s-story",
+      "section_type": "chapter",
+      "number": 71,
+      "title": "The Jeroboam ’s Story",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-072-the-monkey-rope",
+      "section_type": "chapter",
+      "number": 72,
+      "title": "The Monkey-Rope",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "section_type": "chapter",
+      "number": 73,
+      "title": "Stubb and Flask Kill a Right Whale; and Then Have a Talk Over Him",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+      "section_type": "chapter",
+      "number": 74,
+      "title": "The Sperm Whale’s Head⁠—Contrasted View",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "section_type": "chapter",
+      "number": 75,
+      "title": "The Right Whale’s Head⁠—Contrasted View",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-076-the-battering-ram",
+      "section_type": "chapter",
+      "number": 76,
+      "title": "The Battering-Ram",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "section_type": "chapter",
+      "number": 77,
+      "title": "The Great Heidelburgh Tun",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-078-cistern-and-buckets",
+      "section_type": "chapter",
+      "number": 78,
+      "title": "Cistern and Buckets",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-079-the-prairie",
+      "section_type": "chapter",
+      "number": 79,
+      "title": "The Prairie",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-080-the-nut",
+      "section_type": "chapter",
+      "number": 80,
+      "title": "The Nut",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "section_type": "chapter",
+      "number": 81,
+      "title": "The Pequod Meets the Virgin",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-082-the-honor-and-glory-of-whaling",
+      "section_type": "chapter",
+      "number": 82,
+      "title": "The Honor and Glory of Whaling",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-083-jonah-historically-regarded",
+      "section_type": "chapter",
+      "number": 83,
+      "title": "Jonah Historically Regarded",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-084-pitchpoling",
+      "section_type": "chapter",
+      "number": 84,
+      "title": "Pitchpoling",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-085-the-fountain",
+      "section_type": "chapter",
+      "number": 85,
+      "title": "The Fountain",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-086-the-tail",
+      "section_type": "chapter",
+      "number": 86,
+      "title": "The Tail",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-087-the-grand-armada",
+      "section_type": "chapter",
+      "number": 87,
+      "title": "The Grand Armada",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "section_type": "chapter",
+      "number": 88,
+      "title": "Schools and Schoolmasters",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "section_type": "chapter",
+      "number": 89,
+      "title": "Fast-Fish and Loose-Fish",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-090-heads-or-tails",
+      "section_type": "chapter",
+      "number": 90,
+      "title": "Heads or Tails",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "section_type": "chapter",
+      "number": 91,
+      "title": "The Pequod Meets the Rose-Bud",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-092-ambergris",
+      "section_type": "chapter",
+      "number": 92,
+      "title": "Ambergris",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-093-the-castaway",
+      "section_type": "chapter",
+      "number": 93,
+      "title": "The Castaway",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-094-a-squeeze-of-the-hand",
+      "section_type": "chapter",
+      "number": 94,
+      "title": "A Squeeze of the Hand",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-095-the-cassock",
+      "section_type": "chapter",
+      "number": 95,
+      "title": "The Cassock",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-096-the-try-works",
+      "section_type": "chapter",
+      "number": 96,
+      "title": "The Try-Works",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-097-the-lamp",
+      "section_type": "chapter",
+      "number": 97,
+      "title": "The Lamp",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "section_type": "chapter",
+      "number": 98,
+      "title": "Stowing Down and Clearing Up",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-099-the-doubloon",
+      "section_type": "chapter",
+      "number": 99,
+      "title": "The Doubloon",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-100-leg-and-arm",
+      "section_type": "chapter",
+      "number": 100,
+      "title": "Leg and Arm",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-101-the-decanter",
+      "section_type": "chapter",
+      "number": 101,
+      "title": "The Decanter",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "section_type": "chapter",
+      "number": 102,
+      "title": "A Bower in the Arsacides",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-103-measurement-of-the-whale-s-skeleton",
+      "section_type": "chapter",
+      "number": 103,
+      "title": "Measurement of the Whale’s Skeleton",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "section_type": "chapter",
+      "number": 104,
+      "title": "The Fossil Whale",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish",
+      "section_type": "chapter",
+      "number": 105,
+      "title": "Does the Whale’s Magnitude Diminish?⁠—Will He Perish?",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-106-ahab-s-leg",
+      "section_type": "chapter",
+      "number": 106,
+      "title": "Ahab’s Leg",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-107-the-carpenter",
+      "section_type": "chapter",
+      "number": 107,
+      "title": "The Carpenter",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "section_type": "chapter",
+      "number": 108,
+      "title": "Ahab and the Carpenter",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "section_type": "chapter",
+      "number": 109,
+      "title": "Ahab and Starbuck in the Cabin",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "section_type": "chapter",
+      "number": 110,
+      "title": "Queequeg in His Coffin",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-111-the-pacific",
+      "section_type": "chapter",
+      "number": 111,
+      "title": "The Pacific",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-112-the-blacksmith",
+      "section_type": "chapter",
+      "number": 112,
+      "title": "The Blacksmith",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-113-the-forge",
+      "section_type": "chapter",
+      "number": 113,
+      "title": "The Forge",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-114-the-gilder",
+      "section_type": "chapter",
+      "number": 114,
+      "title": "The Gilder",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-115-the-pequod-meets-the-bachelor",
+      "section_type": "chapter",
+      "number": 115,
+      "title": "The Pequod Meets the Bachelor",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-116-the-dying-whale",
+      "section_type": "chapter",
+      "number": 116,
+      "title": "The Dying Whale",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-117-the-whale-watch",
+      "section_type": "chapter",
+      "number": 117,
+      "title": "The Whale Watch",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-118-the-quadrant",
+      "section_type": "chapter",
+      "number": 118,
+      "title": "The Quadrant",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-119-the-candles",
+      "section_type": "chapter",
+      "number": 119,
+      "title": "The Candles",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "section_type": "chapter",
+      "number": 120,
+      "title": "The Deck Towards the End of the First Night Watch",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "section_type": "chapter",
+      "number": 121,
+      "title": "Midnight.⁠—The Forecastle Bulwarks",
+      "level": "summary-only",
+      "rationale": "Skipped as full prose in the shortest route, but represented by a summary so the reader can recover context."
+    },
+    {
+      "unit_id": "chapter-122-midnight-aloft-thunder-and-lightning",
+      "section_type": "chapter",
+      "number": 122,
+      "title": "Midnight Aloft.⁠—Thunder and Lightning",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-123-the-musket",
+      "section_type": "chapter",
+      "number": 123,
+      "title": "The Musket",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-124-the-needle",
+      "section_type": "chapter",
+      "number": 124,
+      "title": "The Needle",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-125-the-log-and-line",
+      "section_type": "chapter",
+      "number": 125,
+      "title": "The Log and Line",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-126-the-life-buoy",
+      "section_type": "chapter",
+      "number": 126,
+      "title": "The Life-Buoy",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-127-the-deck",
+      "section_type": "chapter",
+      "number": 127,
+      "title": "The Deck",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "section_type": "chapter",
+      "number": 128,
+      "title": "The Pequod Meets the Rachel",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-129-the-cabin",
+      "section_type": "chapter",
+      "number": 129,
+      "title": "The Cabin",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-130-the-hat",
+      "section_type": "chapter",
+      "number": 130,
+      "title": "The Hat",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-131-the-pequod-meets-the-delight",
+      "section_type": "chapter",
+      "number": 131,
+      "title": "The Pequod Meets the Delight",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-132-the-symphony",
+      "section_type": "chapter",
+      "number": 132,
+      "title": "The Symphony",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-133-the-chase-first-day",
+      "section_type": "chapter",
+      "number": 133,
+      "title": "The Chase⁠—First Day",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-134-the-chase-second-day",
+      "section_type": "chapter",
+      "number": 134,
+      "title": "The Chase⁠—Second Day",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "chapter-135-the-chase-third-day",
+      "section_type": "chapter",
+      "number": 135,
+      "title": "The Chase⁠—Third Day",
+      "level": "required",
+      "rationale": "Required for a coherent first-pass plot route through Ishmael, Queequeg, Ahab, the Pequod, and the final chase."
+    },
+    {
+      "unit_id": "epilogue-epilogue",
+      "section_type": "epilogue",
+      "number": null,
+      "title": "Epilogue",
+      "level": "required",
+      "rationale": "The epilogue explains Ishmael's survival and completes the frame of the story."
+    }
+  ],
+  "omission_rationale": "Most encyclopedic, cetological, legal, and labor chapters are summarized rather than read as full prose in order to reduce first-pass load.",
+  "status": {
+    "classification_confidence": "medium",
+    "citation_status": "provisional"
+  }
+}

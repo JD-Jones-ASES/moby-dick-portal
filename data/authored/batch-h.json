@@ -1,0 +1,811 @@
+{
+  "sources": [],
+  "notes": [
+    {
+      "unit_id": "chapter-066-the-shark-massacre",
+      "anchor": "Pantheistic vitality seemed to lurk in their very joints and bones",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Pantheistic: of or relating to pantheism, the belief that God is identical with all of nature rather than a separate being. Ishmael applies it to the sharks' reflex nerve-action after death, suggesting their twitching violence is a property of nature itself — making the cosmos, not any personal deity, responsible for their savagery.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-067-cutting-in",
+      "anchor": "Ex officio professors of Sabbath breaking are all whalemen",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Ex officio (Latin: 'by virtue of office') means holding a status automatically because of one's position. Ishmael's irony is that whalemen break the Sabbath not from impiety but because the sea waits for no holy day — their occupation itself grants them that 'professorship.'",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-068-the-blanket",
+      "anchor": "somewhat resembling the thinnest shreds of isinglass",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Isinglass is a nearly transparent, very thin substance made from dried fish swim-bladders, used in the 19th century to clarify wine and beer and as a window material. Melville uses it to describe the translucent outer membrane of whale skin, distinguishing it from the thick, oily blubber beneath.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-068-the-blanket",
+      "anchor": "these fish do not so largely abound, their wondrous voracity can be at times considerably diminished",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Whalers routinely faced shark swarms around a freshly killed carcass. Beale's natural history records that sperm whale blood attracted sharks in such numbers that blubber-cutting operations were regularly interrupted, and men on flensing stages were in constant danger of being bitten.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-069-the-funeral",
+      "anchor": "poniards in the whale",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "A poniard is a slim, sharply pointed dagger. Melville uses it to describe the seabirds' beaks stabbing the floating carcass — a simile that makes the scavenging birds seem treacherous rather than merely hungry, heightening the 'mocking funeral' atmosphere.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-070-the-sphynx",
+      "anchor": "that blood-dripping head hung to the Pequod ’s waist like the giant Holofernes’s from the girdle of Judith",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In the Book of Judith (in the Catholic/Orthodox Bible; apocryphal in Protestant editions), the Hebrew widow Judith enters the camp of the Assyrian general Holofernes, beheads him while he sleeps, and carries his severed head back in a bag. Melville's simile links Ahab's severed whale-head to that act of gruesome deliverance — suggesting danger, triumph, and a kind of sacred violence.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-070-the-sphynx",
+      "anchor": "it seemed the Sphynx’s in the desert",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "The Great Sphinx of Giza, a colossal limestone figure with a human head and lion body, was already a symbol of inscrutable, ageless mystery in Melville's time. Comparing the hooded whale-head to the Sphinx frames Ahab's monologue as an interrogation of an oracle that will never answer — silence as the deepest possible secret.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-071-the-jeroboam-s-story",
+      "anchor": "the speedy opening of the seventh vial",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "The seven vials (or bowls) of wrath in Revelation chapters 15–16 are poured out by angels to bring catastrophic plagues upon the earth at the end of days. The fanatic Gabriel claims to carry the seventh and final vial — total apocalyptic destruction — in his vest pocket, casting himself as God's last agent of judgment.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-071-the-jeroboam-s-story",
+      "anchor": "the long-togged scaramouch the Town-Ho ’s company told us of",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Scaramouch (from Italian scaramuccia, 'skirmisher') was a stock comic villain in commedia dell'arte theater — boastful, cowardly, and easily beaten. Stubb's use of the word signals that he reads Gabriel as a theatrical fraud rather than a genuine prophet, a contrast to the terrified crew who treat him as an archangel.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "anchor": "as the eager Israelites did at the new bursting fountains that poured from the smitten rock",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In Exodus 17 and Numbers 20, Moses strikes a rock with his staff and water gushes out to quench the thirsty Israelites in the desert. Melville applies the image to sharks drinking at fresh wounds in the right whale's body — reversing the biblical miracle of life-giving water into a scene of carnivorous frenzy.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "anchor": "gamboge ghost of a Fedallah",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Gamboge is a deep saffron-yellow pigment derived from Southeast Asian tree resin, used as a watercolor paint and a harsh purgative medicine. Flask applies the color-word to Fedallah's complexion, coding his South Asian appearance as sickly and spectral — a moment of casual racial caricature that also marks Fedallah as uncanny.",
+      "kind": "context",
+      "tone": true
+    },
+    {
+      "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+      "anchor": "the peculiar position of the whale’s eyes, effectually divided as they are by many cubic feet of solid head",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Because the sperm whale's eyes sit on opposite sides of a massive head roughly a third of its body length, each eye sends an independent image to the brain with almost no binocular overlap. Beale's anatomy confirms this arrangement and notes that a whale cannot see directly ahead or astern — a vulnerability whalers exploited by approaching from the front.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "anchor": "those wondrous, half vertical, scimitar-shaped slats of whalebone, say three hundred on a side",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "noaa-north-atlantic-right-whale"
+      ],
+      "note": "These slats are baleen plates — flexible keratin structures that hang from the right whale's upper jaw and act as a filter. Right whales have roughly 200–270 plates per side; the whale swims open-mouthed through dense patches of zooplankton (brit), then closes its mouth and uses its tongue to push water out through the fringed baleen, trapping food.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-076-the-battering-ram",
+      "anchor": "this whole enormous boneless mass is as one wad",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "The sperm whale's forehead (the 'melon' or spermaceti organ) is a dense mass of fibrous connective tissue saturated with oil. Beale documents that it contains no bony structure in the forward section, making it a resilient, compressible ram. This anatomy is the factual basis for historical accounts of sperm whales sinking ships by head-on collision.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "anchor": "sending forth beautiful crystalline shoots, as when the first thin delicate ice is just forming in water",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Spermaceti is liquid inside a living whale but solidifies on contact with air, forming waxy, pearlescent crystals. Beale describes the crystallization process in detail, noting that cooled spermaceti was the basis for the finest candles of the era — far whiter and less smoky than tallow — which is why the sperm whale was so commercially prized.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-078-cistern-and-buckets",
+      "anchor": "coffined, hearsed, and tombed in the secret inner chamber and sanctum sanctorum of the whale",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Sanctum sanctorum is Latin for 'holy of holies,' the innermost chamber of the Jerusalem Temple where the Ark of the Covenant was kept and only the high priest could enter once a year. Melville uses the phrase to make the whale's spermaceti case a sacred, sealed vault — raising Tashtego's near-burial to the level of a death inside a living temple.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-079-the-prairie",
+      "anchor": "Lavater not only treats of the various faces of men, but also attentively studies the faces of horses",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "britannica-phrenology"
+      ],
+      "note": "Johann Caspar Lavater (1741–1801) was a Swiss pastor whose Essays on Physiognomy (1775–78) argued that character and intelligence could be read from facial structure. His method—applied here to the whale—was enormously popular but unscientific; by Melville's era it was already being discredited alongside phrenology.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "anchor": "Canst thou fill his skin with barbed irons? or his head with fish-spears?",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "This is a near-verbatim quotation from Job 41:7, part of God's extended description of Leviathan — an invincible sea-monster used to humble Job. Melville's irony is deliberate: the very creature the Bible declares unconquerable is now suspended helplessly on three harpoon lines, asking 'that unfulfilments should follow the prophets.'",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "anchor": "to have an entire non-valvular structure of the blood-vessels",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Unlike most mammals, whales lack venous valves that close off blood flow when injured. Beale records whalers' experience that a harpooned sperm whale bleeds continuously and profusely from the moment of the strike, making blood-loss — rather than the wound itself — the primary cause of death during the hunt.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-082-the-honor-and-glory-of-whaling",
+      "anchor": "Everyone knows the fine story of Perseus and Andromeda",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "In Greek myth, Perseus rescued Princess Andromeda from a sea-monster (cetus) sent by Poseidon to ravage the Ethiopian coast. Melville reframes the cetus as a whale, making Perseus the first harpooner — a witty claim that gives whaling a lineage older than Homer. The skeleton said to be the monster's was displayed at Joppa (modern Jaffa), the very port from which Jonah sailed.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-082-the-honor-and-glory-of-whaling",
+      "anchor": "that fish, flesh, and fowl idol of the Philistines, Dagon by name; who being planted before the ark of Israel, his horse’s head and both the palms of his hands fell off from him",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In 1 Samuel 5:1–5, the Philistines place the captured Ark of the Covenant in the temple of their fish-god Dagon; the idol is found fallen and broken before the Ark. Melville uses the story to argue that Dagon — a fish deity — was really a whale-god, and that when the Ark defeated Dagon, the 'whaleman' god was toppled by Israel.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-083-jonah-historically-regarded",
+      "anchor": "Arion and the dolphin",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "Arion was a legendary Greek lyric poet who, threatened by sailors intent on robbing him, leaped overboard and was carried safely to shore by a dolphin charmed by his music. Melville pairs the story with Jonah and the whale as examples of sea-creature rescue tales that skeptics doubted — but doubting such stories, he argues, does not disprove them.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-083-jonah-historically-regarded",
+      "anchor": "A penny roll would choke him",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "noaa-north-atlantic-right-whale"
+      ],
+      "note": "Right whales are filter feeders whose throat is surprisingly narrow — modern measurements put the esophagus at roughly 25 centimeters in diameter, too small to swallow a human. Whalers knew this, and the fisherman's saying mocks the Old Sag-Harbor skeptic's literal-minded worry: if Jonah's whale had two spouts (right whale), it could not have swallowed the prophet whole.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-084-pitchpoling",
+      "anchor": "the entire spear is some ten or twelve feet in length; the staff is much slighter than that of the harpoon",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "The pitchpole lance was a lighter, longer weapon than the harpoon, designed for throwing at distance rather than penetrating and holding. Whalers used it only after the harpoon had secured the whale, as its slender pine shaft could not withstand the strain of a running line.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-086-the-tail",
+      "anchor": "the carved Hercules, and its charm would be gone",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "Hercules (Greek: Heracles) was the hero renowned above all others for physical strength, and classical sculptors depicted his muscles straining against the marble. Melville invokes such statues to argue that raw power is inseparable from beauty, the same principle he finds in the whale's tail.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-086-the-tail",
+      "anchor": "Thou shalt see my back parts, my tail, he seems to say, but my face shall not be seen",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "An echo of Exodus 33:23, where God tells Moses: \"thou shalt see my back parts: but my face shall not be seen.\" Melville applies the biblical prohibition against seeing the divine face to the whale, elevating the creature to an unknowable, godlike mystery that exceeds human comprehension.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-087-the-grand-armada",
+      "anchor": "the unborn whale lies bent like a Tartar’s bow",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Sperm whale calves are positioned in the womb with the tail folded forward toward the head, then born tail-first into the water. Melville's comparison to a Tartar's composite recurve bow, which was shorter than the animal itself, captures the sharp curve of the fetal posture accurately.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-090-heads-or-tails",
+      "anchor": "whalebone. Now this was written at a time when the black limber bone of the Greenland or Right whale was largely used in ladies’ bodices",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "scoresby-arctic-regions-gutenberg"
+      ],
+      "note": "The whalebone used in corsets and bodices was actually baleen, the flexible keratin plates lining the right whale's upper jaw for filter-feeding. Unlike the toothed sperm whale, the Greenland right whale's baleen could be split into thin, springy strips, making it the primary commodity of the Arctic whale fishery.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "anchor": "worth a gold guinea an ounce to any druggist",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "smithsonian-ambergris"
+      ],
+      "note": "Ambergris, a waxy substance produced in the intestines of sperm whales, commanded extraordinary prices in the 19th century, used as a fixative in perfumes and as a flavoring. Stubb's recognition of its value, and his deception of the French captain to claim it, turns the grotesque scene into a comedy of commercial cunning.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-092-ambergris",
+      "anchor": "Bethink thee of that saying of St. Paul in Corinthians, about corruption and incorruption",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "1 Corinthians 15:42-43 reads: \"It is sown in corruption; it is raised in incorruption: It is sown in dishonour; it is raised in glory.\" Paul is describing the resurrection of the body. Melville applies this to ambergris found incorrupt inside a rotting whale carcass, turning a whaleman's commodity into a theological paradox.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-092-ambergris",
+      "anchor": "The Turks use it in cooking, and also carry it to Mecca, for the same purpose that frankincense is carried to St. Peter’s in Rome",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "smithsonian-ambergris"
+      ],
+      "note": "Ambergris was prized across cultures: Ottoman cuisine used it as a spice, and it was burned as incense at Mecca during the hajj, just as frankincense was used in Catholic liturgy at St. Peter's Basilica. Melville's parallel deliberately equates Islamic and Christian ritual uses, emphasizing ambergris's universal, cross-cultural value.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-095-the-cassock",
+      "anchor": "Such an idol as that found in the secret groves of Queen Maachah in Judea; and for worshipping which, King Asa, her son, did depose her",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "1 Kings 15:13 records that King Asa removed his mother Maachah from her position as queen mother because she had made an idol in a grove, which Asa cut down and burned. Melville's allusion identifies the whale's grandissimus with the Canaanite fertility idol, a deliberately irreverent comparison.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-096-the-try-works",
+      "anchor": "the truest of all books is Solomon’s, and Ecclesiastes is the fine hammered steel of woe",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Ecclesiastes, traditionally attributed to King Solomon, opens with \"Vanity of vanities; all is vanity\" (1:2) and meditates relentlessly on mortality, futile labor, and life's meaninglessness. Melville treats it as the Bible's most honest book, a counterweight to the fire's seductive, delusional redness.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-097-the-lamp",
+      "anchor": "the purest of oil, in its unmanufactured, and, therefore, unvitiated state; a fluid unknown to solar, lunar, or astral contrivances ashore",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Spermaceti oil, drawn directly from the whale's case and tried out at sea, burned cleaner and brighter than any shore-refined lamp oil. Ashore, solar, lunar, and astral were trade names for particular oil-burning lamp designs. Melville's point: whalemen enjoy a purer, more direct light than any refined product available to landsmen.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "anchor": "Oh! the metempsychosis! Oh! Pythagoras",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "Metempsychosis, the transmigration of souls through successive bodies, was the central doctrine of Pythagoras (c. 570-495 BC), who taught that a soul might pass from human to animal to human across lives. Melville invokes it humorously: the endless cycle of catching and processing whales mirrors a soul doomed to repeat the same life.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-099-the-doubloon",
+      "anchor": "whence, east and west, over golden sands, the headwaters of many a Pactolus flows",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "The Pactolus was a river in ancient Lydia whose sands were literally golden, from alluvial electrum washed down from Mount Tmolus. According to myth, King Midas washed away his golden touch in the Pactolus, enriching the river. Melville uses the allusion to confirm the doubloon's extraordinary, mythic purity.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-100-leg-and-arm",
+      "anchor": "the Samuel Enderby, of London",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "starbuck-history-of-american-whale-fishery"
+      ],
+      "note": "Samuel Enderby & Sons was a real and prominent London whaling firm, active from the late 18th century into the 19th. Enderby ships explored southern and Pacific waters extensively, and the company sponsored geographic expeditions. Naming the English vessel after this firm grounds the meeting in genuine transatlantic whaling history.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-101-the-decanter",
+      "anchor": "our valiant Coffins and Maceys of Nantucket and the Vineyard",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "starbuck-history-of-american-whale-fishery"
+      ],
+      "note": "The Coffin and Macy families were dominant Nantucket whaling dynasties whose names recur throughout American fishery records. Melville invokes them as shorthand for Nantucket's primacy: the island's whalers hunted the sperm whale in the Atlantic decades before England's Enderbys opened the Pacific grounds.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-101-the-decanter",
+      "anchor": "ankers of Geneva",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "An anker is a cask holding about ten gallons; Geneva is an early English word for Dutch genever (gin), from the juniper berry used to flavor it. The Dutch provision list thereby records thousands of gallons of gin for the whaling fleet, underscoring the satirical point about polar fishermen's drinking.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-101-the-decanter",
+      "anchor": "the convivial natives pledge each other in bumpers of train oil",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "scoresby-arctic-regions-gutenberg"
+      ],
+      "note": "Train oil is rendered blubber oil from whales or seals, the primary fuel and trade commodity of Arctic peoples. Scoresby describes Arctic communities sustaining themselves on whale and seal products including oil used as food. Melville contrasts Arctic native subsistence with Dutch commercial excess.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "anchor": "the privilege of Jonah alone; the privilege of discoursing upon the joists and beams",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In the Book of Jonah (1-2), the prophet is swallowed by a great fish and lives inside it three days before being cast up. Melville treats this as conferring on Jonah unique authority to describe the whale's interior. The joke is that Ishmael must establish a competing credential to claim the same anatomical knowledge.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "anchor": "barbaric vertu",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Virtu (or vertu) is an Italian-derived English word for curiosities, art objects, and rare crafted items prized by collectors. King Tranquo's love of barbaric vertu marks him as a Pacific counterpart to the European virtuoso or cabinet-of-curiosities collector, casting the whale skeleton as his grandest specimen.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "anchor": "the weaver-god, he weaves; and by that weaving is he deafened",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "The image of a divine weaver absorbed in his own loom echoes classical myths of Fate as weavers, the Moirai or Parcae, who spin, measure, and cut the thread of life. Melville extends the tradition: the weaving god, like the Fates, is indifferent to mortal appeals, the loom's noise drowning all human voices.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-103-measurement-of-the-whale-s-skeleton",
+      "anchor": "Captain Scoresby’s estimate, of seventy tons for the largest sized Greenland whale",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "scoresby-arctic-regions-gutenberg"
+      ],
+      "note": "William Scoresby Jr.'s Account of the Arctic Regions (1820) is the source Melville cites here. Scoresby gave detailed weight estimates for the bowhead (Greenland) whale based on actual measurements. Melville then extrapolates upward to estimate a sperm whale at ninety tons, using Scoresby's figure as his scientific baseline.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "anchor": "Cuvier pronounced these fragments to have belonged to some utterly unknown Leviathanic species",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "britannica-basilosaurus"
+      ],
+      "note": "Georges Cuvier (1769-1832), the French naturalist who founded vertebrate paleontology, was the first scientific authority to classify whale fossils as a distinct group. His pronouncements carried enormous weight; Melville invokes his name to lend geological authority to the meditation on the whale's deep antiquity.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "anchor": "Owen, the English Anatomist, it turned out that this alleged reptile was a whale",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "britannica-basilosaurus"
+      ],
+      "note": "Sir Richard Owen (1804-1892) examined Basilosaurus bones sent from Alabama and confirmed in 1839 that the creature was a whale, not a reptile, proposing the name Zeuglodon (yoke-tooth). Melville uses this real scientific episode to dramatize the theme that whale anatomy resists even expert classification.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "anchor": "Here Saturn’s grey chaos rolls over me",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "In Greek-Roman myth, Saturn (Kronos) reigned over the primeval Golden Age before Jupiter overthrew him. Bulfinch describes the pre-Olympian era as a formless time. Melville invokes Saturn's chaos to evoke a period before human history, geological deep time when the whale alone ruled the seas.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "anchor": "Methuselah seems a schoolboy. I look round to shake hands with Shem",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Methuselah (Genesis 5:27) lived 969 years, the longest lifespan in the Bible. Shem was Noah's son who survived the Flood (Genesis 9-10). Melville compresses biblical time to make the point that fossil whales are older still, pre-adamite creatures that dwarf even Scripture's oldest figures.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish",
+      "anchor": "the fattest of Pharaoh’s fat kine",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In Genesis 41, Pharaoh dreams of seven fat cattle devoured by seven lean ones, which Joseph interprets as seven years of plenty followed by famine. Melville uses Pharaoh's fat cattle as the biblical benchmark for large livestock, arguing that modern whales are no smaller than ancient ones.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-107-the-carpenter",
+      "anchor": "multum in parvo, Sheffield contrivances",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Multum in parvo is a Latin phrase meaning much in little. Sheffield was England's cutlery capital, famous for multi-blade folding knives. Melville uses both the Latin tag and the Sheffield reference to describe the carpenter as a compact, multi-purpose tool in human form, versatile but devoid of individual soul.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "anchor": "that old Greek, Prometheus, who made men, they say, should have been a blacksmith",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "In Greek myth, Prometheus fashioned the first humans from clay and stole fire from the gods to give to them, an act for which Zeus chained him to a rock. Ahab's identification of Prometheus as a blacksmith-creator lets him cast the ship's forge as a divine workshop and the harpoon as a weapon of godlike defiance.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "anchor": "a departed prophet and seer of his island, who, by those hieroglyphic marks, had written out on his body a complete theory of the heavens and the earth",
+      "claim_type": "historical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "melville-typee-gutenberg"
+      ],
+      "note": "Melville had firsthand knowledge of Polynesian tattooing from his time in the Marquesas, described in Typee. Pacific tattoo systems encoded genealogy, spiritual status, and cosmological knowledge. Melville elevates Queequeg's tattoos to a sacred text that will perish with him, unread, a figure for the unknowability of other cultures.",
+      "kind": "context",
+      "tone": true
+    },
+    {
+      "unit_id": "chapter-111-the-pacific",
+      "anchor": "bowing your head to Pan",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "Pan is the Greek god of wild nature, pasturelands, and the universal life-force; his name was popularly connected with the Greek word for all. Melville closes the paragraph by making the Pacific the domain of Pan rather than any Christian god, a pagan sublimity that overpowers Ahab's singular obsession.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-113-the-forge",
+      "anchor": "Ego non baptizo te in nomine patris, sed in nomine diaboli",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "The Latin means \"I do not baptize you in the name of the Father, but in the name of the devil.\" It is a deliberate inversion of the Christian baptismal formula (Matthew 28:19). Ahab uses the harpooneers' blood to temper the iron and speaks this demonic anti-baptism, consecrating the harpoon to the destruction of Moby Dick.",
+      "kind": "context",
+      "tone": true
+    },
+    {
+      "unit_id": "chapter-113-the-forge",
+      "anchor": "pole, iron, and rope",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "The Three Fates (Moirai in Greek, Parcae in Latin) were goddesses who spun, measured, and cut the thread of each mortal life, described as inseparable and all-powerful. By comparing the harpoon's three components to the Fates, Melville implies that Ahab's weapon is not merely a tool but an instrument of inescapable destiny.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-118-the-quadrant",
+      "anchor": "its numerous cabalistical contrivances",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Cabalistical means mysterious, esoteric, or pertaining to secret hidden knowledge, derived from the Jewish Kabbalah, a tradition of mystical scriptural interpretation. Ahab uses the word with contempt: the quadrant's mirrors and arcs look like occult apparatus but only reveal the navigator's own position, never destiny.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-119-the-candles",
+      "anchor": "His Mene, Mene, Tekel Upharsin has been woven into the shrouds and the cordage",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In Daniel 5, a disembodied hand writes these Aramaic words on the wall of Belshazzar's feast; Daniel translates them as God's judgment that the king has been weighed, found wanting, and his kingdom ended. Melville casts the corpusants' ghostly light as divine handwriting on the ship's own rigging, the same omen of doom, now addressed to Ahab.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "anchor": "boxes of lucifers forward",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Lucifers were friction matches, commercially available from the late 1820s onward, named for the Latin word for light-bearer. Flask's analogy pairs gunpowder with matches: the Pequod is loaded at both ends with things that kill by fire, a running metaphor for a voyage driven by Ahab's consuming rage.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-123-the-musket",
+      "anchor": "Starbuck seemed wrestling with an angel",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "In Genesis 32, Jacob wrestles through the night with a mysterious figure and refuses to release him until he receives a blessing; the struggle leaves Jacob permanently lamed. Starbuck's interior battle, loaded musket in hand at Ahab's door, echoes that night-long moral combat: he too cannot let go, and walks away marked but unable to act.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-124-the-needle",
+      "anchor": "Emblazonings, as of crowned Babylonian kings and queens, reigned over everything",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Babylon was the biblical symbol of supreme worldly splendor: its golden regalia and jeweled throne-rooms recur in Daniel, Isaiah, and Revelation. The morning sea blazing gold after the typhoon is given the grandeur of the ancient world's most magnificent empire, an ironic magnificence just before Ahab finds the compasses wrecked.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-124-the-needle",
+      "anchor": "Ahab is lord over the level loadstone yet",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "dana-two-years-before-the-mast"
+      ],
+      "note": "A loadstone (lodestone) is naturally magnetized iron ore; sailors used the term for the compass needle's magnetic property. A lightning strike could reverse or destroy that magnetism. Ahab remagnetizes a sailmaker's needle by stroking it on a vertically held iron, exploiting Earth's magnetic field, an actual technique here made to look like sorcery.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-125-the-log-and-line",
+      "anchor": "The wooden reel and angular log attached hung, long untouched",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "dana-two-years-before-the-mast"
+      ],
+      "note": "The chip log measured a ship's speed: a flat wooden board was thrown astern, and the rate at which a knotted line paid out over a sandglass gave knots per hour. Its long disuse on the Pequod shows how completely Ahab has abandoned routine navigation; when the rotted line snaps, even this last instrument of ordinary seamanship fails.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-127-the-deck",
+      "anchor": "the gravedigger in the play sings, spade in hand",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "shakespeare-complete-works-gutenberg"
+      ],
+      "note": "Ahab alludes to the First Clown, the Gravedigger, in Hamlet Act 5, Scene 1, who sings cheerful old ballads while digging Ophelia's grave, one of Shakespeare's most famous scenes of dark comedy. Ahab's point is that both Gravedigger and Carpenter treat death as routine material, the horror lying in their cheerful indifference.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-127-the-deck",
+      "anchor": "The Titans, they say, hummed snatches when chipping out the craters for volcanoes",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "The Titans are the elder generation of Greek gods, associated with primal, world-shaping forces; classical tradition connected volcanic eruptions to their underground labor. Ahab's image pairs cosmic destructive work with casual contentment, beings who forge catastrophe hum while doing it, like the Carpenter caulking a coffin without moral weight.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "anchor": "She was Rachel, weeping for her children, because they were not",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "The closing sentence quotes Jeremiah 31:15, where Rachel, matriarch of Israel buried near Bethlehem, mourns the children carried into exile; Matthew 2:18 reapplies it to Herod's massacre of the innocents. The exact King James phrasing gives Captain Gardiner's futile search for his lost son the full weight of all maternal grief in scripture.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-131-the-pequod-meets-the-delight",
+      "anchor": "may the resurrection and the life",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "The Delight's captain begins the promise Jesus makes to Martha in John 11:25: \"I am the resurrection and the life: he that believeth in me, though he were dead, yet shall he live.\" Ahab cuts the prayer off by ordering full sail, literally refusing to let the Christian promise of resurrection be completed over his own kind of dead.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-132-the-symphony",
+      "anchor": "as Samson’s chest in his sleep",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Samson (Judges 13-16) was the Israelite hero of supernatural strength, betrayed by Delilah while he slept. The sea's long, powerful swells are imagined as the heaving chest of this sleeping giant, strength momentarily at rest but not spent, framing the ocean as a Samson whose fury will soon awake as the chase begins.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-132-the-symphony",
+      "anchor": "little Miriam and Martha, laughing-eyed elves, heedlessly gambol around their old sire",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Miriam is Moses's sister, a prophetess (Exodus 15); Martha is the sister of Lazarus and Mary (Luke 10). Ahab pairs two named biblical women as images of innocent, careless joy playing around a scarred patriarch, the serene air like children who do not notice that the father they frolic around has been devastated.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-133-the-chase-first-day",
+      "anchor": "Not the white bull Jupiter swimming away with ravished Europa clinging to his graceful horns",
+      "claim_type": "classical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "bulfinch-age-of-fable"
+      ],
+      "note": "Zeus (Jupiter) disguised himself as a white bull to abduct Europa, a Phoenician princess, swimming with her to Crete. Melville calls Moby Dick more divine in bearing than even a god in disguise, an outrageous superlative that sets up the whale's seemingly supernatural power throughout the three-day chase.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-133-the-chase-first-day",
+      "anchor": "blood of grapes and mulberries cast before Antiochus’s elephants in the book of Maccabees",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "1 Maccabees 6:34 describes Syrian forces showing their war elephants the juice of grapes and mulberries to enrage them before battle against the Maccabean rebels. The whale, maddened at the sight of the wrecked boat, is compared to one of those battle-frenzied elephants, a rare citation from the Apocrypha stressing Moby Dick's focused ferocity.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-134-the-chase-second-day",
+      "anchor": "the more wondrous phenomenon of breaching",
+      "claim_type": "nautical-whaling",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "beale-sperm-whale-bhl"
+      ],
+      "note": "Breaching is when a sperm whale drives itself nearly clear of the water at full speed and crashes back; Beale documented it as the most spectacular display of the animal's power, visible from miles away. Melville uses it to announce Moby Dick with theatrical force: the whale does not merely surface, it launches itself at the sky.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-135-the-chase-third-day",
+      "anchor": "as in the gaseous Fata Morgana",
+      "claim_type": "lexical",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "note": "Fata Morgana, Italian for Morgan le Fay, the shape-shifting sorceress of Arthurian legend, is a complex mirage in which layers of warm and cold air refract light into distorted, floating images. Ishmael sees the sinking Pequod as a phantom that was never quite real, dissolving into an optical illusion as the vortex closes.",
+      "kind": "context"
+    },
+    {
+      "unit_id": "chapter-135-the-chase-third-day",
+      "anchor": "like Satan, would not sink to hell till she had dragged a living part of heaven along with her",
+      "claim_type": "biblical-context",
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "king-james-bible"
+      ],
+      "note": "Isaiah 14:12-15 and Luke 10:18 describe Satan's fall from heaven as a proud, defiant plunge. Melville gives the Pequod Satan's own character: she sinks, but not before a sky-hawk, a living creature of the upper air, is nailed beneath her flag and dragged under, so the ship takes a piece of heaven down with her.",
+      "kind": "context"
+    }
+  ]
+}

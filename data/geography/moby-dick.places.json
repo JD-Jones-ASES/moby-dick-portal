@@ -1,0 +1,1744 @@
+{
+  "places": [
+    {
+      "id": "manhattan",
+      "label": "Manhattan",
+      "kind": "city-or-island",
+      "entity_id": "manhattan",
+      "coordinates": [
+        -74.006,
+        40.7128
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-001-loomings"
+      ],
+      "source_note": "Opening shore frame. Coordinates are a modern display anchor, not a claim about Ishmael's exact location.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "new-bedford",
+      "label": "New Bedford",
+      "kind": "port",
+      "entity_id": "new-bedford",
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-002-the-carpetbag",
+        "chapter-003-the-spouter-inn",
+        "chapter-009-the-sermon"
+      ],
+      "source_note": "Early whaling-port setting. Coordinates are a modern display anchor until reviewed against a cartographic source.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "nantucket",
+      "label": "Nantucket",
+      "kind": "port",
+      "entity_id": "nantucket",
+      "coordinates": [
+        -70.0995,
+        41.2835
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-014-nantucket",
+        "chapter-016-the-ship",
+        "chapter-022-merry-christmas"
+      ],
+      "source_note": "Pequod's home port and launch point. Coordinates are a modern display anchor until reviewed against a cartographic source.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "outward-atlantic",
+      "label": "Outward Atlantic",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -38,
+        28
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-023-the-lee-shore",
+        "chapter-036-the-quarterdeck",
+        "chapter-052-the-albatross"
+      ],
+      "source_note": "Broad route stage for early ocean chapters. This point is an interface anchor, not a reconstructed route coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-and-indian-ocean",
+      "label": "Cape and Indian Ocean",
+      "kind": "ocean-region",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        45,
+        -32
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-053-the-gam",
+        "chapter-089-fast-fish-and-loose-fish",
+        "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish"
+      ],
+      "source_note": "Broad middle-voyage route stage. This point is an interface anchor, not a reconstructed route coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "pacific",
+      "label": "Pacific",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -150,
+        -5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-106-ahab-s-leg",
+        "chapter-119-the-candles",
+        "chapter-132-the-symphony"
+      ],
+      "source_note": "Late-voyage route stage before the final chase. This point is an interface anchor, not a reconstructed route coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "final-chase-region",
+      "label": "Final Chase Region",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -155,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-133-the-chase-first-day",
+        "chapter-134-the-chase-second-day",
+        "chapter-135-the-chase-third-day",
+        "epilogue-epilogue"
+      ],
+      "source_note": "Final chase display stage. This point is an interface anchor until route evidence is reviewed.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "atlantic-threshold",
+      "label": "Atlantic Threshold",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -55,
+        36
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-022-merry-christmas",
+        "chapter-023-the-lee-shore"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "azores-display-stage",
+      "label": "Azores Display Stage",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -28,
+        38
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-052-the-albatross",
+        "chapter-053-the-gam"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-verde-display-stage",
+      "label": "Cape Verde Display Stage",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -24,
+        16
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "equatorial-atlantic",
+      "label": "Equatorial Atlantic",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -20,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-048-the-first-lowering",
+        "chapter-051-the-spirit-spout"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "south-atlantic-whaling-ground",
+      "label": "South Atlantic Whaling Ground",
+      "kind": "ocean-region",
+      "entity_id": "atlantic-ocean",
+      "coordinates": [
+        -20,
+        -35
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-061-stubb-kills-a-whale",
+        "chapter-067-cutting-in"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-of-good-hope-stage",
+      "label": "Cape of Good Hope Stage",
+      "kind": "ship-route-stage",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        18.5,
+        -34.3
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-052-the-albatross",
+        "chapter-071-the-jeroboam-s-story"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "western-indian-ocean",
+      "label": "Western Indian Ocean",
+      "kind": "ocean-region",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        55,
+        -15
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-087-the-grand-armada",
+        "chapter-089-fast-fish-and-loose-fish"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "equatorial-indian-ocean",
+      "label": "Equatorial Indian Ocean",
+      "kind": "ocean-region",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        75,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-091-the-pequod-meets-the-rose-bud",
+        "chapter-096-the-try-works"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sunda-seas-display-stage",
+      "label": "Sunda Seas Display Stage",
+      "kind": "ocean-region",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        105,
+        -7
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-100-leg-and-arm",
+        "chapter-102-a-bower-in-the-arsacides"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "western-pacific-entry",
+      "label": "Western Pacific Entry",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        140,
+        -10
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-111-the-pacific",
+        "chapter-114-the-gilder"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "equatorial-pacific-stage",
+      "label": "Equatorial Pacific Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -170,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-116-the-dying-whale",
+        "chapter-117-the-whale-watch"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "storm-pacific-stage",
+      "label": "Storm Pacific Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -160,
+        -10
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-119-the-candles",
+        "chapter-124-the-needle"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "rachel-search-stage",
+      "label": "Rachel Search Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -158,
+        3
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-128-the-pequod-meets-the-rachel"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "delight-warning-stage",
+      "label": "Delight Warning Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -157,
+        1
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-131-the-pequod-meets-the-delight"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "epilogue-rescue-stage",
+      "label": "Epilogue Rescue Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -154,
+        -1
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "epilogue-epilogue"
+      ],
+      "source_note": "Broad display anchor for a reading-map stage, not a reconstructed historical coordinate.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sag-harbor",
+      "label": "Sag Harbor",
+      "kind": "port",
+      "entity_id": "sag-harbor",
+      "coordinates": [
+        -72.2926,
+        40.9979
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-012-biographical",
+        "chapter-071-the-jeroboam-s-story"
+      ],
+      "source_note": "Whaling-port and captain-background reference point. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-verde-st-jago",
+      "label": "Cape Verde / St. Jago",
+      "kind": "island",
+      "entity_id": "cape-verde",
+      "coordinates": [
+        -23.6052,
+        15.1201
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "source_note": "Atlantic island-stage lead for the Town-Ho's Story. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "azores",
+      "label": "Azores",
+      "kind": "island",
+      "entity_id": "azores",
+      "coordinates": [
+        -28,
+        38.5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-052-the-albatross",
+        "chapter-053-the-gam"
+      ],
+      "source_note": "Atlantic whaling-route reference stage. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-good-hope",
+      "label": "Cape of Good Hope",
+      "kind": "landmark",
+      "entity_id": "cape-good-hope",
+      "coordinates": [
+        18.4741,
+        -34.3568
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-053-the-gam",
+        "chapter-089-fast-fish-and-loose-fish"
+      ],
+      "source_note": "Cape-route reference for the transition toward Indian Ocean material. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "crozet-islands",
+      "label": "Crozet Islands",
+      "kind": "island",
+      "entity_id": "crozet-islands",
+      "coordinates": [
+        51,
+        -46.4
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-052-the-albatross"
+      ],
+      "source_note": "Southern Ocean place-name lead for whaling geography. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "kerguelen-desolation",
+      "label": "Kerguelen / Desolation Island",
+      "kind": "island",
+      "entity_id": "kerguelen",
+      "coordinates": [
+        69.35,
+        -49.35
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-052-the-albatross"
+      ],
+      "source_note": "Southern Ocean place-name lead for the novel's global reach. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "java-sea-sunda",
+      "label": "Java Sea / Sunda Stage",
+      "kind": "ocean-region",
+      "entity_id": "java-sea",
+      "coordinates": [
+        110,
+        -6
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-087-the-grand-armada"
+      ],
+      "source_note": "Display stage for the Grand Armada's eastern-seas setting. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "japan-sea-stage",
+      "label": "Japan Sea Stage",
+      "kind": "ocean-region",
+      "entity_id": "japan-sea-stage",
+      "coordinates": [
+        142,
+        34
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-111-the-pacific",
+        "chapter-133-the-chase-first-day"
+      ],
+      "source_note": "Late-voyage display stage for Ahab's approach toward the final chase. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "arsacides-display",
+      "label": "Arsacides Display Stage",
+      "kind": "island",
+      "entity_id": "arsacides",
+      "coordinates": [
+        160,
+        -9
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-102-a-bower-in-the-arsacides"
+      ],
+      "source_note": "Pacific island-stage lead for the skeleton and measurement chapters. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "peru-current-stage",
+      "label": "Peru Current Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -82,
+        -12
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-111-the-pacific"
+      ],
+      "source_note": "Pacific route-context lead for ocean-current and navigation discussion. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "tahiti-display-stage",
+      "label": "Tahiti Display Stage",
+      "kind": "island",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -149.4,
+        -17.65
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-048-the-first-lowering",
+        "chapter-131-the-pequod-meets-the-delight"
+      ],
+      "source_note": "Pacific island display lead for global crew and route context. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "line-equator",
+      "label": "Equatorial Line",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -150,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-111-the-pacific",
+        "chapter-132-the-symphony"
+      ],
+      "source_note": "Display anchor for equatorial late-voyage motion. Coordinates are display anchors, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "spouter-inn-display",
+      "label": "Spouter-Inn Display",
+      "kind": "other",
+      "entity_id": "spouter-inn",
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-003-the-spouter-inn",
+        "chapter-004-the-counterpane"
+      ],
+      "source_note": "New Bedford inn setting for Ishmael and Queequeg's first shared scenes. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whalemans-chapel-display",
+      "label": "Whaleman's Chapel Display",
+      "kind": "other",
+      "entity_id": "whaleman-chapel",
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-007-the-chapel",
+        "chapter-008-the-pulpit",
+        "chapter-009-the-sermon"
+      ],
+      "source_note": "Chapel setting for memorial tablets and Father Mapple's Jonah sermon. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "pequod-deck-display",
+      "label": "Pequod Deck Display",
+      "kind": "ship-route-stage",
+      "entity_id": "quarterdeck",
+      "coordinates": [
+        -45,
+        20
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-036-the-quarterdeck",
+        "chapter-099-the-doubloon",
+        "chapter-127-the-deck"
+      ],
+      "source_note": "Shipboard command space where Ahab turns objects and ceremonies into pressure on the crew. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "forecastle-display",
+      "label": "Forecastle Display",
+      "kind": "ship-route-stage",
+      "entity_id": "forecastle",
+      "coordinates": [
+        -44.5,
+        19.5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-040-midnight-forecastle",
+        "chapter-121-midnight-the-forecastle-bulwarks"
+      ],
+      "source_note": "Crew space for songs, jokes, fear, and collective speech. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "try-works-display",
+      "label": "Try-Works Display",
+      "kind": "ship-route-stage",
+      "entity_id": "try-works",
+      "coordinates": [
+        50,
+        -35
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-096-the-try-works",
+        "chapter-098-stowing-down-and-clearing-up"
+      ],
+      "source_note": "Deck-work display point for rendering whale oil and resetting the ship. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ambergris-encounter-stage",
+      "label": "Ambergris Encounter Stage",
+      "kind": "ocean-region",
+      "entity_id": "indian-ocean",
+      "coordinates": [
+        58,
+        -30
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-091-the-pequod-meets-the-rose-bud",
+        "chapter-092-ambergris"
+      ],
+      "source_note": "Middle-voyage encounter where foul decay turns unexpectedly into value. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "enderby-encounter-stage",
+      "label": "Enderby Encounter Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -128,
+        -10
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-100-leg-and-arm",
+        "chapter-101-the-decanter"
+      ],
+      "source_note": "Meeting stage for Captain Boomer, the Samuel Enderby, and competing responses to Moby Dick. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "bachelor-encounter-stage",
+      "label": "Bachelor Encounter Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -145,
+        -6
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-115-the-pequod-meets-the-bachelor"
+      ],
+      "source_note": "Contrast point for a successful homeward-bound ship against the Pequod's grim pursuit. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "rachel-encounter-stage",
+      "label": "Rachel Encounter Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -154,
+        -3
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-128-the-pequod-meets-the-rachel"
+      ],
+      "source_note": "Late warning stage where rescue is requested and refused. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "delight-encounter-stage",
+      "label": "Delight Encounter Stage",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -154.2,
+        -2.5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-131-the-pequod-meets-the-delight"
+      ],
+      "source_note": "Final warning stage where wreckage and loss foreshadow the chase. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "final-wreck-display",
+      "label": "Final Wreck Display",
+      "kind": "ocean-region",
+      "entity_id": "pacific-ocean",
+      "coordinates": [
+        -155,
+        0
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-135-the-chase-third-day",
+        "epilogue-epilogue"
+      ],
+      "source_note": "Display point for the Pequod's sinking and Ishmael's survival. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "jonah-sea-display",
+      "label": "Jonah Sea Display",
+      "kind": "ocean-region",
+      "entity_id": "jonah",
+      "coordinates": [
+        34,
+        32
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-009-the-sermon",
+        "chapter-083-jonah-historically-regarded"
+      ],
+      "source_note": "Allusion display anchor for Jonah material; not a claim about the Pequod's route. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "heidelberg-tun-display",
+      "label": "Heidelberg Tun Display",
+      "kind": "landmark",
+      "entity_id": "giant-cask",
+      "coordinates": [
+        8.715,
+        49.41
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-077-the-great-heidelburgh-tun"
+      ],
+      "source_note": "European comparison point for Ishmael's whale-head analogy. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "lima-display",
+      "label": "Lima Display",
+      "kind": "city-or-island",
+      "entity_id": "lima",
+      "coordinates": [
+        -77.0428,
+        -12.0464
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "source_note": "Port display anchor for the Town-Ho's nested narration frame. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sperm-whale-ground-display",
+      "label": "Sperm Whale Ground Display",
+      "kind": "ocean-region",
+      "entity_id": "sperm-whale",
+      "coordinates": [
+        125,
+        -8
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-087-the-grand-armada",
+        "chapter-088-schools-and-schoolmasters"
+      ],
+      "source_note": "Classroom map anchor for whale schools and eastern-seas encounter material. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "right-whale-ground-display",
+      "label": "Right Whale Ground Display",
+      "kind": "ocean-region",
+      "entity_id": "right-whale",
+      "coordinates": [
+        40,
+        -42
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him"
+      ],
+      "source_note": "Classroom map anchor for the right-whale episode and the superstition around paired heads. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coffin-life-buoy-display",
+      "label": "Coffin Life-Buoy Display",
+      "kind": "ship-route-stage",
+      "entity_id": "queequeg-coffin",
+      "coordinates": [
+        -153.5,
+        -4.5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-110-queequeg-in-his-coffin",
+        "chapter-126-the-life-buoy",
+        "chapter-127-the-deck",
+        "epilogue-epilogue"
+      ],
+      "source_note": "Shipboard object trail where Queequeg's coffin becomes the means of rescue. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "doubloon-display",
+      "label": "Doubloon Display",
+      "kind": "ship-route-stage",
+      "entity_id": "doubloon",
+      "coordinates": [
+        -146,
+        -7
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-036-the-quarterdeck",
+        "chapter-099-the-doubloon"
+      ],
+      "source_note": "Object display point for Ahab's reward coin and the crew's competing interpretations. Coordinates are display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "loomings-waterfront-display",
+      "label": "Loomings Waterfront Display",
+      "kind": "landmark",
+      "entity_id": "manhattan",
+      "coordinates": [
+        -74.01,
+        40.706
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-001-loomings"
+      ],
+      "source_note": "Display point for Ishmael's opening pull toward water. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "carpetbag-route-display",
+      "label": "Carpetbag Route Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-carpetbag",
+      "coordinates": [
+        -72.8,
+        41.2
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-002-the-carpetbag"
+      ],
+      "source_note": "Shore-route point for Ishmael's cold movement toward the whaling world. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "counterpane-room-display",
+      "label": "Counterpane Room Display",
+      "kind": "other",
+      "entity_id": "the-counterpane",
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-004-the-counterpane"
+      ],
+      "source_note": "Interior display point for Ishmael and Queequeg's first morning of intimacy and fear. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "lee-shore-display",
+      "label": "Lee Shore Display",
+      "kind": "ocean-region",
+      "entity_id": "the-lee-shore",
+      "coordinates": [
+        -55,
+        30
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-023-the-lee-shore"
+      ],
+      "source_note": "Conceptual ocean display point for Bulkington and the risk of spiritual shore-safety. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "masthead-display",
+      "label": "Mast-Head Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-masthead",
+      "coordinates": [
+        -42,
+        23
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-035-the-masthead"
+      ],
+      "source_note": "Vertical shipboard display point for lookout, reverie, and danger. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "line-display",
+      "label": "The Line Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-line",
+      "coordinates": [
+        -18,
+        2
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-060-the-line",
+        "chapter-061-stubb-kills-a-whale"
+      ],
+      "source_note": "Shipboard work display point for the whale-line's practical and symbolic danger. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "squeeze-display",
+      "label": "Squeeze Display",
+      "kind": "ship-route-stage",
+      "entity_id": "isolation-and-fellowship",
+      "coordinates": [
+        48,
+        -34
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-094-a-squeeze-of-the-hand"
+      ],
+      "source_note": "Deck-work display point for the chapter's surprising fellowship inside labor. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "lamp-display",
+      "label": "The Lamp Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-lamp",
+      "coordinates": [
+        54,
+        -33
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-097-the-lamp"
+      ],
+      "source_note": "Short labor-symbol chapter display point for oil, light, and whaling's domestic reward. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cabin-confrontation-display",
+      "label": "Cabin Confrontation Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-cabin",
+      "coordinates": [
+        -143,
+        -9
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-109-ahab-and-starbuck-in-the-cabin"
+      ],
+      "source_note": "Interior display point for Starbuck's moral confrontation with Ahab. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "blacksmith-forge-display",
+      "label": "Blacksmith Forge Display",
+      "kind": "ship-route-stage",
+      "entity_id": "harpoon",
+      "coordinates": [
+        -144,
+        -9
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-112-the-blacksmith",
+        "chapter-113-the-forge"
+      ],
+      "source_note": "Shipboard craft display point where tools and bodies carry the pressure of revenge. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "needle-display",
+      "label": "Needle Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-needle",
+      "coordinates": [
+        -150,
+        -7
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-124-the-needle"
+      ],
+      "source_note": "Navigation display point where Ahab remakes instrument failure into command theater. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "final-masthead-display",
+      "label": "Final Mast-Head Display",
+      "kind": "ship-route-stage",
+      "entity_id": "the-masthead",
+      "coordinates": [
+        -154.8,
+        -0.5
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-133-the-chase-first-day",
+        "chapter-134-the-chase-second-day"
+      ],
+      "source_note": "Final lookout display point for sighting, chase, and escalating loss. Coordinates are classroom display anchors, not reconstructed route evidence.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-shore-social",
+      "label": "Shore Social World",
+      "kind": "port",
+      "entity_id": "coverage-entity-shore-social",
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-005-breakfast",
+        "chapter-006-the-street",
+        "chapter-010-a-bosom-friend",
+        "chapter-011-nightgown",
+        "chapter-013-wheelbarrow",
+        "chapter-015-chowder",
+        "chapter-017-the-ramadan",
+        "chapter-018-his-mark",
+        "chapter-019-the-prophet",
+        "chapter-020-all-astir",
+        "chapter-021-going-aboard"
+      ],
+      "source_note": "Covers the New Bedford and Nantucket social chapters where inns, streets, meals, religion, contracts, and departure prepare the voyage. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-early-pequod-shipboard",
+      "label": "Early Pequod Shipboard",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-early-pequod-shipboard",
+      "coordinates": [
+        -47,
+        24
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-024-the-advocate",
+        "chapter-025-postscript",
+        "chapter-026-knights-and-squires",
+        "chapter-027-knights-and-squires",
+        "chapter-028-ahab",
+        "chapter-029-enter-ahab-to-him-stubb",
+        "chapter-030-the-pipe",
+        "chapter-031-queen-mab",
+        "chapter-032-cetology",
+        "chapter-033-the-specksnyder",
+        "chapter-034-the-cabin-table"
+      ],
+      "source_note": "Covers early shipboard classification, hierarchy, Ahab's first presence, and the transition from shore contract to ship routine. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-quarterdeck-aftervoices",
+      "label": "Quarterdeck Aftervoices",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-quarterdeck-aftervoices",
+      "coordinates": [
+        -45,
+        20
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-037-sunset",
+        "chapter-038-dusk",
+        "chapter-039-first-night-watch"
+      ],
+      "source_note": "Covers the staged solo voices immediately after the Quarterdeck oath. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-white-whale-theory",
+      "label": "White Whale Theory",
+      "kind": "ocean-region",
+      "entity_id": "coverage-entity-white-whale-theory",
+      "coordinates": [
+        -35,
+        18
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-041-moby-dick",
+        "chapter-042-the-whiteness-of-the-whale",
+        "chapter-043-hark",
+        "chapter-044-the-chart",
+        "chapter-045-the-affidavit",
+        "chapter-046-surmises",
+        "chapter-047-the-mat-maker",
+        "chapter-049-the-hyena",
+        "chapter-050-ahab-s-boat-and-crew-fedallah"
+      ],
+      "source_note": "Covers the explanatory and foreshadowing chapters that make Ahab's hunt, the white whale, and Fedallah legible before the middle voyage. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-whale-images-and-signs",
+      "label": "Whale Images and Signs",
+      "kind": "ocean-region",
+      "entity_id": "coverage-entity-whale-images-and-signs",
+      "coordinates": [
+        95,
+        -8
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-055-of-the-monstrous-pictures-of-whales",
+        "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes",
+        "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+        "chapter-058-brit",
+        "chapter-059-squid"
+      ],
+      "source_note": "Covers the middle-voyage chapters where whale images, feeding grounds, and false signs broaden the sea into an interpretive field. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-cutting-and-carcass-work",
+      "label": "Cutting and Carcass Work",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-cutting-and-carcass-work",
+      "coordinates": [
+        42,
+        -35
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-062-the-dart",
+        "chapter-063-the-crotch",
+        "chapter-064-stubb-s-supper",
+        "chapter-065-the-whale-as-a-dish",
+        "chapter-066-the-shark-massacre",
+        "chapter-068-the-blanket",
+        "chapter-069-the-funeral",
+        "chapter-070-the-sphynx",
+        "chapter-072-the-monkey-rope"
+      ],
+      "source_note": "Covers the labor sequence where the whale body becomes danger, food, rope work, symbolic handling, and shared bodily risk. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-head-body-law-scale",
+      "label": "Head, Body, Law, Scale",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-head-body-law-scale",
+      "coordinates": [
+        50,
+        -36
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-074-the-sperm-whale-s-head-contrasted-view",
+        "chapter-075-the-right-whale-s-head-contrasted-view",
+        "chapter-076-the-battering-ram",
+        "chapter-078-cistern-and-buckets",
+        "chapter-079-the-prairie",
+        "chapter-080-the-nut",
+        "chapter-081-the-pequod-meets-the-virgin",
+        "chapter-082-the-honor-and-glory-of-whaling",
+        "chapter-084-pitchpoling",
+        "chapter-085-the-fountain",
+        "chapter-086-the-tail",
+        "chapter-090-heads-or-tails"
+      ],
+      "source_note": "Covers the sequence where whale heads, anatomy, law, and scale become ways to read power and knowledge. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-pip-and-tryworks-approach",
+      "label": "Pip and Try-Works Approach",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-pip-and-tryworks-approach",
+      "coordinates": [
+        54,
+        -33
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-093-the-castaway",
+        "chapter-095-the-cassock"
+      ],
+      "source_note": "Covers Pip's abandonment and the whale-body labor that leads toward the try-works sequence. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-craft-and-instrument-pressure",
+      "label": "Craft and Instrument Pressure",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-craft-and-instrument-pressure",
+      "coordinates": [
+        -144,
+        -9
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-103-measurement-of-the-whale-s-skeleton",
+        "chapter-104-the-fossil-whale",
+        "chapter-107-the-carpenter",
+        "chapter-108-ahab-and-the-carpenter",
+        "chapter-118-the-quadrant",
+        "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+        "chapter-122-midnight-aloft-thunder-and-lightning",
+        "chapter-123-the-musket",
+        "chapter-125-the-log-and-line"
+      ],
+      "source_note": "Covers late-voyage chapters where measurement, craft, instruments, and command pressure converge. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-place-final-cabin-watch",
+      "label": "Final Cabin and Watch",
+      "kind": "ship-route-stage",
+      "entity_id": "coverage-entity-final-cabin-watch",
+      "coordinates": [
+        -154.5,
+        -2.2
+      ],
+      "coordinate_status": "display-anchor",
+      "chapter_targets": [
+        "chapter-129-the-cabin",
+        "chapter-130-the-hat"
+      ],
+      "source_note": "Covers the last cabin and watch chapters before the final chase fully begins. Coordinates are coverage display anchors for classroom navigation, not reconstructed route claims.",
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    }
+  ]
+}

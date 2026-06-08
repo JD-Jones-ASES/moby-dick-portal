@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/reading-path.schema.json",
+  "title": "Reading Path",
+  "type": "object",
+  "required": ["id", "title", "audience", "description", "goals", "scope", "unit_rules", "omission_rationale", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "audience": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "goals": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "scope": {
+      "type": "object",
+      "required": ["required_units", "recommended_units", "optional_units", "summary_only_units", "deferred_units", "word_count_required"],
+      "additionalProperties": false,
+      "properties": {
+        "required_units": { "type": "integer", "minimum": 0 },
+        "recommended_units": { "type": "integer", "minimum": 0 },
+        "optional_units": { "type": "integer", "minimum": 0 },
+        "summary_only_units": { "type": "integer", "minimum": 0 },
+        "deferred_units": { "type": "integer", "minimum": 0 },
+        "word_count_required": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "unit_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["unit_id", "section_type", "number", "title", "level", "rationale"],
+        "additionalProperties": false,
+        "properties": {
+          "unit_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "section_type": { "enum": ["frontmatter", "chapter", "epilogue"] },
+          "number": {
+            "anyOf": [
+              { "type": "integer", "minimum": 1, "maximum": 135 },
+              { "type": "null" }
+            ]
+          },
+          "title": { "type": "string", "minLength": 1 },
+          "level": { "enum": ["required", "recommended", "optional", "summary-only", "defer", "excluded"] },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "omission_rationale": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "object",
+      "required": ["classification_confidence", "citation_status"],
+      "additionalProperties": false,
+      "properties": {
+        "classification_confidence": { "enum": ["high", "medium", "low"] },
+        "citation_status": { "enum": ["verified", "provisional", "needs-review"] }
+      }
+    }
+  }
+}

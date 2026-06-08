@@ -1,0 +1,1737 @@
+{
+  "generated_from": "data/annotations/moby-dick.annotations.json",
+  "annotation_count": 91,
+  "categorized_annotation_count": 91,
+  "category_count": 6,
+  "categories": {
+    "general-difficult-material": {
+      "category": "general-difficult-material",
+      "annotation_count": 8,
+      "units": [
+        "chapter-006-the-street",
+        "chapter-013-wheelbarrow",
+        "chapter-041-moby-dick",
+        "chapter-064-stubb-s-supper",
+        "chapter-093-the-castaway",
+        "chapter-095-the-cassock",
+        "chapter-125-the-log-and-line"
+      ],
+      "annotations": [
+        "castaway-pip-trauma",
+        "curated-latebook-chapter-093-the-castaway-for-blacks-the-year-s-calendar",
+        "difficult-review-chapter-013-wheelbarrow",
+        "difficult-review-chapter-041-moby-dick",
+        "log-and-line-pip-truth",
+        "street-global-port",
+        "stubbs-supper-fleece",
+        "thin-unit-apparatus-chapter-095-sacred-body"
+      ]
+    },
+    "mental-health-language": {
+      "category": "mental-health-language",
+      "annotation_count": 14,
+      "units": [
+        "chapter-019-the-prophet",
+        "chapter-029-enter-ahab-to-him-stubb",
+        "chapter-036-the-quarterdeck",
+        "chapter-037-sunset",
+        "chapter-040-midnight-forecastle",
+        "chapter-044-the-chart",
+        "chapter-052-the-albatross",
+        "chapter-071-the-jeroboam-s-story",
+        "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+        "chapter-081-the-pequod-meets-the-virgin",
+        "chapter-087-the-grand-armada",
+        "chapter-094-a-squeeze-of-the-hand",
+        "chapter-106-ahab-s-leg"
+      ],
+      "annotations": [
+        "difficult-review-chapter-019-the-prophet",
+        "difficult-review-chapter-029-enter-ahab-to-him-stubb",
+        "difficult-review-chapter-036-the-quarterdeck",
+        "difficult-review-chapter-037-sunset",
+        "difficult-review-chapter-040-midnight-forecastle",
+        "difficult-review-chapter-044-the-chart",
+        "difficult-review-chapter-052-the-albatross",
+        "difficult-review-chapter-071-the-jeroboam-s-story",
+        "difficult-review-chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+        "difficult-review-chapter-081-the-pequod-meets-the-virgin",
+        "difficult-review-chapter-087-the-grand-armada",
+        "difficult-review-chapter-094-a-squeeze-of-the-hand",
+        "difficult-review-chapter-106-ahab-s-leg",
+        "subagent-gauss-dated-madness-language"
+      ]
+    },
+    "race-colonial-language": {
+      "category": "race-colonial-language",
+      "annotation_count": 50,
+      "units": [
+        "frontmatter-extracts",
+        "chapter-002-the-carpetbag",
+        "chapter-003-the-spouter-inn",
+        "chapter-004-the-counterpane",
+        "chapter-005-breakfast",
+        "chapter-007-the-chapel",
+        "chapter-010-a-bosom-friend",
+        "chapter-011-nightgown",
+        "chapter-012-biographical",
+        "chapter-016-the-ship",
+        "chapter-017-the-ramadan",
+        "chapter-018-his-mark",
+        "chapter-024-the-advocate",
+        "chapter-026-knights-and-squires",
+        "chapter-027-knights-and-squires",
+        "chapter-031-queen-mab",
+        "chapter-032-cetology",
+        "chapter-034-the-cabin-table",
+        "chapter-040-midnight-forecastle",
+        "chapter-042-the-whiteness-of-the-whale",
+        "chapter-045-the-affidavit",
+        "chapter-046-surmises",
+        "chapter-047-the-mat-maker",
+        "chapter-048-the-first-lowering",
+        "chapter-051-the-spirit-spout",
+        "chapter-054-the-town-ho-s-story",
+        "chapter-055-of-the-monstrous-pictures-of-whales",
+        "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+        "chapter-058-brit",
+        "chapter-059-squid",
+        "chapter-065-the-whale-as-a-dish",
+        "chapter-068-the-blanket",
+        "chapter-072-the-monkey-rope",
+        "chapter-078-cistern-and-buckets",
+        "chapter-096-the-try-works",
+        "chapter-099-the-doubloon",
+        "chapter-101-the-decanter",
+        "chapter-102-a-bower-in-the-arsacides",
+        "chapter-103-measurement-of-the-whale-s-skeleton",
+        "chapter-110-queequeg-in-his-coffin",
+        "chapter-114-the-gilder",
+        "chapter-115-the-pequod-meets-the-bachelor",
+        "chapter-119-the-candles",
+        "chapter-129-the-cabin",
+        "chapter-130-the-hat",
+        "chapter-132-the-symphony",
+        "chapter-134-the-chase-second-day",
+        "chapter-135-the-chase-third-day",
+        "epilogue-epilogue"
+      ],
+      "annotations": [
+        "arsacides-ethnographic-frame",
+        "bosom-friend-sober-cannibal",
+        "curated-earlybook-chapter-040-midnight-forecastle-thou-blackling",
+        "difficult-review-chapter-002-the-carpetbag",
+        "difficult-review-chapter-004-the-counterpane",
+        "difficult-review-chapter-005-breakfast",
+        "difficult-review-chapter-007-the-chapel",
+        "difficult-review-chapter-011-nightgown",
+        "difficult-review-chapter-012-biographical",
+        "difficult-review-chapter-016-the-ship",
+        "difficult-review-chapter-018-his-mark",
+        "difficult-review-chapter-024-the-advocate",
+        "difficult-review-chapter-026-knights-and-squires",
+        "difficult-review-chapter-027-knights-and-squires",
+        "difficult-review-chapter-031-queen-mab",
+        "difficult-review-chapter-032-cetology",
+        "difficult-review-chapter-034-the-cabin-table",
+        "difficult-review-chapter-042-the-whiteness-of-the-whale",
+        "difficult-review-chapter-045-the-affidavit",
+        "difficult-review-chapter-046-surmises",
+        "difficult-review-chapter-047-the-mat-maker",
+        "difficult-review-chapter-051-the-spirit-spout",
+        "difficult-review-chapter-054-the-town-ho-s-story",
+        "difficult-review-chapter-055-of-the-monstrous-pictures-of-whales",
+        "difficult-review-chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+        "difficult-review-chapter-058-brit",
+        "difficult-review-chapter-059-squid",
+        "difficult-review-chapter-065-the-whale-as-a-dish",
+        "difficult-review-chapter-068-the-blanket",
+        "difficult-review-chapter-072-the-monkey-rope",
+        "difficult-review-chapter-078-cistern-and-buckets",
+        "difficult-review-chapter-096-the-try-works",
+        "difficult-review-chapter-099-the-doubloon",
+        "difficult-review-chapter-101-the-decanter",
+        "difficult-review-chapter-103-measurement-of-the-whale-s-skeleton",
+        "difficult-review-chapter-110-queequeg-in-his-coffin",
+        "difficult-review-chapter-114-the-gilder",
+        "difficult-review-chapter-115-the-pequod-meets-the-bachelor",
+        "difficult-review-chapter-119-the-candles",
+        "difficult-review-chapter-129-the-cabin",
+        "difficult-review-chapter-130-the-hat",
+        "difficult-review-chapter-132-the-symphony",
+        "difficult-review-chapter-134-the-chase-second-day",
+        "difficult-review-chapter-135-the-chase-third-day",
+        "difficult-review-epilogue-epilogue",
+        "difficult-review-frontmatter-extracts",
+        "first-lowering-fedallah-reveal",
+        "ramadan-religious-comedy",
+        "spouter-inn-first-fear",
+        "subagent-earlybook-the-spouter-inn-sober-cannibal-than-a-drunken-christian"
+      ]
+    },
+    "religious-prejudice": {
+      "category": "religious-prejudice",
+      "annotation_count": 6,
+      "units": [
+        "chapter-003-the-spouter-inn",
+        "chapter-017-the-ramadan",
+        "chapter-028-ahab",
+        "chapter-038-dusk",
+        "chapter-113-the-forge",
+        "chapter-127-the-deck"
+      ],
+      "annotations": [
+        "difficult-review-chapter-028-ahab",
+        "difficult-review-chapter-038-dusk",
+        "difficult-review-chapter-113-the-forge",
+        "difficult-review-chapter-127-the-deck",
+        "ramadan-religious-comedy",
+        "subagent-earlybook-the-spouter-inn-sober-cannibal-than-a-drunken-christian"
+      ]
+    },
+    "slavery-coercion-language": {
+      "category": "slavery-coercion-language",
+      "annotation_count": 6,
+      "units": [
+        "chapter-001-loomings",
+        "chapter-013-wheelbarrow",
+        "chapter-053-the-gam",
+        "chapter-089-fast-fish-and-loose-fish",
+        "chapter-104-the-fossil-whale",
+        "chapter-126-the-life-buoy"
+      ],
+      "annotations": [
+        "curated-earlybook-chapter-013-wheelbarrow-a-slave-before-the-sultan",
+        "difficult-review-chapter-001-loomings",
+        "difficult-review-chapter-053-the-gam",
+        "difficult-review-chapter-089-fast-fish-and-loose-fish",
+        "difficult-review-chapter-104-the-fossil-whale",
+        "difficult-review-chapter-126-the-life-buoy"
+      ]
+    },
+    "violence-body-harm": {
+      "category": "violence-body-harm",
+      "annotation_count": 12,
+      "units": [
+        "chapter-026-knights-and-squires",
+        "chapter-053-the-gam",
+        "chapter-061-stubb-kills-a-whale",
+        "chapter-064-stubb-s-supper",
+        "chapter-066-the-shark-massacre",
+        "chapter-067-cutting-in",
+        "chapter-098-stowing-down-and-clearing-up",
+        "chapter-100-leg-and-arm",
+        "chapter-117-the-whale-watch",
+        "chapter-131-the-pequod-meets-the-delight",
+        "chapter-133-the-chase-first-day",
+        "chapter-135-the-chase-third-day"
+      ],
+      "annotations": [
+        "difficult-review-chapter-026-knights-and-squires",
+        "difficult-review-chapter-053-the-gam",
+        "difficult-review-chapter-067-cutting-in",
+        "difficult-review-chapter-098-stowing-down-and-clearing-up",
+        "difficult-review-chapter-100-leg-and-arm",
+        "difficult-review-chapter-117-the-whale-watch",
+        "difficult-review-chapter-131-the-pequod-meets-the-delight",
+        "difficult-review-chapter-133-the-chase-first-day",
+        "difficult-review-chapter-135-the-chase-third-day",
+        "shark-massacre-delayed-labor",
+        "stubb-kills-whale-violence",
+        "subagent-midbook-stubb-s-supper-like-many-old-blacks"
+      ]
+    }
+  },
+  "units": {
+    "frontmatter-titlepage": {
+      "unit_id": "frontmatter-titlepage",
+      "sequence": 1,
+      "title": "Moby Dick",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "frontmatter-imprint": {
+      "unit_id": "frontmatter-imprint",
+      "sequence": 2,
+      "title": "Imprint",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "frontmatter-dedication": {
+      "unit_id": "frontmatter-dedication",
+      "sequence": 3,
+      "title": "Dedication",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "frontmatter-etymology": {
+      "unit_id": "frontmatter-etymology",
+      "sequence": 4,
+      "title": "Etymology",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "frontmatter-extracts": {
+      "unit_id": "frontmatter-extracts",
+      "sequence": 5,
+      "title": "Extracts",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-frontmatter-extracts"
+      ]
+    },
+    "frontmatter-halftitlepage": {
+      "unit_id": "frontmatter-halftitlepage",
+      "sequence": 6,
+      "title": "Moby Dick",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-001-loomings": {
+      "unit_id": "chapter-001-loomings",
+      "sequence": 7,
+      "title": "Loomings",
+      "annotation_count": 1,
+      "categories": [
+        "slavery-coercion-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-001-loomings"
+      ]
+    },
+    "chapter-002-the-carpetbag": {
+      "unit_id": "chapter-002-the-carpetbag",
+      "sequence": 8,
+      "title": "The Carpetbag",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-002-the-carpetbag"
+      ]
+    },
+    "chapter-003-the-spouter-inn": {
+      "unit_id": "chapter-003-the-spouter-inn",
+      "sequence": 9,
+      "title": "The Spouter-Inn",
+      "annotation_count": 2,
+      "categories": [
+        "race-colonial-language",
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "spouter-inn-first-fear",
+        "subagent-earlybook-the-spouter-inn-sober-cannibal-than-a-drunken-christian"
+      ]
+    },
+    "chapter-004-the-counterpane": {
+      "unit_id": "chapter-004-the-counterpane",
+      "sequence": 10,
+      "title": "The Counterpane",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-004-the-counterpane"
+      ]
+    },
+    "chapter-005-breakfast": {
+      "unit_id": "chapter-005-breakfast",
+      "sequence": 11,
+      "title": "Breakfast",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-005-breakfast"
+      ]
+    },
+    "chapter-006-the-street": {
+      "unit_id": "chapter-006-the-street",
+      "sequence": 12,
+      "title": "The Street",
+      "annotation_count": 1,
+      "categories": [
+        "general-difficult-material"
+      ],
+      "annotations": [
+        "street-global-port"
+      ]
+    },
+    "chapter-007-the-chapel": {
+      "unit_id": "chapter-007-the-chapel",
+      "sequence": 13,
+      "title": "The Chapel",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-007-the-chapel"
+      ]
+    },
+    "chapter-008-the-pulpit": {
+      "unit_id": "chapter-008-the-pulpit",
+      "sequence": 14,
+      "title": "The Pulpit",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-009-the-sermon": {
+      "unit_id": "chapter-009-the-sermon",
+      "sequence": 15,
+      "title": "The Sermon",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-010-a-bosom-friend": {
+      "unit_id": "chapter-010-a-bosom-friend",
+      "sequence": 16,
+      "title": "A Bosom Friend",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "bosom-friend-sober-cannibal"
+      ]
+    },
+    "chapter-011-nightgown": {
+      "unit_id": "chapter-011-nightgown",
+      "sequence": 17,
+      "title": "Nightgown",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-011-nightgown"
+      ]
+    },
+    "chapter-012-biographical": {
+      "unit_id": "chapter-012-biographical",
+      "sequence": 18,
+      "title": "Biographical",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-012-biographical"
+      ]
+    },
+    "chapter-013-wheelbarrow": {
+      "unit_id": "chapter-013-wheelbarrow",
+      "sequence": 19,
+      "title": "Wheelbarrow",
+      "annotation_count": 2,
+      "categories": [
+        "general-difficult-material",
+        "slavery-coercion-language"
+      ],
+      "annotations": [
+        "curated-earlybook-chapter-013-wheelbarrow-a-slave-before-the-sultan",
+        "difficult-review-chapter-013-wheelbarrow"
+      ]
+    },
+    "chapter-014-nantucket": {
+      "unit_id": "chapter-014-nantucket",
+      "sequence": 20,
+      "title": "Nantucket",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-015-chowder": {
+      "unit_id": "chapter-015-chowder",
+      "sequence": 21,
+      "title": "Chowder",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-016-the-ship": {
+      "unit_id": "chapter-016-the-ship",
+      "sequence": 22,
+      "title": "The Ship",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-016-the-ship"
+      ]
+    },
+    "chapter-017-the-ramadan": {
+      "unit_id": "chapter-017-the-ramadan",
+      "sequence": 23,
+      "title": "The Ramadan",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language",
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "ramadan-religious-comedy"
+      ]
+    },
+    "chapter-018-his-mark": {
+      "unit_id": "chapter-018-his-mark",
+      "sequence": 24,
+      "title": "His Mark",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-018-his-mark"
+      ]
+    },
+    "chapter-019-the-prophet": {
+      "unit_id": "chapter-019-the-prophet",
+      "sequence": 25,
+      "title": "The Prophet",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-019-the-prophet"
+      ]
+    },
+    "chapter-020-all-astir": {
+      "unit_id": "chapter-020-all-astir",
+      "sequence": 26,
+      "title": "All Astir",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-021-going-aboard": {
+      "unit_id": "chapter-021-going-aboard",
+      "sequence": 27,
+      "title": "Going Aboard",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-022-merry-christmas": {
+      "unit_id": "chapter-022-merry-christmas",
+      "sequence": 28,
+      "title": "Merry Christmas",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-023-the-lee-shore": {
+      "unit_id": "chapter-023-the-lee-shore",
+      "sequence": 29,
+      "title": "The Lee Shore",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-024-the-advocate": {
+      "unit_id": "chapter-024-the-advocate",
+      "sequence": 30,
+      "title": "The Advocate",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-024-the-advocate"
+      ]
+    },
+    "chapter-025-postscript": {
+      "unit_id": "chapter-025-postscript",
+      "sequence": 31,
+      "title": "Postscript",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-026-knights-and-squires": {
+      "unit_id": "chapter-026-knights-and-squires",
+      "sequence": 32,
+      "title": "Knights and Squires",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language",
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-026-knights-and-squires"
+      ]
+    },
+    "chapter-027-knights-and-squires": {
+      "unit_id": "chapter-027-knights-and-squires",
+      "sequence": 33,
+      "title": "Knights and Squires",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-027-knights-and-squires"
+      ]
+    },
+    "chapter-028-ahab": {
+      "unit_id": "chapter-028-ahab",
+      "sequence": 34,
+      "title": "Ahab",
+      "annotation_count": 1,
+      "categories": [
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "difficult-review-chapter-028-ahab"
+      ]
+    },
+    "chapter-029-enter-ahab-to-him-stubb": {
+      "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+      "sequence": 35,
+      "title": "Enter Ahab; To Him, Stubb",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-029-enter-ahab-to-him-stubb"
+      ]
+    },
+    "chapter-030-the-pipe": {
+      "unit_id": "chapter-030-the-pipe",
+      "sequence": 36,
+      "title": "The Pipe",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-031-queen-mab": {
+      "unit_id": "chapter-031-queen-mab",
+      "sequence": 37,
+      "title": "Queen Mab",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-031-queen-mab"
+      ]
+    },
+    "chapter-032-cetology": {
+      "unit_id": "chapter-032-cetology",
+      "sequence": 38,
+      "title": "Cetology",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-032-cetology"
+      ]
+    },
+    "chapter-033-the-specksnyder": {
+      "unit_id": "chapter-033-the-specksnyder",
+      "sequence": 39,
+      "title": "The Specksnyder",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-034-the-cabin-table": {
+      "unit_id": "chapter-034-the-cabin-table",
+      "sequence": 40,
+      "title": "The Cabin-Table",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-034-the-cabin-table"
+      ]
+    },
+    "chapter-035-the-masthead": {
+      "unit_id": "chapter-035-the-masthead",
+      "sequence": 41,
+      "title": "The Masthead",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-036-the-quarterdeck": {
+      "unit_id": "chapter-036-the-quarterdeck",
+      "sequence": 42,
+      "title": "The Quarterdeck",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-036-the-quarterdeck"
+      ]
+    },
+    "chapter-037-sunset": {
+      "unit_id": "chapter-037-sunset",
+      "sequence": 43,
+      "title": "Sunset",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-037-sunset"
+      ]
+    },
+    "chapter-038-dusk": {
+      "unit_id": "chapter-038-dusk",
+      "sequence": 44,
+      "title": "Dusk",
+      "annotation_count": 1,
+      "categories": [
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "difficult-review-chapter-038-dusk"
+      ]
+    },
+    "chapter-039-first-night-watch": {
+      "unit_id": "chapter-039-first-night-watch",
+      "sequence": 45,
+      "title": "First Night-Watch",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-040-midnight-forecastle": {
+      "unit_id": "chapter-040-midnight-forecastle",
+      "sequence": 46,
+      "title": "Midnight, Forecastle",
+      "annotation_count": 2,
+      "categories": [
+        "mental-health-language",
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "curated-earlybook-chapter-040-midnight-forecastle-thou-blackling",
+        "difficult-review-chapter-040-midnight-forecastle"
+      ]
+    },
+    "chapter-041-moby-dick": {
+      "unit_id": "chapter-041-moby-dick",
+      "sequence": 47,
+      "title": "Moby Dick",
+      "annotation_count": 1,
+      "categories": [
+        "general-difficult-material"
+      ],
+      "annotations": [
+        "difficult-review-chapter-041-moby-dick"
+      ]
+    },
+    "chapter-042-the-whiteness-of-the-whale": {
+      "unit_id": "chapter-042-the-whiteness-of-the-whale",
+      "sequence": 48,
+      "title": "The Whiteness of the Whale",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-042-the-whiteness-of-the-whale"
+      ]
+    },
+    "chapter-043-hark": {
+      "unit_id": "chapter-043-hark",
+      "sequence": 49,
+      "title": "Hark!",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-044-the-chart": {
+      "unit_id": "chapter-044-the-chart",
+      "sequence": 50,
+      "title": "The Chart",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-044-the-chart"
+      ]
+    },
+    "chapter-045-the-affidavit": {
+      "unit_id": "chapter-045-the-affidavit",
+      "sequence": 51,
+      "title": "The Affidavit",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-045-the-affidavit"
+      ]
+    },
+    "chapter-046-surmises": {
+      "unit_id": "chapter-046-surmises",
+      "sequence": 52,
+      "title": "Surmises",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-046-surmises"
+      ]
+    },
+    "chapter-047-the-mat-maker": {
+      "unit_id": "chapter-047-the-mat-maker",
+      "sequence": 53,
+      "title": "The Mat-Maker",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-047-the-mat-maker"
+      ]
+    },
+    "chapter-048-the-first-lowering": {
+      "unit_id": "chapter-048-the-first-lowering",
+      "sequence": 54,
+      "title": "The First Lowering",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "first-lowering-fedallah-reveal"
+      ]
+    },
+    "chapter-049-the-hyena": {
+      "unit_id": "chapter-049-the-hyena",
+      "sequence": 55,
+      "title": "The Hyena",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-050-ahab-s-boat-and-crew-fedallah": {
+      "unit_id": "chapter-050-ahab-s-boat-and-crew-fedallah",
+      "sequence": 56,
+      "title": "Ahab\u2019s Boat and Crew. Fedallah",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-051-the-spirit-spout": {
+      "unit_id": "chapter-051-the-spirit-spout",
+      "sequence": 57,
+      "title": "The Spirit-Spout",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-051-the-spirit-spout"
+      ]
+    },
+    "chapter-052-the-albatross": {
+      "unit_id": "chapter-052-the-albatross",
+      "sequence": 58,
+      "title": "The Albatross",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-052-the-albatross"
+      ]
+    },
+    "chapter-053-the-gam": {
+      "unit_id": "chapter-053-the-gam",
+      "sequence": 59,
+      "title": "The Gam",
+      "annotation_count": 1,
+      "categories": [
+        "slavery-coercion-language",
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-053-the-gam"
+      ]
+    },
+    "chapter-054-the-town-ho-s-story": {
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "sequence": 60,
+      "title": "The Town-Ho \u2019s Story",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-054-the-town-ho-s-story"
+      ]
+    },
+    "chapter-055-of-the-monstrous-pictures-of-whales": {
+      "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+      "sequence": 61,
+      "title": "Of the Monstrous Pictures of Whales",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-055-of-the-monstrous-pictures-of-whales"
+      ]
+    },
+    "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes": {
+      "unit_id": "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes",
+      "sequence": 62,
+      "title": "Of the Less Erroneous Pictures of Whales, and the True Pictures of Whaling Scenes",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars": {
+      "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+      "sequence": 63,
+      "title": "Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars"
+      ]
+    },
+    "chapter-058-brit": {
+      "unit_id": "chapter-058-brit",
+      "sequence": 64,
+      "title": "Brit",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-058-brit"
+      ]
+    },
+    "chapter-059-squid": {
+      "unit_id": "chapter-059-squid",
+      "sequence": 65,
+      "title": "Squid",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-059-squid"
+      ]
+    },
+    "chapter-060-the-line": {
+      "unit_id": "chapter-060-the-line",
+      "sequence": 66,
+      "title": "The Line",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-061-stubb-kills-a-whale": {
+      "unit_id": "chapter-061-stubb-kills-a-whale",
+      "sequence": 67,
+      "title": "Stubb Kills a Whale",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "stubb-kills-whale-violence"
+      ]
+    },
+    "chapter-062-the-dart": {
+      "unit_id": "chapter-062-the-dart",
+      "sequence": 68,
+      "title": "The Dart",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-063-the-crotch": {
+      "unit_id": "chapter-063-the-crotch",
+      "sequence": 69,
+      "title": "The Crotch",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-064-stubb-s-supper": {
+      "unit_id": "chapter-064-stubb-s-supper",
+      "sequence": 70,
+      "title": "Stubb\u2019s Supper",
+      "annotation_count": 2,
+      "categories": [
+        "general-difficult-material",
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "stubbs-supper-fleece",
+        "subagent-midbook-stubb-s-supper-like-many-old-blacks"
+      ]
+    },
+    "chapter-065-the-whale-as-a-dish": {
+      "unit_id": "chapter-065-the-whale-as-a-dish",
+      "sequence": 71,
+      "title": "The Whale as a Dish",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-065-the-whale-as-a-dish"
+      ]
+    },
+    "chapter-066-the-shark-massacre": {
+      "unit_id": "chapter-066-the-shark-massacre",
+      "sequence": 72,
+      "title": "The Shark Massacre",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "shark-massacre-delayed-labor"
+      ]
+    },
+    "chapter-067-cutting-in": {
+      "unit_id": "chapter-067-cutting-in",
+      "sequence": 73,
+      "title": "Cutting In",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-067-cutting-in"
+      ]
+    },
+    "chapter-068-the-blanket": {
+      "unit_id": "chapter-068-the-blanket",
+      "sequence": 74,
+      "title": "The Blanket",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-068-the-blanket"
+      ]
+    },
+    "chapter-069-the-funeral": {
+      "unit_id": "chapter-069-the-funeral",
+      "sequence": 75,
+      "title": "The Funeral",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-070-the-sphynx": {
+      "unit_id": "chapter-070-the-sphynx",
+      "sequence": 76,
+      "title": "The Sphynx",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-071-the-jeroboam-s-story": {
+      "unit_id": "chapter-071-the-jeroboam-s-story",
+      "sequence": 77,
+      "title": "The Jeroboam \u2019s Story",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-071-the-jeroboam-s-story"
+      ]
+    },
+    "chapter-072-the-monkey-rope": {
+      "unit_id": "chapter-072-the-monkey-rope",
+      "sequence": 78,
+      "title": "The Monkey-Rope",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-072-the-monkey-rope"
+      ]
+    },
+    "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him": {
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "sequence": 79,
+      "title": "Stubb and Flask Kill a Right Whale; and Then Have a Talk Over Him",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him"
+      ]
+    },
+    "chapter-074-the-sperm-whale-s-head-contrasted-view": {
+      "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+      "sequence": 80,
+      "title": "The Sperm Whale\u2019s Head\u2060\u2014Contrasted View",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-075-the-right-whale-s-head-contrasted-view": {
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "sequence": 81,
+      "title": "The Right Whale\u2019s Head\u2060\u2014Contrasted View",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-076-the-battering-ram": {
+      "unit_id": "chapter-076-the-battering-ram",
+      "sequence": 82,
+      "title": "The Battering-Ram",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-077-the-great-heidelburgh-tun": {
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "sequence": 83,
+      "title": "The Great Heidelburgh Tun",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-078-cistern-and-buckets": {
+      "unit_id": "chapter-078-cistern-and-buckets",
+      "sequence": 84,
+      "title": "Cistern and Buckets",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-078-cistern-and-buckets"
+      ]
+    },
+    "chapter-079-the-prairie": {
+      "unit_id": "chapter-079-the-prairie",
+      "sequence": 85,
+      "title": "The Prairie",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-080-the-nut": {
+      "unit_id": "chapter-080-the-nut",
+      "sequence": 86,
+      "title": "The Nut",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-081-the-pequod-meets-the-virgin": {
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "sequence": 87,
+      "title": "The Pequod Meets the Virgin",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-081-the-pequod-meets-the-virgin"
+      ]
+    },
+    "chapter-082-the-honor-and-glory-of-whaling": {
+      "unit_id": "chapter-082-the-honor-and-glory-of-whaling",
+      "sequence": 88,
+      "title": "The Honor and Glory of Whaling",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-083-jonah-historically-regarded": {
+      "unit_id": "chapter-083-jonah-historically-regarded",
+      "sequence": 89,
+      "title": "Jonah Historically Regarded",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-084-pitchpoling": {
+      "unit_id": "chapter-084-pitchpoling",
+      "sequence": 90,
+      "title": "Pitchpoling",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-085-the-fountain": {
+      "unit_id": "chapter-085-the-fountain",
+      "sequence": 91,
+      "title": "The Fountain",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-086-the-tail": {
+      "unit_id": "chapter-086-the-tail",
+      "sequence": 92,
+      "title": "The Tail",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-087-the-grand-armada": {
+      "unit_id": "chapter-087-the-grand-armada",
+      "sequence": 93,
+      "title": "The Grand Armada",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-087-the-grand-armada"
+      ]
+    },
+    "chapter-088-schools-and-schoolmasters": {
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "sequence": 94,
+      "title": "Schools and Schoolmasters",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-089-fast-fish-and-loose-fish": {
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "sequence": 95,
+      "title": "Fast-Fish and Loose-Fish",
+      "annotation_count": 1,
+      "categories": [
+        "slavery-coercion-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-089-fast-fish-and-loose-fish"
+      ]
+    },
+    "chapter-090-heads-or-tails": {
+      "unit_id": "chapter-090-heads-or-tails",
+      "sequence": 96,
+      "title": "Heads or Tails",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-091-the-pequod-meets-the-rose-bud": {
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "sequence": 97,
+      "title": "The Pequod Meets the Rose-Bud",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-092-ambergris": {
+      "unit_id": "chapter-092-ambergris",
+      "sequence": 98,
+      "title": "Ambergris",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-093-the-castaway": {
+      "unit_id": "chapter-093-the-castaway",
+      "sequence": 99,
+      "title": "The Castaway",
+      "annotation_count": 2,
+      "categories": [
+        "general-difficult-material"
+      ],
+      "annotations": [
+        "castaway-pip-trauma",
+        "curated-latebook-chapter-093-the-castaway-for-blacks-the-year-s-calendar"
+      ]
+    },
+    "chapter-094-a-squeeze-of-the-hand": {
+      "unit_id": "chapter-094-a-squeeze-of-the-hand",
+      "sequence": 100,
+      "title": "A Squeeze of the Hand",
+      "annotation_count": 1,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-094-a-squeeze-of-the-hand"
+      ]
+    },
+    "chapter-095-the-cassock": {
+      "unit_id": "chapter-095-the-cassock",
+      "sequence": 101,
+      "title": "The Cassock",
+      "annotation_count": 1,
+      "categories": [
+        "general-difficult-material"
+      ],
+      "annotations": [
+        "thin-unit-apparatus-chapter-095-sacred-body"
+      ]
+    },
+    "chapter-096-the-try-works": {
+      "unit_id": "chapter-096-the-try-works",
+      "sequence": 102,
+      "title": "The Try-Works",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-096-the-try-works"
+      ]
+    },
+    "chapter-097-the-lamp": {
+      "unit_id": "chapter-097-the-lamp",
+      "sequence": 103,
+      "title": "The Lamp",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-098-stowing-down-and-clearing-up": {
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "sequence": 104,
+      "title": "Stowing Down and Clearing Up",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-098-stowing-down-and-clearing-up"
+      ]
+    },
+    "chapter-099-the-doubloon": {
+      "unit_id": "chapter-099-the-doubloon",
+      "sequence": 105,
+      "title": "The Doubloon",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-099-the-doubloon"
+      ]
+    },
+    "chapter-100-leg-and-arm": {
+      "unit_id": "chapter-100-leg-and-arm",
+      "sequence": 106,
+      "title": "Leg and Arm",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-100-leg-and-arm"
+      ]
+    },
+    "chapter-101-the-decanter": {
+      "unit_id": "chapter-101-the-decanter",
+      "sequence": 107,
+      "title": "The Decanter",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-101-the-decanter"
+      ]
+    },
+    "chapter-102-a-bower-in-the-arsacides": {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "sequence": 108,
+      "title": "A Bower in the Arsacides",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "arsacides-ethnographic-frame"
+      ]
+    },
+    "chapter-103-measurement-of-the-whale-s-skeleton": {
+      "unit_id": "chapter-103-measurement-of-the-whale-s-skeleton",
+      "sequence": 109,
+      "title": "Measurement of the Whale\u2019s Skeleton",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-103-measurement-of-the-whale-s-skeleton"
+      ]
+    },
+    "chapter-104-the-fossil-whale": {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "sequence": 110,
+      "title": "The Fossil Whale",
+      "annotation_count": 1,
+      "categories": [
+        "slavery-coercion-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-104-the-fossil-whale"
+      ]
+    },
+    "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish": {
+      "unit_id": "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish",
+      "sequence": 111,
+      "title": "Does the Whale\u2019s Magnitude Diminish?\u2060\u2014Will He Perish?",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-106-ahab-s-leg": {
+      "unit_id": "chapter-106-ahab-s-leg",
+      "sequence": 112,
+      "title": "Ahab\u2019s Leg",
+      "annotation_count": 2,
+      "categories": [
+        "mental-health-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-106-ahab-s-leg",
+        "subagent-gauss-dated-madness-language"
+      ]
+    },
+    "chapter-107-the-carpenter": {
+      "unit_id": "chapter-107-the-carpenter",
+      "sequence": 113,
+      "title": "The Carpenter",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-108-ahab-and-the-carpenter": {
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "sequence": 114,
+      "title": "Ahab and the Carpenter",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-109-ahab-and-starbuck-in-the-cabin": {
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "sequence": 115,
+      "title": "Ahab and Starbuck in the Cabin",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-110-queequeg-in-his-coffin": {
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "sequence": 116,
+      "title": "Queequeg in His Coffin",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-110-queequeg-in-his-coffin"
+      ]
+    },
+    "chapter-111-the-pacific": {
+      "unit_id": "chapter-111-the-pacific",
+      "sequence": 117,
+      "title": "The Pacific",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-112-the-blacksmith": {
+      "unit_id": "chapter-112-the-blacksmith",
+      "sequence": 118,
+      "title": "The Blacksmith",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-113-the-forge": {
+      "unit_id": "chapter-113-the-forge",
+      "sequence": 119,
+      "title": "The Forge",
+      "annotation_count": 1,
+      "categories": [
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "difficult-review-chapter-113-the-forge"
+      ]
+    },
+    "chapter-114-the-gilder": {
+      "unit_id": "chapter-114-the-gilder",
+      "sequence": 120,
+      "title": "The Gilder",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-114-the-gilder"
+      ]
+    },
+    "chapter-115-the-pequod-meets-the-bachelor": {
+      "unit_id": "chapter-115-the-pequod-meets-the-bachelor",
+      "sequence": 121,
+      "title": "The Pequod Meets the Bachelor",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-115-the-pequod-meets-the-bachelor"
+      ]
+    },
+    "chapter-116-the-dying-whale": {
+      "unit_id": "chapter-116-the-dying-whale",
+      "sequence": 122,
+      "title": "The Dying Whale",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-117-the-whale-watch": {
+      "unit_id": "chapter-117-the-whale-watch",
+      "sequence": 123,
+      "title": "The Whale Watch",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-117-the-whale-watch"
+      ]
+    },
+    "chapter-118-the-quadrant": {
+      "unit_id": "chapter-118-the-quadrant",
+      "sequence": 124,
+      "title": "The Quadrant",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-119-the-candles": {
+      "unit_id": "chapter-119-the-candles",
+      "sequence": 125,
+      "title": "The Candles",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-119-the-candles"
+      ]
+    },
+    "chapter-120-the-deck-towards-the-end-of-the-first-night-watch": {
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "sequence": 126,
+      "title": "The Deck Towards the End of the First Night Watch",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-121-midnight-the-forecastle-bulwarks": {
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "sequence": 127,
+      "title": "Midnight.\u2060\u2014The Forecastle Bulwarks",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-122-midnight-aloft-thunder-and-lightning": {
+      "unit_id": "chapter-122-midnight-aloft-thunder-and-lightning",
+      "sequence": 128,
+      "title": "Midnight Aloft.\u2060\u2014Thunder and Lightning",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-123-the-musket": {
+      "unit_id": "chapter-123-the-musket",
+      "sequence": 129,
+      "title": "The Musket",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-124-the-needle": {
+      "unit_id": "chapter-124-the-needle",
+      "sequence": 130,
+      "title": "The Needle",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-125-the-log-and-line": {
+      "unit_id": "chapter-125-the-log-and-line",
+      "sequence": 131,
+      "title": "The Log and Line",
+      "annotation_count": 1,
+      "categories": [
+        "general-difficult-material"
+      ],
+      "annotations": [
+        "log-and-line-pip-truth"
+      ]
+    },
+    "chapter-126-the-life-buoy": {
+      "unit_id": "chapter-126-the-life-buoy",
+      "sequence": 132,
+      "title": "The Life-Buoy",
+      "annotation_count": 1,
+      "categories": [
+        "slavery-coercion-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-126-the-life-buoy"
+      ]
+    },
+    "chapter-127-the-deck": {
+      "unit_id": "chapter-127-the-deck",
+      "sequence": 133,
+      "title": "The Deck",
+      "annotation_count": 1,
+      "categories": [
+        "religious-prejudice"
+      ],
+      "annotations": [
+        "difficult-review-chapter-127-the-deck"
+      ]
+    },
+    "chapter-128-the-pequod-meets-the-rachel": {
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "sequence": 134,
+      "title": "The Pequod Meets the Rachel",
+      "annotation_count": 0,
+      "categories": [],
+      "annotations": []
+    },
+    "chapter-129-the-cabin": {
+      "unit_id": "chapter-129-the-cabin",
+      "sequence": 135,
+      "title": "The Cabin",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-129-the-cabin"
+      ]
+    },
+    "chapter-130-the-hat": {
+      "unit_id": "chapter-130-the-hat",
+      "sequence": 136,
+      "title": "The Hat",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-130-the-hat"
+      ]
+    },
+    "chapter-131-the-pequod-meets-the-delight": {
+      "unit_id": "chapter-131-the-pequod-meets-the-delight",
+      "sequence": 137,
+      "title": "The Pequod Meets the Delight",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-131-the-pequod-meets-the-delight"
+      ]
+    },
+    "chapter-132-the-symphony": {
+      "unit_id": "chapter-132-the-symphony",
+      "sequence": 138,
+      "title": "The Symphony",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-132-the-symphony"
+      ]
+    },
+    "chapter-133-the-chase-first-day": {
+      "unit_id": "chapter-133-the-chase-first-day",
+      "sequence": 139,
+      "title": "The Chase\u2060\u2014First Day",
+      "annotation_count": 1,
+      "categories": [
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-133-the-chase-first-day"
+      ]
+    },
+    "chapter-134-the-chase-second-day": {
+      "unit_id": "chapter-134-the-chase-second-day",
+      "sequence": 140,
+      "title": "The Chase\u2060\u2014Second Day",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-chapter-134-the-chase-second-day"
+      ]
+    },
+    "chapter-135-the-chase-third-day": {
+      "unit_id": "chapter-135-the-chase-third-day",
+      "sequence": 141,
+      "title": "The Chase\u2060\u2014Third Day",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language",
+        "violence-body-harm"
+      ],
+      "annotations": [
+        "difficult-review-chapter-135-the-chase-third-day"
+      ]
+    },
+    "epilogue-epilogue": {
+      "unit_id": "epilogue-epilogue",
+      "sequence": 142,
+      "title": "Epilogue",
+      "annotation_count": 1,
+      "categories": [
+        "race-colonial-language"
+      ],
+      "annotations": [
+        "difficult-review-epilogue-epilogue"
+      ]
+    }
+  }
+}

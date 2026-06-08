@@ -1,0 +1,847 @@
+---
+import "../styles/global.css";
+import { loadGuideData } from "../lib/guide-data.js";
+import coverImage from "../../vendor/standard-ebooks/herman-melville_moby-dick-master/images/cover.jpg";
+
+const guideData = await loadGuideData();
+const payload = JSON.stringify(guideData).replace(/<\/script/gi, "<\\/script");
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moby-Dick Student Guide</title>
+  </head>
+  <body>
+    <div class="reader-app">
+      <header class="topbar">
+        <a class="brand-lockup" href={import.meta.env.BASE_URL} aria-label="Moby-Dick launch page">
+          <img class="cover-mark" src={coverImage.src} alt="" width="48" height="72" />
+          <div>
+            <p class="eyebrow">Reversible student edition</p>
+            <h1>Moby-Dick</h1>
+          </div>
+        </a>
+
+        <div class="top-controls" aria-label="Reader controls">
+          <label class="select-field">
+            <span>Path</span>
+            <select id="path-select"></select>
+          </label>
+          <label class="search-field">
+            <span>Search</span>
+            <div class="search-control">
+              <input id="search" type="search" placeholder="Chapter, term, or function" />
+              <button class="clear-search" id="clear-search" type="button" aria-label="Clear search" hidden>&times;</button>
+            </div>
+          </label>
+          <div class="segmented" aria-label="Source display">
+            <button class="segment active" id="source-path" type="button">Path Only</button>
+            <button class="segment" id="source-all" type="button">Whole Book</button>
+          </div>
+          <div class="segmented" aria-label="Study depth">
+            <button class="segment" id="depth-read" type="button">Read</button>
+            <button class="segment active" id="depth-guide" type="button">Guide</button>
+            <button class="segment" id="depth-study" type="button">Study</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="nav-pane">
+          <section class="path-brief">
+            <p class="eyebrow" id="path-audience"></p>
+            <h2 id="path-title"></h2>
+            <p id="path-description"></p>
+            <div class="path-meter" aria-hidden="true">
+              <span id="path-meter-fill"></span>
+            </div>
+            <p class="meter-label" id="path-meter-label"></p>
+          </section>
+
+          <section class="stats" id="stats" aria-label="Path statistics"></section>
+
+          <section class="story-map" aria-label="Story map">
+            <p class="rail-label">Story Map</p>
+            <div class="story-buttons" id="story-map"></div>
+          </section>
+
+          <section class="function-filter" aria-label="Function filter">
+            <p class="rail-label">Trail lens</p>
+            <div class="filter-buttons" id="function-filters"></div>
+          </section>
+
+          <nav class="unit-list" id="unit-list" aria-label="Reading units"></nav>
+        </aside>
+
+        <main class="reader-main">
+          <article class="reader-shell">
+            <header class="reader-head">
+              <div class="chapter-kicker">
+                <p id="reader-meta"></p>
+                <div class="chapter-actions">
+                  <button class="icon-button" id="previous-unit" type="button" aria-label="Previous unit">&lsaquo;</button>
+                  <button class="icon-button" id="next-unit" type="button" aria-label="Next unit">&rsaquo;</button>
+                </div>
+              </div>
+              <h2 id="reader-title"></h2>
+              <p class="summary" id="reader-summary"></p>
+              <div class="chapter-tags" id="chapter-tags"></div>
+              <div class="bridge-card" id="bridge-card" hidden></div>
+            </header>
+
+            <section class="reader-text" id="reader-text"></section>
+            <nav class="reader-bottom-nav" aria-label="Chapter navigation">
+              <button class="page-nav-button" id="previous-unit-bottom" type="button">
+                <span aria-hidden="true">&lsaquo;</span>
+                <span>
+                  <small>Previous</small>
+                  <strong id="previous-unit-label">Reading unit</strong>
+                </span>
+              </button>
+              <button class="page-nav-button next" id="next-unit-bottom" type="button">
+                <span>
+                  <small>Next</small>
+                  <strong id="next-unit-label">Reading unit</strong>
+                </span>
+                <span aria-hidden="true">&rsaquo;</span>
+              </button>
+            </nav>
+          </article>
+        </main>
+
+        <aside class="study-pane">
+          <section class="voyage-card">
+            <div class="rail-heading">
+              <p class="rail-label">Voyage</p>
+              <strong id="map-stage"></strong>
+            </div>
+            <svg class="route-map" viewBox="0 0 360 180" role="img" aria-labelledby="route-title">
+              <title id="route-title">Pequod voyage plot stages</title>
+              <defs>
+                <pattern id="sea-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                  <line x1="0" y1="0" x2="0" y2="12"></line>
+                </pattern>
+              </defs>
+              <rect width="360" height="180" rx="8"></rect>
+              <path class="route-line" d="M54 62 C94 42 116 64 132 78 C160 104 205 124 245 104 C292 82 323 92 334 118"></path>
+              <g id="route-points"></g>
+            </svg>
+            <p class="map-caption">Stage guide, not an exact chart.</p>
+            <p class="map-note" id="map-note"></p>
+          </section>
+
+          <section class="apparatus-card">
+            <div class="rail-heading">
+              <p class="rail-label">Abridgment</p>
+              <strong id="path-status"></strong>
+            </div>
+            <p id="path-rationale"></p>
+          </section>
+
+          <section class="apparatus-card">
+            <div class="rail-heading">
+              <p class="rail-label">Glossary</p>
+              <strong id="glossary-count"></strong>
+            </div>
+            <div id="glossary-card"></div>
+          </section>
+
+          <section class="apparatus-card" id="study-notes-card">
+            <div class="rail-heading">
+              <p class="rail-label">Study Notes</p>
+              <strong id="note-count"></strong>
+            </div>
+            <div id="reference-card"></div>
+            <div id="annotation-card"></div>
+          </section>
+
+          <section class="apparatus-card">
+            <div class="rail-heading">
+              <p class="rail-label">Recover More</p>
+              <strong id="skip-count"></strong>
+            </div>
+            <div class="skip-list" id="skip-list"></div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <script id="guide-data" type="application/json" set:html={payload}></script>
+    <script>
+      const payload = JSON.parse(document.getElementById("guide-data").textContent);
+      const unitsById = new Map(payload.units.map((unit) => [unit.unit_id, unit]));
+      const pathsById = new Map(payload.paths.map((readingPath) => [readingPath.id, readingPath]));
+      const allFunctions = [...new Set(payload.units.flatMap((unit) => unit.functions))].sort();
+      const glossary = payload.glossary;
+      const referenceCards = payload.referenceCards;
+      const annotations = payload.annotations;
+      const annotationsByUnit = payload.annotationIndex?.units ?? {};
+      const annotationById = new Map(annotations.map((annotation) => [annotation.id, annotation]));
+      for (const unitPack of Object.values(annotationsByUnit)) {
+        for (const annotation of unitPack.annotations ?? []) {
+          annotationById.set(annotation.id, annotation);
+        }
+      }
+      const voyageMap = payload.voyageMap;
+
+      const pathSelect = document.getElementById("path-select");
+      const search = document.getElementById("search");
+      const clearSearch = document.getElementById("clear-search");
+      const pathAudience = document.getElementById("path-audience");
+      const pathTitle = document.getElementById("path-title");
+      const pathDescription = document.getElementById("path-description");
+      const pathMeterFill = document.getElementById("path-meter-fill");
+      const pathMeterLabel = document.getElementById("path-meter-label");
+      const stats = document.getElementById("stats");
+      const storyMap = document.getElementById("story-map");
+      const functionFilters = document.getElementById("function-filters");
+      const unitList = document.getElementById("unit-list");
+      const readerMeta = document.getElementById("reader-meta");
+      const readerTitle = document.getElementById("reader-title");
+      const readerSummary = document.getElementById("reader-summary");
+      const chapterTags = document.getElementById("chapter-tags");
+      const bridgeCard = document.getElementById("bridge-card");
+      const readerText = document.getElementById("reader-text");
+      const previousUnit = document.getElementById("previous-unit");
+      const nextUnit = document.getElementById("next-unit");
+      const previousUnitBottom = document.getElementById("previous-unit-bottom");
+      const nextUnitBottom = document.getElementById("next-unit-bottom");
+      const previousUnitLabel = document.getElementById("previous-unit-label");
+      const nextUnitLabel = document.getElementById("next-unit-label");
+      const sourcePath = document.getElementById("source-path");
+      const sourceAll = document.getElementById("source-all");
+      const depthRead = document.getElementById("depth-read");
+      const depthGuide = document.getElementById("depth-guide");
+      const depthStudy = document.getElementById("depth-study");
+      const routePoints = document.getElementById("route-points");
+      const mapStage = document.getElementById("map-stage");
+      const mapNote = document.getElementById("map-note");
+      const pathStatus = document.getElementById("path-status");
+      const pathRationale = document.getElementById("path-rationale");
+      const glossaryCount = document.getElementById("glossary-count");
+      const glossaryCard = document.getElementById("glossary-card");
+      const studyNotesCard = document.getElementById("study-notes-card");
+      const noteCount = document.getElementById("note-count");
+      const referenceCard = document.getElementById("reference-card");
+      const annotationCard = document.getElementById("annotation-card");
+      const skipCount = document.getElementById("skip-count");
+      const skipList = document.getElementById("skip-list");
+      const glossaryPopover = document.createElement("div");
+      glossaryPopover.className = "gloss-popover";
+      glossaryPopover.hidden = true;
+      document.body.append(glossaryPopover);
+
+      const routePositions = [
+        [54, 62],
+        [89, 54],
+        [126, 76],
+        [171, 106],
+        [235, 109],
+        [292, 88],
+        [334, 118]
+      ];
+
+      let currentPathId = "narrative_core";
+      let sourceMode = "path";
+      let depthMode = "guide";
+      let functionFilter = "all";
+      let currentUnitId = firstReadableUnit(currentPathId);
+
+      function activePath() {
+        return pathsById.get(currentPathId);
+      }
+
+      function firstReadableUnit(pathId) {
+        const path = pathsById.get(pathId);
+        const firstChapter = path.unit_rules.find((rule) => {
+          const unit = unitsById.get(rule.unit_id);
+          return unit?.section_type === "chapter" && isIncluded(rule.level);
+        });
+        return firstChapter?.unit_id ?? path.unit_rules.find((rule) => isIncluded(rule.level))?.unit_id ?? path.unit_rules[0].unit_id;
+      }
+
+      function isIncluded(level) {
+        return level === "required" || level === "recommended";
+      }
+
+      function isRecoverable(rule) {
+        return !isIncluded(rule.level);
+      }
+
+      function isPathFrontmatter(rule) {
+        return currentPathId !== "full_text" && rule && unitsById.get(rule.unit_id)?.section_type === "frontmatter";
+      }
+
+      function ruleFor(unitId) {
+        return activePath().unit_rules.find((rule) => rule.unit_id === unitId);
+      }
+
+      function fullTextPath() {
+        return pathsById.get("full_text");
+      }
+
+      function displayRules() {
+        return sourceMode === "all" ? fullTextPath().unit_rules : activePath().unit_rules;
+      }
+
+      function formatNumber(unit) {
+        if (unit.section_type === "chapter") return "Ch. " + unit.number;
+        if (unit.section_type === "epilogue") return "Epilogue";
+        return "Front";
+      }
+
+      function formatLevel(level) {
+        return level.replace("-", " ");
+      }
+
+      function sentenceCase(value) {
+        return value.replace(/-/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+      }
+
+      function summaryFor(unit) {
+        return unit.summaries.student || unit.summaries.one_breath || unit.summaries.why_it_matters || "This reading unit is preserved from the source text; a reviewed student summary is still pending.";
+      }
+
+      function visibleRules() {
+        const query = search.value.trim().toLowerCase();
+        return displayRules().filter((rule) => {
+          const unit = unitsById.get(rule.unit_id);
+          const visibleBySource = sourceMode === "all" || (isIncluded(rule.level) && !isPathFrontmatter(rule));
+          const visibleByFunction = functionFilter === "all" || unit.functions.includes(functionFilter);
+          const haystack = [unit.title, unit.number, rule.level, unit.functions.join(" "), summaryFor(unit)].join(" ").toLowerCase();
+          return visibleBySource && visibleByFunction && (!query || haystack.includes(query));
+        });
+      }
+
+      function navigationRules() {
+        return displayRules().filter((rule) => sourceMode === "all" || (isIncluded(rule.level) && !isPathFrontmatter(rule)));
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function escapeRegExp(value) {
+        return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      }
+
+      function textWithGlosses(html) {
+        if (depthMode === "read") return html;
+        const labelMap = new Map();
+        for (const item of glossary) {
+          const labels = [item.term, ...(item.variants || [])].filter(Boolean);
+          for (const label of labels) labelMap.set(label.toLowerCase(), item.id);
+        }
+
+        const labels = [...labelMap.keys()].sort((a, b) => b.length - a.length).map(escapeRegExp);
+        if (labels.length === 0) return html;
+        const pattern = new RegExp("\\b(" + labels.join("|") + ")\\b", "gi");
+        return html
+          .split(/(<[^>]+>)/g)
+          .map((part) => part.startsWith("<") ? part : part.replace(pattern, (match) => '<span class="gloss-term" tabindex="0" data-term="' + labelMap.get(match.toLowerCase()) + '">' + match + '</span>'))
+          .join("");
+      }
+
+      function annotationsForUnit(unitId) {
+        return annotationsByUnit[unitId]?.annotations ?? annotations.filter((annotation) => annotation.unit_id === unitId);
+      }
+
+      function isReaderSurfaceAnnotation(annotation) {
+        const surfaces = annotation.display?.surfaces ?? ["reader"];
+        return surfaces.includes("reader");
+      }
+
+      function isPublicStudyAnnotation(annotation) {
+        return isReaderSurfaceAnnotation(annotation) && annotation.status?.content_status === "student-ready";
+      }
+
+      function isReaderInlineAnnotation(annotation) {
+        return annotation.display?.inline !== false && isPublicStudyAnnotation(annotation);
+      }
+
+      function rangeForSelector(text, annotation) {
+        const selector = annotation.selector ?? { exact: annotation.anchor };
+        const exact = selector.exact || annotation.anchor;
+        const lowerText = text.toLowerCase();
+        const lowerExact = exact.toLowerCase();
+        let fallback = null;
+        let index = lowerText.indexOf(lowerExact);
+
+        while (index !== -1) {
+          const range = { start: index, end: index + exact.length, annotation };
+          if (!fallback) fallback = range;
+
+          const prefix = selector.prefix ?? "";
+          const suffix = selector.suffix ?? "";
+          const before = text.slice(Math.max(0, index - prefix.length), index);
+          const after = text.slice(index + exact.length, index + exact.length + suffix.length);
+          if (before === prefix && after === suffix) return range;
+
+          index = lowerText.indexOf(lowerExact, index + Math.max(1, exact.length));
+        }
+
+        return fallback;
+      }
+
+      function annotationRangesFor(text, unit) {
+        if (depthMode !== "study") return [];
+        const ranges = annotationsForUnit(unit.unit_id)
+          .filter((annotation) => annotation.anchor && isReaderInlineAnnotation(annotation))
+          .map((annotation) => rangeForSelector(text, annotation))
+          .filter(Boolean)
+          .sort((a, b) => a.start - b.start || b.end - a.end);
+
+        const accepted = [];
+        let lastEnd = -1;
+        for (const range of ranges) {
+          if (range.start < lastEnd) continue;
+          accepted.push(range);
+          lastEnd = range.end;
+        }
+
+        return accepted;
+      }
+
+      function textWithAnnotations(rawText, paragraphStart, ranges) {
+        if (depthMode !== "study" || ranges.length === 0) return escapeHtml(rawText);
+        const paragraphEnd = paragraphStart + rawText.length;
+        const paragraphRanges = ranges.filter((range) => range.start >= paragraphStart && range.end <= paragraphEnd);
+        if (paragraphRanges.length === 0) return escapeHtml(rawText);
+
+        let html = "";
+        let cursor = 0;
+        for (const range of paragraphRanges) {
+          const localStart = range.start - paragraphStart;
+          const localEnd = range.end - paragraphStart;
+          if (localStart < cursor) continue;
+          html += escapeHtml(rawText.slice(cursor, localStart));
+          html += '<span class="annotation-term" tabindex="0" data-annotation="' + escapeHtml(range.annotation.id) + '">' + escapeHtml(rawText.slice(localStart, localEnd)) + "</span>";
+          cursor = localEnd;
+        }
+        html += escapeHtml(rawText.slice(cursor));
+        return html;
+      }
+
+      function renderParagraphs(text, unit) {
+        const ranges = annotationRangesFor(text, unit);
+        let cursor = 0;
+        return text
+          .split(/\n{2,}/)
+          .map((part) => {
+            const partStart = text.indexOf(part, cursor);
+            cursor = partStart + part.length;
+            const paragraph = part.trim();
+            if (!paragraph) return "";
+            const leadingWhitespace = part.search(/\S/);
+            const paragraphStart = partStart + Math.max(0, leadingWhitespace);
+            return "<p>" + textWithGlosses(textWithAnnotations(paragraph, paragraphStart, ranges)) + "</p>";
+          })
+          .filter(Boolean)
+          .join("");
+      }
+
+      function waypointFor(unit) {
+        if (!unit.number) return null;
+        return voyageMap.waypoints.find((waypoint) => unit.number >= waypoint.chapter_start && unit.number <= waypoint.chapter_end) ?? null;
+      }
+
+      function renderPathOptions() {
+        pathSelect.innerHTML = "";
+        for (const readingPath of payload.paths) {
+          const option = document.createElement("option");
+          option.value = readingPath.id;
+          option.textContent = readingPath.title;
+          pathSelect.append(option);
+        }
+      }
+
+      function renderFunctionFilters() {
+        const preferred = ["all", "narrative", "character", "symbolic", "whaling-labor", "cetology", "gam", "theatrical", "prophecy", "legal-political"];
+        const values = preferred.filter((value) => value === "all" || allFunctions.includes(value));
+        functionFilters.innerHTML = values.map((value) => (
+          '<button class="filter-pill' + (functionFilter === value ? " active" : "") + '" type="button" data-function="' + value + '">' +
+          (value === "all" ? "All Trails" : sentenceCase(value)) +
+          "</button>"
+        )).join("");
+        for (const button of functionFilters.querySelectorAll("button")) {
+          button.addEventListener("click", () => {
+            functionFilter = button.dataset.function;
+            render();
+          });
+        }
+      }
+
+      function renderPathBrief() {
+        const path = activePath();
+        const totalWords = pathsById.get("full_text").scope.word_count_required;
+        const percent = Math.max(4, Math.round((path.scope.word_count_required / totalWords) * 100));
+        pathAudience.textContent = path.audience;
+        pathTitle.textContent = path.title;
+        pathDescription.textContent = path.description;
+        pathMeterFill.style.width = percent + "%";
+        pathMeterLabel.textContent = path.scope.word_count_required.toLocaleString() + " of " + totalWords.toLocaleString() + " source words carried in this path.";
+      }
+
+      function renderStats() {
+        const rules = displayRules().filter((rule) => sourceMode === "all" || !isPathFrontmatter(rule));
+        const countLevel = (level) => rules.filter((rule) => rule.level === level).length;
+        const recoverable = rules.filter((rule) => isRecoverable(rule)).length;
+        const statData = [
+          ["Required", countLevel("required")],
+          ["Recommended", countLevel("recommended")],
+          ["Optional", countLevel("optional")],
+          ["Recoverable", recoverable]
+        ];
+        stats.innerHTML = statData.map(([label, value]) => (
+          '<div class="stat"><strong>' + value.toLocaleString() + '</strong><span>' + label + '</span></div>'
+        )).join("");
+      }
+
+      function renderStoryMap() {
+        storyMap.innerHTML = "";
+        for (const waypoint of voyageMap.waypoints) {
+          const rule = firstRuleForWaypoint(waypoint);
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "story-button" + (waypointFor(unitsById.get(currentUnitId))?.id === waypoint.id ? " active" : "");
+          button.disabled = !rule;
+          button.innerHTML = '<strong>' + escapeHtml(waypoint.label) + '</strong><span>Ch. ' + waypoint.chapter_start + "-" + waypoint.chapter_end + '</span>';
+          button.addEventListener("click", () => {
+            if (!rule) return;
+            currentUnitId = rule.unit_id;
+            render();
+          });
+          storyMap.append(button);
+        }
+      }
+
+      function firstRuleForWaypoint(waypoint) {
+        return displayRules().find((candidate) => {
+          const unit = unitsById.get(candidate.unit_id);
+          return unit?.number >= waypoint.chapter_start && unit.number <= waypoint.chapter_end && (sourceMode === "all" || (isIncluded(candidate.level) && !isPathFrontmatter(candidate)));
+        });
+      }
+
+      function renderUnitList() {
+        const rules = visibleRules();
+        unitList.innerHTML = "";
+        if (rules.length === 0) {
+          unitList.innerHTML = '<p class="empty-state">No units match this lens.</p>';
+          return;
+        }
+        for (const rule of rules) {
+          const unit = unitsById.get(rule.unit_id);
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "unit-button" + (unit.unit_id === currentUnitId ? " active" : "");
+          button.innerHTML =
+            '<span class="unit-number">' + formatNumber(unit) + '</span>' +
+            '<span class="unit-name">' + escapeHtml(unit.title) + '</span>' +
+            '<span class="unit-function">' + escapeHtml(unit.functions[0] || "source") + '</span>' +
+            '<span class="level ' + rule.level + '">' + formatLevel(rule.level) + '</span>';
+          button.addEventListener("click", () => {
+            currentUnitId = unit.unit_id;
+            render();
+          });
+          unitList.append(button);
+        }
+      }
+
+      function renderReader() {
+        const unit = unitsById.get(currentUnitId);
+        const rule = ruleFor(currentUnitId) ?? { level: "required", rationale: "Visible in full source mode." };
+        const isBridge = sourceMode === "path" && !isIncluded(rule.level);
+        const shownSummary = depthMode === "read" ? unit.summaries.one_breath : summaryFor(unit);
+        readerMeta.textContent = formatNumber(unit) + " / " + formatLevel(rule.level) + " / " + unit.word_count.toLocaleString() + " words";
+        readerTitle.textContent = unit.title;
+        readerSummary.textContent = shownSummary;
+        readerSummary.hidden = depthMode === "read" && !unit.summaries.one_breath;
+        chapterTags.innerHTML = unit.functions.map((tag) => '<span>' + sentenceCase(tag) + '</span>').join("");
+
+        if (isBridge) {
+          bridgeCard.hidden = false;
+          bridgeCard.innerHTML =
+            '<p class="eyebrow">Skipped in ' + escapeHtml(activePath().title) + '</p>' +
+            '<strong>This unit is summarized here, but the full source is one click away.</strong>' +
+            '<p>' + escapeHtml(rule.rationale || summaryFor(unit)) + '</p>' +
+            '<button class="primary-action" id="open-full-unit" type="button">Open full source text</button>';
+          readerText.innerHTML = '<div class="summary-sheet"><h3>Student Summary</h3><p>' + escapeHtml(summaryFor(unit)) + '</p></div>';
+          document.getElementById("open-full-unit").addEventListener("click", () => {
+            sourceMode = "all";
+            render();
+          });
+        } else {
+          bridgeCard.hidden = true;
+          bridgeCard.innerHTML = "";
+          readerText.innerHTML = renderParagraphs(unit.plain_text || "Text pending.", unit);
+        }
+      }
+
+      function renderRoute() {
+        const unit = unitsById.get(currentUnitId);
+        const waypoint = waypointFor(unit);
+        routePoints.innerHTML = voyageMap.waypoints.map((point, index) => {
+          const [x, y] = routePositions[index] ?? [40 + index * 45, 90];
+          const active = waypoint?.id === point.id;
+          const rule = firstRuleForWaypoint(point);
+          const disabled = rule ? "" : ' aria-disabled="true"';
+          return '<circle class="' + (active ? "active" : "") + '" cx="' + x + '" cy="' + y + '" r="' + (active ? 7 : 5) + '" tabindex="' + (rule ? "0" : "-1") + '" role="button" data-waypoint="' + escapeHtml(point.id) + '"' + disabled + '><title>' + escapeHtml(point.label + " / Ch. " + point.chapter_start + "-" + point.chapter_end) + '</title></circle>';
+        }).join("");
+        mapStage.textContent = waypoint?.label ?? "Source Frame";
+        mapNote.textContent = waypoint ? waypoint.student_note : voyageMap.note;
+        for (const pointNode of routePoints.querySelectorAll("circle[data-waypoint]")) {
+          const point = voyageMap.waypoints.find((candidate) => candidate.id === pointNode.dataset.waypoint);
+          const rule = point && firstRuleForWaypoint(point);
+          const go = () => {
+            if (!rule) return;
+            currentUnitId = rule.unit_id;
+            render();
+          };
+          pointNode.addEventListener("click", go);
+          pointNode.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              go();
+            }
+          });
+        }
+      }
+
+      function renderAbridgmentStatus() {
+        const unit = unitsById.get(currentUnitId);
+        const rule = ruleFor(currentUnitId) ?? { level: "required", rationale: "" };
+        pathStatus.textContent = formatLevel(rule.level);
+        pathRationale.textContent = rule.rationale || (isIncluded(rule.level) ? "This unit is carried in the selected path." : "This unit is recoverable from the full source.");
+        document.body.dataset.depth = depthMode;
+        document.body.dataset.source = sourceMode;
+      }
+
+      function renderGlossary() {
+        const unit = unitsById.get(currentUnitId);
+        const matches = glossary.filter((entry) => entry.targets.includes(unit.unit_id));
+        glossaryCount.textContent = matches.length ? matches.length + " linked" : "On hover";
+        if (depthMode === "read") {
+          glossaryCard.innerHTML = '<p class="empty-state">Glossary is hidden in Read mode.</p>';
+          return;
+        }
+        if (matches.length === 0) {
+          glossaryCard.innerHTML = '<p class="empty-state">Hover or tap dotted terms in the text. Linked chapter terms will appear here.</p>';
+          return;
+        }
+        glossaryCard.innerHTML = matches.slice(0, depthMode === "study" ? 8 : 3).map((item) => (
+          '<div class="mini-card"><strong>' + escapeHtml(item.term) + '</strong><p>' + escapeHtml(item.definition) + '</p><span>' + escapeHtml(item.category) + '</span></div>'
+        )).join("");
+      }
+
+      function renderStudyCards() {
+        const unit = unitsById.get(currentUnitId);
+        const cards = referenceCards.filter((card) => card.targets.includes(unit.unit_id));
+        const notes = annotationsForUnit(unit.unit_id).filter(isPublicStudyAnnotation);
+        const linkedCount = cards.length + notes.length;
+        studyNotesCard.hidden = depthMode !== "study";
+
+        if (depthMode !== "study") {
+          noteCount.textContent = linkedCount ? "Study mode" : "None yet";
+          referenceCard.innerHTML = "";
+          annotationCard.innerHTML = "";
+          return;
+        }
+
+        noteCount.textContent = linkedCount ? linkedCount + " linked" : "None yet";
+        referenceCard.innerHTML = cards.length
+          ? cards.map((card) => '<div class="mini-card"><strong>' + escapeHtml(card.title) + '</strong><p>' + escapeHtml(card.student_note) + '</p><span>' + escapeHtml(card.kind) + '</span></div>').join("")
+          : '<p class="empty-state">No reference cards are linked to this unit yet.</p>';
+        annotationCard.innerHTML = notes.length
+          ? notes.map((annotation) => '<button class="mini-card note-card" type="button" data-annotation="' + escapeHtml(annotation.id) + '"><strong>' + escapeHtml(annotation.anchor) + '</strong><p>' + escapeHtml(annotation.note) + '</p><span>' + escapeHtml(annotation.kind) + '</span></button>').join("")
+          : '<p class="empty-state">Publication-ready study notes are pending editorial review.</p>';
+      }
+
+      function renderSkipped() {
+        const skipped = activePath().unit_rules.filter((rule) => isRecoverable(rule) && unitsById.get(rule.unit_id)?.section_type !== "frontmatter");
+        skipCount.textContent = skipped.length.toLocaleString();
+        if (!skipped.length) {
+          skipList.innerHTML = '<p class="empty-state">No additional source units in this path.</p>';
+          return;
+        }
+        const limit = depthMode === "study" ? 16 : 7;
+        skipList.innerHTML = "";
+        for (const rule of skipped.slice(0, limit)) {
+          const unit = unitsById.get(rule.unit_id);
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "skip-item";
+          button.innerHTML =
+            '<strong>' + formatNumber(unit) + " " + escapeHtml(unit.title) + '</strong>' +
+            '<span>' + formatLevel(rule.level) + ' / ' + escapeHtml(unit.functions.join(", ")) + '</span>' +
+            '<p>' + escapeHtml(summaryFor(unit)) + '</p>';
+          button.addEventListener("click", () => {
+            currentUnitId = unit.unit_id;
+            sourceMode = "path";
+            render();
+          });
+          skipList.append(button);
+        }
+      }
+
+      function bindGlossaryTerms() {
+        for (const node of document.querySelectorAll(".gloss-term")) {
+          const item = glossary.find((entry) => entry.id === node.dataset.term);
+          if (!item) continue;
+          const renderSelected = () => {
+            glossaryCard.innerHTML = '<div class="mini-card selected"><strong>' + escapeHtml(item.term) + '</strong><p>' + escapeHtml(item.definition) + '</p><span>' + escapeHtml(item.category) + '</span></div>';
+          };
+          const show = () => {
+            renderSelected();
+            if (window.matchMedia("(min-width: 1181px)").matches) {
+              glossaryPopover.hidden = true;
+              return;
+            }
+            const rect = node.getBoundingClientRect();
+            glossaryPopover.innerHTML = '<strong>' + escapeHtml(item.term) + '</strong><p>' + escapeHtml(item.definition) + '</p><span>' + escapeHtml(item.category) + '</span>';
+            glossaryPopover.hidden = false;
+            const width = Math.min(320, window.innerWidth - 24);
+            const left = Math.max(12, Math.min(rect.left, window.innerWidth - width - 12));
+            const top = rect.bottom + 10 < window.innerHeight - 120 ? rect.bottom + 10 : rect.top - 128;
+            glossaryPopover.style.width = width + "px";
+            glossaryPopover.style.left = left + "px";
+            glossaryPopover.style.top = Math.max(12, top) + "px";
+          };
+          const hide = () => {
+            glossaryPopover.hidden = true;
+          };
+          node.addEventListener("mouseenter", show);
+          node.addEventListener("focus", show);
+          node.addEventListener("click", show);
+          node.addEventListener("mouseleave", hide);
+          node.addEventListener("blur", hide);
+        }
+      }
+
+      function selectAnnotation(annotationId, shouldScroll) {
+        const annotation = annotationById.get(annotationId);
+        if (!annotation) return;
+        for (const node of document.querySelectorAll(".annotation-term, .note-card")) {
+          node.classList.toggle("selected", node.dataset.annotation === annotationId);
+        }
+        if (depthMode !== "study") return;
+        const card = document.querySelector('.note-card[data-annotation="' + annotationId + '"]');
+        const term = document.querySelector('.annotation-term[data-annotation="' + annotationId + '"]');
+        if (shouldScroll && term) term.scrollIntoView({ behavior: "smooth", block: "center" });
+        if (!shouldScroll && card) card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+
+      function bindAnnotationTerms() {
+        for (const node of document.querySelectorAll(".annotation-term")) {
+          const show = () => selectAnnotation(node.dataset.annotation, false);
+          node.addEventListener("mouseenter", show);
+          node.addEventListener("focus", show);
+          node.addEventListener("click", show);
+        }
+        for (const node of document.querySelectorAll(".note-card")) {
+          node.addEventListener("click", () => selectAnnotation(node.dataset.annotation, true));
+        }
+      }
+
+      function renderSourceControls() {
+        sourcePath.classList.toggle("active", sourceMode === "path");
+        sourceAll.classList.toggle("active", sourceMode === "all");
+        depthRead.classList.toggle("active", depthMode === "read");
+        depthGuide.classList.toggle("active", depthMode === "guide");
+        depthStudy.classList.toggle("active", depthMode === "study");
+      }
+
+      function renderNavigationControls() {
+        const rules = navigationRules();
+        const index = Math.max(0, rules.findIndex((rule) => rule.unit_id === currentUnitId));
+        const previousRule = rules[index - 1];
+        const nextRule = rules[index + 1];
+        previousUnit.disabled = index <= 0;
+        nextUnit.disabled = index === -1 || index >= rules.length - 1;
+        previousUnitBottom.disabled = previousUnit.disabled;
+        nextUnitBottom.disabled = nextUnit.disabled;
+        previousUnitLabel.textContent = previousRule ? formatNumber(unitsById.get(previousRule.unit_id)) + " " + unitsById.get(previousRule.unit_id).title : "Start";
+        nextUnitLabel.textContent = nextRule ? formatNumber(unitsById.get(nextRule.unit_id)) + " " + unitsById.get(nextRule.unit_id).title : "End";
+      }
+
+      function move(delta) {
+        const rules = navigationRules();
+        const index = rules.findIndex((rule) => rule.unit_id === currentUnitId);
+        const next = rules[Math.max(0, Math.min(rules.length - 1, index + delta))];
+        if (next) {
+          currentUnitId = next.unit_id;
+          render();
+        }
+      }
+
+      function render() {
+        pathSelect.value = currentPathId;
+        renderPathBrief();
+        renderStats();
+        renderStoryMap();
+        renderFunctionFilters();
+        renderUnitList();
+        renderReader();
+        renderRoute();
+        renderAbridgmentStatus();
+        renderGlossary();
+        renderStudyCards();
+        renderSkipped();
+        renderSourceControls();
+        renderNavigationControls();
+        bindGlossaryTerms();
+        bindAnnotationTerms();
+      }
+
+      pathSelect.addEventListener("change", () => {
+        currentPathId = pathSelect.value;
+        sourceMode = "path";
+        currentUnitId = firstReadableUnit(currentPathId);
+        render();
+      });
+      search.addEventListener("input", () => {
+        clearSearch.hidden = !search.value;
+        renderUnitList();
+      });
+      clearSearch.addEventListener("click", () => {
+        search.value = "";
+        clearSearch.hidden = true;
+        renderUnitList();
+        search.focus();
+      });
+      sourcePath.addEventListener("click", () => {
+        sourceMode = "path";
+        if (!isIncluded(ruleFor(currentUnitId)?.level) || isPathFrontmatter(ruleFor(currentUnitId))) currentUnitId = firstReadableUnit(currentPathId);
+        render();
+      });
+      sourceAll.addEventListener("click", () => {
+        sourceMode = "all";
+        render();
+      });
+      depthRead.addEventListener("click", () => {
+        depthMode = "read";
+        render();
+      });
+      depthGuide.addEventListener("click", () => {
+        depthMode = "guide";
+        render();
+      });
+      depthStudy.addEventListener("click", () => {
+        depthMode = "study";
+        render();
+      });
+      previousUnit.addEventListener("click", () => move(-1));
+      nextUnit.addEventListener("click", () => move(1));
+      previousUnitBottom.addEventListener("click", () => move(-1));
+      nextUnitBottom.addEventListener("click", () => move(1));
+
+      renderPathOptions();
+      render();
+    </script>
+  </body>
+</html>

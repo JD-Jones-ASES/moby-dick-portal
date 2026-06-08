@@ -1,0 +1,8 @@
+{
+  "sources": [],
+  "notes": [
+    {"unit_id":"chapter-082-the-honor-and-glory-of-whaling","anchor":"Everyone knows the fine story of Perseus and Andromeda","claim_type":"classical-context","citations":["standard-ebooks-moby-dick","bulfinch-age-of-fable","jonah-kjv-crossref"],"note":"In Greek myth, Perseus rescued Princess Andromeda from a sea-monster (cetus) sent to ravage the Ethiopian coast. Melville reframes the cetus as a whale, making Perseus the first harpooner, a witty claim that gives whaling a lineage older than Homer. The monster's skeleton was said to be displayed at Joppa, the very port from which Jonah sailed.","kind":"context"},
+    {"unit_id":"chapter-083-jonah-historically-regarded","anchor":"Arion and the dolphin","claim_type":"classical-context","citations":["standard-ebooks-moby-dick","bulfinch-age-of-fable","jonah-kjv-crossref"],"note":"Arion was a legendary Greek lyric poet who, threatened by sailors intent on robbing him, leaped overboard and was carried safely to shore by a dolphin charmed by his music. Melville pairs the story with Jonah and the whale as sea-creature rescue tales that skeptics doubted, arguing that doubt alone does not disprove them.","kind":"context"},
+    {"unit_id":"chapter-083-jonah-historically-regarded","anchor":"A penny roll would choke him","claim_type":"nautical-whaling","citations":["standard-ebooks-moby-dick","noaa-north-atlantic-right-whale","jonah-kjv-crossref"],"note":"Right whales are filter feeders whose throat is surprisingly narrow, too small to swallow a human. Whalers knew this, and the fisherman's saying mocks the old Sag-Harbor skeptic's literal worry: if Jonah's whale had two spouts, making it a right whale, it could not have swallowed the prophet whole.","kind":"context"}
+  ]
+}

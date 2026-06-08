@@ -1,0 +1,95 @@
+{
+  "depths": [
+    {
+      "id": "read",
+      "title": "Read",
+      "inline_annotations": false,
+      "apparatus": ["source-text"],
+      "student_visible": true
+    },
+    {
+      "id": "guide",
+      "title": "Guide",
+      "inline_annotations": false,
+      "apparatus": ["summaries", "glossary", "map", "abridgment"],
+      "student_visible": true
+    },
+    {
+      "id": "study",
+      "title": "Study",
+      "inline_annotations": true,
+      "apparatus": ["summaries", "glossary", "annotations", "references", "citations", "map", "abridgment"],
+      "student_visible": true
+    },
+    {
+      "id": "explore",
+      "title": "Explore",
+      "inline_annotations": false,
+      "apparatus": ["indexes", "trails", "graphs", "search"],
+      "student_visible": false
+    },
+    {
+      "id": "teacher",
+      "title": "Teacher",
+      "inline_annotations": false,
+      "apparatus": ["review-queues", "lesson-hooks", "difficult-material", "density", "citations"],
+      "student_visible": false
+    }
+  ],
+  "kind_defaults": {
+    "gloss": {
+      "depth": "guide",
+      "priority": 1,
+      "inline": false,
+      "surfaces": ["index", "search"],
+      "spoiler_level": "none"
+    },
+    "context": {
+      "depth": "study",
+      "priority": 3,
+      "inline": true,
+      "surfaces": ["reader", "index", "search"],
+      "spoiler_level": "none"
+    },
+    "form": {
+      "depth": "study",
+      "priority": 3,
+      "inline": true,
+      "surfaces": ["reader", "trail", "index", "search"],
+      "spoiler_level": "none"
+    },
+    "theme": {
+      "depth": "study",
+      "priority": 3,
+      "inline": true,
+      "surfaces": ["reader", "trail", "index", "search"],
+      "spoiler_level": "none"
+    },
+    "difficult-material": {
+      "depth": "study",
+      "priority": 2,
+      "inline": true,
+      "surfaces": ["reader", "index", "review", "teacher"],
+      "spoiler_level": "none"
+    },
+    "map": {
+      "depth": "guide",
+      "priority": 2,
+      "inline": false,
+      "surfaces": ["map", "index"],
+      "spoiler_level": "none"
+    },
+    "teacher-note": {
+      "depth": "teacher",
+      "priority": 3,
+      "inline": false,
+      "surfaces": ["teacher", "review"],
+      "spoiler_level": "teacher-only"
+    }
+  },
+  "density_thresholds": {
+    "guide_inline_marks_per_unit": 0,
+    "study_inline_marks_per_paragraph": 4,
+    "study_inline_marks_per_unit": 30
+  }
+}

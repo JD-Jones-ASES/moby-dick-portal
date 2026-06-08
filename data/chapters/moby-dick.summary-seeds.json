@@ -1,0 +1,856 @@
+{
+  "summaries": [
+    {
+      "unit_id": "frontmatter-titlepage",
+      "one_breath": "The title page identifies the work as Melville's Moby Dick and keeps the guide attached to the full source text.",
+      "student": "This brief title page is not part of the plot, but it matters for orientation. It names the book and author before the guide begins separating full text, abridged paths, and study layers.",
+      "why_it_matters": "For a reversible edition, even tiny source units stay visible. The title page helps students see that abridgment is a reading choice, not a replacement text."
+    },
+    {
+      "unit_id": "frontmatter-imprint",
+      "one_breath": "The imprint explains the edition's source chain, public-domain basis, and Standard Ebooks production history.",
+      "student": "The imprint is edition information rather than Melville's narrative. It tells readers that this text comes through Standard Ebooks, using Project Gutenberg and Internet Archive sources, with public-domain and CC0 licensing notes.",
+      "why_it_matters": "Students usually do not need to read the imprint for plot, but teachers and project users need its source trail. It supports the guide's promise that the full text remains intact and traceable."
+    },
+    {
+      "unit_id": "frontmatter-dedication",
+      "one_breath": "Melville dedicates the novel to Nathaniel Hawthorne as an act of admiration.",
+      "student": "The dedication is short, but it points to a real literary friendship and influence. Melville admired Hawthorne's dark, symbolic fiction, and the dedication places Moby-Dick near that kind of moral and psychological intensity.",
+      "why_it_matters": "The dedication gives students a first clue that the book is not only a sea adventure. It belongs to a literary world interested in guilt, symbols, secrecy, and the pressure of hidden meanings."
+    },
+    {
+      "unit_id": "frontmatter-etymology",
+      "one_breath": "The etymology gathers old words for whale and turns language itself into the book's first whale-hunt.",
+      "student": "Before the story begins, Melville stages a comic scholarly search through dictionaries, languages, and shaky explanations of the word whale. The section is strange on purpose: it shows Ishmael's world as one where facts, languages, and jokes pile up before certainty arrives.",
+      "why_it_matters": "This frontmatter prepares students for the novel's method. Moby-Dick will chase the whale through plot, science, religion, myth, and language, and none of those approaches will be complete by itself."
+    },
+    {
+      "unit_id": "frontmatter-extracts",
+      "one_breath": "The extracts assemble centuries of whale references so the novel begins inside a noisy archive of human whale-thinking.",
+      "student": "This long opening collage quotes religious, classical, historical, scientific, and literary writing about whales. It is not a normal preface; it is a crowded library that makes the whale feel ancient, global, symbolic, commercial, and impossible to pin down.",
+      "why_it_matters": "The extracts teach students how to read the book's scale. Melville wants the whale to exceed one genre or explanation, so he opens with many voices before giving us Ishmael's."
+    },
+    {
+      "unit_id": "frontmatter-halftitlepage",
+      "one_breath": "The half-title quietly resets the page before the narrative proper begins.",
+      "student": "This small source unit contains only the book title. In print and ebook structure, it works like a divider between the prefatory apparatus and the beginning of the story.",
+      "why_it_matters": "The half-title has little interpretive weight, but keeping it in the manifest protects the edition's source order. A full-text path should be able to recover even the book's quiet structural pieces."
+    },
+    {
+      "unit_id": "chapter-001-loomings",
+      "one_breath": "Ishmael explains why he goes to sea when life on land feels stale, angry, or unbearable.",
+      "student": "The novel begins with Ishmael's famous invitation to know him by name, then turns quickly to his restless need for the sea. He presents whaling not as a simple adventure but as a remedy for despair, boredom, and violent impulses.",
+      "why_it_matters": "This chapter establishes the narrator's voice: comic, learned, unstable, and surprisingly direct about depression and escape. It also makes the voyage psychological before it becomes nautical."
+    },
+    {
+      "unit_id": "chapter-002-the-carpetbag",
+      "one_breath": "Ishmael travels toward Nantucket but stops in New Bedford, where the cold and darkness make the journey feel uncertain.",
+      "student": "Ishmael sets out for Nantucket, the famous whaling port, but arrives first in New Bedford. The chapter turns a practical travel problem into atmosphere: winter, poverty, and strangeness gather around him before he ever reaches a ship.",
+      "why_it_matters": "The chapter slows the start just enough to make Ishmael vulnerable. Students meet the world of whaling through discomfort and improvisation rather than heroic certainty."
+    },
+    {
+      "unit_id": "chapter-003-the-spouter-inn",
+      "one_breath": "At the Spouter-Inn, Ishmael is forced to share a bed with Queequeg and begins to rethink his fear of strangers.",
+      "student": "Ishmael enters a strange inn full of whaling signs, stories, and unsettling art. His fear peaks when he learns he must share a bed with Queequeg, a harpooneer he has not met, but the encounter begins moving from panic toward trust.",
+      "why_it_matters": "This is the first major test of Ishmael's assumptions. Melville uses comedy and fear to begin one of the book's central relationships."
+    },
+    {
+      "unit_id": "chapter-004-the-counterpane",
+      "one_breath": "Ishmael wakes beside Queequeg and connects the moment to childhood memories of fear, touch, and comfort.",
+      "student": "The morning after the awkward bed-sharing arrangement, Ishmael finds Queequeg's arm around him. Instead of treating the scene only as a joke, he links it to a childhood memory of punishment and loneliness.",
+      "why_it_matters": "The chapter deepens Ishmael's emotional life and turns Queequeg from a frightening stranger into a source of unexpected tenderness."
+    },
+    {
+      "unit_id": "chapter-005-breakfast",
+      "one_breath": "The inn's whalemen eat together in awkward silence, puncturing Ishmael's expectations of rough sailor talk.",
+      "student": "Ishmael expects the whalers to be loud, wild storytellers, but breakfast is stiff and quiet. The comedy comes from the gap between his imagination and the ordinary social awkwardness of the room.",
+      "why_it_matters": "The chapter humanizes whalemen before romanticizing them. It also shows that Ishmael's narration often corrects itself."
+    },
+    {
+      "unit_id": "chapter-006-the-street",
+      "one_breath": "Ishmael describes New Bedford as a place shaped by whaling money, global trade, and social contradiction.",
+      "student": "Walking through New Bedford, Ishmael sees wealth, fashion, sailors, and global influence packed into a whaling town. The chapter makes whaling feel like an economic system, not just a dangerous job.",
+      "why_it_matters": "Students get early context for the industry behind the adventure. The chapter also hints that the voyage is tied to money, empire, and global movement."
+    },
+    {
+      "unit_id": "chapter-007-the-chapel",
+      "one_breath": "Ishmael enters a whalemen's chapel where memorial tablets make the danger of the voyage impossible to ignore.",
+      "student": "The chapel is filled with memorials to sailors lost at sea. Ishmael confronts the reality that whaling can erase bodies, families, and certainty.",
+      "why_it_matters": "This chapter sets a funeral shadow over the adventure. It also prepares the way for Father Mapple's sermon and the book's recurring biblical frame."
+    },
+    {
+      "unit_id": "chapter-008-the-pulpit",
+      "one_breath": "Father Mapple climbs into a ship-shaped pulpit, turning worship into a maritime drama.",
+      "student": "Before the sermon begins, Melville makes the pulpit itself symbolic: it resembles a ship, and Father Mapple climbs into it like a sailor boarding. Religious teaching and sea travel are visually fused.",
+      "why_it_matters": "The chapter shows how form matters in this novel. Spaces, objects, and gestures often become arguments before anyone explains them."
+    },
+    {
+      "unit_id": "chapter-009-the-sermon",
+      "one_breath": "Father Mapple retells Jonah as a lesson about fleeing duty, facing judgment, and speaking truth.",
+      "student": "Father Mapple preaches on Jonah, who tries to escape God's command and is swallowed by a great fish. The sermon turns obedience, guilt, and truth-telling into urgent questions for anyone going to sea.",
+      "why_it_matters": "The sermon gives students a key biblical pattern for the whole novel. It also raises the question of whether Ahab, Ishmael, or anyone else can recognize a warning in time."
+    },
+    {
+      "unit_id": "chapter-010-a-bosom-friend",
+      "one_breath": "Ishmael chooses friendship with Queequeg over fear, and the two become intimate companions.",
+      "student": "Ishmael decides that Queequeg's supposed savagery is less troubling than many civilized people's cruelty. Their friendship becomes affectionate, funny, and serious at once.",
+      "why_it_matters": "This chapter is essential for understanding Ishmael's moral education. It also complicates the book's racial and cultural assumptions without making them disappear."
+    },
+    {
+      "unit_id": "chapter-011-nightgown",
+      "one_breath": "Ishmael and Queequeg share warmth and talk in bed, deepening their odd but sincere friendship.",
+      "student": "The chapter pauses the plot for a quiet domestic scene. Ishmael and Queequeg smoke, talk, and sit together under the bedclothes while the cold world remains outside.",
+      "why_it_matters": "This chapter lets students see intimacy before the voyage hardens into labor and danger. It also keeps Queequeg from being treated only as a symbol or exotic figure."
+    },
+    {
+      "unit_id": "chapter-012-biographical",
+      "one_breath": "Ishmael sketches Queequeg's royal background and his decision to leave home for whaling.",
+      "student": "Queequeg is presented as the son of a king who chose to travel in order to learn about the wider world. His whaling life is not random; it is tied to ambition, exile, and curiosity.",
+      "why_it_matters": "The chapter gives Queequeg a history and motive. It asks students to see him as a full character, not simply as Ishmael's first surprise."
+    },
+    {
+      "unit_id": "chapter-013-wheelbarrow",
+      "one_breath": "Ishmael and Queequeg travel toward Nantucket, and Queequeg proves calm and brave during a ferry accident.",
+      "student": "The pair leave New Bedford and head for Nantucket. A comic travel episode turns serious when Queequeg rescues a frightened passenger after a mishap on the water.",
+      "why_it_matters": "Queequeg's courage becomes practical rather than merely described. The chapter also moves the story from shore friendship toward the whaling voyage."
+    },
+    {
+      "unit_id": "chapter-014-nantucket",
+      "one_breath": "Ishmael introduces Nantucket as a tiny island with an outsized whaling empire.",
+      "student": "Nantucket is described as bare, sandy, and improbably powerful. Ishmael turns the island into a comic marvel: a small place whose sailors range over the whole ocean.",
+      "why_it_matters": "Students get the historical and imaginative launch point for the Pequod. The chapter makes geography feel like destiny."
+    },
+    {
+      "unit_id": "chapter-015-chowder",
+      "one_breath": "Ishmael and Queequeg arrive at the Try Pots inn and enter Nantucket's whaling culture through food and talk.",
+      "student": "The Try Pots gives the travelers warmth, chowder, and another threshold into the whaling world. The ordinary meal becomes part of the book's dense attention to bodies, appetite, and sea labor.",
+      "why_it_matters": "The chapter offers relief before the signing of the ship. It also keeps the world of the novel tactile and social."
+    },
+    {
+      "unit_id": "chapter-016-the-ship",
+      "one_breath": "Ishmael and Queequeg sign onto the Pequod, a strange ship whose owners hint at Ahab's hidden power.",
+      "student": "The pair reaches Nantucket and chooses the Pequod, a ship decorated with the materials of whale hunting. Ishmael signs on without meeting Captain Ahab, whose absence makes him more mysterious.",
+      "why_it_matters": "This chapter commits Ishmael and Queequeg to the voyage. It also introduces the Pequod as more than transportation: it is a symbolic world built from violence, labor, and profit."
+    },
+    {
+      "unit_id": "chapter-017-the-ramadan",
+      "one_breath": "Ishmael anxiously waits through Queequeg's religious fast and misunderstands what is happening.",
+      "student": "Queequeg observes a ritual fast, and Ishmael responds with confusion, worry, and comic impatience. The scene exposes both his concern for Queequeg and his limited understanding of Queequeg's beliefs.",
+      "why_it_matters": "The chapter is useful for discussing cross-cultural friendship without pretending Ishmael has become fully enlightened. Care and misunderstanding coexist."
+    },
+    {
+      "unit_id": "chapter-018-his-mark",
+      "one_breath": "Queequeg signs onto the Pequod, and his skill unsettles the owners' assumptions.",
+      "student": "Peleg and Bildad hesitate over Queequeg's religion, but his confidence and Ishmael's loyalty carry the moment. Queequeg signs with his mark and joins the voyage.",
+      "why_it_matters": "The chapter tests whether the friendship can survive institutional suspicion. It also makes Queequeg's labor value impossible for the owners to ignore."
+    },
+    {
+      "unit_id": "chapter-019-the-prophet",
+      "one_breath": "A strange man named Elijah warns Ishmael and Queequeg that Ahab's voyage carries hidden danger.",
+      "student": "Elijah speaks in riddles about Ahab and the Pequod, suggesting that the voyage is already shadowed by doom. Ishmael cannot tell whether to take him seriously.",
+      "why_it_matters": "The chapter adds prophecy and uncertainty before the ship leaves port. It trains readers to notice warnings that characters half-ignore."
+    },
+    {
+      "unit_id": "chapter-020-all-astir",
+      "one_breath": "The Pequod is readied for departure while Ahab remains unseen.",
+      "student": "Supplies, crew, and shipboard routines gather into motion. The practical work of departure contrasts with the mystery surrounding Ahab, who still does not appear.",
+      "why_it_matters": "This chapter turns preparation into suspense. Students can see how Melville delays Ahab in order to make his eventual entrance heavier."
+    },
+    {
+      "unit_id": "chapter-021-going-aboard",
+      "one_breath": "Ishmael and Queequeg board the Pequod before dawn, with Elijah's warnings still hanging over them.",
+      "student": "The chapter brings the two friends onto the ship in darkness and uncertainty. Elijah appears again, making the departure feel less like a clean beginning than a crossing into danger.",
+      "why_it_matters": "The shore world is ending. The chapter converts prophecy into atmosphere and makes boarding feel like commitment."
+    },
+    {
+      "unit_id": "chapter-022-merry-christmas",
+      "one_breath": "The Pequod leaves Nantucket on Christmas Day under hard weather and harder command.",
+      "student": "The ship departs in winter, with Peleg and Bildad shouting, praying, and managing the launch. Ahab is still absent, but the ship has entered the ocean's authority.",
+      "why_it_matters": "The voyage finally begins. The Christmas setting adds irony: a day associated with birth opens a journey toward death."
+    },
+    {
+      "unit_id": "chapter-023-the-lee-shore",
+      "one_breath": "Ishmael briefly honors Bulkington, whose courage lies in choosing the open sea over false safety.",
+      "student": "This short symbolic chapter interrupts the voyage to meditate on Bulkington. Ishmael imagines him as someone who refuses the safety of shore because truth may require exposure and risk.",
+      "why_it_matters": "The chapter gives students one of Melville's clearest statements about danger and integrity. It also shows how even a minor character can become a philosophical emblem."
+    },
+    {
+      "unit_id": "chapter-024-the-advocate",
+      "one_breath": "Ishmael argues that whaling deserves respect because it is skilled, dangerous, and important work.",
+      "student": "He answers critics who call whaling dirty or unpoetic. He compares whale hunters to soldiers, points to the industry's wealth and reach, and says whalemen have helped open parts of the world that later travelers used too.",
+      "why_it_matters": "The chapter is Melville's defense of his subject. It turns whaling into a way of thinking about labor, history, and empire."
+    },
+    {
+      "unit_id": "chapter-025-postscript",
+      "one_breath": "Ishmael jokes that coronation oil comes from sperm whales, so whalers secretly supply royal ceremony.",
+      "student": "He extends his defense of whaling by suggesting that kings and queens are anointed with sperm oil at coronations. The tone is comic, but the point is serious: whaling supports rituals of power even while people look down on it.",
+      "why_it_matters": "This short add-on keeps the satire going and links whaling to monarchy, status, and public ceremony."
+    },
+    {
+      "unit_id": "chapter-026-knights-and-squires",
+      "one_breath": "Ishmael introduces Starbuck and begins mapping the Pequod's officers and harpooneers as paired figures.",
+      "student": "Starbuck is presented as serious, conscientious, brave, and marked by thoughts of home. Ishmael then describes how each mate on the Pequod has a harpooneer as a kind of squire, turning ship hierarchy into a knightly order.",
+      "why_it_matters": "The chapter gives students part of the crew map they need for the rest of the voyage. It also shows how Melville mixes social rank, labor, and symbolism."
+    },
+    {
+      "unit_id": "chapter-027-knights-and-squires",
+      "one_breath": "Ishmael sketches Stubb and Flask, names the harpooneers, and widens the view to the whole crew.",
+      "student": "Stubb is easygoing, humorous, and almost unnervingly calm in danger; Flask is short, combative, and eager to hunt whales. Ishmael then names Tashtego and Daggoo and notices that the Pequod is a mixed crew of outsiders, including Pip, whose later fate he quietly foreshadows.",
+      "why_it_matters": "The chapter rounds out the officers and the ship's social structure. It also stresses that the Pequod is a global working crew, not a purely American one."
+    },
+    {
+      "unit_id": "chapter-032-cetology",
+      "one_breath": "Ishmael tries to classify whales, admits the science is messy, and invents his own practical system.",
+      "student": "He reviews earlier whale writers, argues that the sperm whale deserves top billing, and then proposes a rough scheme that sorts whales by size into Folios, Octavos, and Duodecimos. The chapter is part joke, part real taxonomy, and part confession that complete knowledge is out of reach.",
+      "why_it_matters": "This is one of the book's strangest formal chapters. It shows how Melville turns mock scholarship into a way of thinking about limits, order, and language."
+    },
+    {
+      "unit_id": "chapter-033-the-specksnyder",
+      "one_breath": "Ishmael explains why harpooneers matter so much on whaling ships and how shipboard rank works.",
+      "student": "He describes the old Dutch office of specksnyder, or chief harpooneer, to show that whaling has its own rank structure. The chapter also sets up the rule that officers live aft and common sailors forward, while Ahab works inside those customs to strengthen his command.",
+      "why_it_matters": "Students get a clear look at shipboard hierarchy before the cabin scenes begin. It also hints that Ahab knows how to use maritime custom while bending it to his own ends."
+    },
+    {
+      "unit_id": "chapter-034-the-cabin-table",
+      "one_breath": "Dinner aboard the Pequod reveals strict social order at the captain's table and a rougher one for the harpooneers.",
+      "student": "Ahab, Starbuck, Stubb, and Flask eat in formal silence, with the captain's authority shaping every movement at the table. After they leave, Queequeg, Tashtego, and Daggoo eat with much more noise and freedom, while the steward cowers between both worlds.",
+      "why_it_matters": "The chapter makes the ship's hierarchy visible through meal customs. It also shows that Ahab's power is built into daily ritual, not just into orders."
+    },
+    {
+      "unit_id": "chapter-035-the-masthead",
+      "one_breath": "Ishmael describes the long, dreamy, and dangerous work of keeping lookout from the masthead.",
+      "student": "He explains how whale ships keep men aloft for hours at a time, often for months across a voyage. The height can feel calm and meditative, but it can also dull attention, and Ishmael warns that a lookout lost in thought can miss a whale or even lose his life.",
+      "why_it_matters": "This chapter slows the action into a study of perception and risk. It also gives the novel one of its clearest meditations on distraction, imagination, and the danger of drifting from the task at hand."
+    },
+    {
+      "unit_id": "chapter-028-ahab",
+      "one_breath": "Ahab finally appears, marked by injury, command, and a disturbing stillness.",
+      "student": "After many delays, Ishmael sees Ahab on deck. His scar, ivory leg, and withdrawn intensity make him feel both human and almost mythic.",
+      "why_it_matters": "This is the long-awaited entrance of the captain. The chapter teaches students to read Ahab's body and silence as part of his power."
+    },
+    {
+      "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+      "one_breath": "Ahab clashes with Stubb, showing that even ordinary shipboard correction can become threatening under his command.",
+      "student": "Stubb lightly objects to Ahab's pacing, but Ahab's response turns the exchange into a warning. The crew is learning that this captain's authority is personal, volatile, and difficult to challenge.",
+      "why_it_matters": "The chapter gives an early sign of the command climate aboard the Pequod. It also introduces Stubb's humor as a coping style."
+    },
+    {
+      "unit_id": "chapter-030-the-pipe",
+      "one_breath": "Ahab gives up smoking because even ordinary comfort no longer fits his obsession.",
+      "student": "Ahab tries to smoke his pipe, then throws it away. A habit associated with rest and reflection cannot survive the pressure of his purpose.",
+      "why_it_matters": "This brief chapter is a precise character study. Ahab's obsession is not only dramatic; it has invaded the smallest rituals of daily life."
+    },
+    {
+      "unit_id": "chapter-031-queen-mab",
+      "one_breath": "Stubb describes a strange dream that turns fear of Ahab into comic prophecy.",
+      "student": "Stubb processes Ahab's aggression through a dream and a joking conversation with Flask. The comedy does not erase the danger; it shows how sailors absorb fear and keep moving.",
+      "why_it_matters": "The chapter adds another warning system before Ahab states his mission. It also lets students see humor as part of the novel's dark machinery."
+    },
+    {
+      "unit_id": "chapter-036-the-quarterdeck",
+      "one_breath": "Ahab reveals that the voyage's real purpose is revenge against Moby Dick.",
+      "student": "Ahab gathers the crew and turns an ordinary whaling voyage into a hunt for one white whale. By nailing a gold coin to the mast and demanding the crew's oath, he converts labor into obsession.",
+      "why_it_matters": "This is the central plot turn. The Pequod stops being merely a workplace and becomes the instrument of Ahab's private vengeance."
+    },
+    {
+      "unit_id": "chapter-037-sunset",
+      "one_breath": "Alone at the stern windows, Ahab talks to himself about his pain, his power, and his refusal to stop.",
+      "student": "In a soliloquy, Ahab sees his own life as a burden of iron, not gold. He admits that beauty hurts him now, then turns back to his revenge and says he will keep driving toward it no matter what.",
+      "why_it_matters": "This chapter lets students hear Ahab's inner voice without the crew around him. It sharpens the tragedy by showing both self-knowledge and total refusal."
+    },
+    {
+      "unit_id": "chapter-038-dusk",
+      "one_breath": "Starbuck worries that Ahab is dragging him into evil but still feels bound to obey.",
+      "student": "Starbuck thinks through his moral conflict: he sees Ahab's madness, hates it, and yet cannot free himself from command or pity. The scene shifts from quiet reflection to the noise of the forecastle, letting the ship's divided worlds echo each other.",
+      "why_it_matters": "This is one of the clearest Ahab-Starbuck counterpoints in the novel. It shows that resistance is morally obvious but emotionally and socially hard to carry out."
+    },
+    {
+      "unit_id": "chapter-039-first-night-watch",
+      "one_breath": "Stubb works aloft and laughs off the unease below, insisting that whatever happens is already fated.",
+      "student": "Alone at work, Stubb turns anxiety into jokes and song. He hears enough of the captain's tension to know something is wrong, but he answers it with humor rather than panic.",
+      "why_it_matters": "This chapter gives Stubb his defining tone: comic fatalism. It also shows how the crew absorbs Ahab's growing menace in small, ordinary moments."
+    },
+    {
+      "unit_id": "chapter-040-midnight-forecastle",
+      "one_breath": "At midnight the forecastle becomes a noisy chorus and dance, then shifts toward fear as a storm rises.",
+      "student": "Melville stages the crew as a crowd of voices, with sailors from many places singing, joking, and arguing. The mood turns darker when the weather changes and Pip panics at the talk of the White Whale.",
+      "why_it_matters": "The chapter shows the Pequod as a mixed, global workplace, not just a backdrop for Ahab. Its theatrical form also lets Melville build tension through sound, movement, and shifting voices."
+    },
+    {
+      "unit_id": "chapter-041-moby-dick",
+      "one_breath": "Ishmael gathers stories about the White Whale and explains why Ahab's hatred has become absolute.",
+      "student": "The chapter gives Moby Dick a reputation before the whale appears in the plot. Ishmael moves through rumors, injuries, and Ahab's history until the captain's revenge seems both understandable and terrifying.",
+      "why_it_matters": "This is the explanatory bridge between the oath and the hunt. It shows how fact, rumor, trauma, and symbolism merge around Moby Dick."
+    },
+    {
+      "unit_id": "chapter-042-the-whiteness-of-the-whale",
+      "one_breath": "Ishmael meditates on why whiteness can suggest not purity but terror, emptiness, and dread.",
+      "student": "Instead of explaining Moby Dick as just a dangerous animal, Ishmael studies the symbolic force of whiteness. The chapter moves through religion, race, nature, and fear to show how one color can carry contradictory meanings.",
+      "why_it_matters": "This is one of the novel's major interpretive chapters. It helps students see that Moby Dick is both a whale in the plot and a symbol that resists simple decoding."
+    },
+    {
+      "unit_id": "chapter-043-hark",
+      "one_breath": "On a quiet night watch, the crew hears strange noises below deck and wonders who or what is hidden aboard.",
+      "student": "Archy thinks he hears coughing and movement under the hatches, and Cabaco brushes it off as nerves and overeating. The brief exchange turns into a rumor that someone unseen is in the after-hold and that the captain knows more than he says.",
+      "why_it_matters": "The chapter is all tension and no payoff, which is the point. Melville uses the whispering darkness to make the ship feel secretive and unstable before the crew fully understands what they are sailing toward."
+    },
+    {
+      "unit_id": "chapter-044-the-chart",
+      "one_breath": "Ahab studies charts and ocean patterns, trying to make the whale hunt seem calculable.",
+      "student": "Ahab's private planning becomes visible as he tracks seasons, cruising grounds, and whale movements. His obsession uses real navigational knowledge but bends it toward revenge.",
+      "why_it_matters": "The chapter connects madness to method. Students can see that Ahab is dangerous partly because he is disciplined and intelligent."
+    },
+    {
+      "unit_id": "chapter-045-the-affidavit",
+      "one_breath": "Ishmael builds a case for the real power and danger of sperm whales by piling up witness-like evidence.",
+      "student": "Written like a sworn statement, the chapter gathers sightings, named whales, shipwrecks, and other examples. Ishmael wants readers to see that the White Whale and the fishery's dangers are not fantasy.",
+      "why_it_matters": "This is one of the novel's clearest mixes of fact and argument. It makes the story feel documented while also showing how hard it is to prove the truth of something so extreme."
+    },
+    {
+      "unit_id": "chapter-046-surmises",
+      "one_breath": "Ahab thinks through how to keep the crew's ordinary whaling work aligned with his private revenge.",
+      "student": "Ahab knows the crew still expects profit, food, routine, and whale oil. He calculates how to let the voyage function as a business while secretly steering it toward Moby Dick.",
+      "why_it_matters": "This chapter clarifies the political problem of Ahab's command. He cannot simply desire; he must manage people and incentives."
+    },
+    {
+      "unit_id": "chapter-047-the-mat-maker",
+      "one_breath": "While weaving with Queequeg, Ishmael turns the work into a meditation on fate before whales are sighted.",
+      "student": "A quiet shipboard task becomes philosophical as Ishmael imagines the mat as a loom of fate, with free will, chance, and necessity crossing one another. The stillness breaks when Tashtego spots whales and the deck suddenly snaps into motion.",
+      "why_it_matters": "The chapter is classic Melville: labor becomes thought, and thought is tested by events. It also shows how quickly the novel can move from reflection to pursuit."
+    },
+    {
+      "unit_id": "chapter-048-the-first-lowering",
+      "one_breath": "The first whale chase reveals the danger of the work and the hidden presence of Ahab's private boat crew.",
+      "student": "The Pequod lowers boats for the first time, and the chaos of whaling becomes immediate. Fedallah and Ahab's secret crew appear, confirming that Ahab has prepared more than the crew knew.",
+      "why_it_matters": "The chapter turns whaling from concept into action. It also reveals that Ahab has been concealing part of the voyage's machinery."
+    },
+    {
+      "unit_id": "chapter-049-the-hyena",
+      "one_breath": "After a frightening accident, Ishmael slips into grim humor and treats the voyage like a death sentence he can laugh at.",
+      "student": "Ishmael says there are moments when life feels like a cruel joke, and whaling is one of them. After the men are dragged back aboard, he asks about the danger, decides he may as well prepare for death, and names Queequeg as the person to handle his affairs.",
+      "why_it_matters": "This chapter shows how the novel turns fear into dark comedy instead of denying it. It also makes Ishmael sound less like a heroic narrator and more like someone trying to survive panic by joking with death."
+    },
+    {
+      "unit_id": "chapter-050-ahab-s-boat-and-crew-fedallah",
+      "one_breath": "Ishmael explains Ahab's hidden boat crew and the unsettling authority Fedallah holds near him.",
+      "student": "The narrative pauses to account for Fedallah and the private crew. Their presence makes Ahab's command feel more secretive, ritualized, and separate from normal ship order.",
+      "why_it_matters": "Fedallah becomes part of the novel's prophecy and doom structure. Students should notice how Ahab surrounds himself with figures who intensify rather than restrain him."
+    },
+    {
+      "unit_id": "chapter-051-the-spirit-spout",
+      "one_breath": "A mysterious spout appears at night, seeming to lure the Pequod onward.",
+      "student": "The crew repeatedly sees a ghostly whale spout, but the whale itself remains out of reach. The image turns the ocean into a space of pursuit, illusion, and omen.",
+      "why_it_matters": "The chapter builds atmosphere and momentum. The hunt begins to feel guided by signs no one can fully interpret."
+    },
+    {
+      "unit_id": "chapter-052-the-albatross",
+      "one_breath": "The Pequod meets a weather-beaten ship, but the encounter fails and feels ominous.",
+      "student": "Ishmael describes a homeward-bound whaler that looks almost ghostly from years at sea. Ahab tries to hail her about the White Whale, but the missed trumpet and crossing wakes make the meeting feel like a bad sign.",
+      "why_it_matters": "The chapter turns a ship-to-ship encounter into an omen. It also widens the voyage beyond the Pequod, reminding students that other whalemen are moving through the same dangerous world."
+    },
+    {
+      "unit_id": "chapter-053-the-gam",
+      "one_breath": "Ishmael explains the custom of a gam, the social visit whaling ships make when they meet at sea.",
+      "student": "Whaleships exchange hails, letters, news, and boat visits when they cross paths. Ishmael treats this as one of the most distinctive customs of the fishery, and he compares whalers to other sailors to show how unusual it is.",
+      "why_it_matters": "The chapter gives students a key piece of whaling culture and a name for one of the novel's most important social rituals. It also helps explain how news and stories move across the ocean."
+    },
+    {
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "one_breath": "Ishmael tells the long story of the Town-Ho, where abuse, mutiny, secrecy, and Moby Dick converge.",
+      "student": "Framed as a tale told in Lima, the chapter follows the Town-Ho from its leaking hull to Radney's abuse of Steelkilt, the resulting revolt, and the later whale chase in which Moby Dick kills Radney. The story also shows how much of it stays secret, even after it is repeated on the Pequod.",
+      "why_it_matters": "This is one of the novel's biggest stories within the story. It echoes Ahab's plot, makes Moby Dick's danger concrete, and shows how Melville uses oral storytelling to mix suspense, testimony, and secrecy."
+    },
+    {
+      "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+      "one_breath": "Ishmael attacks wrong pictures of whales, from old religious art to modern books and scientific drawings.",
+      "student": "He moves through examples from sculpture, classical painting, Bible illustrations, and natural history books, arguing that artists usually get whales wrong because they work from guesswork or damaged bodies. The chapter keeps returning to the problem that a living whale is hard to see, let alone draw correctly.",
+      "why_it_matters": "The chapter makes representation itself a classroom issue. It teaches students to question easy images and to see how difficult it is to make a believable picture of the whale."
+    },
+    {
+      "unit_id": "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes",
+      "one_breath": "Ishmael names better whale pictures and argues that the best ones show action instead of stiff outlines.",
+      "student": "He compares artists and naturalists, praising the pictures that actually catch the motion of whaling scenes. The best examples show boats, crews, spray, smoke, and the whale in action rather than as a flat specimen.",
+      "why_it_matters": "This chapter continues the book's argument about how to see and represent the whale. It values lived experience and motion over neat, lifeless accuracy."
+    },
+    {
+      "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+      "one_breath": "Melville shows whales turning up everywhere in art, landscape, and even the night sky.",
+      "student": "The chapter starts with a painted sign of a whale attack, then moves through carvings on teeth and wood, metal whales on church spires, rock shapes, mountain ridges, and constellations. Whales become something the eye keeps finding, whether in the world or in the mind.",
+      "why_it_matters": "This is one of the book's clearest examples of how obsession changes perception. Melville also shows that whales belong not just to biology, but to art, myth, and the way people make meaning from what they see."
+    },
+    {
+      "unit_id": "chapter-058-brit",
+      "one_breath": "The Pequod sails through fields of brit, the tiny food whales eat, and the scene opens onto the sea's violence.",
+      "student": "Right whales feed in the brit like mowers moving through a field, but the calm image gives way to a harsher thought: the sea destroys ships, whales, and people without mercy. The chapter ends by contrasting that dangerous ocean with the small, fragile island of peace inside the human soul.",
+      "why_it_matters": "The chapter links whale life to the book's larger philosophy of danger and vulnerability. It also shows how Melville can begin with marine ecology and end with a large claim about what it means to live in the world."
+    },
+    {
+      "unit_id": "chapter-059-squid",
+      "one_breath": "In the still sea, the crew spots a giant white creature that turns out to be a live squid, not Moby Dick.",
+      "student": "Daggoo sees a strange white mass rising and sinking ahead of the ship, and the men rush to the yards thinking they may have found the White Whale. Instead, they encounter a huge squid with long arms, a rare and eerie creature that few whalemen ever see and live to describe.",
+      "why_it_matters": "The chapter expands the ocean beyond the whale hunt itself. It also matters for the book's natural history, because Melville uses the squid to explain what sperm whales may eat and to make the sea feel stranger than the crew expects."
+    },
+    {
+      "unit_id": "chapter-060-the-line",
+      "one_breath": "Ishmael explains the whale-line, the dangerous rope that can drag a man or boat to death during a chase.",
+      "student": "He describes the line's material, length, coiling, and the way it is laid through the boat before a hunt. What looks like simple rope becomes a system of hidden danger surrounding every crew member.",
+      "why_it_matters": "The chapter turns a technical detail into a lesson about whaling's violence. It also shows one of Melville's favorite moves: making ordinary equipment feel like a reminder that life itself is precarious."
+    },
+    {
+      "unit_id": "chapter-061-stubb-kills-a-whale",
+      "one_breath": "On a still day at sea, Stubb spots a sperm whale, snaps the crew into action, and helps bring it down.",
+      "student": "The chapter starts in a dreamy calm, then suddenly shifts when the whale appears under the ship. Stubb stays strangely cheerful through the chase, and the crew's quick, noisy work ends with the whale killed and the real labor of handling the body about to begin.",
+      "why_it_matters": "This chapter shows Stubb's mix of humor and competence under pressure. It also reminds students that whaling can turn from boredom to violence in a few seconds."
+    },
+    {
+      "unit_id": "chapter-062-the-dart",
+      "one_breath": "Melville explains how hard it is for a harpooneer to row, shout, turn, and throw the harpoon all at once.",
+      "student": "The chapter describes the normal boat sequence in a whale chase: the harpooneer rows under pressure, then has to twist around and hurl the dart at the whale at exactly the right instant. Melville argues that the system exhausts the person who has to do the most dangerous work.",
+      "why_it_matters": "This technical chapter makes the chase scenes easier to read and much more physical. It also reminds students that whaling is labor that pushes bodies past their limit."
+    },
+    {
+      "unit_id": "chapter-063-the-crotch",
+      "one_breath": "Melville explains the harpoon rest at the bow and how the second iron can become dangerous during a chase.",
+      "student": "The crotch is the notched stick that holds the harpoon ready at the front of the boat, usually with two irons waiting. If the first iron fails, the second may have to be thrown out anyway, and once it is loose on the line it can tangle, whip around, or threaten the whole crew.",
+      "why_it_matters": "The chapter gives students the gear knowledge they need for later boat scenes. It also shows how quickly whaling equipment can become a source of chaos instead of control."
+    },
+    {
+      "unit_id": "chapter-064-stubb-s-supper",
+      "one_breath": "After Stubb's whale is killed, he eats a late supper from the whale's flesh while sharks swarm around the carcass.",
+      "student": "The Pequod tows the dead whale in the dark, and Ahab stays restless because Moby Dick is still ahead, not behind. Stubb turns the night into a grotesque feast by having steak cut from the whale, while sharks crowd the water and strip the body below.",
+      "why_it_matters": "The chapter makes whaling feel both practical and disturbing. It also shows that even a successful kill does not satisfy Ahab's larger obsession."
+    },
+    {
+      "unit_id": "chapter-065-the-whale-as-a-dish",
+      "one_breath": "Melville asks why eating whale seems strange when people accept other kinds of animal flesh.",
+      "student": "He gives examples of whale dishes, from right-whale tongue in France to sailors dipping biscuit in whale oil, and even describes brains as food. Then he turns the disgust back on ordinary meat-eating and points out that supposedly civilized people also consume dead animals with little shame.",
+      "why_it_matters": "The chapter connects appetite to violence and exposes double standards around eating. It also keeps the novel's whale obsession grounded in the body, not just in ideas."
+    },
+    {
+      "unit_id": "chapter-066-the-shark-massacre",
+      "one_breath": "While the crew waits to cut in the whale, sharks swarm the carcass and the men beat them back with spades.",
+      "student": "Stubb sets an anchor watch so the whale can be left overnight, but the sharks gather in such numbers that Queequeg and another sailor have to attack them under lantern light. Even the dead whale is still part of a violent struggle: the crew is working to save the catch from being stripped apart before morning.",
+      "why_it_matters": "The chapter keeps whale processing from feeling neat or heroic. It shows that whaling is labor shaped by damage, and it gives Queequeg one more moment of grim humor and bodily risk."
+    },
+    {
+      "unit_id": "chapter-067-cutting-in",
+      "one_breath": "Melville describes cutting-in, the process of slicing long strips of blubber from the whale.",
+      "student": "The Pequod becomes a worksite, with the mates, harpooneers, and crew all pulling together to strip the whale. The heavy body leans the ship over, and the operation feels like butchery and factory labor at the same time.",
+      "why_it_matters": "This chapter explains the physical work behind whale oil. It also shows how whaling turns the ship itself into a tilted, dangerous machine."
+    },
+    {
+      "unit_id": "chapter-068-the-blanket",
+      "one_breath": "Ishmael argues that a whale's blubber works like skin and a blanket, making the outer layer hard to define.",
+      "student": "He works through the strange question of where the whale's skin really is and compares the blubber to a flexible covering that can be stripped away in pieces. The chapter mixes anatomy, analogy, and speculation instead of clean scientific certainty.",
+      "why_it_matters": "Melville uses the whale's body to show how knowledge in this book is often indirect and unstable. Even a technical chapter becomes a meditation on how language reaches toward what it cannot fully name."
+    },
+    {
+      "unit_id": "chapter-069-the-funeral",
+      "one_breath": "The beheaded whale drifts away like a grotesque funeral procession, stripped by sharks and seabirds.",
+      "student": "The whale's body floats off white and huge, while sharks tear at it below and birds attack it from above. Ishmael treats the scene as a mock funeral, then widens it into a reflection on how people build dangerous beliefs from what they see.",
+      "why_it_matters": "This chapter turns a dead whale into a symbol of public mourning, theft, and superstition. It also shows Melville moving from concrete shipboard labor into a bigger argument about memory, precedent, and false authority."
+    },
+    {
+      "unit_id": "chapter-070-the-sphynx",
+      "one_breath": "Ahab talks to the hoisted sperm whale head like a silent sphinx and tries to force meaning from it.",
+      "student": "The detached head becomes a mute monument, and Ahab launches into one of his fiercest speeches at it. He keeps asking the head to reveal what it knows, but the only answer is silence, until the scene is interrupted by a sail in the distance.",
+      "why_it_matters": "This chapter shows Ahab's habit of treating the world as if it must answer him. It also turns a whale head into a symbol of mystery that refuses to explain itself."
+    },
+    {
+      "unit_id": "chapter-071-the-jeroboam-s-story",
+      "one_breath": "The Pequod meets the Jeroboam, whose plague-struck crew carries another warning about prophecy and obsession.",
+      "student": "A gam with the Jeroboam brings news of Gabriel, a religiously charged figure whose influence has unsettled his ship. The encounter also connects Moby Dick to more injury and forewarning.",
+      "why_it_matters": "This is one of the major warning chapters in the middle voyage. It shows that Ahab's story is not isolated; other ships have already been marked by fear, belief, and the White Whale."
+    },
+    {
+      "unit_id": "chapter-072-the-monkey-rope",
+      "one_breath": "Ishmael is tied to Queequeg by a monkey-rope while Queequeg works on the whale's back.",
+      "student": "Ishmael has to hold Queequeg by a rope while Queequeg stands on the whale during cutting-in. The setup makes them dependent on each other, and Ishmael uses that danger to think about how every person is bound to other people in ways they cannot fully control.",
+      "why_it_matters": "This is one of the novel's clearest metaphors for human interdependence. It also shows how ship labor turns friendship into something physically dangerous."
+    },
+    {
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "one_breath": "Stubb and Flask kill a right whale, then joke about Fedallah and the strange luck hanging over the ship.",
+      "student": "The Pequod drifts into a patch of right whales, and the two mates bring one alongside after a hard chase around the ship. While the whale is being secured, they trade comic talk about Ahab, Fedallah, and whether the Parsee is some kind of devilish charm on the voyage.",
+      "why_it_matters": "The chapter shows ordinary shipwork continuing even when the novel pauses for whale anatomy. It also deepens the ship's atmosphere of superstition, because the crew keeps explaining events through luck, omens, and rumor."
+    },
+    {
+      "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+      "one_breath": "Ishmael compares the sperm whale's head with the right whale's head to teach practical cetology.",
+      "student": "He studies the two heads as if they were lessons in anatomy, noticing the sperm whale's dignity, the placement of its eyes and ears, and the way its massive skull differs from the right whale's shape. The chapter keeps shifting between close observation and extended comparison.",
+      "why_it_matters": "Melville is not just giving facts here; he is showing how analogy and comparison shape knowledge. The chapter also prepares readers for the next one by making the contrast between the two whale types unmistakable."
+    },
+    {
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "one_breath": "Ishmael examines the right whale's head and finds a very different shape, mouth, and use.",
+      "student": "The right whale's head looks blunt and shoe-like at first, then opens into a mouth full of baleen, or whalebone plates, that strain food from the water. Ishmael keeps spinning out comparisons, from organs and crowns to wigs and umbrellas, to make the strange anatomy legible.",
+      "why_it_matters": "The chapter deepens the book's mock-scientific method and shows how much perception depends on metaphor. It also completes the contrast with the sperm whale's head so students can see the difference rather than just hear it named."
+    },
+    {
+      "unit_id": "chapter-076-the-battering-ram",
+      "one_breath": "Ishmael studies the whale's head as a massive battering ram built to take violent impact.",
+      "student": "Melville asks the reader to look closely at the sperm whale's front end, which is a broad, boneless wall of toughness. He argues that the head is made not for delicacy but for force, and that its structure helps explain the whale's power to smash through water and objects.",
+      "why_it_matters": "This is one of Melville's clearest mock-scientific arguments about the whale's anatomy. It matters because the book keeps turning natural history into a way of thinking about force, danger, and physical design."
+    },
+    {
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "one_breath": "Ishmael compares the whale's head to a giant wine cask packed with spermaceti.",
+      "student": "He breaks the sperm whale's head into parts, especially the junk and the case, and explains how the upper chamber holds the valuable spermaceti. The chapter treats the whale like a vast storage vessel, but it also warns how easy it is to lose or spill that precious oil while cutting it out.",
+      "why_it_matters": "The chapter makes the whale's body into both a scientific object and a container of wealth. It helps students see how Melville mixes anatomy, labor, and metaphor instead of separating them."
+    },
+    {
+      "unit_id": "chapter-078-cistern-and-buckets",
+      "one_breath": "Tashtego lowers buckets into the sperm whale's head for oil, but a mishap sends him tumbling inside.",
+      "student": "The whale's head becomes a kind of cistern, and the crew works bucket by bucket to drain it. Then the labor goes wrong: Tashtego falls in, Daggoo and the others rush to rescue him, and the huge head nearly slips away into the sea.",
+      "why_it_matters": "This chapter turns anatomy into action and danger at once. It also shows how whaling work is both absurdly technical and physically precarious."
+    },
+    {
+      "unit_id": "chapter-079-the-prairie",
+      "one_breath": "Ishmael tries to read the whale's face, but the sperm whale resists human systems for interpreting faces.",
+      "student": "Using the language of physiognomy and phrenology, Ishmael argues that the sperm whale has no normal face to study: no nose, no readable features, only a broad forehead that looks both sublime and unknowable. He ends by admitting that human sciences cannot really decipher the whale's brow.",
+      "why_it_matters": "This chapter shows how badly human categories fit the whale. It is a good example of Melville testing the limits of classification while also making fun of the systems people trust."
+    },
+    {
+      "unit_id": "chapter-080-the-nut",
+      "one_breath": "The whale's tiny hidden brain and huge spinal cord make its body seem powerful in a way human categories miss.",
+      "student": "Ishmael says the sperm whale's brain is small and deeply hidden, then shifts attention to the spine and hump as possible sources of strength and character. He suggests that the whale's true power is not obvious from the outside, and that even the false brow of the skull hides what matters most.",
+      "why_it_matters": "The chapter keeps pushing against simple ideas of intelligence and power. Melville keeps using anatomy to make a larger point: the most important part of a creature may be the part people cannot see at first."
+    },
+    {
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "one_breath": "The Pequod meets the German ship Jungfrau, and both crews race after a wounded old whale.",
+      "student": "Derick De Deer comes aboard begging for oil because his ship is empty, then immediately throws himself into the chase when whales are sighted. The pursuit becomes a comic but brutal contest between the German boats and the Pequod, with a badly injured old bull whale trying to escape the pack.",
+      "why_it_matters": "The chapter widens the voyage beyond the Pequod and shows how whaling connects ships from different nations in the same violent economy. It also mixes comedy with real danger, one of Melville's most characteristic moves."
+    },
+    {
+      "unit_id": "chapter-082-the-honor-and-glory-of-whaling",
+      "one_breath": "Ishmael defends whaling as an ancient, honorable calling linked to heroes, saints, and gods.",
+      "student": "He traces whaling back through Perseus, Saint George, Hercules, Jonah, and Vishnu, arguing that the trade belongs to a long and distinguished tradition. The chapter is comic, but the argument is serious: whalers should not be treated as crude laborers when their work has deep mythic and historical roots.",
+      "why_it_matters": "This chapter is Melville's direct defense of his subject. It lifts whaling into epic and religious history while also showing how Ishmael can sound both earnest and playful at the same time."
+    },
+    {
+      "unit_id": "chapter-083-jonah-historically-regarded",
+      "one_breath": "Ishmael treats the story of Jonah and the whale as something people debate like history, not just faith.",
+      "student": "He collects skeptical and defensive explanations for Jonah's journey, including arguments about whale anatomy, the distance to Nineveh, and whether Jonah could have reached the city by another route. The chapter is less about proving the miracle than about showing how people argue over it.",
+      "why_it_matters": "This chapter shows Melville mixing scholarship, satire, and biblical commentary. It also prepares students to read the novel's religious references as active arguments, not decorative allusions."
+    },
+    {
+      "unit_id": "chapter-084-pitchpoling",
+      "one_breath": "Stubb uses the special whaling technique of pitchpoling to strike a fast-moving whale from a rocking boat.",
+      "student": "After Queequeg oils the boat to help it slide, the crew chases a running whale. When the whale is too fast to approach closely, Stubb shows the skill and nerve needed to throw the long lance from a distance and hit the animal while the boat is still in motion.",
+      "why_it_matters": "The chapter turns whaling into exact, high-risk labor instead of vague adventure. It also shows how Melville can move from technical detail to comedy and violence in the same scene."
+    },
+    {
+      "unit_id": "chapter-085-the-fountain",
+      "one_breath": "Ishmael tries to explain the whale's spout and ends up circling around a mystery he cannot fully settle.",
+      "student": "He argues about how the sperm whale breathes, whether the spout is water or vapor, and why the animal must rise to the surface at regular intervals. The chapter keeps testing observation against uncertainty, then shifts into a more poetic view of the whale as a deep, misty being.",
+      "why_it_matters": "This is one of the book's clearest chapters about the limits of knowledge. Ishmael is both a careful observer and a thinker who knows that even close study does not solve everything."
+    },
+    {
+      "unit_id": "chapter-086-the-tail",
+      "one_breath": "Ishmael gives the whale's tail a full anatomical and symbolic study.",
+      "student": "He describes the tail's size, structure, strength, and the different ways a whale uses it to move, strike, sweep, play, and dive. The chapter keeps returning to the strange mix of power and grace in the flukes, which can crush a boat or rise beautifully out of the sea.",
+      "why_it_matters": "Melville turns a single body part into a lesson in form, force, and interpretation. The chapter is useful for seeing how the novel can make scientific description feel philosophical and poetic at once."
+    },
+    {
+      "unit_id": "chapter-087-the-grand-armada",
+      "one_breath": "The Pequod sails into a huge herd of sperm whales, and a dangerous chase becomes a crowded spectacle.",
+      "student": "Near the Straits of Sunda, the ship enters waters filled with whales, then has to push through a dense moving mass of spouts, bodies, and panic. The hunt becomes even more complicated when Malay pirates appear behind the Pequod, so the ship is both chasing and being chased at once.",
+      "why_it_matters": "This chapter enlarges the scale of the voyage and shows the world of whaling as global, crowded, and unstable. It also gives students one of Melville's most vivid scenes of herd behavior, pursuit, and confusion."
+    },
+    {
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "one_breath": "Ishmael explains sperm whale schools: female groups, young male bands, and older bulls who live mostly alone.",
+      "student": "Melville turns whale behavior into a social lesson. He distinguishes female schools, young male schools, and the older schoolmaster whale, who grows solitary with age.",
+      "why_it_matters": "This chapter deepens the book's cetology and gives students a clear example of Melville using animal life to think about gender, age, and social order."
+    },
+    {
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "one_breath": "A whaling rule about possession expands into a sharp meditation on property, power, and empire.",
+      "student": "Ishmael explains the difference between a Fast-Fish, already claimed, and a Loose-Fish, available to whoever can seize it. He then applies the rule far beyond whaling.",
+      "why_it_matters": "This chapter shows Melville's habit of turning technical details into political thought. It is especially useful for discussions of ownership, colonialism, and legal language."
+    },
+    {
+      "unit_id": "chapter-090-heads-or-tails",
+      "one_breath": "Ishmael explains an old English rule that gives the king the whale's head and the queen the tail.",
+      "student": "He uses a legal case to show how a whale, once claimed under royal authority, could be treated as property for the crown. Then he follows the logic through old law books and jokes about why the king gets the head and the queen gets the tail.",
+      "why_it_matters": "The chapter turns law into a study of power and ownership. It is especially useful for discussing how Melville links whaling to monarchy, property, and the strange language of authority."
+    },
+    {
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "one_breath": "The Pequod meets the Rose-Bud, a French whaler stuck with foul carcasses, and Stubb finds ambergris.",
+      "student": "Stubb approaches a French ship carrying two bad catches: one blasted whale and one dried-out carcass that still might contain ambergris. He jokes with the captain and crew, then pulls a small haul of the fragrant substance from the whale's body.",
+      "why_it_matters": "The chapter mixes comedy, commerce, and decay. It shows how even a horrible-smelling whale can still be valuable, and it introduces ambergris as one of the book's strangest whale products."
+    },
+    {
+      "unit_id": "chapter-092-ambergris",
+      "one_breath": "Ishmael explains ambergris, the waxy perfume material found in whales, and argues that whalers are unfairly blamed for bad smells.",
+      "student": "He defines ambergris, notes that it is prized in perfume and sometimes cooking, and traces the bad smell associated with whaling to older methods of handling whale oil. The chapter ends by insisting that whales are not inherently filthy and can even seem fragrant.",
+      "why_it_matters": "This digression matters because Melville keeps turning the whale into a scientific and commercial object. It also shows how the novel can move from slapstick smell to a serious argument about value and perception."
+    },
+    {
+      "unit_id": "chapter-093-the-castaway",
+      "one_breath": "Pip is abandoned in the water and returns mentally shattered by the experience.",
+      "student": "During a whale chase, Pip panics, jumps from the boat, and is left alone in the vast ocean before being recovered. The trauma changes him, and the ship treats that change uneasily.",
+      "why_it_matters": "Pip becomes one of the novel's most important late figures. The chapter also forces students to face the human cost of shipboard discipline and whaling danger."
+    },
+    {
+      "unit_id": "chapter-094-a-squeeze-of-the-hand",
+      "one_breath": "While squeezing spermaceti by hand, Ishmael is briefly overwhelmed by warmth and fellowship.",
+      "student": "The work of pressing the whale oil back into fluid becomes oddly soothing, even affectionate. Ishmael describes losing anger and feeling as if the whole crew should be drawn together in shared softness, before moving on to more practical details of whale processing.",
+      "why_it_matters": "This chapter matters because it makes physical labor shape emotion and thought. It also shows Melville's habit of finding tenderness inside industrial work without pretending the work is harmless."
+    },
+    {
+      "unit_id": "chapter-095-the-cassock",
+      "one_breath": "The blubber stripped from the whale becomes a black robe, and the mincer wears it like a cassock while cutting it up.",
+      "student": "Melville describes the long strip of whale skin pulled over the mincer's body, then shows him standing at the wooden horse where blubber is chopped into pieces for the pots. The result makes shipboard butchery look like a strange religious office.",
+      "why_it_matters": "The chapter is a sharp example of Melville turning labor into ritual imagery. It also shows how the whale gets converted from body to commodity through very physical work."
+    },
+    {
+      "unit_id": "chapter-096-the-try-works",
+      "one_breath": "The ship's furnaces turn whale blubber into oil, and Ishmael turns the scene into a nightmare of labor and fire.",
+      "student": "The try-works make the Pequod into a floating factory at night. Ishmael describes the heat, smoke, and danger until the ship seems almost hellish.",
+      "why_it_matters": "This chapter is essential for understanding whaling as industrial labor. It also gives one of the strongest symbolic images of the voyage consuming itself."
+    },
+    {
+      "unit_id": "chapter-097-the-lamp",
+      "one_breath": "The whaleship's lamps burn whale oil, so even the sailors' sleeping quarters glow with the product of the hunt.",
+      "student": "Ishmael describes the forecastle lit by lamps filled at the try-works, as if the ship were a small shrine. Whalemen live in light because they hunt the very oil that powers their nights.",
+      "why_it_matters": "The chapter makes the connection between whales and everyday illumination impossible to miss. It also turns a practical fact into a small argument about how the sea's labor reaches inland life."
+    },
+    {
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "one_breath": "After the oil is casked and the ship is cleaned, the Pequod is spotless only until the next whale.",
+      "student": "Melville walks through the process of stowing the oil below deck and scrubbing away the blood, soot, and blubber above. The ship becomes clean enough to seem domestic, but the next cry for a whale will start the cycle again.",
+      "why_it_matters": "This chapter captures the grind of whale work better than any single chase scene. It also shows the novel's larger pattern: labor, cleanup, and renewed danger repeat before anyone gets much rest."
+    },
+    {
+      "unit_id": "chapter-099-the-doubloon",
+      "one_breath": "Different crew members interpret Ahab's gold coin according to their own fears, desires, and beliefs.",
+      "student": "The coin nailed to the mast becomes a kind of mirror. Ahab, Starbuck, Stubb, Flask, and others read different meanings into the same object.",
+      "why_it_matters": "The chapter is a compact lesson in interpretation. Students can see how symbols change depending on who is looking."
+    },
+    {
+      "unit_id": "chapter-100-leg-and-arm",
+      "one_breath": "Ahab meets the captain of the Samuel Enderby, another whaleman injured by Moby Dick.",
+      "student": "The two wounded captains compare injuries, and the English captain tells the story of losing his arm in a whale attack. His surgeon, Dr. Bunger, joins the conversation, and Ahab listens closely for any clue about the White Whale's last movements before rushing back to his own ship.",
+      "why_it_matters": "The chapter gives Ahab another version of obsession's cost in the body. It also deepens the novel's network of ship encounters, where other lives and injuries reflect his own hunt."
+    },
+    {
+      "unit_id": "chapter-101-the-decanter",
+      "one_breath": "Ishmael praises the Enderby whaling house and recalls a cheerful visit to the Samuel Enderby.",
+      "student": "He explains how the Enderbys helped open new whale grounds, then recalls a convivial night aboard the Samuel Enderby with flip, beef, bread, and plenty of noise. From there he turns to old Dutch records to show how richly whalers were provisioned.",
+      "why_it_matters": "The chapter places whaling inside a larger history of trade, national rivalry, and shipboard abundance. It also gives one of the book's clearest comic contrasts between grim labor and generous eating and drinking."
+    },
+    {
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "one_breath": "Ishmael describes a giant sperm whale skeleton in a palm grove and shows how little a dead frame reveals.",
+      "student": "He says he learned the whale's bones from a stranded skeleton in the Arsacides, where the priests treat it like a sacred object. The chapter is partly travel memory, partly anatomy lesson, and partly an argument that the whale has to be understood in more than one piece at a time.",
+      "why_it_matters": "This chapter pushes the book deeper into whale anatomy and display. It also turns a skeleton into a scene of wonder, helping students see how Melville mixes science, storytelling, and reverence."
+    },
+    {
+      "unit_id": "chapter-103-measurement-of-the-whale-s-skeleton",
+      "one_breath": "Ishmael gives exact measurements for a whale skeleton while showing that bones still understate the living animal.",
+      "student": "He compares the Tranque whale's length, ribs, spine, and skull to the larger body it once held, then points out how much flesh, weight, and force are missing from the bones. He also treats the skeleton as something that can be checked against other museum specimens, not just his own memory.",
+      "why_it_matters": "The chapter teaches students how Melville can sound scientific while still insisting on uncertainty. It also keeps the whale bigger than any single method of description."
+    },
+    {
+      "unit_id": "chapter-104-the-fossil-whale",
+      "one_breath": "Ishmael moves from living whales to fossil whales and stretches the book into deep geological time.",
+      "student": "He gathers examples of ancient whale bones, compares them with modern whale anatomy, and describes a huge extinct whale found in Alabama that was first misread as a reptile. He ends by linking whales to old monuments, temples, and prehuman history.",
+      "why_it_matters": "This chapter makes the whale feel ancient enough to outlast ordinary human history. It is also a strong example of Melville turning natural history into a meditation on scale, extinction, and wonder."
+    },
+    {
+      "unit_id": "chapter-105-does-the-whale-s-magnitude-diminish-will-he-perish",
+      "one_breath": "Ishmael asks whether whales have shrunk over time or may eventually be hunted out of existence.",
+      "student": "He weighs old claims about gigantic whales against newer measurements, then takes up the harder question of whether relentless hunting could wipe the whale out. By the end, he still believes the species is strong enough, widespread enough, and long-lived enough to survive human pressure.",
+      "why_it_matters": "The chapter turns whale biology into a debate about extinction and human damage. It gives students an early example of Melville thinking about species survival on a huge scale."
+    },
+    {
+      "unit_id": "chapter-106-ahab-s-leg",
+      "one_breath": "Ahab's damaged ivory leg reminds the crew how physically dependent and dangerously driven he is.",
+      "student": "Ahab's artificial leg has been strained by the voyage, and its repair draws attention to his injury. His body is both a source of vulnerability and a sign of the revenge story he cannot release.",
+      "why_it_matters": "The chapter keeps Ahab embodied rather than abstract. His obsession is tied to pain, disability, command, and pride."
+    },
+    {
+      "unit_id": "chapter-107-the-carpenter",
+      "one_breath": "Melville introduces the Pequod's carpenter as a practical fixer who can make almost anything needed on a whaleship.",
+      "student": "The carpenter works at his vice-bench repairing, shaping, drilling, and improvising across many kinds of shipboard tasks. He seems emotionally detached and almost machine-like, but he is still a living, comic presence who can keep the ship functioning in constant emergencies.",
+      "why_it_matters": "This chapter shows labor as intelligence, not just background work. The carpenter also becomes an important contrast to Ahab: practical, impersonal, and useful in a world the captain keeps trying to bend to his will."
+    },
+    {
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "one_breath": "Ahab talks with the carpenter while his replacement leg is fitted, turning repair into a meditation on embodiment.",
+      "student": "As the carpenter files and measures the ivory leg, Ahab jokes, philosophizes, and grows restless with the fact that he needs another man's work to stand. He talks about the strange feeling of a lost limb, the limits of the body, and the uneasy idea that a person can still be haunted by what is no longer there.",
+      "why_it_matters": "This chapter keeps Ahab physical, vulnerable, and unsettlingly self-aware. It also links his private injury to the larger themes of debt, control, and the body's stubborn presence in the novel."
+    },
+    {
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "one_breath": "Starbuck confronts Ahab over leaking oil, briefly challenging revenge in the name of duty.",
+      "student": "When the ship's oil casks leak, Starbuck argues that the crew must stop and repair them. Ahab resists because practical duty competes with the hunt, and the confrontation becomes dangerously personal.",
+      "why_it_matters": "This is a key Ahab-Starbuck conflict. It shows that the ship's economic purpose and moral order still have defenders, but Ahab can overpower them."
+    },
+    {
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "one_breath": "Queequeg falls gravely ill, orders a coffin, then recovers and turns the coffin toward another purpose.",
+      "student": "Queequeg believes he is near death and has a coffin made according to his wishes. When he decides to live, the coffin remains aboard as an object waiting for a new meaning.",
+      "why_it_matters": "The chapter prepares the epilogue without announcing it. It also returns emotional attention to Queequeg after many chapters of shipboard systems and Ahab's will."
+    },
+    {
+      "unit_id": "chapter-111-the-pacific",
+      "one_breath": "The Pequod enters the Pacific, whose calm beauty briefly makes Ahab's obsession visible against something larger.",
+      "student": "Ishmael describes the Pacific as a vast, mysterious sea that seems alive with memory and dreaming. Ahab, however, does not relax into the beauty; he stays fixed on the White Whale as the ship moves toward the Japanese cruising grounds.",
+      "why_it_matters": "The chapter gives the voyage a change of atmosphere and a wider world. It also shows how beauty and obsession can exist side by side without canceling each other out."
+    },
+    {
+      "unit_id": "chapter-112-the-blacksmith",
+      "one_breath": "Perth, the ship's blacksmith, is revealed as a ruined man whose pain and labor have driven him to whaling.",
+      "student": "While he keeps repairing weapons and tools on deck, Ishmael tells the story of how drink, loss, and poverty broke his family and his body. Perth's life ashore ended in ruin, so the sea becomes a place to keep working and keep going.",
+      "why_it_matters": "This chapter gives one of the book's clearest portraits of damaged labor. It also shows that whaling attracts men who are running from grief as much as men chasing profit."
+    },
+    {
+      "unit_id": "chapter-113-the-forge",
+      "one_breath": "Ahab has a special harpoon forged for Moby Dick, turning revenge into ritual metalwork.",
+      "student": "Ahab gathers materials and crew energy to make a weapon for the final hunt. The scene feels like a dark ceremony, with practical craft transformed into symbolic violence.",
+      "why_it_matters": "This chapter makes Ahab's obsession tangible. The harpoon becomes a physical extension of his will."
+    },
+    {
+      "unit_id": "chapter-114-the-gilder",
+      "one_breath": "In a rare golden calm, the sea seems beautiful enough to soften Ahab, Starbuck, and Stubb for a moment.",
+      "student": "The Pequod works through long stretches of quiet weather, and the ocean looks almost gentle and pastoral. Ishmael notes that the peace does not last, but it briefly changes how the crew sees the world, especially when Starbuck and Stubb speak from within the glow of the sea.",
+      "why_it_matters": "The chapter balances the novel's violence with a moment of beauty. It also shows how Melville lets different characters answer the same scene in very different ways."
+    },
+    {
+      "unit_id": "chapter-115-the-pequod-meets-the-bachelor",
+      "one_breath": "The grim Pequod meets the cheerful, full-of-oil Bachelor, and Ahab rejects its easy confidence.",
+      "student": "The Bachelor is homeward-bound, richly loaded, and almost festive, with a captain who does not believe in the White Whale. Ahab asks after Moby Dick, gets no useful answer, and moves on without sharing the other ship's joy.",
+      "why_it_matters": "This encounter sharpens the contrast between plenty and obsession, celebration and doom. It also shows Ahab becoming more isolated from the ordinary life of the sea."
+    },
+    {
+      "unit_id": "chapter-116-the-dying-whale",
+      "one_breath": "Watching a whale die, Ahab turns the scene into a meditation on sun worship, death, and nature.",
+      "student": "After a successful hunt, Ahab sees the whale turn its head toward the sun as it dies, then reflects on how life seems to seek light even at the end. The sight pushes him into a dark, philosophical speech about death, the sea, and the forces that rule both.",
+      "why_it_matters": "The chapter gives Ahab one of his more reflective moments, but it does not soften him. It helps students see how he keeps translating natural events into a private metaphysics."
+    },
+    {
+      "unit_id": "chapter-117-the-whale-watch",
+      "one_breath": "Fedallah gives Ahab prophecies that seem to promise safety while actually tightening doom.",
+      "student": "Ahab and Fedallah speak at night about signs, hearses, hemp, and death. Ahab hears the prophecy in the most self-protective way possible.",
+      "why_it_matters": "The chapter is crucial for the ending because its riddles return during the chase. It shows how prophecy can mislead when someone only hears what desire permits."
+    },
+    {
+      "unit_id": "chapter-118-the-quadrant",
+      "one_breath": "Ahab destroys the navigational instrument because it cannot answer the only question he cares about.",
+      "student": "The quadrant can help locate the ship, but it cannot locate Moby Dick or justify Ahab's purpose. Ahab smashes it and chooses his own will over a tool of orientation.",
+      "why_it_matters": "The chapter dramatizes Ahab's rejection of limits. He refuses a world that can guide position but not meaning."
+    },
+    {
+      "unit_id": "chapter-119-the-candles",
+      "one_breath": "During a storm, Ahab treats lightning as a sign of his own defiant power.",
+      "student": "The Pequod enters a terrifying electrical storm. While the crew is frightened, Ahab addresses the fire as if it confirms rather than rebukes him.",
+      "why_it_matters": "This chapter raises the voyage to apocalyptic intensity. It also contrasts natural terror with Ahab's refusal to submit."
+    },
+    {
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "one_breath": "Starbuck tries to manage the storm-ready ship, but Ahab dismisses practical caution.",
+      "student": "In a short stage-like exchange, Starbuck asks to secure the yards and anchors, while Ahab refuses to strike anything down. Ahab treats the storm as a challenge to his will and answers Starbuck with bluster, metaphor, and sarcasm.",
+      "why_it_matters": "The chapter shows command turning into performance. It also makes clear that Ahab can hear practical advice and still reject it when it threatens his sense of control."
+    },
+    {
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "one_breath": "Stubb and Flask joke through the storm while lashing down anchors, turning danger into rough shipboard comedy.",
+      "student": "The two mates argue about risk, insurance, lightning, and whether Ahab's ship is really any more dangerous than others. Their talk keeps moving between common sense and absurdity, which fits a ship trying to hold itself together in bad weather.",
+      "why_it_matters": "This chapter shows how sailors manage fear with wit and technical talk. It also keeps the storm sequence human, noisy, and grounded in ordinary labor."
+    },
+    {
+      "unit_id": "chapter-122-midnight-aloft-thunder-and-lightning",
+      "one_breath": "High in the storm, Tashtego keeps watch while the ship moves deeper into danger.",
+      "student": "This short chapter holds the storm from the masthead. Tashtego's position above the ship makes the scene feel exposed, vertical, and precarious.",
+      "why_it_matters": "The chapter keeps the storm sequence moving through multiple viewpoints. It also reminds students that ordinary crew members physically inhabit the danger Ahab interprets symbolically."
+    },
+    {
+      "unit_id": "chapter-123-the-musket",
+      "one_breath": "Starbuck considers killing Ahab but cannot bring himself to do it.",
+      "student": "With Ahab asleep and a loaded musket nearby, Starbuck sees a possible way to save the ship. He thinks through the moral terror of murder, obedience, and responsibility before stepping back.",
+      "why_it_matters": "This is Starbuck's sharpest crisis. It shows how hard it is to resist Ahab even when resistance may be the only way to save lives."
+    },
+    {
+      "unit_id": "chapter-124-the-needle",
+      "one_breath": "Ahab remakes the ship's compass after the storm disrupts its needle.",
+      "student": "The storm has damaged the Pequod's compass, but Ahab turns the failure into another display of mastery. He creates a new needle and restores direction by force of will.",
+      "why_it_matters": "The chapter shows why the crew keeps following him: Ahab can still solve real problems. His competence makes his madness more dangerous."
+    },
+    {
+      "unit_id": "chapter-125-the-log-and-line",
+      "one_breath": "The ship's old measuring tools fail, and Pip's strange speech unsettles Ahab.",
+      "student": "A practical attempt to measure the ship's speed breaks down. Pip's presence turns the moment inward, pressing Ahab toward truths he does not want to face.",
+      "why_it_matters": "Navigation tools keep failing as the ending nears. Pip becomes a human counter-instrument, measuring moral and spiritual damage."
+    },
+    {
+      "unit_id": "chapter-126-the-life-buoy",
+      "one_breath": "A sailor dies, and Queequeg's coffin is transformed into a life-buoy.",
+      "student": "After a death at sea exposes the need for a new life-buoy, Queequeg's coffin is repurposed. The object now carries both burial and rescue in the same form.",
+      "why_it_matters": "This chapter prepares Ishmael's survival. It also shows Melville's habit of making objects change meaning under pressure."
+    },
+    {
+      "unit_id": "chapter-127-the-deck",
+      "one_breath": "Ahab and the carpenter speak over the coffin-life-buoy, mixing practical work with grim symbolism.",
+      "student": "The carpenter treats the coffin-life-buoy as a job; Ahab cannot help reading it as a sign. Their exchange makes the ship feel full of objects that are both useful and ominous.",
+      "why_it_matters": "The chapter keeps symbolic pressure high without leaving shipboard labor behind. Practical work and metaphysical dread occupy the same deck."
+    },
+    {
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "one_breath": "The Rachel asks Ahab to help search for missing boys, but he refuses because Moby Dick is near.",
+      "student": "Captain Gardiner of the Rachel pleads for help finding lost whaleboats, including one carrying his son. Ahab rejects the appeal and continues the hunt.",
+      "why_it_matters": "This is one of Ahab's clearest moral failures. He chooses revenge over another captain's children, making the cost of obsession painfully concrete."
+    },
+    {
+      "unit_id": "chapter-129-the-cabin",
+      "one_breath": "Ahab pushes Pip away, fearing the boy's broken insight will weaken his resolve.",
+      "student": "Pip's attachment to Ahab creates a moment of tenderness and danger. Ahab recognizes that staying near Pip might call him back toward human feeling.",
+      "why_it_matters": "The chapter shows Ahab resisting compassion because it threatens the hunt. It also deepens Pip's late role as a witness to damage."
+    },
+    {
+      "unit_id": "chapter-130-the-hat",
+      "one_breath": "Ahab stands isolated as signs gather and the ship nears the White Whale.",
+      "student": "The chapter focuses on Ahab's exposed figure and the ominous theft of his hat by a sea bird. The ship is close to its goal, and even small events feel charged.",
+      "why_it_matters": "The final atmosphere tightens here. Ahab's authority remains visible, but the world around him seems to be stripping it away."
+    },
+    {
+      "unit_id": "chapter-131-the-pequod-meets-the-delight",
+      "one_breath": "The Delight brings news of disaster from Moby Dick, but Ahab treats the warning as confirmation.",
+      "student": "Another ship has encountered the White Whale and suffered for it. Instead of turning back, Ahab reads the damage as proof that he is close.",
+      "why_it_matters": "This is the last major warning before the chase. It shows the closed loop of Ahab's mind: every sign against the hunt becomes a sign to continue."
+    },
+    {
+      "unit_id": "chapter-132-the-symphony",
+      "one_breath": "Ahab briefly softens before Starbuck, but cannot turn away from the chase.",
+      "student": "Near the end, Ahab speaks with unusual tenderness about age, family, and the cost of his obsession. Starbuck nearly reaches him, but Ahab remains trapped by the purpose he has made for himself.",
+      "why_it_matters": "This is the strongest late challenge to Ahab's course. It makes the ending feel tragic rather than merely inevitable."
+    },
+    {
+      "unit_id": "chapter-133-the-chase-first-day",
+      "one_breath": "The Pequod finally encounters Moby Dick, beginning the three-day chase.",
+      "student": "Ahab and the crew sight the white whale and lower boats in pursuit. The first day confirms both Moby Dick's physical power and Ahab's refusal to stop.",
+      "why_it_matters": "The final action begins here. The chapter turns long-building obsession into direct confrontation."
+    },
+    {
+      "unit_id": "chapter-134-the-chase-second-day",
+      "one_breath": "The second day of the chase brings more damage, but Ahab reads disaster as another reason to continue.",
+      "student": "Moby Dick again defeats the hunters, and the signs around Ahab grow darker. Instead of retreating, he treats injury and warning as proof that the chase must go on.",
+      "why_it_matters": "The chapter shows the logic of obsession at its most dangerous: every reason to stop becomes fuel for continuing."
+    },
+    {
+      "unit_id": "chapter-135-the-chase-third-day",
+      "one_breath": "Ahab's final attack on Moby Dick destroys the Pequod and nearly everyone aboard.",
+      "student": "On the third day, Ahab strikes at Moby Dick and is caught in the fatal consequences of his pursuit. The Pequod sinks, and the crew is swallowed by the disaster their captain forced upon them.",
+      "why_it_matters": "This is the novel's catastrophe. It completes the revenge plot while leaving Ishmael's survival for the epilogue to explain."
+    },
+    {
+      "unit_id": "epilogue-epilogue",
+      "one_breath": "Ishmael survives the wreck by floating on Queequeg's coffin until the Rachel rescues him.",
+      "student": "The epilogue explains how Ishmael lived to tell the story. Queequeg's coffin becomes a life-buoy, and the Rachel, still searching for its own lost children, finds Ishmael instead.",
+      "why_it_matters": "Without the epilogue, the narration has no survivor. The ending also turns an object associated with death into the means of preserving the story."
+    }
+  ]
+}

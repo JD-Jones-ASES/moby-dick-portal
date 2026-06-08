@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/annotation.schema.json",
+  "title": "Annotation Collection",
+  "type": "object",
+  "required": ["annotations"],
+  "additionalProperties": false,
+  "properties": {
+    "annotations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/annotation" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "annotation": {
+      "type": "object",
+      "required": ["id", "unit_id", "kind", "selector", "display", "anchor", "note", "tags", "relationships", "evidence", "citations", "provenance", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "unit_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "kind": {
+          "enum": ["gloss", "context", "form", "theme", "difficult-material", "map", "teacher-note"]
+        },
+        "selector": {
+          "type": "object",
+          "required": ["type", "exact"],
+          "additionalProperties": false,
+          "properties": {
+            "type": { "const": "TextQuoteSelector" },
+            "exact": { "type": "string", "minLength": 1 },
+            "prefix": { "type": "string" },
+            "suffix": { "type": "string" },
+            "position": {
+              "type": "object",
+              "required": ["start", "end", "generated"],
+              "additionalProperties": false,
+              "properties": {
+                "start": { "type": "integer", "minimum": 0 },
+                "end": { "type": "integer", "minimum": 1 },
+                "generated": { "type": "boolean" }
+              }
+            }
+          }
+        },
+        "display": {
+          "type": "object",
+          "required": ["depth", "priority", "inline", "surfaces", "spoiler_level"],
+          "additionalProperties": false,
+          "properties": {
+            "depth": { "enum": ["read", "guide", "study", "explore", "teacher"] },
+            "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "inline": { "type": "boolean" },
+            "surfaces": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "enum": ["reader", "margin-card", "trail", "index", "search", "map", "review", "teacher"]
+              },
+              "uniqueItems": true
+            },
+            "spoiler_level": { "enum": ["none", "mild", "major", "teacher-only"] }
+          }
+        },
+        "anchor": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9:-]*$" },
+          "uniqueItems": true
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "target"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {
+                "enum": [
+                  "belongs-to-trail",
+                  "mentions-entity",
+                  "defines-entity",
+                  "defines-term",
+                  "supports-reference",
+                  "uses-source",
+                  "near-waypoint",
+                  "continues-annotation",
+                  "contrasts-annotation"
+                ]
+              },
+              "target": { "type": "string", "pattern": "^[a-z0-9][a-z0-9:-]*$" }
+            }
+          },
+          "uniqueItems": true
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["claim_type", "citations", "validation"],
+            "additionalProperties": false,
+            "properties": {
+              "claim_type": {
+                "enum": [
+                  "source-text-observation",
+                  "lexical",
+                  "historical-context",
+                  "biblical-context",
+                  "classical-context",
+                  "nautical-whaling",
+                  "interpretive",
+                  "difficult-material",
+                  "cartographic",
+                  "publication-context"
+                ]
+              },
+              "citations": {
+                "type": "array",
+                "items": { "type": "string" },
+                "uniqueItems": true
+              },
+              "validation": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "enum": [
+                    "selector-resolves",
+                    "primary-source-checked",
+                    "reference-source-checked",
+                    "adversarial-review",
+                    "tone-review",
+                    "needs-review"
+                  ]
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        },
+        "citations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["author", "created", "method"],
+          "additionalProperties": false,
+          "properties": {
+            "author": { "type": "string", "minLength": 1 },
+            "created": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "method": { "enum": ["hand-authored", "source-checked-draft", "subagent-draft", "migration", "reviewed"] },
+            "reviewer": { "type": "string", "minLength": 1 },
+            "reviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "retired": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+          }
+        },
+        "status": {
+          "type": "object",
+          "required": ["content_status", "citation_status", "review_queue"],
+          "additionalProperties": false,
+          "properties": {
+            "content_status": { "enum": ["student-ready", "draft", "needs-review"] },
+            "citation_status": { "enum": ["verified", "provisional", "needs-review"] },
+            "review_queue": {
+              "type": "array",
+              "items": {
+                "enum": ["source-check", "citation", "tone", "difficult-material", "interpretive", "teacher", "density", "selector"]
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

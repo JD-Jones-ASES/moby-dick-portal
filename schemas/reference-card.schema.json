@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/reference-card.schema.json",
+  "title": "Reference Card Collection",
+  "type": "object",
+  "required": ["cards"],
+  "additionalProperties": false,
+  "properties": {
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/referenceCard" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "referenceCard": {
+      "type": "object",
+      "required": ["id", "title", "kind", "summary", "student_note", "targets", "citations", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": ["biblical", "classical", "historical", "whaling", "nautical", "biographical", "literary", "cartographic", "other"]
+        },
+        "summary": { "type": "string", "minLength": 1 },
+        "student_note": { "type": "string", "minLength": 1 },
+        "targets": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "uniqueItems": true
+        },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "object",
+          "required": ["content_status", "citation_status"],
+          "additionalProperties": false,
+          "properties": {
+            "content_status": { "enum": ["student-ready", "draft", "needs-review"] },
+            "citation_status": { "enum": ["verified", "provisional", "needs-review"] }
+          }
+        }
+      }
+    }
+  }
+}

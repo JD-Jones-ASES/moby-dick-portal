@@ -1,0 +1,1545 @@
+{
+  "generated_from": "data/annotations/moby-dick.annotations.json",
+  "entity_count": 117,
+  "covered_entity_count": 117,
+  "entities": {
+    "agency": {
+      "entity_id": "agency",
+      "label": "Agency",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "chapter-048-the-first-lowering"
+      ],
+      "annotations": [
+        "entity-index-agency"
+      ]
+    },
+    "ahab": {
+      "entity_id": "ahab",
+      "label": "Ahab",
+      "kind": "character",
+      "annotation_count": 26,
+      "units": [
+        "chapter-022-merry-christmas",
+        "chapter-028-ahab",
+        "chapter-029-enter-ahab-to-him-stubb",
+        "chapter-030-the-pipe",
+        "chapter-041-moby-dick",
+        "chapter-044-the-chart",
+        "chapter-046-surmises",
+        "chapter-050-ahab-s-boat-and-crew-fedallah",
+        "chapter-070-the-sphynx",
+        "chapter-100-leg-and-arm",
+        "chapter-106-ahab-s-leg",
+        "chapter-108-ahab-and-the-carpenter",
+        "chapter-109-ahab-and-starbuck-in-the-cabin",
+        "chapter-113-the-forge",
+        "chapter-116-the-dying-whale",
+        "chapter-117-the-whale-watch",
+        "chapter-118-the-quadrant",
+        "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+        "chapter-123-the-musket",
+        "chapter-124-the-needle",
+        "chapter-128-the-pequod-meets-the-rachel",
+        "chapter-129-the-cabin",
+        "chapter-130-the-hat",
+        "chapter-133-the-chase-first-day",
+        "chapter-134-the-chase-second-day",
+        "chapter-135-the-chase-third-day"
+      ],
+      "annotations": [
+        "ahab-carpenter-body-object",
+        "ahab-ivory-leg",
+        "ahabs-leg-body-repair",
+        "cabin-ahab-pip-tenderness",
+        "cabin-musket-choice",
+        "chart-rational-obsession",
+        "chase-first-day-there-she-blows",
+        "chase-second-day-repeated-warning",
+        "chase-third-day-towards-thee",
+        "deck-command-watch",
+        "dying-whale-sunset",
+        "enter-ahab-stubb-command",
+        "fedallah-private-crew",
+        "forge-baptism-weapon",
+        "hat-hawk-omen",
+        "leg-and-arm-gam-mirror",
+        "merry-christmas-ahab-absence",
+        "moby-dick-rumor-network",
+        "musket-starbuck-choice",
+        "needle-remade-compass",
+        "pipe-renounces-comfort",
+        "quadrant-smashed-navigation",
+        "rachel-search-refused",
+        "sphynx-speaking-head",
+        "surmises-ahab-management",
+        "whale-watch-hearse-prophecy"
+      ]
+    },
+    "ahab-revenge": {
+      "entity_id": "ahab-revenge",
+      "label": "Ahab's Revenge",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "chapter-041-moby-dick"
+      ],
+      "annotations": [
+        "entity-index-ahab-revenge"
+      ]
+    },
+    "ahabs-pipe": {
+      "entity_id": "ahabs-pipe",
+      "label": "Ahab's Pipe",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-ahabs-pipe"
+      ]
+    },
+    "albatross": {
+      "entity_id": "albatross",
+      "label": "Albatross",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-042-the-whiteness-of-the-whale"
+      ],
+      "annotations": [
+        "entity-index-albatross"
+      ]
+    },
+    "arsacides": {
+      "entity_id": "arsacides",
+      "label": "Arsacides",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-102-a-bower-in-the-arsacides"
+      ],
+      "annotations": [
+        "entity-index-arsacides"
+      ]
+    },
+    "atlantic-ocean": {
+      "entity_id": "atlantic-ocean",
+      "label": "Atlantic Ocean",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-017-the-ramadan"
+      ],
+      "annotations": [
+        "entity-index-atlantic-ocean"
+      ]
+    },
+    "aunt-charity": {
+      "entity_id": "aunt-charity",
+      "label": "Aunt Charity",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-020-all-astir"
+      ],
+      "annotations": [
+        "entity-index-aunt-charity"
+      ]
+    },
+    "azores": {
+      "entity_id": "azores",
+      "label": "Azores",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-027-knights-and-squires"
+      ],
+      "annotations": [
+        "entity-index-azores"
+      ]
+    },
+    "bachelor": {
+      "entity_id": "bachelor",
+      "label": "Bachelor",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-bachelor"
+      ]
+    },
+    "bildad": {
+      "entity_id": "bildad",
+      "label": "Bildad",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-016-the-ship"
+      ],
+      "annotations": [
+        "entity-index-bildad"
+      ]
+    },
+    "boomer": {
+      "entity_id": "boomer",
+      "label": "Captain Boomer",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-100-leg-and-arm"
+      ],
+      "annotations": [
+        "entity-index-boomer"
+      ]
+    },
+    "bulkington": {
+      "entity_id": "bulkington",
+      "label": "Bulkington",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-bulkington"
+      ]
+    },
+    "cape-good-hope": {
+      "entity_id": "cape-good-hope",
+      "label": "Cape of Good Hope",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-051-the-spirit-spout"
+      ],
+      "annotations": [
+        "entity-index-cape-good-hope"
+      ]
+    },
+    "cape-verde": {
+      "entity_id": "cape-verde",
+      "label": "Cape Verde",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "annotations": [
+        "entity-registry-cape-verde"
+      ]
+    },
+    "captain-gardiner": {
+      "entity_id": "captain-gardiner",
+      "label": "Captain Gardiner",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-128-the-pequod-meets-the-rachel"
+      ],
+      "annotations": [
+        "entity-index-captain-gardiner"
+      ]
+    },
+    "coffin": {
+      "entity_id": "coffin",
+      "label": "Coffin",
+      "kind": "symbol",
+      "annotation_count": 3,
+      "units": [
+        "chapter-110-queequeg-in-his-coffin",
+        "chapter-126-the-life-buoy",
+        "chapter-127-the-deck"
+      ],
+      "annotations": [
+        "deck-coffin-line-tubs",
+        "life-buoy-coffin-return",
+        "queequeg-coffin-symbol-seed"
+      ]
+    },
+    "compass": {
+      "entity_id": "compass",
+      "label": "Compass",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-035-the-masthead"
+      ],
+      "annotations": [
+        "entity-index-compass"
+      ]
+    },
+    "coverage-entity-craft-and-instrument-pressure": {
+      "entity_id": "coverage-entity-craft-and-instrument-pressure",
+      "label": "Craft and Instrument Pressure",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-113-the-forge"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-craft-and-instrument-pressure"
+      ]
+    },
+    "coverage-entity-cutting-and-carcass-work": {
+      "entity_id": "coverage-entity-cutting-and-carcass-work",
+      "label": "Cutting and Carcass Work",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-067-cutting-in"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-cutting-and-carcass-work"
+      ]
+    },
+    "coverage-entity-early-pequod-shipboard": {
+      "entity_id": "coverage-entity-early-pequod-shipboard",
+      "label": "Early Pequod Shipboard",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-022-merry-christmas"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-early-pequod-shipboard"
+      ]
+    },
+    "coverage-entity-final-cabin-watch": {
+      "entity_id": "coverage-entity-final-cabin-watch",
+      "label": "Final Cabin and Watch",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-129-the-cabin"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-final-cabin-watch"
+      ]
+    },
+    "coverage-entity-head-body-law-scale": {
+      "entity_id": "coverage-entity-head-body-law-scale",
+      "label": "Head, Body, Law, Scale",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-089-fast-fish-and-loose-fish"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-head-body-law-scale"
+      ]
+    },
+    "coverage-entity-pip-and-tryworks-approach": {
+      "entity_id": "coverage-entity-pip-and-tryworks-approach",
+      "label": "Pip and Try-Works Approach",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-096-the-try-works"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-pip-and-tryworks-approach"
+      ]
+    },
+    "coverage-entity-quarterdeck-aftervoices": {
+      "entity_id": "coverage-entity-quarterdeck-aftervoices",
+      "label": "Quarterdeck Aftervoices",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-037-sunset"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-quarterdeck-aftervoices"
+      ]
+    },
+    "coverage-entity-shore-social": {
+      "entity_id": "coverage-entity-shore-social",
+      "label": "Shore Social World",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-shore-social"
+      ]
+    },
+    "coverage-entity-whale-images-and-signs": {
+      "entity_id": "coverage-entity-whale-images-and-signs",
+      "label": "Whale Images and Signs",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-055-of-the-monstrous-pictures-of-whales"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-whale-images-and-signs"
+      ]
+    },
+    "coverage-entity-white-whale-theory": {
+      "entity_id": "coverage-entity-white-whale-theory",
+      "label": "White Whale Theory",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-041-moby-dick"
+      ],
+      "annotations": [
+        "entity-registry-coverage-entity-white-whale-theory"
+      ]
+    },
+    "crozet-islands": {
+      "entity_id": "crozet-islands",
+      "label": "Crozet Islands",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-052-the-albatross"
+      ],
+      "annotations": [
+        "entity-index-crozet-islands"
+      ]
+    },
+    "daggoo": {
+      "entity_id": "daggoo",
+      "label": "Daggoo",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-027-knights-and-squires"
+      ],
+      "annotations": [
+        "entity-index-daggoo"
+      ]
+    },
+    "delight": {
+      "entity_id": "delight",
+      "label": "Delight",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-009-the-sermon"
+      ],
+      "annotations": [
+        "entity-index-delight"
+      ]
+    },
+    "doubloon": {
+      "entity_id": "doubloon",
+      "label": "Doubloon",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-099-the-doubloon"
+      ],
+      "annotations": [
+        "entity-index-doubloon"
+      ]
+    },
+    "ecology": {
+      "entity_id": "ecology",
+      "label": "Ecology",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "chapter-058-brit"
+      ],
+      "annotations": [
+        "entity-registry-ecology"
+      ]
+    },
+    "elijah": {
+      "entity_id": "elijah",
+      "label": "Elijah",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-019-the-prophet"
+      ],
+      "annotations": [
+        "entity-index-elijah"
+      ]
+    },
+    "epic-catalog": {
+      "entity_id": "epic-catalog",
+      "label": "Epic Catalog",
+      "kind": "form",
+      "annotation_count": 1,
+      "units": [
+        "chapter-032-cetology"
+      ],
+      "annotations": [
+        "entity-registry-epic-catalog"
+      ]
+    },
+    "equator": {
+      "entity_id": "equator",
+      "label": "Equator",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-002-the-carpetbag"
+      ],
+      "annotations": [
+        "entity-index-equator"
+      ]
+    },
+    "fast-fish-loose-fish": {
+      "entity_id": "fast-fish-loose-fish",
+      "label": "Fast-Fish and Loose-Fish",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-089-fast-fish-and-loose-fish"
+      ],
+      "annotations": [
+        "entity-index-fast-fish-loose-fish"
+      ]
+    },
+    "fate": {
+      "entity_id": "fate",
+      "label": "Fate",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "chapter-007-the-chapel"
+      ],
+      "annotations": [
+        "entity-index-fate"
+      ]
+    },
+    "father-mapple": {
+      "entity_id": "father-mapple",
+      "label": "Father Mapple",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-008-the-pulpit"
+      ],
+      "annotations": [
+        "entity-index-father-mapple"
+      ]
+    },
+    "fedallah": {
+      "entity_id": "fedallah",
+      "label": "Fedallah",
+      "kind": "character",
+      "annotation_count": 4,
+      "units": [
+        "chapter-043-hark",
+        "chapter-048-the-first-lowering",
+        "chapter-050-ahab-s-boat-and-crew-fedallah",
+        "chapter-117-the-whale-watch"
+      ],
+      "annotations": [
+        "fedallah-private-crew",
+        "first-lowering-fedallah-reveal",
+        "hark-hidden-crew",
+        "whale-watch-hearse-prophecy"
+      ]
+    },
+    "flask": {
+      "entity_id": "flask",
+      "label": "Flask",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him"
+      ],
+      "annotations": [
+        "stubb-flask-right-whale-balance"
+      ]
+    },
+    "fleece": {
+      "entity_id": "fleece",
+      "label": "Fleece",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-101-the-decanter"
+      ],
+      "annotations": [
+        "entity-index-fleece"
+      ]
+    },
+    "forecastle": {
+      "entity_id": "forecastle",
+      "label": "Forecastle",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-001-loomings"
+      ],
+      "annotations": [
+        "entity-index-forecastle"
+      ]
+    },
+    "gabriel": {
+      "entity_id": "gabriel",
+      "label": "Gabriel",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-gabriel"
+      ]
+    },
+    "gam-form": {
+      "entity_id": "gam-form",
+      "label": "Gam",
+      "kind": "form",
+      "annotation_count": 1,
+      "units": [
+        "chapter-053-the-gam"
+      ],
+      "annotations": [
+        "entity-index-gam-form"
+      ]
+    },
+    "giant-cask": {
+      "entity_id": "giant-cask",
+      "label": "Giant Cask",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-077-the-great-heidelburgh-tun"
+      ],
+      "annotations": [
+        "entity-registry-giant-cask"
+      ]
+    },
+    "giant-squid": {
+      "entity_id": "giant-squid",
+      "label": "Giant Squid",
+      "kind": "animal",
+      "annotation_count": 1,
+      "units": [
+        "chapter-045-the-affidavit"
+      ],
+      "annotations": [
+        "entity-index-giant-squid"
+      ]
+    },
+    "harpoon": {
+      "entity_id": "harpoon",
+      "label": "Harpoon",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "chapter-002-the-carpetbag"
+      ],
+      "annotations": [
+        "entity-index-harpoon"
+      ]
+    },
+    "indian-ocean": {
+      "entity_id": "indian-ocean",
+      "label": "Indian Ocean",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-007-the-chapel"
+      ],
+      "annotations": [
+        "entity-index-indian-ocean"
+      ]
+    },
+    "ishmael": {
+      "entity_id": "ishmael",
+      "label": "Ishmael",
+      "kind": "character",
+      "annotation_count": 6,
+      "units": [
+        "chapter-002-the-carpetbag",
+        "chapter-004-the-counterpane",
+        "chapter-035-the-masthead",
+        "chapter-047-the-mat-maker",
+        "chapter-049-the-hyena",
+        "chapter-072-the-monkey-rope"
+      ],
+      "annotations": [
+        "carpetbag-poverty-choice",
+        "counterpane-memory-touch",
+        "hyena-practical-joke",
+        "masthead-daydream-danger",
+        "mat-maker-fate-weaving",
+        "monkey-rope-interdependence"
+      ]
+    },
+    "ishmael-witness": {
+      "entity_id": "ishmael-witness",
+      "label": "Ishmael as Witness",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "epilogue-epilogue"
+      ],
+      "annotations": [
+        "entity-registry-ishmael-witness"
+      ]
+    },
+    "isolation-and-fellowship": {
+      "entity_id": "isolation-and-fellowship",
+      "label": "Isolation and Fellowship",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "chapter-008-the-pulpit"
+      ],
+      "annotations": [
+        "entity-index-isolation-and-fellowship"
+      ]
+    },
+    "japan-sea-stage": {
+      "entity_id": "japan-sea-stage",
+      "label": "Japan Sea Stage",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-007-the-chapel"
+      ],
+      "annotations": [
+        "entity-index-japan-sea-stage"
+      ]
+    },
+    "java-sea": {
+      "entity_id": "java-sea",
+      "label": "Java Sea",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-087-the-grand-armada"
+      ],
+      "annotations": [
+        "entity-registry-java-sea"
+      ]
+    },
+    "jeroboam": {
+      "entity_id": "jeroboam",
+      "label": "Jeroboam",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-071-the-jeroboam-s-story"
+      ],
+      "annotations": [
+        "entity-index-jeroboam"
+      ]
+    },
+    "job": {
+      "entity_id": "job",
+      "label": "Job",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-job"
+      ]
+    },
+    "jonah": {
+      "entity_id": "jonah",
+      "label": "Jonah",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-jonah"
+      ]
+    },
+    "jonah-sermon": {
+      "entity_id": "jonah-sermon",
+      "label": "Jonah Sermon",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-jonah-sermon"
+      ]
+    },
+    "kerguelen": {
+      "entity_id": "kerguelen",
+      "label": "Kerguelen",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-052-the-albatross"
+      ],
+      "annotations": [
+        "entity-registry-kerguelen"
+      ]
+    },
+    "labor": {
+      "entity_id": "labor",
+      "label": "Labor",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "chapter-035-the-masthead"
+      ],
+      "annotations": [
+        "entity-index-labor"
+      ]
+    },
+    "lance": {
+      "entity_id": "lance",
+      "label": "Lance",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-lance"
+      ]
+    },
+    "leviathan": {
+      "entity_id": "leviathan",
+      "label": "Leviathan",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-leviathan"
+      ]
+    },
+    "lima": {
+      "entity_id": "lima",
+      "label": "Lima",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-042-the-whiteness-of-the-whale"
+      ],
+      "annotations": [
+        "entity-index-lima"
+      ]
+    },
+    "log-line": {
+      "entity_id": "log-line",
+      "label": "Log-Line",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-125-the-log-and-line"
+      ],
+      "annotations": [
+        "entity-index-log-line"
+      ]
+    },
+    "manhattan": {
+      "entity_id": "manhattan",
+      "label": "Manhattan",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-001-loomings"
+      ],
+      "annotations": [
+        "entity-index-manhattan"
+      ]
+    },
+    "moby-dick": {
+      "entity_id": "moby-dick",
+      "label": "Moby Dick",
+      "kind": "animal",
+      "annotation_count": 15,
+      "units": [
+        "chapter-028-ahab",
+        "chapter-041-moby-dick",
+        "chapter-051-the-spirit-spout",
+        "chapter-059-squid",
+        "chapter-070-the-sphynx",
+        "chapter-074-the-sperm-whale-s-head-contrasted-view",
+        "chapter-076-the-battering-ram",
+        "chapter-085-the-fountain",
+        "chapter-086-the-tail",
+        "chapter-103-measurement-of-the-whale-s-skeleton",
+        "chapter-104-the-fossil-whale",
+        "chapter-116-the-dying-whale",
+        "chapter-133-the-chase-first-day",
+        "chapter-134-the-chase-second-day",
+        "chapter-135-the-chase-third-day"
+      ],
+      "annotations": [
+        "ahab-ivory-leg",
+        "battering-ram-head-power",
+        "chase-first-day-there-she-blows",
+        "chase-second-day-repeated-warning",
+        "chase-third-day-towards-thee",
+        "dying-whale-sunset",
+        "fossil-whale-deep-time",
+        "fountain-science-uncertainty",
+        "moby-dick-rumor-network",
+        "skeleton-measurement-scale",
+        "sperm-whale-head-classification",
+        "sphynx-speaking-head",
+        "spirit-spout-omen",
+        "squid-false-sign",
+        "tail-power-symbol"
+      ]
+    },
+    "monkey-rope": {
+      "entity_id": "monkey-rope",
+      "label": "Monkey-Rope",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-072-the-monkey-rope"
+      ],
+      "annotations": [
+        "entity-index-monkey-rope"
+      ]
+    },
+    "nantucket": {
+      "entity_id": "nantucket",
+      "label": "Nantucket",
+      "kind": "place",
+      "annotation_count": 2,
+      "units": [
+        "chapter-014-nantucket",
+        "chapter-015-chowder"
+      ],
+      "annotations": [
+        "chowder-bodily-comfort",
+        "nantucket-sand-sea-power"
+      ]
+    },
+    "narcissus": {
+      "entity_id": "narcissus",
+      "label": "Narcissus",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "chapter-001-loomings"
+      ],
+      "annotations": [
+        "entity-index-narcissus"
+      ]
+    },
+    "new-bedford": {
+      "entity_id": "new-bedford",
+      "label": "New Bedford",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-002-the-carpetbag"
+      ],
+      "annotations": [
+        "entity-index-new-bedford"
+      ]
+    },
+    "pacific-ocean": {
+      "entity_id": "pacific-ocean",
+      "label": "Pacific Ocean",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-111-the-pacific"
+      ],
+      "annotations": [
+        "pacific-false-peace"
+      ]
+    },
+    "peleg": {
+      "entity_id": "peleg",
+      "label": "Peleg",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-016-the-ship"
+      ],
+      "annotations": [
+        "entity-index-peleg"
+      ]
+    },
+    "pequod": {
+      "entity_id": "pequod",
+      "label": "Pequod",
+      "kind": "ship",
+      "annotation_count": 4,
+      "units": [
+        "chapter-020-all-astir",
+        "chapter-021-going-aboard",
+        "chapter-022-merry-christmas",
+        "chapter-115-the-pequod-meets-the-bachelor"
+      ],
+      "annotations": [
+        "all-astir-ship-as-workplace",
+        "bachelor-contrast-joy",
+        "going-aboard-shadowed-departure",
+        "merry-christmas-ahab-absence"
+      ]
+    },
+    "perth": {
+      "entity_id": "perth",
+      "label": "Perth",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-106-ahab-s-leg"
+      ],
+      "annotations": [
+        "entity-index-perth"
+      ]
+    },
+    "pip": {
+      "entity_id": "pip",
+      "label": "Pip",
+      "kind": "character",
+      "annotation_count": 3,
+      "units": [
+        "chapter-093-the-castaway",
+        "chapter-125-the-log-and-line",
+        "chapter-129-the-cabin"
+      ],
+      "annotations": [
+        "cabin-ahab-pip-tenderness",
+        "castaway-pip-trauma",
+        "log-and-line-pip-truth"
+      ]
+    },
+    "profit": {
+      "entity_id": "profit",
+      "label": "Profit",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-profit"
+      ]
+    },
+    "prometheus": {
+      "entity_id": "prometheus",
+      "label": "Prometheus",
+      "kind": "allusion",
+      "annotation_count": 1,
+      "units": [
+        "chapter-044-the-chart"
+      ],
+      "annotations": [
+        "entity-index-prometheus"
+      ]
+    },
+    "quadrant": {
+      "entity_id": "quadrant",
+      "label": "Quadrant",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-118-the-quadrant"
+      ],
+      "annotations": [
+        "entity-index-quadrant"
+      ]
+    },
+    "quarterdeck": {
+      "entity_id": "quarterdeck",
+      "label": "Quarterdeck",
+      "kind": "form",
+      "annotation_count": 1,
+      "units": [
+        "chapter-001-loomings"
+      ],
+      "annotations": [
+        "entity-index-quarterdeck"
+      ]
+    },
+    "queequeg": {
+      "entity_id": "queequeg",
+      "label": "Queequeg",
+      "kind": "character",
+      "annotation_count": 7,
+      "units": [
+        "chapter-004-the-counterpane",
+        "chapter-010-a-bosom-friend",
+        "chapter-012-biographical",
+        "chapter-018-his-mark",
+        "chapter-047-the-mat-maker",
+        "chapter-072-the-monkey-rope",
+        "chapter-110-queequeg-in-his-coffin"
+      ],
+      "annotations": [
+        "biographical-queequeg-king",
+        "bosom-friend-sober-cannibal",
+        "counterpane-memory-touch",
+        "his-mark-contract-faith",
+        "mat-maker-fate-weaving",
+        "monkey-rope-interdependence",
+        "queequeg-coffin-symbol-seed"
+      ]
+    },
+    "queequeg-coffin": {
+      "entity_id": "queequeg-coffin",
+      "label": "Queequeg's Coffin",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-126-the-life-buoy"
+      ],
+      "annotations": [
+        "entity-index-queequeg-coffin"
+      ]
+    },
+    "rachel": {
+      "entity_id": "rachel",
+      "label": "Rachel",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-128-the-pequod-meets-the-rachel"
+      ],
+      "annotations": [
+        "entity-index-rachel"
+      ]
+    },
+    "radney": {
+      "entity_id": "radney",
+      "label": "Radney",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "annotations": [
+        "entity-index-radney"
+      ]
+    },
+    "right-whale": {
+      "entity_id": "right-whale",
+      "label": "Right Whale",
+      "kind": "animal",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-right-whale"
+      ]
+    },
+    "rose-bud": {
+      "entity_id": "rose-bud",
+      "label": "Rose-Bud",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-091-the-pequod-meets-the-rose-bud"
+      ],
+      "annotations": [
+        "entity-index-rose-bud"
+      ]
+    },
+    "sag-harbor": {
+      "entity_id": "sag-harbor",
+      "label": "Sag Harbor",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-012-biographical"
+      ],
+      "annotations": [
+        "entity-index-sag-harbor"
+      ]
+    },
+    "samuel-enderby": {
+      "entity_id": "samuel-enderby",
+      "label": "Samuel Enderby",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-100-leg-and-arm"
+      ],
+      "annotations": [
+        "entity-index-samuel-enderby"
+      ]
+    },
+    "shakespearean-tragedy": {
+      "entity_id": "shakespearean-tragedy",
+      "label": "Shakespearean Tragedy",
+      "kind": "form",
+      "annotation_count": 1,
+      "units": [
+        "chapter-045-the-affidavit"
+      ],
+      "annotations": [
+        "entity-index-shakespearean-tragedy"
+      ]
+    },
+    "sharks": {
+      "entity_id": "sharks",
+      "label": "Sharks",
+      "kind": "animal",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-sharks"
+      ]
+    },
+    "shipboard-command": {
+      "entity_id": "shipboard-command",
+      "label": "Shipboard Command",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-036-the-quarterdeck"
+      ],
+      "annotations": [
+        "entity-registry-shipboard-command"
+      ]
+    },
+    "sperm-whale": {
+      "entity_id": "sperm-whale",
+      "label": "Sperm Whale",
+      "kind": "animal",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-sperm-whale"
+      ]
+    },
+    "spouter-inn": {
+      "entity_id": "spouter-inn",
+      "label": "Spouter-Inn",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-spouter-inn"
+      ]
+    },
+    "starbuck": {
+      "entity_id": "starbuck",
+      "label": "Starbuck",
+      "kind": "character",
+      "annotation_count": 2,
+      "units": [
+        "chapter-109-ahab-and-starbuck-in-the-cabin",
+        "chapter-123-the-musket"
+      ],
+      "annotations": [
+        "cabin-musket-choice",
+        "musket-starbuck-choice"
+      ]
+    },
+    "starbuck-conscience": {
+      "entity_id": "starbuck-conscience",
+      "label": "Starbuck's Conscience",
+      "kind": "theme",
+      "annotation_count": 1,
+      "units": [
+        "chapter-009-the-sermon"
+      ],
+      "annotations": [
+        "entity-index-starbuck-conscience"
+      ]
+    },
+    "steelkit": {
+      "entity_id": "steelkit",
+      "label": "Steelkilt",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "annotations": [
+        "entity-index-steelkit"
+      ]
+    },
+    "stubb": {
+      "entity_id": "stubb",
+      "label": "Stubb",
+      "kind": "character",
+      "annotation_count": 6,
+      "units": [
+        "chapter-029-enter-ahab-to-him-stubb",
+        "chapter-031-queen-mab",
+        "chapter-039-first-night-watch",
+        "chapter-061-stubb-kills-a-whale",
+        "chapter-064-stubb-s-supper",
+        "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him"
+      ],
+      "annotations": [
+        "enter-ahab-stubb-command",
+        "first-night-watch-stubb-response",
+        "queen-mab-dream-warning",
+        "stubb-flask-right-whale-balance",
+        "stubb-kills-whale-violence",
+        "stubbs-supper-fleece"
+      ]
+    },
+    "tashtego": {
+      "entity_id": "tashtego",
+      "label": "Tashtego",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-078-cistern-and-buckets"
+      ],
+      "annotations": [
+        "cistern-tashtego-rescue"
+      ]
+    },
+    "the-blankness": {
+      "entity_id": "the-blankness",
+      "label": "Blankness",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-042-the-whiteness-of-the-whale"
+      ],
+      "annotations": [
+        "entity-index-the-blankness"
+      ]
+    },
+    "the-cabin": {
+      "entity_id": "the-cabin",
+      "label": "The Cabin",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-009-the-sermon"
+      ],
+      "annotations": [
+        "entity-index-the-cabin"
+      ]
+    },
+    "the-candles": {
+      "entity_id": "the-candles",
+      "label": "The Candles",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-119-the-candles"
+      ],
+      "annotations": [
+        "entity-registry-the-candles"
+      ]
+    },
+    "the-carpenter": {
+      "entity_id": "the-carpenter",
+      "label": "The Carpenter",
+      "kind": "character",
+      "annotation_count": 1,
+      "units": [
+        "chapter-050-ahab-s-boat-and-crew-fedallah"
+      ],
+      "annotations": [
+        "entity-index-the-carpenter"
+      ]
+    },
+    "the-carpetbag": {
+      "entity_id": "the-carpetbag",
+      "label": "The Carpetbag",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-002-the-carpetbag"
+      ],
+      "annotations": [
+        "entity-index-the-carpetbag"
+      ]
+    },
+    "the-counterpane": {
+      "entity_id": "the-counterpane",
+      "label": "The Counterpane",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-the-counterpane"
+      ]
+    },
+    "the-deck": {
+      "entity_id": "the-deck",
+      "label": "The Deck",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-009-the-sermon"
+      ],
+      "annotations": [
+        "entity-index-the-deck"
+      ]
+    },
+    "the-lamp": {
+      "entity_id": "the-lamp",
+      "label": "The Lamp",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-003-the-spouter-inn"
+      ],
+      "annotations": [
+        "entity-index-the-lamp"
+      ]
+    },
+    "the-lee-shore": {
+      "entity_id": "the-lee-shore",
+      "label": "The Lee Shore",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-023-the-lee-shore"
+      ],
+      "annotations": [
+        "entity-registry-the-lee-shore"
+      ]
+    },
+    "the-lifebuoy": {
+      "entity_id": "the-lifebuoy",
+      "label": "The Life-Buoy",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-126-the-life-buoy"
+      ],
+      "annotations": [
+        "entity-index-the-lifebuoy"
+      ]
+    },
+    "the-line": {
+      "entity_id": "the-line",
+      "label": "The Line",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-045-the-affidavit"
+      ],
+      "annotations": [
+        "entity-index-the-line"
+      ]
+    },
+    "the-masthead": {
+      "entity_id": "the-masthead",
+      "label": "The Mast-Head",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "frontmatter-extracts"
+      ],
+      "annotations": [
+        "entity-index-the-masthead"
+      ]
+    },
+    "the-needle": {
+      "entity_id": "the-needle",
+      "label": "The Needle",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-051-the-spirit-spout"
+      ],
+      "annotations": [
+        "entity-index-the-needle"
+      ]
+    },
+    "the-try-works": {
+      "entity_id": "the-try-works",
+      "label": "The Try-Works",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-094-a-squeeze-of-the-hand"
+      ],
+      "annotations": [
+        "entity-index-the-try-works"
+      ]
+    },
+    "town-ho": {
+      "entity_id": "town-ho",
+      "label": "Town-Ho",
+      "kind": "ship",
+      "annotation_count": 1,
+      "units": [
+        "chapter-054-the-town-ho-s-story"
+      ],
+      "annotations": [
+        "entity-index-town-ho"
+      ]
+    },
+    "try-works": {
+      "entity_id": "try-works",
+      "label": "Try-works",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-094-a-squeeze-of-the-hand"
+      ],
+      "annotations": [
+        "entity-index-try-works"
+      ]
+    },
+    "whale-line": {
+      "entity_id": "whale-line",
+      "label": "Whale-line",
+      "kind": "concept",
+      "annotation_count": 1,
+      "units": [
+        "chapter-045-the-affidavit"
+      ],
+      "annotations": [
+        "entity-index-whale-line"
+      ]
+    },
+    "whaleboat": {
+      "entity_id": "whaleboat",
+      "label": "Whaleboat",
+      "kind": "topic",
+      "annotation_count": 1,
+      "units": [
+        "chapter-018-his-mark"
+      ],
+      "annotations": [
+        "entity-index-whaleboat"
+      ]
+    },
+    "whaleman-chapel": {
+      "entity_id": "whaleman-chapel",
+      "label": "Whaleman's Chapel",
+      "kind": "place",
+      "annotation_count": 1,
+      "units": [
+        "chapter-007-the-chapel"
+      ],
+      "annotations": [
+        "entity-registry-whaleman-chapel"
+      ]
+    },
+    "whiteness": {
+      "entity_id": "whiteness",
+      "label": "Whiteness",
+      "kind": "symbol",
+      "annotation_count": 1,
+      "units": [
+        "chapter-042-the-whiteness-of-the-whale"
+      ],
+      "annotations": [
+        "entity-index-whiteness"
+      ]
+    }
+  }
+}

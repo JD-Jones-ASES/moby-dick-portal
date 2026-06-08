@@ -1,0 +1,18 @@
+node_modules/
+.npm-cache/
+dist/
+build/
+.astro/
+.vite/
+coverage/
+data/**/_review_queue/
+data/**/_candidates/
+*.log
+
+# Local agent/editor state — not for the public repo
+.claude/
+.codex-screenshots/
+
+# Large/local source artifacts and third-party reference material (kept out of the public repo)
+herman-melville_moby-dick-master.zip
+*.pdf

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/chapter.schema.json",
+  "title": "Moby-Dick Chapter Manifest",
+  "type": "object",
+  "required": ["generated_from", "source_spine", "unit_count", "chapter_count", "frontmatter_count", "epilogue_count", "units", "chapters"],
+  "additionalProperties": false,
+  "properties": {
+    "generated_from": { "type": "string", "minLength": 1 },
+    "source_spine": { "type": "string", "minLength": 1 },
+    "unit_count": { "type": "integer", "const": 142 },
+    "chapter_count": { "type": "integer", "const": 135 },
+    "frontmatter_count": { "type": "integer", "const": 6 },
+    "epilogue_count": { "type": "integer", "const": 1 },
+    "units": {
+      "type": "array",
+      "minItems": 142,
+      "maxItems": 142,
+      "items": { "$ref": "#/$defs/readingUnit" }
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 135,
+      "maxItems": 135,
+      "items": { "$ref": "#/$defs/chapterUnit" }
+    }
+  },
+  "$defs": {
+    "readingUnit": {
+      "type": "object",
+      "required": ["unit_id", "sequence", "section_type", "number", "slug", "title", "source_path", "word_count", "functions", "paths", "summaries", "metadata_status", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "unit_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "sequence": { "type": "integer", "minimum": 1, "maximum": 142 },
+        "section_type": { "$ref": "#/$defs/sectionType" },
+        "number": {
+          "anyOf": [
+            { "type": "integer", "minimum": 1, "maximum": 135 },
+            { "type": "null" }
+          ]
+        },
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 },
+        "word_count": { "type": "integer", "minimum": 1 },
+        "functions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chapterFunction" },
+          "uniqueItems": true
+        },
+        "paths": {
+          "type": "object",
+          "required": ["full_text"],
+          "additionalProperties": { "$ref": "#/$defs/inclusionLevel" },
+          "properties": {
+            "full_text": { "const": "required" },
+            "narrative_core": { "$ref": "#/$defs/inclusionLevel" },
+            "classroom_standard": { "$ref": "#/$defs/inclusionLevel" }
+          }
+        },
+        "summaries": {
+          "type": "object",
+          "required": ["one_breath", "student", "why_it_matters"],
+          "additionalProperties": false,
+          "properties": {
+            "one_breath": { "type": "string" },
+            "student": { "type": "string" },
+            "why_it_matters": { "type": "string" }
+          }
+        },
+        "metadata_status": {
+          "type": "object",
+          "required": ["classification_confidence", "citation_status"],
+          "additionalProperties": false,
+          "properties": {
+            "classification_confidence": { "enum": ["high", "medium", "low"] },
+            "citation_status": { "enum": ["verified", "provisional", "needs-review"] }
+          }
+        },
+        "citations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "chapterUnit": {
+      "allOf": [
+        { "$ref": "#/$defs/readingUnit" },
+        {
+          "type": "object",
+          "properties": {
+            "section_type": { "const": "chapter" },
+            "number": { "type": "integer", "minimum": 1, "maximum": 135 },
+            "slug": { "pattern": "^chapter-[0-9]{3}-[a-z0-9-]+$" }
+          }
+        }
+      ]
+    },
+    "sectionType": {
+      "enum": ["frontmatter", "chapter", "epilogue"]
+    },
+    "chapterFunction": {
+      "enum": [
+        "narrative",
+        "character",
+        "cetology",
+        "whaling-labor",
+        "gam",
+        "sermon",
+        "theatrical",
+        "symbolic",
+        "prophecy",
+        "legal-political",
+        "biblical-allusion",
+        "transition",
+        "prefatory",
+        "unknown"
+      ]
+    },
+    "inclusionLevel": {
+      "enum": ["required", "recommended", "optional", "summary-only", "defer", "excluded"]
+    }
+  }
+}

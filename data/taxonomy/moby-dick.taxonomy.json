@@ -1,0 +1,2458 @@
+{
+  "trails": [
+    {
+      "id": "ahab-starbuck",
+      "label": "Ahab and Starbuck",
+      "description": "Scenes and notes tracking command, conscience, obedience, and resistance between Ahab and Starbuck.",
+      "tags": [
+        "character:ahab",
+        "character:starbuck",
+        "theme:obedience"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ishmael-queequeg",
+      "label": "Ishmael and Queequeg",
+      "description": "The early friendship, intimacy, and cultural friction around Ishmael and Queequeg.",
+      "tags": [
+        "character:ishmael",
+        "character:queequeg",
+        "theme:fellowship"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whaling-labor",
+      "label": "Whaling Labor",
+      "description": "Technical work, danger, hierarchy, tools, bodies, and profit aboard whaleships.",
+      "tags": [
+        "topic:whaling",
+        "topic:labor"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cetology-classification",
+      "label": "Cetology and Classification",
+      "description": "Melville's whale science, parody, taxonomy, and pressure on systems of knowledge.",
+      "tags": [
+        "topic:cetology",
+        "theme:classification"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "gams-foreshadowing",
+      "label": "Gams and Foreshadowing",
+      "description": "Ship encounters, exchanged stories, warnings, rumor, and delayed consequences.",
+      "tags": [
+        "form:gam",
+        "theme:foreshadowing"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "biblical-classical-allusion",
+      "label": "Biblical and Classical Allusion",
+      "description": "Biblical, classical, and mythic references that shape the novel's language and scale.",
+      "tags": [
+        "allusion:biblical",
+        "allusion:classical"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "race-empire-global-crew",
+      "label": "Race, Empire, and the Global Crew",
+      "description": "The Pequod's multiracial crew, nineteenth-century racial language, empire, and difficult material.",
+      "tags": [
+        "theme:race",
+        "theme:empire",
+        "review:difficult-material"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "theater-form-experiments",
+      "label": "Theater and Form Experiments",
+      "description": "Sermons, soliloquies, stage directions, choruses, legal parody, catalogs, and genre shifts.",
+      "tags": [
+        "form:theatrical",
+        "form:sermon",
+        "form:catalog"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "law-property-politics",
+      "label": "Law, Property, and Politics",
+      "description": "Whaling rules, ownership, empire, legal metaphor, and political argument.",
+      "tags": [
+        "theme:law",
+        "theme:property",
+        "theme:politics"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "symbols-prophecy",
+      "label": "Symbols and Prophecy",
+      "description": "Recurring symbolic objects, omens, dreams, warnings, prophecy, weather, and signs.",
+      "tags": [
+        "theme:symbolism",
+        "theme:prophecy"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "shipboard-tools",
+      "label": "Shipboard Tools",
+      "description": "A trail for tools, instruments, and work objects that carry practical and symbolic force.",
+      "tags": [
+        "topic:tools",
+        "topic:nautical"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ships-and-gams",
+      "label": "Ships and Gams",
+      "description": "A trail for the named ships whose meetings test Ahab's ability to hear other stories.",
+      "tags": [
+        "form:gam",
+        "topic:ships"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "navigation-and-failure",
+      "label": "Navigation and Failure",
+      "description": "A trail for charts, compass, quadrant, log-line, and moments when knowledge tools fail.",
+      "tags": [
+        "topic:navigation",
+        "theme:failure"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "objects-that-transform",
+      "label": "Objects That Transform",
+      "description": "A trail for objects whose meanings change across the voyage.",
+      "tags": [
+        "theme:symbolism",
+        "topic:objects"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "labor-after-death",
+      "label": "Labor After Death",
+      "description": "A trail for the processing, cutting, rendering, and cleanup after whale deaths.",
+      "tags": [
+        "topic:whaling",
+        "topic:labor"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "voice-and-performance",
+      "label": "Voice and Performance",
+      "description": "A trail for sermons, soliloquies, choruses, songs, and stage-like speech.",
+      "tags": [
+        "form:theatrical",
+        "form:voice"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "evidence-and-belief",
+      "label": "Evidence and Belief",
+      "description": "A trail for affidavits, testimony, rumor, and Ishmael's efforts to make readers believe.",
+      "tags": [
+        "theme:evidence",
+        "theme:belief"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "care-and-refusal",
+      "label": "Care and Refusal",
+      "description": "A trail for moments when rescue, friendship, pity, or duty is offered and accepted or refused.",
+      "tags": [
+        "theme:care",
+        "theme:ethics"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "books-and-knowledge",
+      "label": "Books and Knowledge",
+      "description": "Libraries, citations, footnotes, affidavits, and mock scholarship as Melville builds and tests authority.",
+      "tags": [
+        "theme:knowledge",
+        "form:citation",
+        "topic:books"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whiteness-and-terror",
+      "label": "Whiteness and Terror",
+      "description": "The white whale, color symbolism, blankness, fear, race, and spiritual uncertainty.",
+      "tags": [
+        "theme:whiteness",
+        "theme:symbolism",
+        "review:difficult-material"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "profit-and-extraction",
+      "label": "Profit and Extraction",
+      "description": "Oil, ambergris, markets, ownership, bodies, and the conversion of whale life into value.",
+      "tags": [
+        "theme:profit",
+        "topic:extraction",
+        "topic:whaling"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "friendship-and-isolation",
+      "label": "Friendship and Isolation",
+      "description": "Companionship, care, sleeping arrangements, rescue, loneliness, and abandoned duty.",
+      "tags": [
+        "theme:friendship",
+        "theme:isolation"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "bodies-and-vulnerability",
+      "label": "Bodies and Vulnerability",
+      "description": "Hands, legs, wounds, drowning, risk, pain, disability language, and bodily dependence aboard ship.",
+      "tags": [
+        "theme:bodies",
+        "theme:vulnerability",
+        "review:difficult-material"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ecological-scale",
+      "label": "Ecological Scale",
+      "description": "Whale size, extinction arguments, ocean immensity, deep time, and modern ecological questions.",
+      "tags": [
+        "topic:ecology",
+        "theme:scale",
+        "topic:cetology"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "comedy-and-grotesque",
+      "label": "Comedy and Grotesque",
+      "description": "Comic exaggeration, odd bodies, slapstick, grotesque labor, and jokes that carry pressure.",
+      "tags": [
+        "form:comedy",
+        "form:grotesque"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "scripture-and-sermons",
+      "label": "Scripture and Sermons",
+      "description": "Sermon form, biblical quotation, prophecy, judgment, mercy, Job, Jonah, Rachel, and Ahab.",
+      "tags": [
+        "allusion:biblical",
+        "form:sermon",
+        "theme:judgment"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "colonial-contact",
+      "label": "Colonial Contact",
+      "description": "Pacific travel, racialized description, empire, conversion language, and global labor.",
+      "tags": [
+        "theme:empire",
+        "theme:race",
+        "review:difficult-material"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "fate-and-agency",
+      "label": "Fate and Agency",
+      "description": "Predestination, choice, prophecy, habits, vows, chance, and the limits of refusal.",
+      "tags": [
+        "theme:fate",
+        "theme:agency",
+        "theme:prophecy"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "craft-and-making",
+      "label": "Craft and Making",
+      "description": "Carpenters, blacksmiths, coopers, gear, repair work, tools, and the intelligence of manual craft.",
+      "tags": [
+        "topic:craft",
+        "topic:tools",
+        "topic:labor"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "endings-and-survival",
+      "label": "Endings and Survival",
+      "description": "Final warnings, rescue failures, the sinking, Ishmael's survival, and how the narrative can still be told.",
+      "tags": [
+        "theme:survival",
+        "theme:ending",
+        "theme:witness"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "narrator-and-reliability",
+      "label": "Narrator and Reliability",
+      "description": "Ishmael's shifts between witness, lecturer, comedian, critic, and survivor.",
+      "tags": [
+        "character:ishmael",
+        "theme:witness",
+        "form:narration"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "labor-hierarchy",
+      "label": "Labor and Hierarchy",
+      "description": "Command, rank, officer authority, forecastle labor, and unequal risk aboard the Pequod.",
+      "tags": [
+        "topic:labor",
+        "theme:hierarchy",
+        "topic:shipboard"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "death-and-burial",
+      "label": "Death and Burial",
+      "description": "Coffins, funeral language, abandoned bodies, shipwreck, mourning, and survival after catastrophe.",
+      "tags": [
+        "theme:death",
+        "theme:survival",
+        "symbol:coffin"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "weather-and-navigation",
+      "label": "Weather and Navigation",
+      "description": "Wind, storms, compass work, quadrant readings, log-lines, and the sea as a navigational problem.",
+      "tags": [
+        "topic:navigation",
+        "topic:weather",
+        "topic:tools"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "violence-and-mercy",
+      "label": "Violence and Mercy",
+      "description": "Cruelty, pity, sermons, animal suffering, rescue, and the possibility of restraint.",
+      "tags": [
+        "theme:violence",
+        "theme:mercy",
+        "review:difficult-material"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "masculinity-and-command",
+      "label": "Masculinity and Command",
+      "description": "Captaincy, pride, obedience, theatrical selfhood, courage, and fear under pressure.",
+      "tags": [
+        "theme:masculinity",
+        "theme:command",
+        "character:ahab"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "commerce-and-credit",
+      "label": "Commerce and Credit",
+      "description": "Shares, wages, ownership, insurance-like reasoning, cargo, and the business language of whaling.",
+      "tags": [
+        "theme:commerce",
+        "theme:profit",
+        "theme:property"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "shore-life-and-home",
+      "label": "Shore Life and Home",
+      "description": "Beds, inns, chapels, wives, owners, ports, and the shore world the voyage leaves behind.",
+      "tags": [
+        "topic:shore",
+        "theme:home",
+        "theme:departure"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sleep-dreams-visions",
+      "label": "Sleep, Dreams, and Visions",
+      "description": "Dreams, trances, omens, reveries, prophecy, and altered states of perception.",
+      "tags": [
+        "theme:dreams",
+        "theme:prophecy",
+        "theme:perception"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "teaching-and-reading",
+      "label": "Teaching and Reading",
+      "description": "Sermons, cetology lessons, definitions, mock scholarship, and the reader's training.",
+      "tags": [
+        "form:lesson",
+        "theme:knowledge",
+        "topic:reading"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sound-and-silence",
+      "label": "Sound and Silence",
+      "description": "Songs, cries, sermons, whispers, muteness, unanswered questions, and shipboard voices.",
+      "tags": [
+        "theme:sound",
+        "theme:silence",
+        "form:voice"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "measurement-and-scale",
+      "label": "Measurement and Scale",
+      "description": "Weights, lengths, skeletons, fossils, maps, ocean size, and the failure of exact measure.",
+      "tags": [
+        "theme:scale",
+        "topic:measurement",
+        "topic:cetology"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "food-and-appetite",
+      "label": "Food and Appetite",
+      "description": "Meals, hunger, whale meat, sharks, domestic eating, and the grotesque conversion of bodies into food.",
+      "tags": [
+        "theme:appetite",
+        "topic:food",
+        "form:grotesque"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ritual-and-ceremony",
+      "label": "Ritual and Ceremony",
+      "description": "Sermons, oaths, baptisms, funerals, coronation images, and labor that becomes ceremony.",
+      "tags": [
+        "theme:ritual",
+        "form:sermon",
+        "theme:symbolism"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "rescue-and-witness",
+      "label": "Rescue and Witness",
+      "description": "Failed rescue, delayed rescue, abandoned figures, the Rachel, and Ishmael's role as final witness.",
+      "tags": [
+        "theme:rescue",
+        "theme:witness",
+        "theme:ending"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "short-chapters-big-turns",
+      "label": "Short Chapters, Big Turns",
+      "description": "Compact chapters whose small size hides a major shift in symbol, command, weather, or consequence.",
+      "tags": [
+        "form:short-chapter",
+        "theme:turning-point"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "objects-that-change-meaning",
+      "label": "Objects That Change Meaning",
+      "description": "Objects such as the doubloon, pipe, coffin, lamp, line, compass, and quadrant as they move between practical use and symbol.",
+      "tags": [
+        "symbol:object",
+        "topic:tools"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "crew-voices",
+      "label": "Crew Voices",
+      "description": "Moments when sailors other than Ahab and Ishmael shape the sound, fear, humor, or conscience of the voyage.",
+      "tags": [
+        "form:voice",
+        "topic:crew"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "failed-warnings",
+      "label": "Failed Warnings",
+      "description": "Warnings, prophecies, ship encounters, and pleas for help that Ahab hears without changing course.",
+      "tags": [
+        "theme:warning",
+        "theme:choice"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whale-body-as-book",
+      "label": "Whale Body As Book",
+      "description": "Chapters where Ishmael reads heads, bones, skin, oil, and size as if the whale body were an archive.",
+      "tags": [
+        "topic:cetology",
+        "theme:reading"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "domesticity-at-sea",
+      "label": "Domesticity At Sea",
+      "description": "Beds, meals, lamps, pipes, squeezing, sewing, cleaning, and other domestic-feeling acts aboard or near the ship.",
+      "tags": [
+        "theme:home",
+        "topic:shipboard"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "isolation-and-fellowship",
+      "label": "Isolation And Fellowship",
+      "description": "The book's movement between loneliness, chosen friendship, crew solidarity, and final abandonment.",
+      "tags": [
+        "theme:isolation",
+        "theme:fellowship"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "knowledge-under-strain",
+      "label": "Knowledge Under Strain",
+      "description": "Moments where classification, testimony, measurement, prophecy, or navigation fails under pressure.",
+      "tags": [
+        "theme:knowledge",
+        "theme:limits"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "body-and-instrument",
+      "label": "Body And Instrument",
+      "description": "Peg legs, hands, heads, ropes, needles, lances, and tools that blur bodies with ship equipment.",
+      "tags": [
+        "theme:body",
+        "topic:tools"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "aftermath-and-survival",
+      "label": "Aftermath And Survival",
+      "description": "Late chapters where rescue, witness, wreckage, and memory determine what remains after the hunt.",
+      "tags": [
+        "theme:survival",
+        "theme:witness"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "ishmael",
+      "label": "Ishmael",
+      "kind": "character",
+      "aliases": [
+        "narrator"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "queequeg",
+      "label": "Queequeg",
+      "kind": "character",
+      "aliases": [
+        "Queequeg's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ahab",
+      "label": "Ahab",
+      "kind": "character",
+      "aliases": [
+        "Captain Ahab",
+        "Ahab's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "starbuck",
+      "label": "Starbuck",
+      "kind": "character",
+      "aliases": [
+        "Starbuck's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "stubb",
+      "label": "Stubb",
+      "kind": "character",
+      "aliases": [
+        "Stubb's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "flask",
+      "label": "Flask",
+      "kind": "character",
+      "aliases": [
+        "Flask's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "tashtego",
+      "label": "Tashtego",
+      "kind": "character",
+      "aliases": [
+        "Tashtego's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "daggoo",
+      "label": "Daggoo",
+      "kind": "character",
+      "aliases": [
+        "Daggoo's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "fedallah",
+      "label": "Fedallah",
+      "kind": "character",
+      "aliases": [
+        "Fedallah's",
+        "Parsee"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "pip",
+      "label": "Pip",
+      "kind": "character",
+      "aliases": [
+        "Pip's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "father-mapple",
+      "label": "Father Mapple",
+      "kind": "character",
+      "aliases": [
+        "Mapple",
+        "Father Mapple's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "pequod",
+      "label": "Pequod",
+      "kind": "ship",
+      "aliases": [
+        "Pequod's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "moby-dick",
+      "label": "Moby Dick",
+      "kind": "animal",
+      "aliases": [
+        "Moby-Dick",
+        "white whale"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "new-bedford",
+      "label": "New Bedford",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "manhattan",
+      "label": "Manhattan",
+      "kind": "place",
+      "aliases": [
+        "Manhattoes"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "nantucket",
+      "label": "Nantucket",
+      "kind": "place",
+      "aliases": [
+        "Nantucketers"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "atlantic-ocean",
+      "label": "Atlantic Ocean",
+      "kind": "place",
+      "aliases": [
+        "Atlantic"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "indian-ocean",
+      "label": "Indian Ocean",
+      "kind": "place",
+      "aliases": [
+        "Indian seas"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "pacific-ocean",
+      "label": "Pacific Ocean",
+      "kind": "place",
+      "aliases": [
+        "Pacific"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coffin",
+      "label": "Coffin",
+      "kind": "symbol",
+      "aliases": [
+        "coffin life-buoy"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whiteness",
+      "label": "Whiteness",
+      "kind": "symbol",
+      "aliases": [
+        "white"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "doubloon",
+      "label": "Doubloon",
+      "kind": "symbol",
+      "aliases": [
+        "gold coin"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "jonah",
+      "label": "Jonah",
+      "kind": "allusion",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "fast-fish-loose-fish",
+      "label": "Fast-Fish and Loose-Fish",
+      "kind": "concept",
+      "aliases": [
+        "Fast-Fish",
+        "Loose-Fish"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "elijah",
+      "label": "Elijah",
+      "kind": "character",
+      "aliases": [
+        "Elijah's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "bildad",
+      "label": "Bildad",
+      "kind": "character",
+      "aliases": [
+        "Captain Bildad",
+        "Bildad's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "peleg",
+      "label": "Peleg",
+      "kind": "character",
+      "aliases": [
+        "Captain Peleg",
+        "Peleg's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "bulkington",
+      "label": "Bulkington",
+      "kind": "character",
+      "aliases": [
+        "Bulkington's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "gabriel",
+      "label": "Gabriel",
+      "kind": "character",
+      "aliases": [
+        "Gabriel's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "radney",
+      "label": "Radney",
+      "kind": "character",
+      "aliases": [
+        "Radney's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "steelkit",
+      "label": "Steelkilt",
+      "kind": "character",
+      "aliases": [
+        "Steelkilt's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "town-ho",
+      "label": "Town-Ho",
+      "kind": "ship",
+      "aliases": [
+        "Town-Ho's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whale-line",
+      "label": "Whale-line",
+      "kind": "concept",
+      "aliases": [
+        "line"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "try-works",
+      "label": "Try-works",
+      "kind": "concept",
+      "aliases": [
+        "tryworks"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "quarterdeck",
+      "label": "Quarterdeck",
+      "kind": "form",
+      "aliases": [
+        "quarter-deck"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "gam-form",
+      "label": "Gam",
+      "kind": "form",
+      "aliases": [
+        "gams"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "jonah-sermon",
+      "label": "Jonah Sermon",
+      "kind": "allusion",
+      "aliases": [
+        "Jonah"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "leviathan",
+      "label": "Leviathan",
+      "kind": "allusion",
+      "aliases": [
+        "Leviathan"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "narcissus",
+      "label": "Narcissus",
+      "kind": "allusion",
+      "aliases": [
+        "Narcissus"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "prometheus",
+      "label": "Prometheus",
+      "kind": "allusion",
+      "aliases": [
+        "Promethean"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "aunt-charity",
+      "label": "Aunt Charity",
+      "kind": "character",
+      "aliases": [
+        "Charity"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "captain-gardiner",
+      "label": "Captain Gardiner",
+      "kind": "character",
+      "aliases": [
+        "Gardiner"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "perth",
+      "label": "Perth",
+      "kind": "character",
+      "aliases": [
+        "blacksmith"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-carpenter",
+      "label": "The Carpenter",
+      "kind": "character",
+      "aliases": [
+        "carpenter"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "job",
+      "label": "Job",
+      "kind": "allusion",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "shakespearean-tragedy",
+      "label": "Shakespearean Tragedy",
+      "kind": "form",
+      "aliases": [
+        "tragedy"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "epic-catalog",
+      "label": "Epic Catalog",
+      "kind": "form",
+      "aliases": [
+        "catalog"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "fate",
+      "label": "Fate",
+      "kind": "theme",
+      "aliases": [
+        "predestination"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "agency",
+      "label": "Agency",
+      "kind": "theme",
+      "aliases": [
+        "choice"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "labor",
+      "label": "Labor",
+      "kind": "topic",
+      "aliases": [
+        "work"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "profit",
+      "label": "Profit",
+      "kind": "topic",
+      "aliases": [
+        "market"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ecology",
+      "label": "Ecology",
+      "kind": "topic",
+      "aliases": [
+        "environment"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-verde",
+      "label": "Cape Verde",
+      "kind": "place",
+      "aliases": [
+        "St. Jago"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "azores",
+      "label": "Azores",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "cape-good-hope",
+      "label": "Cape of Good Hope",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "crozet-islands",
+      "label": "Crozet Islands",
+      "kind": "place",
+      "aliases": [
+        "Crozetts"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "kerguelen",
+      "label": "Kerguelen",
+      "kind": "place",
+      "aliases": [
+        "Desolation Island"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "java-sea",
+      "label": "Java Sea",
+      "kind": "place",
+      "aliases": [
+        "Sunda seas"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "japan-sea-stage",
+      "label": "Japan Sea Stage",
+      "kind": "place",
+      "aliases": [
+        "Japan"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sag-harbor",
+      "label": "Sag Harbor",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "arsacides",
+      "label": "Arsacides",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "fleece",
+      "label": "Fleece",
+      "kind": "character",
+      "aliases": [
+        "the cook",
+        "cook"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "queequeg-coffin",
+      "label": "Queequeg's Coffin",
+      "kind": "symbol",
+      "aliases": [
+        "life-buoy"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "compass",
+      "label": "Compass",
+      "kind": "symbol",
+      "aliases": [
+        "Ahab's compass"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "quadrant",
+      "label": "Quadrant",
+      "kind": "symbol",
+      "aliases": [
+        "navigation instrument"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "log-line",
+      "label": "Log-Line",
+      "kind": "symbol",
+      "aliases": [
+        "ship's log-line"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "monkey-rope",
+      "label": "Monkey-Rope",
+      "kind": "symbol",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "harpoon",
+      "label": "Harpoon",
+      "kind": "topic",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "lance",
+      "label": "Lance",
+      "kind": "topic",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whaleboat",
+      "label": "Whaleboat",
+      "kind": "topic",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "rachel",
+      "label": "Rachel",
+      "kind": "ship",
+      "aliases": [
+        "Rachel's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "delight",
+      "label": "Delight",
+      "kind": "ship",
+      "aliases": [
+        "Delight's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "bachelor",
+      "label": "Bachelor",
+      "kind": "ship",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "rose-bud",
+      "label": "Rose-Bud",
+      "kind": "ship",
+      "aliases": [
+        "Bouton de Rose"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "jeroboam",
+      "label": "Jeroboam",
+      "kind": "ship",
+      "aliases": [
+        "Jeroboam's"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "albatross",
+      "label": "Albatross",
+      "kind": "ship",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "samuel-enderby",
+      "label": "Samuel Enderby",
+      "kind": "ship",
+      "aliases": [
+        "Enderby"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sperm-whale",
+      "label": "Sperm Whale",
+      "kind": "animal",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "right-whale",
+      "label": "Right Whale",
+      "kind": "animal",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "giant-squid",
+      "label": "Giant Squid",
+      "kind": "animal",
+      "aliases": [
+        "squid"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "sharks",
+      "label": "Sharks",
+      "kind": "animal",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "starbuck-conscience",
+      "label": "Starbuck's Conscience",
+      "kind": "theme",
+      "aliases": [
+        "conscience"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ahab-revenge",
+      "label": "Ahab's Revenge",
+      "kind": "theme",
+      "aliases": [
+        "revenge"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ishmael-witness",
+      "label": "Ishmael as Witness",
+      "kind": "theme",
+      "aliases": [
+        "survivor"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "shipboard-command",
+      "label": "Shipboard Command",
+      "kind": "concept",
+      "aliases": [
+        "captaincy"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "forecastle",
+      "label": "Forecastle",
+      "kind": "place",
+      "aliases": [
+        "foc'sle"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "spouter-inn",
+      "label": "Spouter-Inn",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "whaleman-chapel",
+      "label": "Whaleman's Chapel",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "giant-cask",
+      "label": "Giant Cask",
+      "kind": "symbol",
+      "aliases": [
+        "Heidelberg Tun"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "lima",
+      "label": "Lima",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "equator",
+      "label": "Equator",
+      "kind": "place",
+      "aliases": [
+        "the Line"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-lamp",
+      "label": "The Lamp",
+      "kind": "symbol",
+      "aliases": [
+        "lamp"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "ahabs-pipe",
+      "label": "Ahab's Pipe",
+      "kind": "symbol",
+      "aliases": [
+        "pipe"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-line",
+      "label": "The Line",
+      "kind": "symbol",
+      "aliases": [
+        "whale-line"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-needle",
+      "label": "The Needle",
+      "kind": "symbol",
+      "aliases": [
+        "compass needle"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-candles",
+      "label": "The Candles",
+      "kind": "symbol",
+      "aliases": [
+        "St. Elmo's fire"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-lifebuoy",
+      "label": "The Life-Buoy",
+      "kind": "symbol",
+      "aliases": [
+        "life-buoy"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-deck",
+      "label": "The Deck",
+      "kind": "place",
+      "aliases": [
+        "deck"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-cabin",
+      "label": "The Cabin",
+      "kind": "place",
+      "aliases": [
+        "Ahab's cabin"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-masthead",
+      "label": "The Mast-Head",
+      "kind": "place",
+      "aliases": [
+        "masthead"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-try-works",
+      "label": "The Try-Works",
+      "kind": "place",
+      "aliases": [
+        "tryworks"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-lee-shore",
+      "label": "The Lee Shore",
+      "kind": "concept",
+      "aliases": [
+        "lee shore"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-blankness",
+      "label": "Blankness",
+      "kind": "concept",
+      "aliases": [
+        "blankness"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "isolation-and-fellowship",
+      "label": "Isolation and Fellowship",
+      "kind": "theme",
+      "aliases": [
+        "fellowship",
+        "isolation"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-carpetbag",
+      "label": "The Carpetbag",
+      "kind": "symbol",
+      "aliases": [
+        "carpetbag"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "the-counterpane",
+      "label": "The Counterpane",
+      "kind": "symbol",
+      "aliases": [
+        "counterpane"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "boomer",
+      "label": "Captain Boomer",
+      "kind": "character",
+      "aliases": [
+        "Boomer",
+        "Captain Boomer"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-shore-social",
+      "label": "Shore Social World",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-early-pequod-shipboard",
+      "label": "Early Pequod Shipboard",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-quarterdeck-aftervoices",
+      "label": "Quarterdeck Aftervoices",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-white-whale-theory",
+      "label": "White Whale Theory",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-whale-images-and-signs",
+      "label": "Whale Images and Signs",
+      "kind": "place",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-cutting-and-carcass-work",
+      "label": "Cutting and Carcass Work",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-head-body-law-scale",
+      "label": "Head, Body, Law, Scale",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-pip-and-tryworks-approach",
+      "label": "Pip and Try-Works Approach",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-craft-and-instrument-pressure",
+      "label": "Craft and Instrument Pressure",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    },
+    {
+      "id": "coverage-entity-final-cabin-watch",
+      "label": "Final Cabin and Watch",
+      "kind": "concept",
+      "aliases": [],
+      "citations": [
+        "standard-ebooks-moby-dick"
+      ],
+      "status": {
+        "content_status": "draft",
+        "citation_status": "provisional"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/geography.schema.json",
+  "title": "Moby-Dick Geography Registry",
+  "type": "object",
+  "required": ["places"],
+  "additionalProperties": false,
+  "properties": {
+    "places": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/place" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "place": {
+      "type": "object",
+      "required": ["id", "label", "kind", "entity_id", "coordinates", "coordinate_status", "chapter_targets", "source_note", "citations", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "label": { "type": "string", "minLength": 1 },
+        "kind": { "enum": ["city-or-island", "port", "island", "ocean-region", "ship-route-stage", "landmark", "other"] },
+        "entity_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        },
+        "coordinate_status": { "enum": ["verified", "provisional", "display-anchor", "unknown"] },
+        "chapter_targets": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "uniqueItems": true
+        },
+        "source_note": { "type": "string", "minLength": 1 },
+        "citations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "object",
+          "required": ["content_status", "citation_status"],
+          "additionalProperties": false,
+          "properties": {
+            "content_status": { "enum": ["student-ready", "draft", "needs-review"] },
+            "citation_status": { "enum": ["verified", "provisional", "needs-review"] }
+          }
+        }
+      }
+    }
+  }
+}

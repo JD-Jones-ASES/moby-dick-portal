@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/melville/glossary-entry.schema.json",
+  "title": "Glossary Collection",
+  "type": "object",
+  "required": ["entries"],
+  "additionalProperties": false,
+  "properties": {
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/glossaryEntry" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "glossaryEntry": {
+      "type": "object",
+      "required": ["id", "term", "category", "definition", "variants", "targets", "citations", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "term": { "type": "string", "minLength": 1 },
+        "category": {
+          "enum": ["whaling", "nautical", "vocabulary", "biblical", "classical", "historical", "shipboard", "symbolic", "other"]
+        },
+        "definition": { "type": "string", "minLength": 1 },
+        "variants": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "targets": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "uniqueItems": true
+        },
+        "citations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "object",
+          "required": ["definition_status", "citation_status"],
+          "additionalProperties": false,
+          "properties": {
+            "definition_status": { "enum": ["student-ready", "draft", "needs-review"] },
+            "citation_status": { "enum": ["verified", "provisional", "needs-review"] }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "id": "pequod-voyage-seed",
+  "title": "Pequod Voyage Seed",
+  "status": {
+    "route_status": "provisional",
+    "citation_status": "provisional"
+  },
+  "note": "This seed tracks broad route stages for the reader UI. Coordinates are approximate display anchors, not scholarly claims.",
+  "waypoints": [
+    {
+      "id": "loomings-shore-water",
+      "label": "Shore to Water",
+      "chapter_start": 1,
+      "chapter_end": 1,
+      "coordinates": [
+        -74.01,
+        40.706
+      ],
+      "student_note": "The first chapter turns a private mood into a movement toward the sea."
+    },
+    {
+      "id": "manhattan-frame",
+      "label": "Manhattan Frame",
+      "chapter_start": 1,
+      "chapter_end": 1,
+      "coordinates": [
+        -74.006,
+        40.7128
+      ],
+      "student_note": "Ishmael begins on shore, using Manhattan and the pull of water to explain why he goes to sea."
+    },
+    {
+      "id": "new-bedford",
+      "label": "New Bedford",
+      "chapter_start": 2,
+      "chapter_end": 10,
+      "coordinates": [
+        -70.9342,
+        41.6362
+      ],
+      "student_note": "Ishmael enters the whaling world through a cold port town, an inn, a chapel, and Queequeg."
+    },
+    {
+      "id": "spouter-inn-room",
+      "label": "Spouter-Inn Room",
+      "chapter_start": 3,
+      "chapter_end": 4,
+      "coordinates": [
+        -70.9442,
+        41.6262
+      ],
+      "student_note": "Fear of Queequeg changes into recognition and intimacy."
+    },
+    {
+      "id": "new-bedford-chapel",
+      "label": "New Bedford Chapel",
+      "chapter_start": 7,
+      "chapter_end": 9,
+      "coordinates": [
+        -70.9242,
+        41.6462
+      ],
+      "student_note": "Memorial tablets and the Jonah sermon teach readers how the voyage will think about risk, judgment, and survival."
+    },
+    {
+      "id": "nightgown-room",
+      "label": "Nightgown Room",
+      "chapter_start": 11,
+      "chapter_end": 11,
+      "coordinates": [
+        -70.9142,
+        41.6262
+      ],
+      "student_note": "A quiet room scene turns Ishmael and Queequeg's friendship into warmth, trust, and domestic comedy before the move toward Nantucket."
+    },
+    {
+      "id": "sag-harbor-background",
+      "label": "Sag Harbor Background",
+      "chapter_start": 12,
+      "chapter_end": 13,
+      "coordinates": [
+        -72.2926,
+        40.9979
+      ],
+      "student_note": "Captain histories and whaling-port reputations widen the shore world before Nantucket."
+    },
+    {
+      "id": "nantucket",
+      "label": "Nantucket",
+      "chapter_start": 14,
+      "chapter_end": 22,
+      "coordinates": [
+        -70.0995,
+        41.2835
+      ],
+      "student_note": "Ishmael and Queequeg sign onto the Pequod and leave shore behind."
+    },
+    {
+      "id": "nantucket-contract",
+      "label": "Nantucket Contract",
+      "chapter_start": 16,
+      "chapter_end": 18,
+      "coordinates": [
+        -70.0895,
+        41.2935
+      ],
+      "student_note": "The ship, owners, crew, and profit system turn Ishmael's desire for sea into a signed voyage."
+    },
+    {
+      "id": "lee-shore-threshold",
+      "label": "Lee Shore Threshold",
+      "chapter_start": 23,
+      "chapter_end": 23,
+      "coordinates": [
+        -55,
+        30
+      ],
+      "student_note": "Bulkington's brief return marks the moral risk of choosing the open sea."
+    },
+    {
+      "id": "atlantic-outward",
+      "label": "Outward Atlantic",
+      "chapter_start": 23,
+      "chapter_end": 52,
+      "coordinates": [
+        -38,
+        28
+      ],
+      "student_note": "The voyage becomes Ahab's hunt, and the first major symbolic and theatrical chapters appear."
+    },
+    {
+      "id": "ahab-appears",
+      "label": "Ahab Appears",
+      "chapter_start": 28,
+      "chapter_end": 30,
+      "coordinates": [
+        -47,
+        24
+      ],
+      "student_note": "The captain's body, silence, and pipe begin turning rumor into command presence."
+    },
+    {
+      "id": "masthead-reverie",
+      "label": "Mast-Head Reverie",
+      "chapter_start": 35,
+      "chapter_end": 35,
+      "coordinates": [
+        -42,
+        23
+      ],
+      "student_note": "A lookout chapter becomes a lesson in perception, dreaming, and danger."
+    },
+    {
+      "id": "quarterdeck-oath",
+      "label": "Quarterdeck Oath",
+      "chapter_start": 36,
+      "chapter_end": 36,
+      "coordinates": [
+        -45,
+        20
+      ],
+      "student_note": "Ahab makes the private hunt public and binds the crew to the white whale."
+    },
+    {
+      "id": "forecastle-chorus",
+      "label": "Forecastle Chorus",
+      "chapter_start": 40,
+      "chapter_end": 40,
+      "coordinates": [
+        -44.5,
+        19.5
+      ],
+      "student_note": "The crew's midnight voices widen the book from captain-centered drama to many languages and fears."
+    },
+    {
+      "id": "white-whale-theory",
+      "label": "White Whale Theory",
+      "chapter_start": 41,
+      "chapter_end": 45,
+      "coordinates": [
+        -35,
+        18
+      ],
+      "student_note": "Ishmael pauses the action to explain Ahab's obsession and the whale's symbolic terror."
+    },
+    {
+      "id": "first-lowering-atlantic",
+      "label": "First Lowering Atlantic",
+      "chapter_start": 48,
+      "chapter_end": 51,
+      "coordinates": [
+        -20,
+        0
+      ],
+      "student_note": "The first lowering turns Ahab's announced hunt into dangerous labor on the water."
+    },
+    {
+      "id": "first-gams",
+      "label": "First Gams",
+      "chapter_start": 52,
+      "chapter_end": 55,
+      "coordinates": [
+        -30,
+        10
+      ],
+      "student_note": "Ship encounters begin turning the ocean into a network of rumor, warnings, and competing knowledge."
+    },
+    {
+      "id": "cape-and-indian-ocean",
+      "label": "Cape and Indian Ocean",
+      "chapter_start": 53,
+      "chapter_end": 105,
+      "coordinates": [
+        45,
+        -32
+      ],
+      "student_note": "The middle voyage spreads into gams, labor chapters, cetology, property law, and repeated warnings."
+    },
+    {
+      "id": "town-ho-atlantic",
+      "label": "Town-Ho Story Atlantic",
+      "chapter_start": 54,
+      "chapter_end": 54,
+      "coordinates": [
+        -24,
+        16
+      ],
+      "student_note": "A nested ship story shows how rumor, mutiny, and prophecy travel between crews."
+    },
+    {
+      "id": "squid-and-armada",
+      "label": "Squid and Armada",
+      "chapter_start": 59,
+      "chapter_end": 87,
+      "coordinates": [
+        110,
+        -6
+      ],
+      "student_note": "The voyage moves through false signs, whale schools, and the enormous scale of ocean life."
+    },
+    {
+      "id": "line-and-kill",
+      "label": "Line and Kill",
+      "chapter_start": 60,
+      "chapter_end": 62,
+      "coordinates": [
+        -18,
+        2
+      ],
+      "student_note": "Technical rope-work and whale-killing make danger practical rather than abstract."
+    },
+    {
+      "id": "cutting-in-work",
+      "label": "Cutting-In Work",
+      "chapter_start": 66,
+      "chapter_end": 72,
+      "coordinates": [
+        42,
+        -35
+      ],
+      "student_note": "The whale body becomes labor, rope, risk, tools, sharks, and shared dependence."
+    },
+    {
+      "id": "whale-body-reading",
+      "label": "Whale Body Reading",
+      "chapter_start": 68,
+      "chapter_end": 80,
+      "coordinates": [
+        48,
+        -36
+      ],
+      "student_note": "The whale body becomes anatomy, measurement, comparison, and interpretive problem."
+    },
+    {
+      "id": "head-and-measurement",
+      "label": "Head and Measurement",
+      "chapter_start": 74,
+      "chapter_end": 80,
+      "coordinates": [
+        50,
+        -36
+      ],
+      "student_note": "Ishmael moves from whale heads to measurement, anatomy, and the limits of reading a body."
+    },
+    {
+      "id": "law-and-labor-middle",
+      "label": "Law and Labor Middle Voyage",
+      "chapter_start": 88,
+      "chapter_end": 105,
+      "coordinates": [
+        55,
+        -38
+      ],
+      "student_note": "The middle book turns whale bodies into law, labor, oil, anatomy, fossils, and arguments about extinction."
+    },
+    {
+      "id": "squeeze-and-lamp",
+      "label": "Squeeze and Lamp",
+      "chapter_start": 94,
+      "chapter_end": 97,
+      "coordinates": [
+        53,
+        -33
+      ],
+      "student_note": "Labor briefly becomes fellowship and light before the voyage tightens again."
+    },
+    {
+      "id": "tryworks-and-oil",
+      "label": "Try-Works and Oil",
+      "chapter_start": 94,
+      "chapter_end": 98,
+      "coordinates": [
+        55,
+        -34
+      ],
+      "student_note": "Rendering, squeezing, cleaning, and stowing show how whale bodies become cargo and routine."
+    },
+    {
+      "id": "enderby-contrast",
+      "label": "Enderby Contrast",
+      "chapter_start": 100,
+      "chapter_end": 101,
+      "coordinates": [
+        -128,
+        -10
+      ],
+      "student_note": "Captain Boomer's missing arm throws Ahab's missing leg into sharper relief."
+    },
+    {
+      "id": "pacific-craft",
+      "label": "Pacific Craft",
+      "chapter_start": 106,
+      "chapter_end": 118,
+      "coordinates": [
+        -140,
+        -12
+      ],
+      "student_note": "Ahab's body, tools, craft workers, and navigation instruments come under pressure."
+    },
+    {
+      "id": "pacific",
+      "label": "Pacific",
+      "chapter_start": 106,
+      "chapter_end": 132,
+      "coordinates": [
+        -150,
+        -5
+      ],
+      "student_note": "Ahab's pressure intensifies as the ship moves toward the final chase."
+    },
+    {
+      "id": "coffin-to-life-buoy",
+      "label": "Coffin to Life-Buoy",
+      "chapter_start": 110,
+      "chapter_end": 127,
+      "coordinates": [
+        -153.5,
+        -4.5
+      ],
+      "student_note": "Queequeg's coffin slowly changes meaning until it becomes the object that can save Ishmael."
+    },
+    {
+      "id": "blacksmith-forge",
+      "label": "Blacksmith Forge",
+      "chapter_start": 112,
+      "chapter_end": 113,
+      "coordinates": [
+        -144,
+        -9
+      ],
+      "student_note": "The ship's craft workers help turn Ahab's obsession into tools."
+    },
+    {
+      "id": "storm-and-omens",
+      "label": "Storm and Omens",
+      "chapter_start": 119,
+      "chapter_end": 124,
+      "coordinates": [
+        -152,
+        -8
+      ],
+      "student_note": "Weather, fire, compass failure, and the log-line make the ship feel trapped in signs."
+    },
+    {
+      "id": "needle-and-log",
+      "label": "Needle and Log",
+      "chapter_start": 124,
+      "chapter_end": 125,
+      "coordinates": [
+        -150,
+        -7
+      ],
+      "student_note": "Navigation instruments fail or are remade while Ahab keeps asserting control."
+    },
+    {
+      "id": "rachel-refusal",
+      "label": "Rachel Refusal",
+      "chapter_start": 128,
+      "chapter_end": 128,
+      "coordinates": [
+        -154,
+        -3
+      ],
+      "student_note": "Ahab refuses a rescue mission, making the moral cost of the chase painfully direct."
+    },
+    {
+      "id": "search-and-warning",
+      "label": "Search and Warning",
+      "chapter_start": 128,
+      "chapter_end": 131,
+      "coordinates": [
+        -154,
+        -4
+      ],
+      "student_note": "The Rachel and Delight make rescue and warning visible just before the final pursuit."
+    },
+    {
+      "id": "symphony-threshold",
+      "label": "Symphony Threshold",
+      "chapter_start": 132,
+      "chapter_end": 132,
+      "coordinates": [
+        -154.5,
+        -2
+      ],
+      "student_note": "Ahab briefly hears another possible future before returning to the chase."
+    },
+    {
+      "id": "final-chase",
+      "label": "Final Chase",
+      "chapter_start": 133,
+      "chapter_end": 135,
+      "coordinates": [
+        -155,
+        0
+      ],
+      "student_note": "The three-day chase destroys the Pequod; the epilogue explains Ishmael's survival."
+    },
+    {
+      "id": "epilogue-survival",
+      "label": "Epilogue Survival",
+      "chapter_start": 135,
+      "chapter_end": 135,
+      "coordinates": [
+        -154.8,
+        0.2
+      ],
+      "student_note": "The wreck leaves one witness, and the book's survival depends on Ishmael's rescue."
+    },
+    {
+      "id": "final-witness",
+      "label": "Final Witness",
+      "chapter_start": 135,
+      "chapter_end": 135,
+      "coordinates": [
+        -155.2,
+        -0.2
+      ],
+      "student_note": "The wreck resolves the voyage into survival, rescue, and the burden of telling."
+    }
+  ]
+}
