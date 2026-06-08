@@ -7,16 +7,19 @@ import { buildVoyageMap } from "../../lib/voyage-map.js";
 const data = await loadGuideData();
 const map = buildVoyageMap(data.voyageMap.waypoints);
 
-// chapter number -> unit_id, so each stage links to its reader route.
+// chapter number -> unit_id, so each stage links to its reader route. The two epilogue stages carry
+// chapter_start: 135 in the data but belong to the epilogue, so detect them by id.
 const chapterByNumber = new Map(
   data.units.filter((u) => u.section_type === "chapter").map((u) => [u.number, u.unit_id])
 );
-function hrefFor(chapterStart) {
-  const id = chapterByNumber.get(chapterStart) ?? "epilogue-epilogue";
-  return unitHref(id);
+const epilogueId = data.units.find((u) => u.section_type === "epilogue")?.unit_id ?? "epilogue-epilogue";
+const isEpilogue = (w) => /epilogue|final-witness/i.test(w.id);
+function hrefFor(w) {
+  if (isEpilogue(w)) return unitHref(epilogueId);
+  return unitHref(chapterByNumber.get(w.chapter_start) ?? epilogueId);
 }
 function chapterLabel(w) {
-  if (!w.chapter_start) return "Epilogue";
+  if (isEpilogue(w)) return "Epilogue";
   if (w.chapter_end && w.chapter_end !== w.chapter_start) return `Chapters ${w.chapter_start}–${w.chapter_end}`;
   return `Chapter ${w.chapter_start}`;
 }
@@ -24,7 +27,7 @@ function chapterLabel(w) {
 const byId = new Map(map.nodes.map((n) => [n.id, n]));
 const stages = data.voyageMap.waypoints
   .filter((w) => byId.has(w.id))
-  .map((w) => ({ ...w, node: byId.get(w.id), href: hrefFor(w.chapter_start), clabel: chapterLabel(w) }))
+  .map((w) => ({ ...w, node: byId.get(w.id), href: hrefFor(w), clabel: chapterLabel(w) }))
   .sort((a, b) => a.node.n - b.node.n);
 ---
 
@@ -40,16 +43,12 @@ const stages = data.voyageMap.waypoints
     </div>
 
     <div class="voyage-map">
-      <svg viewBox={map.viewBox} preserveAspectRatio="xMidYMid meet" role="img"
+      <svg viewBox={map.viewBox} preserveAspectRatio="xMidYMid meet" role="group"
         aria-label="Geographic map of the 41 ordered stages of the Pequod's voyage">
         <path class="map-land" d={map.landPath} vector-effect="non-scaling-stroke" aria-hidden="true" />
         <path class="map-graticule" d={map.graticule} vector-effect="non-scaling-stroke" aria-hidden="true" />
         {map.oceans.map((o) => (
           <text class="ocean-label" x={o.x} y={o.y} text-anchor="middle" style={`font-size:${map.fontSize}px`} aria-hidden="true">{o.t}</text>
-        ))}
-        <polyline class="map-route" points={map.route} vector-effect="non-scaling-stroke" aria-hidden="true" />
-        {map.nodes.filter((n) => n.jittered).map((n) => (
-          <line class="map-connector" x1={n.tx} y1={n.ty} x2={n.x} y2={n.y} vector-effect="non-scaling-stroke" aria-hidden="true" />
         ))}
         {stages.map((s) => (
           <Fragment>
@@ -60,12 +59,13 @@ const stages = data.voyageMap.waypoints
             </circle>
             <circle class={`wp-dot ${s.node.n === 1 || s.node.n === map.nodes.length ? "endpoint" : ""}`}
               id={`dot-${s.node.id}`} cx={s.node.x} cy={s.node.y}
-              r={s.node.n === 1 || s.node.n === map.nodes.length ? map.endR : map.dotR} />
+              r={s.node.n === 1 || s.node.n === map.nodes.length ? map.endR : map.dotR}
+              style={`--wp-active-r:${s.node.n === 1 || s.node.n === map.nodes.length ? map.endActiveR : map.dotActiveR}`} />
           </Fragment>
         ))}
       </svg>
     </div>
-    <p class="map-caption">{data.voyageMap.note ?? "Coordinates are approximate display anchors for orientation, not charted positions."}</p>
+    <p class="map-caption">These markers are approximate display anchors — the novel rarely fixes an exact position, so each dot shows a stage's ocean region, not a charted point. Read the stages below in order; hover or tap a dot to find it.</p>
 
     <h2 class="section-h">Stages</h2>
     <ol style="list-style:none; padding:0; margin:0;">
@@ -121,6 +121,7 @@ const stages = data.voyageMap.waypoints
       document.querySelectorAll(".waypoint[data-card]").forEach((li) => {
         const id = li.dataset.card;
         li.addEventListener("mouseenter", () => highlight(id, false));
+        li.addEventListener("focusin", () => highlight(id, false));
       });
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") clear(); });
     })();

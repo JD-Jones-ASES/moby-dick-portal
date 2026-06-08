@@ -177,7 +177,10 @@ function noteCitations(a) {
       );
 
       // ---- Glossary marks <-> cards + popover ----
+      // openMark = id of the currently shown popover; pinned = it was opened by an explicit
+      // click (mark or card) and should survive pointer-leave until Escape / outside / another open.
       let openMark = null;
+      let pinned = false;
       function hideAllPops() {
         document.querySelectorAll(".gloss-pop:not([hidden])").forEach((p) => {
           p.hidden = true;
@@ -185,15 +188,13 @@ function noteCitations(a) {
         });
         document.querySelectorAll(".gloss-mark.active, .gloss.active").forEach((el) => el.classList.remove("active"));
         openMark = null;
+        pinned = false;
       }
       function placePop(mark, pop) {
         pop.hidden = false;
         pop.classList.remove("below", "flip-left");
-        const r = mark.getBoundingClientRect();
-        if (r.top < 150) pop.classList.add("below");
-        // measure after reveal
-        const pr = pop.getBoundingClientRect();
-        if (pr.right > window.innerWidth - 8) pop.classList.add("flip-left");
+        if (mark.getBoundingClientRect().top < 150) pop.classList.add("below");
+        if (pop.getBoundingClientRect().right > window.innerWidth - 8) pop.classList.add("flip-left");
       }
       function showGloss(id, fromCard) {
         const mark = document.getElementById("gmark-" + id);
@@ -208,25 +209,42 @@ function noteCitations(a) {
       }
       document.querySelectorAll(".gloss-mark").forEach((mark) => {
         const id = mark.dataset.gloss;
-        mark.addEventListener("mouseenter", () => { if (!openMark) showGloss(id, false); });
-        mark.addEventListener("mouseleave", () => { if (openMark === id) hideAllPops(); });
-        mark.addEventListener("focus", () => { hideAllPops(); showGloss(id, false); });
-        mark.addEventListener("blur", () => { if (openMark === id) hideAllPops(); });
+        const pop = document.getElementById("gpop-" + id);
+        mark.addEventListener("mouseenter", () => {
+          if (openMark === id) return;
+          if (openMark) hideAllPops();
+          showGloss(id, false);
+        });
+        mark.addEventListener("mouseleave", () => {
+          // defer so a move into the popover (which sets its own hover) can cancel the close
+          setTimeout(() => {
+            if (openMark === id && !pinned && !(pop && pop.matches(":hover"))) hideAllPops();
+          }, 90);
+        });
+        mark.addEventListener("focus", () => { if (openMark !== id) { hideAllPops(); showGloss(id, false); } });
+        mark.addEventListener("blur", () => { if (openMark === id && !pinned) hideAllPops(); });
         mark.addEventListener("click", (e) => {
           e.preventDefault();
-          if (openMark === id) hideAllPops();
-          else { hideAllPops(); showGloss(id, false); }
+          if (openMark === id && pinned) hideAllPops();
+          else { hideAllPops(); showGloss(id, false); pinned = true; }
         });
+        if (pop) {
+          pop.addEventListener("mouseenter", () => { openMark = id; });
+          pop.addEventListener("mouseleave", () => { if (openMark === id && !pinned) hideAllPops(); });
+        }
       });
       document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
         const id = card.dataset.gloss;
-        const act = () => { hideAllPops(); showGloss(id, true); };
+        const act = () => { if (openMark === id) return; hideAllPops(); showGloss(id, true); pinned = true; };
         card.addEventListener("click", act);
         card.addEventListener("focus", act);
       });
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") hideAllPops(); });
       document.addEventListener("click", (e) => {
         if (!e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
+      });
+      document.addEventListener("focusin", (e) => {
+        if (openMark && !e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
       });
 
       // ---- Density toggle ----

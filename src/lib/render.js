@@ -4,10 +4,15 @@
 //   - Study annotations  -> <a class="anno-mark">     (solid gold underline; links to a note card)
 //   - Glossary terms     -> <button class="gloss-mark"> (dotted accent underline; hover/focus popover)
 //
-// Correctness rule (load-bearing): annotations are AUTHORITATIVE. We keep all annotation spans first,
-// then admit a glossary span only if it overlaps no kept annotation span and no earlier kept glossary
-// span. An annotation is never dropped to make room for a glossary mark. All matching is done on the
-// raw plain_text; output is escaped per text-segment as we walk, so inserted tag offsets stay correct.
+// Correctness rules (load-bearing):
+//   - Annotations are AUTHORITATIVE: all kept annotation spans are placed first; a glossary span is
+//     admitted only if it overlaps no kept annotation and no earlier kept glossary span. An annotation
+//     is never dropped for a glossary mark.
+//   - One glossary mark per entry, at the first whole-word occurrence that clears every constraint
+//     (so a blocked earliest occurrence falls through to a later valid one).
+//   - When two entries contend for the same span (e.g. the word "aft" matched by the entry "aft" and
+//     by the variant "aft" of "abaft"), the entry whose CANONICAL term matched wins.
+// All matching is on the raw plain_text; output is escaped per text-segment as we walk.
 
 function esc(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -25,28 +30,10 @@ function overlaps(aStart, aEnd, bStart, bEnd) {
   return aStart < bEnd && aEnd > bStart;
 }
 
-// First whole-word, case-insensitive occurrence of any of `terms` in `text`. ASCII corpus, so a
-// boundary class (not \b) handles hyphenated terms ("try-works") and substring cases ("aft" vs "abaft").
-function firstWholeWordMatch(text, terms) {
-  let best = -1;
-  let bestLen = 0;
-  for (const raw of terms) {
-    const term = (raw ?? "").trim();
-    if (term.length < 2) continue;
-    const re = new RegExp(`(?<![A-Za-z0-9])${escapeRegExp(term)}(?![A-Za-z0-9])`, "i");
-    const m = re.exec(text);
-    if (m && (best === -1 || m.index < best)) {
-      best = m.index;
-      bestLen = m[0].length;
-    }
-  }
-  return best === -1 ? null : { start: best, end: best + bestLen };
-}
-
 export function renderUnit(plainText, annotations = [], glossaryEntries = []) {
   const text = plainText ?? "";
 
-  // 1) Annotation spans (authoritative). Existing behavior: sort, keep earliest non-overlapping.
+  // 1) Annotation spans (authoritative). Sort, keep earliest non-overlapping.
   const annoSpans = [];
   for (const a of annotations) {
     const anchor = a.anchor ?? a.selector?.exact;
@@ -73,24 +60,41 @@ export function renderUnit(plainText, annotations = [], glossaryEntries = []) {
     }
   }
 
-  // 2) Glossary spans, filtered against kept annotations and each other.
-  const glossCandidates = [];
+  // 2) Glossary candidates: every whole-word occurrence of each term/variant that clears the
+  //    per-occurrence constraints (not offset 0 / drop cap, no paragraph straddle, no annotation
+  //    overlap). Carry a `canonical` flag (true when the entry's primary term matched).
+  const candidates = [];
   for (const g of glossaryEntries) {
     const terms = [g.term, ...(g.variants ?? [])];
-    const hit = firstWholeWordMatch(text, terms);
-    if (!hit) continue;
-    if (hit.start === 0) continue; // protect the drop-cap on the first paragraph
-    if (/\n{2,}/.test(text.slice(hit.start, hit.end))) continue; // never straddle a paragraph break
-    glossCandidates.push({ type: "gloss", start: hit.start, end: hit.end, entry: g });
+    for (let ti = 0; ti < terms.length; ti++) {
+      const term = (terms[ti] ?? "").trim();
+      if (term.length < 2) continue;
+      const re = new RegExp(`(?<![A-Za-z0-9])${escapeRegExp(term)}(?![A-Za-z0-9])`, "gi");
+      let m;
+      while ((m = re.exec(text)) !== null) {
+        const start = m.index;
+        const end = m.index + m[0].length;
+        if (m.index === re.lastIndex) re.lastIndex++;
+        if (start === 0) continue;
+        if (/\n{2,}/.test(text.slice(start, end))) continue;
+        if (keptAnno.some((s) => overlaps(start, end, s.start, s.end))) continue;
+        candidates.push({ start, end, entry: g, canonical: ti === 0 });
+      }
+    }
   }
-  glossCandidates.sort((a, b) => a.start - b.start || a.end - b.end);
+  // Earliest first; on a tie, shorter then canonical-term wins.
+  candidates.sort(
+    (a, b) => a.start - b.start || a.end - b.end || Number(b.canonical) - Number(a.canonical)
+  );
   const keptGloss = [];
   const glossPlaced = [];
-  for (const g of glossCandidates) {
-    if (keptAnno.some((s) => overlaps(g.start, g.end, s.start, s.end))) continue;
-    if (keptGloss.some((s) => overlaps(g.start, g.end, s.start, s.end))) continue;
-    keptGloss.push(g);
-    glossPlaced.push(g.entry.id);
+  const placedEntries = new Set();
+  for (const c of candidates) {
+    if (placedEntries.has(c.entry.id)) continue; // one mark per entry
+    if (keptGloss.some((s) => overlaps(c.start, c.end, s.start, s.end))) continue;
+    keptGloss.push({ type: "gloss", start: c.start, end: c.end, entry: c.entry });
+    glossPlaced.push(c.entry.id);
+    placedEntries.add(c.entry.id);
   }
 
   // 3) Merge (mutually non-overlapping now) and walk, escaping text segments.
@@ -101,13 +105,15 @@ export function renderUnit(plainText, annotations = [], glossaryEntries = []) {
     out += esc(text.slice(cursor, sp.start));
     const inner = esc(text.slice(sp.start, sp.end));
     if (sp.type === "anno") {
-      out += `<a class="anno-mark" id="mark-${sp.id}" data-note="${escAttr(sp.id)}" href="#note-${escAttr(sp.id)}">${inner}</a>`;
+      const id = escAttr(sp.id);
+      out += `<a class="anno-mark" id="mark-${id}" data-note="${id}" href="#note-${id}">${inner}</a>`;
     } else {
       const g = sp.entry;
-      const pid = `gpop-${g.id}`;
+      const gid = escAttr(g.id);
+      const pid = `gpop-${gid}`;
       out +=
         `<span class="gloss-wrap">` +
-        `<button type="button" class="gloss-mark" id="gmark-${escAttr(g.id)}" data-gloss="${escAttr(g.id)}" aria-describedby="${pid}">${inner}</button>` +
+        `<button type="button" class="gloss-mark" id="gmark-${gid}" data-gloss="${gid}" aria-describedby="${pid}">${inner}</button>` +
         `<span class="gloss-pop" role="tooltip" id="${pid}" hidden>` +
         `<span class="gp-term">${esc(g.term)}</span>` +
         (g.category ? `<span class="gp-cat">${esc(g.category)}</span>` : "") +

@@ -343,7 +343,7 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .wp-dot { fill: var(--gold); stroke: var(--paper-raised); stroke-width: 2; transition: r 0.12s ease, fill 0.12s ease; cursor: pointer; }
 .wp-dot.endpoint { fill: var(--accent); }
 .wp-hit { fill: transparent; cursor: pointer; outline: none; }
-.wp-hit:focus-visible + .wp-dot, .wp-hit.wp-active + .wp-dot, .wp-dot.wp-active { fill: var(--accent); r: 8; }
+.wp-hit:focus-visible + .wp-dot, .wp-dot.wp-active { fill: var(--accent); r: var(--wp-active-r, 8); }
 .wp-hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 50%; }
 .map-caption { margin: 0.6rem 0 0; font-size: 0.85rem; font-style: italic; color: var(--ink-faint); }
 
@@ -398,6 +398,9 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 }
 .gloss-pop.below { bottom: auto; top: calc(100% + 7px); }
 .gloss-pop.flip-left { left: auto; right: 0; }
+/* Transparent bridge over the 7px gap so the pointer can travel mark -> popover without dismissing it. */
+.gloss-pop::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 9px; }
+.gloss-pop.below::before { top: auto; bottom: 100%; }
 .gloss-pop .gp-term { font-family: var(--serif); font-weight: 700; font-size: 0.98rem; color: var(--ink); margin-right: 0.4rem; }
 .gloss-pop .gp-cat { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold); font-weight: 700; }
 .gloss-pop .gp-def { display: block; margin-top: 0.3rem; }
@@ -407,7 +410,7 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .reader-tools .legend { display: inline-flex; align-items: center; gap: 0.35rem; }
 .reader-tools .swatch { width: 18px; height: 0; border-bottom: 2px solid; display: inline-block; }
 .reader-tools .swatch.anno { border-bottom-color: var(--gold); }
-.reader-tools .swatch.gloss { border-bottom-style: dotted; border-bottom-width: 2px; border-bottom-color: var(--gloss); }
+.reader-tools .swatch.gloss { border-bottom-style: dotted; border-bottom-color: var(--gloss); }
 .tool-toggle {
   margin-left: auto; border: 1px solid var(--line-strong); background: var(--paper-raised);
   color: var(--ink-soft); border-radius: 7px; padding: 0.3rem 0.6rem; font: inherit; font-size: 0.8rem; cursor: pointer;

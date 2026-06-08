@@ -70,40 +70,65 @@ export function buildVoyageMap(waypoints) {
   // viewBox cropped to the route bounds (+ padding), clamped to the map rectangle.
   const xs = trueNodes.map((n) => n.x);
   const ys = trueNodes.map((n) => n.y);
-  let minX = Math.min(...xs);
-  let maxX = Math.max(...xs);
-  let minY = Math.min(...ys);
-  let maxY = Math.max(...ys);
-  minX = Math.max(0, minX - ((maxX - minX) * 0.08 + 14));
-  maxX = Math.min(W, maxX + ((maxX - minX) * 0.08 + 14));
-  minY = Math.max(0, minY - ((maxY - minY) * 0.22 + 14));
-  maxY = Math.min(H, maxY + ((maxY - minY) * 0.22 + 14));
+  const rawMinX = Math.min(...xs);
+  const rawMaxX = Math.max(...xs);
+  const rawMinY = Math.min(...ys);
+  const rawMaxY = Math.max(...ys);
+  const padX = (rawMaxX - rawMinX) * 0.08 + 14;
+  const padY = (rawMaxY - rawMinY) * 0.22 + 14;
+  const minX = Math.max(0, rawMinX - padX);
+  const maxX = Math.min(W, rawMaxX + padX);
+  const minY = Math.max(0, rawMinY - padY);
+  const maxY = Math.min(H, rawMaxY + padY);
   const spanX = maxX - minX;
   const spanY = maxY - minY;
   const U = Math.max(spanX, spanY) / 100;
-  const dotR = U * 0.95;
-  const endR = U * 1.4;
-  const hitR = U * 2.4;
-  const collideR = U * 0.95; // only near-identical points (a dot-width apart) get spread
-  const jitterR = U * 1.7;
+  const dotR = U * 0.7;
+  const endR = U * 1.05;
+  const hitR = U * 2.2;
+  const minSep = dotR * 2.1; // required clearance between any two placed dots (just over a diameter)
+  const jitterR = U * 1.5;
 
-  // Deterministic golden-angle jitter for stages that pile on the same pixel (NE-shore rooms,
-  // the Pacific-finale cluster). Members fan onto a small ring around the shared point; a thin
-  // connector is drawn back to the true position. Distinct stages keep their true coordinates.
-  const placed = [];
+  // A dot is moved whenever its true position lands within minSep of an ALREADY-PLACED (final) dot —
+  // this is the true overlap criterion, so an un-jittered dot can't be hit by an earlier jittered one.
+  // It then walks successive golden-angle slots (widening the ring after each full turn) and takes the
+  // first that clears every placed dot; a thin connector is drawn from the moved dot to its true spot.
+  const placed = []; // final {x,y,tx,ty}
   let clusterCount = 0;
   const nodes = trueNodes.map((n, i) => {
-    let dx = 0;
-    let dy = 0;
+    let px = n.x;
+    let py = n.y;
     let jittered = false;
-    if (placed.some((p) => Math.hypot(p.tx - n.x, p.ty - n.y) < collideR)) {
-      const ang = ((clusterCount++ * 137.5) * Math.PI) / 180;
-      dx = Math.cos(ang) * jitterR;
-      dy = Math.sin(ang) * jitterR;
+    const clearOf = (x, y) => placed.reduce((m, p) => Math.min(m, Math.hypot(p.x - x, p.y - y)), Infinity);
+    if (clearOf(n.x, n.y) < minSep) {
       jittered = true;
+      let bestClear = -1;
+      let bx = n.x;
+      let by = n.y;
+      for (let k = 0; k < 48; k++) {
+        const ang = ((clusterCount + k) * 137.5 * Math.PI) / 180;
+        const r = jitterR * (1 + Math.floor(k / 10) * 0.5);
+        const x = n.x + Math.cos(ang) * r;
+        const y = n.y + Math.sin(ang) * r;
+        const clear = clearOf(x, y);
+        if (clear > bestClear) {
+          bestClear = clear;
+          bx = x;
+          by = y;
+        }
+        if (clear >= minSep) {
+          clusterCount += k + 1;
+          break;
+        }
+        if (k === 47) clusterCount += k + 1;
+      }
+      px = bx;
+      py = by;
     }
-    const disp = { x: n.x + dx, y: n.y + dy, tx: n.x, ty: n.y };
+    const disp = { x: px, y: py, tx: n.x, ty: n.y };
     placed.push(disp);
+    // Only draw a connector for dots that moved noticeably; tiny nudges need none.
+    const movedFar = jittered && Math.hypot(px - n.x, py - n.y) > dotR * 1.1;
     return {
       id: n.w.id,
       label: n.w.label,
@@ -114,11 +139,9 @@ export function buildVoyageMap(waypoints) {
       ty: r1(n.y),
       x: r1(disp.x),
       y: r1(disp.y),
-      jittered
+      jittered: movedFar
     };
   });
-
-  const route = trueNodes.map((n) => `${r1(n.x)},${r1(n.y)}`).join(" ");
 
   const graticule = [];
   for (let lon = -180; lon <= 180; lon += 30) {
@@ -142,12 +165,13 @@ export function buildVoyageMap(waypoints) {
     viewBox: `${r1(minX)} ${r1(minY)} ${r1(spanX)} ${r1(spanY)}`,
     landPath,
     graticule: graticule.join(""),
-    route,
     nodes,
     oceans,
     dotR: r1(dotR),
     endR: r1(endR),
     hitR: r1(hitR),
+    dotActiveR: r1(U * 1.15),
+    endActiveR: r1(U * 1.5),
     fontSize: r1(U * 2.3)
   };
 }
