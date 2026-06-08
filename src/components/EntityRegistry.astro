@@ -1,0 +1,49 @@
+---
+// A searchable registry of entities of one kind (characters, places), linking to /entity/[id]/.
+import { withBase } from "../lib/site.js";
+import { entitiesOfKind } from "../lib/explore.js";
+
+const { kind, eyebrow, title, lede } = Astro.props;
+const entities = entitiesOfKind(kind);
+---
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("explorer/")}>← Explore</a></nav>
+  <div class="page-head">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+  </div>
+
+  <div class="toc-controls">
+    <input id="ent-search" type="search" placeholder={`Search ${title.toLowerCase()}…`} aria-label={`Search ${title.toLowerCase()}`} />
+  </div>
+
+  <div class="grid cols-3" id="ent-list">
+    {entities.map((e) => (
+      <a class="card entity-card" href={withBase(`entity/${e.id}/`)} data-ent data-text={`${e.label} ${(e.aliases ?? []).join(" ")}`.toLowerCase()}>
+        <h3>{e.label}</h3>
+        {e.aliases?.length ? <p class="muted">also: {e.aliases.join(", ")}</p> : null}
+        <p class="count-pill">{e.unitCount} {e.unitCount === 1 ? "chapter" : "chapters"}</p>
+      </a>
+    ))}
+  </div>
+  <p id="ent-empty" class="muted hide" style="padding:2rem 0;">No matches.</p>
+</div>
+
+<script is:inline>
+  (function () {
+    const q = document.getElementById("ent-search");
+    const items = Array.from(document.querySelectorAll("[data-ent]"));
+    const empty = document.getElementById("ent-empty");
+    q.addEventListener("input", function () {
+      const t = q.value.trim().toLowerCase();
+      let shown = 0;
+      items.forEach((el) => {
+        const show = !t || el.dataset.text.includes(t);
+        el.classList.toggle("hide", !show);
+        if (show) shown++;
+      });
+      empty.classList.toggle("hide", shown !== 0);
+    });
+  })();
+</script>

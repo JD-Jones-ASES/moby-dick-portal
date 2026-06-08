@@ -1305,3 +1305,46 @@
   `src/components/ChapterFlourish.astro`, `data/references/big-read-links.json`; modified
   `src/pages/read/[unit].astro`, `src/lib/reader-ui.js`, `src/styles/portal.css`; docs
   `UPGRADE_ROADMAP.md` (Phase 3 ✅), `Agent.md`.
+- Shipped: committed `438bc09` and pushed to `main` (autonomy granted); GitHub Actions deploy succeeded
+  and the live chapter serves the flourish, ambient toggle, and the correctly-slugged Big Read link.
+
+## 2026-06-08 - Phase 4: Guided exploration — trails, entities, path compare (shipped)
+
+- Built Phase 4 of `docs/UPGRADE_ROADMAP.md` autonomously, with an ultracode adversarial review between
+  implementation and ship. **+167 static pages** (build went 149 → 316), pure static, no new deps,
+  base-correct; build green, verified in-browser in Paper + Night with a clean console.
+- **Membership model (the key data decision):** a chapter belongs to a trail/entity when an annotation in
+  it carries the tag `trail:<id>` / `entity:<id>`. The generated `annotations-by-{trail,entity}.json
+  .units[]` is **deliberately NOT unioned in** — its synthetic floor passes over-inflate some trails
+  (whaling-labor showed 122 chapters via the index vs **54** real tagged; the index median is 1, max 135).
+  Tags are the honest, annotation-grounded signal and keep trails distinct. `src/lib/explore.js` computes
+  the membership maps once at build from the raw annotations and exposes `coveredTrails`/`coveredEntities`
+  (≥1 chapter → gets a page), `trailUnitIds`/`entityUnitIds`, `notesForTag`, `relatedByOverlap` (related
+  lenses by shared chapters), `entitiesOfKind`, `lensesForUnit` (reader breadcrumb), and `placedNoteIds`.
+- **Pages:** `/explorer/` hub → Trails / Characters / Places / Compare; `/trails/` index + `/trails/[id]/`
+  (45 covered trails); `/entity/[id]/` (117 entities); `/explorer/characters/` (24) + `/explorer/places/`
+  (27) via a shared `EntityRegistry.astro`; `/paths/compare/` (142×3 status table with vanilla column
+  toggles + a bounded-height sticky header). Trail and entity pages share `CollectionView.astro` — a
+  header + a numbered "stops" timeline (chapters in narrative order with summary + lens-specific public
+  notes) + related lenses. A reader sidebar breadcrumb **"This chapter appears in"** (chips → trails/
+  entities via `lensesForUnit`), an **"Explore"** nav item, and **trail (45) + entity (117) records added
+  to the Phase-2 search index** (so the palette now finds lenses too; 870 records total).
+- **Astro gotcha:** `getStaticPaths` is hoisted above frontmatter declarations, so helpers it calls must
+  be imported, not locally declared — moved `cap()` into `site.js`.
+- **Adversarial review** (4-dimension Workflow → find → verify) confirmed **9 findings** (2 rejected —
+  the "66 entities without a registry" is intended scope, and a claimed margin bug was a margin-collapse
+  mis-model). All fixed: **(major)** trail/entity note links pointed at `#note-<id>` anchors the reader
+  never renders for the 4 globally-unplaced public notes → added `placedNoteIds()` (replays `renderUnit`
+  to get the reader's actual placed set) and filter lens notes to it; entity pages now gated on membership
+  like trails (`coveredEntities`); tag chips humanized (`topic:whaling` → "Whaling"); compare table got
+  `scope="col"` + per-row `<th scope="row">`; `.st-defer`/`.st-cut` pills use `--ink-soft` (AA contrast);
+  the lone trail/entity id collision no longer self-references in "Related lenses"; the compare sticky
+  header now sticks (bounded `.cmp-scroll` height + a box-shadow underline that survives border-collapse);
+  the 7-item nav uses `min-height` + an earlier label-shed breakpoint to avoid wrap.
+- Files: new `src/lib/explore.js`, `src/components/CollectionView.astro`, `src/components/EntityRegistry.astro`,
+  `src/pages/trails/index.astro`, `src/pages/trails/[id].astro`, `src/pages/entity/[id].astro`,
+  `src/pages/explorer/index.astro`, `src/pages/explorer/characters/index.astro`,
+  `src/pages/explorer/places/index.astro`, `src/pages/paths/compare/index.astro`; modified
+  `src/lib/site.js` (`cap`), `src/lib/search-index.js`, `src/lib/search-ui.js`,
+  `src/components/Layout.astro` (Explore nav), `src/pages/read/[unit].astro` (breadcrumb),
+  `src/styles/portal.css`; docs `UPGRADE_ROADMAP.md` (Phase 4 ✅), `Agent.md`.

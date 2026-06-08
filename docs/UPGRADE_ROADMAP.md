@@ -1,10 +1,10 @@
 # Upgrade Roadmap — The Immersive Moby-Dick Reader
 
-> **Status:** active plan. Phase 0 (the hover page-jump fix), **Phase 1 (the Immersive Reading Room)**,
-> **Phase 2 (the Deep Search ⌘K palette)**, and **Phase 3 (nautical immersion + optional audio)** are
-> **shipped**. Phases 4–5 are the rest of the reading-first immersive upgrade and are intended to be
-> executed in fresh sessions, one phase per session where practical. This is **not a content pass** —
-> the scholarly content pipeline is separate (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
+> **Status:** active plan. Phases 0–4 are **shipped** — the hover page-jump fix, **Phase 1 (the
+> Immersive Reading Room)**, **Phase 2 (the Deep Search ⌘K palette)**, **Phase 3 (nautical immersion +
+> optional audio)**, and **Phase 4 (guided exploration: trails, entities, path compare)**. **Phase 5
+> (QA, accessibility, cold-start docs)** is the last one. This is **not a content pass** — the scholarly
+> content pipeline is separate (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
 
 ## North star
 
@@ -136,7 +136,17 @@ See the 2026-06-08 BUILD_LOG "Phase 3" entry.
   `data/references/big-read-links.json` (chapter number → URL), render a subtle "Listen (external) ↗" link
   in the reader sidebar for chapters with a recording. **Link out only — never embed/host.**
 
-### Phase 4 — Guided exploration: trails, entities, path compare  (static pages)
+### Phase 4 — Guided exploration: trails, entities, path compare  (static pages)  ✅ SHIPPED
+Shipped **+167 static pages**: `/explorer/` hub, `/trails/` + `/trails/[id]/` (45 covered trails),
+`/entity/[id]/` (117 entities), `/explorer/characters/` + `/explorer/places/`, `/paths/compare/`. Plus a
+reader sidebar breadcrumb "This chapter appears in", an "Explore" nav item, and trail/entity records in
+the Phase-2 search index. **Membership is annotation-tag-grounded** (`trail:<id>`/`entity:<id>` on any
+annotation in a chapter) — the generated `annotations-by-*.json .units[]` was deliberately NOT unioned in
+because its floor passes over-inflate some trails (whaling-labor → 122 vs 54 real). Trails/entities with
+zero membership get **no page and no link** (no dead/empty pages). Trail/entity "stops" link only to notes
+the reader actually places (`placedNoteIds()` replays `renderUnit` so a `#note-<id>` target always exists).
+`src/lib/explore.js` is the shared build-time data module; `CollectionView.astro` is the reused trail/
+entity renderer. Hardened against a 9-finding adversarial review. See the 2026-06-08 BUILD_LOG "Phase 4".
 - **⚠ Scope guardrail (measured):** only **14/55** trails have public student-ready annotations. Build
   trail/entity pages on **chapter-level membership** (`data/indexes/annotations-by-trail.json` /
   `annotations-by-entity.json` `.units[]`, always populated) plus any public notes that exist — show

@@ -1,0 +1,63 @@
+---
+import Layout from "../../components/Layout.astro";
+import CollectionView from "../../components/CollectionView.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { unitHref, unitKicker, withBase, claimInfo, primaryClaim, cap } from "../../lib/site.js";
+import { coveredEntities, entityUnitIds, orderUnits, notesForTag, relatedByOverlap, placedNoteIds } from "../../lib/explore.js";
+
+const KIND_LABEL = {
+  character: "Character", place: "Place", ship: "Ship", animal: "Animal", symbol: "Symbol",
+  concept: "Concept", allusion: "Allusion", theme: "Theme", topic: "Topic", form: "Form"
+};
+
+export async function getStaticPaths() {
+  const data = await loadGuideData();
+  const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+  const placed = await placedNoteIds();
+
+  return coveredEntities().map((e) => {
+    const unitIds = entityUnitIds(e.id);
+    const units = orderUnits(unitIds, ordered);
+    const byUnit = {};
+    for (const n of notesForTag(data.annotations, "entity", e.id)) {
+      if (!placed.has(n.id)) continue; // only link notes the reader actually renders (#note-id exists)
+      (byUnit[n.unit_id] = byUnit[n.unit_id] || []).push(n);
+    }
+    const chapters = units.map((u) => ({
+      unit_id: u.unit_id,
+      kicker: unitKicker(u),
+      title: u.title,
+      one: u.summaries?.one_breath ?? "",
+      href: unitHref(u.unit_id),
+      notes: (byUnit[u.unit_id] || []).map((n) => {
+        const c = claimInfo(primaryClaim(n));
+        return { id: n.id, anchor: n.anchor, note: n.note, label: c.label, cls: c.cls };
+      })
+    }));
+
+    const related = [
+      ...relatedByOverlap(unitIds, "entity", e.id, 5).map((r) => ({ href: withBase(`entity/${r.id}/`), label: r.def.label, eyebrow: cap(r.def.kind), shared: r.shared })),
+      // pass e.id as selfId so a same-named trail sibling (the lone trail/entity id collision) isn't self-listed
+      ...relatedByOverlap(unitIds, "trail", e.id, 5).map((r) => ({ href: withBase(`trails/${r.id}/`), label: r.def.label, eyebrow: "Trail", shared: r.shared }))
+    ].sort((a, b) => b.shared - a.shared).slice(0, 6);
+
+    const aliases = (e.aliases ?? []).filter(Boolean);
+    return { params: { id: e.id }, props: { entity: e, aliases, chapters, related } };
+  });
+}
+
+const { entity, aliases, chapters, related } = Astro.props;
+const kindLabel = KIND_LABEL[entity.kind] ?? cap(entity.kind);
+const lede = aliases.length ? `Also called ${aliases.join(", ")}.` : null;
+---
+<Layout title={`${entity.label} — ${kindLabel}`} current="explore" description={`Where ${entity.label} appears across Moby-Dick, chapter by chapter.`}>
+  <CollectionView
+    eyebrow={kindLabel}
+    title={entity.label}
+    lede={lede}
+    chapters={chapters}
+    related={related}
+    backHref={withBase(entity.kind === "place" ? "explorer/places/" : entity.kind === "character" ? "explorer/characters/" : "explorer/")}
+    backLabel={entity.kind === "place" ? "All places" : entity.kind === "character" ? "All characters" : "Explore"}
+  />
+</Layout>

@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 1rem;
-  height: 60px;
+  min-height: 60px;
 }
 .brand {
   display: flex;
@@ -714,11 +714,101 @@ body::after {
   .chapter-flourish { animation: none; opacity: 1; }
 }
 
+/* ---- Guided exploration: trails, entities, path compare (Phase 4) ---- */
+
+.crumbs { padding: 1.5rem 0 0; font-size: 0.85rem; }
+.crumbs a { color: var(--ink-faint); }
+.crumbs a:hover { color: var(--accent); }
+
+/* Chips (trail/entity tags + the reader "appears in" breadcrumb) */
+.chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.75rem 0 0; }
+.chip {
+  display: inline-flex; align-items: center; font-size: 0.78rem; font-weight: 600;
+  padding: 0.22rem 0.6rem; border-radius: 999px;
+  border: 1px solid var(--line-strong); color: var(--ink-soft); background: var(--paper-raised);
+}
+a.chip:hover { text-decoration: none; border-color: var(--accent); color: var(--accent); }
+.chip-trail { border-color: color-mix(in srgb, var(--c-historical) 45%, var(--line-strong)); }
+.chip-entity { border-color: color-mix(in srgb, var(--c-classical) 45%, var(--line-strong)); }
+.appears-in h2 { margin-bottom: 0.6rem; }
+
+/* Trail / entity "stops" — chapters in narrative order */
+.trail-stops { list-style: none; counter-reset: stop; padding: 0; margin: 2rem 0 0; }
+.trail-stop {
+  position: relative; counter-increment: stop;
+  border-left: 2px solid var(--line); padding: 0 0 1.6rem 1.4rem; margin-left: 0.5rem;
+}
+.trail-stop::before {
+  content: counter(stop); position: absolute; left: -0.85rem; top: 0;
+  width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: var(--paper-raised); border: 1px solid var(--line-strong); color: var(--ink-faint);
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.trail-stop:last-child { border-left-color: transparent; }
+.ts-head { display: flex; flex-direction: column; gap: 0.05rem; }
+.ts-head:hover { text-decoration: none; }
+.ts-kicker { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 700; }
+.ts-title { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); }
+.ts-head:hover .ts-title { color: var(--accent); }
+.ts-one { color: var(--ink-soft); font-size: 0.95rem; margin: 0.3rem 0 0; }
+.ts-notes { margin-top: 0.7rem; display: grid; gap: 0.6rem; }
+.ts-note { background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--line-strong); border-radius: 8px; padding: 0.7rem 0.85rem; }
+.ts-note .anchor-q { font-family: var(--serif); font-style: italic; color: var(--ink); font-size: 0.95rem; display: block; margin: 0.3rem 0; }
+.ts-note .body { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+
+/* Related lenses + explore/trail/entity cards */
+.related { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+.related-card h3 { font-size: 1.05rem; margin: 0.2rem 0; }
+.related-card p { font-size: 0.82rem; color: var(--ink-faint); }
+.explore-card h3, .trail-card h3 { margin: 0.25rem 0 0.4rem; }
+.explore-card .count-pill, .trail-card .count-pill, .related-card .count-pill { display: inline-block; margin-top: 0.5rem; }
+.entity-card { text-align: left; }
+.entity-card h3 { margin: 0 0 0.2rem; font-size: 1.1rem; }
+.entity-card .count-pill { display: inline-block; margin-top: 0.4rem; }
+
+/* Path-compare table */
+.cmp-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; margin: 1rem 0 1.25rem; }
+.cmp-ctl-label { font-size: 0.85rem; color: var(--ink-faint); font-weight: 600; }
+.cmp-toggle { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; cursor: pointer; }
+/* Bounded height makes this a real 2D scroll container so the sticky header actually sticks. */
+.cmp-scroll { overflow: auto; max-height: min(75vh, 720px); border: 1px solid var(--line); border-radius: var(--radius); }
+.cmp-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+.cmp-table th, .cmp-table td { padding: 0.55rem 0.8rem; text-align: left; border-bottom: 1px solid var(--line); }
+/* box-shadow underline survives border-collapse while the header is stuck (the border would not). */
+.cmp-table thead th { position: sticky; top: 0; background: var(--paper-raised); z-index: 1; vertical-align: bottom; box-shadow: inset 0 -1px 0 var(--line); }
+.cmp-table th.cmp-unit { font-weight: inherit; text-align: left; }
+.cmp-table tbody th.cmp-unit { background: transparent; }
+.cmp-table .cmp-col { text-align: center; width: 7.5rem; }
+.cmp-count { display: block; font-size: 0.68rem; color: var(--ink-faint); font-weight: 400; text-transform: none; letter-spacing: 0; }
+.cmp-unit a { font-family: var(--serif); color: var(--ink); }
+.cmp-unit a:hover { color: var(--accent); }
+.cmp-kicker { display: block; font-size: 0.72rem; color: var(--ink-faint); }
+.cmp-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 4%, transparent); }
+.st { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 0.12rem 0.5rem; border-radius: 5px; }
+.st-req { background: var(--accent); color: #fff; }
+.st-opt { background: color-mix(in srgb, var(--gold) 22%, var(--paper-raised)); color: var(--gold); border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); }
+.st-defer { background: var(--paper-raised); color: var(--ink-soft); border: 1px solid var(--line-strong); }
+.st-cut { background: transparent; color: var(--ink-soft); border: 1px dashed var(--line-strong); }
+:root[data-theme="night"] .st-req { color: var(--paper); }
+.cmp-table.hide-narrative_core .col-narrative_core,
+.cmp-table.hide-classroom_standard .col-classroom_standard,
+.cmp-table.hide-full_text .col-full_text { display: none; }
+
+/* Search badges for the new record types */
+.sr-type-trail { background: var(--c-historical); }
+.sr-type-entity { background: var(--c-classical); }
+
 /* ---- Responsive ---- */
+/* Mid-range: with 7 nav items + Search + Theme, shed the Search label/kbd before the row wraps. */
+@media (max-width: 1080px) {
+  .search-btn-txt, .search-btn kbd { display: none; }
+}
 @media (max-width: 900px) {
   .reader { grid-template-columns: 1fr; }
   .notes { position: static; }
-  .grid.cols-3, .grid.cols-2, .gloss-grid { grid-template-columns: 1fr; }
+  .grid.cols-3, .grid.cols-2, .gloss-grid, .related-grid { grid-template-columns: 1fr; }
   .nav-links a { padding: 0.35rem 0.5rem; font-size: 0.85rem; }
   .brand span.full { display: none; }
   .search-btn-txt, .search-btn kbd { display: none; }

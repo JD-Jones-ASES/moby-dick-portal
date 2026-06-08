@@ -134,16 +134,21 @@ best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-AP
   **link-out-only** Big Read "Listen" link per chapter/epilogue (`data/references/big-read-links.json` —
   the Big Read's own verified slugs, which differ from ours). Hardened against a 7-finding review. See the
   2026-06-08 BUILD_LOG "Phase 3" entry.
-- **Next:** Phase 4 (trails/entity/explorer/path-compare — ~175 static pages) → Phase 5 (QA + docs +
-  full a11y/Lighthouse pass + confirm the search-index build wiring is green). One phase per session where
-  practical. See the roadmap for the file map and the **localStorage key registry**. Two load-bearing
-  notes: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`) — the Phase-2 search index
-  honors this via its build-time endpoint; reuse that pattern for any new generated artifact; **(2)** only
-  14/55 trails have public notes, so build Phase-4 trail/entity pages on **chapter-level membership**
-  (`data/indexes/annotations-by-trail.json`/`annotations-by-entity.json` `.units[]`), never gate on
-  public-note presence, and add `trail`/`entity` records to `buildSearchIndex` (src/lib/search-index.js)
-  only once `/trails/[id]/` + `/entity/[id]/` exist. Reuse the client-module pattern (processed
-  `<script>import`); don't reintroduce inline scripts. `mdp-sound` (Phase 3) joins the localStorage keys.
+- **Phase 4 (guided exploration) is SHIPPED:** +167 static pages — `/explorer/` hub, `/trails/` +
+  `/trails/[id]/` (45 covered trails), `/entity/[id]/` (117 entities), `/explorer/characters|places/`,
+  `/paths/compare/` — plus a reader "This chapter appears in" breadcrumb, an "Explore" nav item, and
+  trail+entity records in the search index. Membership is **annotation-tag-grounded** (`trail:`/`entity:`
+  tags; the `annotations-by-*.json .units[]` was NOT used — it over-inflates trails). `src/lib/explore.js`
+  is the shared build-time data module; `CollectionView.astro` renders trails+entities. Trails/entities
+  with zero membership get no page; lens notes link only to `placedNoteIds()` (so `#note-<id>` always
+  resolves). Hardened against a 9-finding review. See the 2026-06-08 BUILD_LOG "Phase 4".
+- **Next:** Phase 5 — QA, accessibility, cold-start docs (the LAST phase). Full keyboard + screen-reader
+  (axe/NVDA) pass across reader, search overlay, map, trails, compare table; ARIA live regions; reduced-
+  motion + light/dark + offline on every surface; Lighthouse; a grep guard that every link uses
+  `withBase`/`import.meta.env.BASE_URL`; confirm the GitHub Actions build is green with the search-index
+  wiring; finalize docs. localStorage keys now live: `mdp-theme`, `mdp-gloss`, `mdp-focus`, `mdp-typo`,
+  `mdp-resume-*` (+ `mdp-resume-index`), `mdp-sound`. Reuse the client-module pattern (processed
+  `<script>import`); don't reintroduce inline scripts.
 - Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
   search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
 

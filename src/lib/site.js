@@ -68,6 +68,10 @@ export function unitKicker(unit) {
   return "Front matter";
 }
 
+export function cap(s) {
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+}
+
 // Human labels for the unit `functions` classification (thematic browsing).
 export const functionMeta = {
   narrative: "Narrative",

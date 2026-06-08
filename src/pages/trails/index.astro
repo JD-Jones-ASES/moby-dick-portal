@@ -1,0 +1,51 @@
+---
+import Layout from "../../components/Layout.astro";
+import { withBase } from "../../lib/site.js";
+import { coveredTrails } from "../../lib/explore.js";
+
+const trails = coveredTrails();
+---
+<Layout title="Thematic trails" current="explore" description="Follow a theme — whaling labor, prophecy, race and empire, biblical allusion — chapter by chapter across Moby-Dick.">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("explorer/")}>← Explore</a></nav>
+    <div class="page-head">
+      <p class="eyebrow">Explore</p>
+      <h1>Thematic trails</h1>
+      <p class="lede">{trails.length} trails through the book. Each gathers the chapters where a theme runs, in narrative order, with the study notes that land on it.</p>
+    </div>
+
+    <div class="toc-controls">
+      <input id="tr-search" type="search" placeholder="Search trails…" aria-label="Search trails" />
+    </div>
+
+    <div class="grid cols-2" id="tr-list">
+      {trails.map((t) => (
+        <a class="card trail-card" href={withBase(`trails/${t.id}/`)} data-tr data-text={`${t.label} ${t.description ?? ""}`.toLowerCase()}>
+          <span class="kicker">Trail</span>
+          <h3>{t.label}</h3>
+          {t.description && <p>{t.description}</p>}
+          <p class="count-pill">{t.unitCount} {t.unitCount === 1 ? "chapter" : "chapters"}</p>
+        </a>
+      ))}
+    </div>
+    <p id="tr-empty" class="muted hide" style="padding:2rem 0;">No trails match.</p>
+  </div>
+
+  <script is:inline>
+    (function () {
+      const q = document.getElementById("tr-search");
+      const items = Array.from(document.querySelectorAll("[data-tr]"));
+      const empty = document.getElementById("tr-empty");
+      q.addEventListener("input", function () {
+        const t = q.value.trim().toLowerCase();
+        let shown = 0;
+        items.forEach((el) => {
+          const show = !t || el.dataset.text.includes(t);
+          el.classList.toggle("hide", !show);
+          if (show) shown++;
+        });
+        empty.classList.toggle("hide", shown !== 0);
+      });
+    })();
+  </script>
+</Layout>

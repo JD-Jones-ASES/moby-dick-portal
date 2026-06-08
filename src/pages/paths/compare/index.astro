@@ -1,0 +1,80 @@
+---
+import Layout from "../../../components/Layout.astro";
+import { loadGuideData } from "../../../lib/guide-data.js";
+import { unitHref, unitKicker, pathMeta, withBase } from "../../../lib/site.js";
+
+const data = await loadGuideData();
+const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+const pathIds = ["narrative_core", "classroom_standard", "full_text"];
+
+const statusMeta = {
+  required: { label: "In", cls: "st-req" },
+  optional: { label: "Optional", cls: "st-opt" },
+  defer: { label: "Deferred", cls: "st-defer" },
+  excluded: { label: "Cut", cls: "st-cut" }
+};
+function st(unit, pathId) {
+  const v = unit.paths?.[pathId] ?? "excluded";
+  return statusMeta[v] ?? { label: v, cls: "st-defer" };
+}
+
+const counts = {};
+for (const p of pathIds) {
+  counts[p] = ordered.filter((u) => (u.paths?.[p] ?? "excluded") === "required").length;
+}
+---
+<Layout title="Compare the paths" current="explore" description="A chapter-by-chapter comparison of what Narrative Core, Classroom Standard, and Full Text keep, defer, or cut.">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href={withBase("explorer/")}>← Explore</a></nav>
+    <div class="page-head">
+      <p class="eyebrow">Compare</p>
+      <h1>The three paths, side by side</h1>
+      <p class="lede">Every reading unit and how each path treats it. Nothing is deleted — “cut” and “deferred” chapters are always one click away in the full text.</p>
+    </div>
+
+    <div class="cmp-controls">
+      <span class="cmp-ctl-label">Show columns:</span>
+      {pathIds.map((p) => (
+        <label class="cmp-toggle"><input type="checkbox" data-col={p} checked /> {pathMeta[p].short}</label>
+      ))}
+    </div>
+
+    <div class="cmp-scroll">
+      <table class="cmp-table" id="cmp">
+        <thead>
+          <tr>
+            <th scope="col" class="cmp-unit">Chapter</th>
+            {pathIds.map((p) => (
+              <th scope="col" class={`cmp-col col-${p}`}>{pathMeta[p].short}<span class="cmp-count">{counts[p]} in</span></th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {ordered.map((u) => (
+            <tr>
+              <th scope="row" class="cmp-unit">
+                <a href={unitHref(u.unit_id)}>{u.section_type === "chapter" ? `${u.number}. ` : ""}{u.title}</a>
+                <span class="cmp-kicker">{unitKicker(u)}</span>
+              </th>
+              {pathIds.map((p) => {
+                const s = st(u, p);
+                return <td class={`cmp-col col-${p}`}><span class={`st ${s.cls}`}>{s.label}</span></td>;
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      const table = document.getElementById("cmp");
+      document.querySelectorAll(".cmp-toggle input[data-col]").forEach((cb) => {
+        cb.addEventListener("change", function () {
+          table.classList.toggle("hide-" + cb.dataset.col, !cb.checked);
+        });
+      });
+    })();
+  </script>
+</Layout>

@@ -1,0 +1,56 @@
+---
+// Shared rendering for a "lens over chapters" page — used by both /trails/[id]/ and /entity/[id]/.
+// Shows the lens header, its chapters in narrative order (summary + any lens-specific public notes),
+// and related lenses by shared-chapter overlap. All links are pre-baked base-correct by the callers.
+const { eyebrow, title, lede, tags = [], chapters, related = [], backHref, backLabel } = Astro.props;
+---
+<div class="wrap narrow">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href={backHref}>← {backLabel}</a></nav>
+  <div class="page-head">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    {lede && <p class="lede">{lede}</p>}
+    {tags.length > 0 && (
+      <div class="chip-row">{tags.map((t) => <span class="chip">{t}</span>)}</div>
+    )}
+    <p class="count-pill">{chapters.length} {chapters.length === 1 ? "chapter" : "chapters"} in narrative order</p>
+  </div>
+
+  <ol class="trail-stops">
+    {chapters.map((c) => (
+      <li class="trail-stop" id={c.unit_id}>
+        <a class="ts-head" href={c.href}>
+          <span class="ts-kicker">{c.kicker}</span>
+          <span class="ts-title">{c.title}</span>
+        </a>
+        {c.one && <p class="ts-one">{c.one}</p>}
+        {c.notes.length > 0 && (
+          <div class="ts-notes">
+            {c.notes.map((n) => (
+              <div class="ts-note">
+                <span class={`claim ${n.cls}`}>{n.label}</span>
+                <a class="anchor-q" href={`${c.href}#note-${n.id}`}>“{n.anchor}”</a>
+                <p class="body">{n.note}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </li>
+    ))}
+  </ol>
+
+  {related.length > 0 && (
+    <section class="related">
+      <h2 class="section-h">Related lenses</h2>
+      <div class="related-grid">
+        {related.map((r) => (
+          <a class="card related-card" href={r.href}>
+            <span class="kicker">{r.eyebrow}</span>
+            <h3>{r.label}</h3>
+            <p>{r.shared} shared {r.shared === 1 ? "chapter" : "chapters"}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</div>

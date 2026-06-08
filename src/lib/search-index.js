@@ -9,6 +9,12 @@
 
 import { unitHref, unitKicker, withBase, primaryClaim, claimInfo } from "./site.js";
 import { termBlob } from "./search-tokenize.js";
+import { coveredTrails, coveredEntities } from "./explore.js";
+
+const ENTITY_KIND_LABEL = {
+  character: "Character", place: "Place", ship: "Ship", animal: "Animal", symbol: "Symbol",
+  concept: "Concept", allusion: "Allusion", theme: "Theme", topic: "Topic", form: "Form"
+};
 
 function clip(text, max) {
   const t = String(text || "").replace(/\s+/g, " ").trim();
@@ -65,6 +71,34 @@ export function buildSearchIndex(data) {
       path: unitHref(a.unit_id) + `#note-${a.id}`,
       terms: termBlob([a.anchor, a.note, claim.label]),
       tt: termBlob([a.anchor])
+    });
+  }
+
+  // --- Thematic trails (only those with chapter membership → that have a page) ---
+  for (const t of coveredTrails()) {
+    records.push({
+      id: t.id,
+      type: "trail",
+      title: t.label,
+      snippet: clip(t.description, 200),
+      path: withBase(`trails/${t.id}/`),
+      terms: termBlob([t.label, t.description, (t.tags ?? []).join(" ")]),
+      tt: termBlob([t.label])
+    });
+  }
+
+  // --- Entities (characters, places, ships, symbols, …) — only those with a page ---
+  for (const e of coveredEntities()) {
+    const kindLabel = ENTITY_KIND_LABEL[e.kind] ?? e.kind;
+    const aliases = (e.aliases ?? []).filter(Boolean).join(", ");
+    records.push({
+      id: e.id,
+      type: "entity",
+      title: e.label,
+      snippet: aliases ? `${kindLabel} · also: ${aliases}` : kindLabel,
+      path: withBase(`entity/${e.id}/`),
+      terms: termBlob([e.label, aliases, e.kind, kindLabel]),
+      tt: termBlob([e.label, aliases])
     });
   }
 

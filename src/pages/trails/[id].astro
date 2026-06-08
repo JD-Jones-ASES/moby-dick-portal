@@ -1,0 +1,61 @@
+---
+import Layout from "../../components/Layout.astro";
+import CollectionView from "../../components/CollectionView.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { unitHref, unitKicker, withBase, claimInfo, primaryClaim, cap } from "../../lib/site.js";
+import { coveredTrails, trailUnitIds, orderUnits, notesForTag, relatedByOverlap, placedNoteIds } from "../../lib/explore.js";
+
+export async function getStaticPaths() {
+  const data = await loadGuideData();
+  const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+  const placed = await placedNoteIds();
+
+  return coveredTrails().map((t) => {
+    const unitIds = trailUnitIds(t.id);
+    const units = orderUnits(unitIds, ordered);
+    const byUnit = {};
+    for (const n of notesForTag(data.annotations, "trail", t.id)) {
+      if (!placed.has(n.id)) continue; // only link notes the reader actually renders (#note-id exists)
+      (byUnit[n.unit_id] = byUnit[n.unit_id] || []).push(n);
+    }
+    const chapters = units.map((u) => ({
+      unit_id: u.unit_id,
+      kicker: unitKicker(u),
+      title: u.title,
+      one: u.summaries?.one_breath ?? "",
+      href: unitHref(u.unit_id),
+      notes: (byUnit[u.unit_id] || []).map((n) => {
+        const c = claimInfo(primaryClaim(n));
+        return { id: n.id, anchor: n.anchor, note: n.note, label: c.label, cls: c.cls };
+      })
+    }));
+
+    const related = [
+      ...relatedByOverlap(unitIds, "trail", t.id, 5).map((r) => ({ href: withBase(`trails/${r.id}/`), label: r.def.label, eyebrow: "Trail", shared: r.shared })),
+      // pass t.id as selfId so a same-named entity sibling (the lone trail/entity id collision) isn't self-listed
+      ...relatedByOverlap(unitIds, "entity", t.id, 5).map((r) => ({ href: withBase(`entity/${r.id}/`), label: r.def.label, eyebrow: cap(r.def.kind), shared: r.shared }))
+    ].sort((a, b) => b.shared - a.shared).slice(0, 6);
+
+    return { params: { id: t.id }, props: { trail: t, chapters, related } };
+  });
+}
+
+const { trail, chapters, related } = Astro.props;
+// Humanize taxonomy tags for the chips: drop the machine prefix, de-hyphenate, title-case.
+function humanizeTag(t) {
+  return String(t).split(":").pop().replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+const tags = (trail.tags ?? []).filter((t) => !/^(review|provenance|layer|function|status):/.test(t)).map(humanizeTag);
+---
+<Layout title={trail.label} current="explore" description={trail.description}>
+  <CollectionView
+    eyebrow="Thematic trail"
+    title={trail.label}
+    lede={trail.description}
+    tags={tags}
+    chapters={chapters}
+    related={related}
+    backHref={withBase("trails/")}
+    backLabel="All trails"
+  />
+</Layout>

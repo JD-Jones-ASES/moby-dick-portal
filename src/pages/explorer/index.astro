@@ -1,0 +1,45 @@
+---
+import Layout from "../../components/Layout.astro";
+import { withBase } from "../../lib/site.js";
+import { coveredTrails, entitiesOfKind } from "../../lib/explore.js";
+
+const trailCount = coveredTrails().length;
+const characters = entitiesOfKind("character").length;
+const places = entitiesOfKind("place").length;
+---
+<Layout title="Explore" current="explore" description="Guided ways into Moby-Dick — thematic trails, characters, places, and a side-by-side comparison of the reading paths.">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Find your way in</p>
+      <h1>Explore the book</h1>
+      <p class="lede">Beyond reading front to back: follow a theme, trace a character or place across the voyage, or compare how the three reading paths cut the same text.</p>
+    </div>
+
+    <div class="grid cols-2">
+      <a class="card explore-card" href={withBase("trails/")}>
+        <span class="kicker">Thematic</span>
+        <h3>Trails</h3>
+        <p>Follow a theme — whaling labor, prophecy, race and empire, biblical allusion — chapter by chapter.</p>
+        <p class="count-pill">{trailCount} trails</p>
+      </a>
+      <a class="card explore-card" href={withBase("explorer/characters/")}>
+        <span class="kicker">People</span>
+        <h3>Characters</h3>
+        <p>Ahab, Ishmael, Queequeg, Starbuck and the rest — every chapter each one appears in.</p>
+        <p class="count-pill">{characters} characters</p>
+      </a>
+      <a class="card explore-card" href={withBase("explorer/places/")}>
+        <span class="kicker">Geography</span>
+        <h3>Places</h3>
+        <p>Nantucket, the Pacific, the line — the ports and waters the voyage moves through.</p>
+        <p class="count-pill">{places} places</p>
+      </a>
+      <a class="card explore-card" href={withBase("paths/compare/")}>
+        <span class="kicker">Compare</span>
+        <h3>The three paths, side by side</h3>
+        <p>See exactly which chapters Narrative Core and Classroom Standard keep, defer, or cut.</p>
+        <p class="count-pill">142 units × 3 paths</p>
+      </a>
+    </div>
+  </div>
+</Layout>

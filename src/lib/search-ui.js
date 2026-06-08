@@ -12,6 +12,8 @@ const INDEX_URL = (BASE.endsWith("/") ? BASE : BASE + "/") + "search-index.json"
 
 const TYPES = [
   { key: "chapter", label: "Chapters" },
+  { key: "trail", label: "Trails" },
+  { key: "entity", label: "People & places" },
   { key: "glossary", label: "Glossary" },
   { key: "note", label: "Study notes" }
 ];
@@ -269,7 +271,9 @@ function renderMessage(msg) {
 }
 
 // ---- helpers ----
-function typeShort(t) { return t === "chapter" ? "Ch" : t === "glossary" ? "Term" : "Note"; }
+function typeShort(t) {
+  return t === "chapter" ? "Ch" : t === "glossary" ? "Term" : t === "trail" ? "Trail" : t === "entity" ? "Entity" : "Note";
+}
 
 function escapeHtml(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

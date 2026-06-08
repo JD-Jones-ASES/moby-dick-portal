@@ -3,8 +3,9 @@ import Layout from "../../components/Layout.astro";
 import { loadGuideData } from "../../lib/guide-data.js";
 import { renderUnit } from "../../lib/render.js";
 import {
-  unitHref, unitKicker, pathMeta, primaryClaim, claimInfo, externalCitations, sourceInfo
+  unitHref, unitKicker, pathMeta, primaryClaim, claimInfo, externalCitations, sourceInfo, withBase
 } from "../../lib/site.js";
+import { lensesForUnit } from "../../lib/explore.js";
 import ChapterFlourish from "../../components/ChapterFlourish.astro";
 import AmbientSound from "../../components/AmbientSound.astro";
 import bigRead from "../../../data/references/big-read-links.json";
@@ -44,6 +45,7 @@ export async function getStaticPaths() {
       params: { unit: unit.unit_id },
       props: {
         unit, html, notes, glossary, references,
+        lenses: lensesForUnit(unit.unit_id),
         prev: prev && { unit_id: prev.unit_id, title: prev.title, kicker: unitKicker(prev) },
         next: next && { unit_id: next.unit_id, title: next.title, kicker: unitKicker(next) }
       }
@@ -51,7 +53,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { unit, html, notes, glossary, references, prev, next } = Astro.props;
+const { unit, html, notes, glossary, references, prev, next, lenses } = Astro.props;
 const kicker = unitKicker(unit);
 const bigReadLink = bigReadUrl(unit);
 const paths = Object.entries(pathMeta)
@@ -138,6 +140,21 @@ function noteCitations(a) {
             <p class="big-read-note">A free recording from the <em>Moby-Dick Big Read</em> — a different voice for every chapter. Opens in a new tab.</p>
           </div>
         )}
+
+        {(lenses.trails.length > 0 || lenses.entities.length > 0) && (
+          <div class="notes appears-in">
+            <h2>This chapter appears in</h2>
+            <div class="chip-row">
+              {lenses.trails.map((t) => (
+                <a class="chip chip-trail" href={withBase(`trails/${t.id}/`)}>{t.label}</a>
+              ))}
+              {lenses.entities.map((e) => (
+                <a class="chip chip-entity" href={withBase(`entity/${e.id}/`)}>{e.label}</a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {notes.length > 0 && (
           <div class="notes">
             <h2>Study notes</h2>
