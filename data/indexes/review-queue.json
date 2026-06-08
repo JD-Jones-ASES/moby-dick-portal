@@ -9,7 +9,7 @@
     "data/geography/moby-dick.places.json",
     "data/maps/moby-dick.voyage-map.json"
   ],
-  "item_count": 3805,
+  "item_count": 3943,
   "queues": {
     "citation": {
       "queue": "citation",
@@ -53797,7 +53797,7 @@
     },
     "source-check": {
       "queue": "source-check",
-      "item_count": 3298,
+      "item_count": 3308,
       "items": [
         {
           "type": "annotation",
@@ -55574,6 +55574,15 @@
         },
         {
           "type": "glossary",
+          "id": "hypo",
+          "unit_id": "chapter-001-loomings",
+          "label": "hypo",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
           "id": "hypos",
           "unit_id": "chapter-001-loomings",
           "label": "hypos",
@@ -55960,6 +55969,15 @@
           "priority": 2
         },
         {
+          "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-002-the-carpetbag",
+          "label": "wight",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 2
+        },
+        {
           "type": "reference",
           "id": "apparatus-deep-ref-chapter-002-the-carpetbag-1",
           "unit_id": "chapter-002-the-carpetbag",
@@ -56168,11 +56186,29 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "anon",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-003-the-spouter-inn-1",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "Ch. 3 Spouter-Inn: wider scene detail",
           "content_status": "draft",
           "citation_status": "provisional",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "fain",
+          "content_status": "student-ready",
+          "citation_status": "verified",
           "priority": 2
         },
         {
@@ -57316,6 +57352,15 @@
           "label": "Ch. 9 Sermon: wider evidence and trust",
           "content_status": "draft",
           "citation_status": "provisional",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "belike",
+          "content_status": "student-ready",
+          "citation_status": "verified",
           "priority": 2
         },
         {
@@ -60806,6 +60851,15 @@
           "id": "cetology",
           "unit_id": "chapter-032-cetology",
           "label": "cetology",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
+          "id": "hartshorn",
+          "unit_id": "chapter-032-cetology",
+          "label": "hartshorn",
           "content_status": "student-ready",
           "citation_status": "verified",
           "priority": 2
@@ -64676,6 +64730,15 @@
           "id": "firmament",
           "unit_id": "chapter-093-the-castaway",
           "label": "firmament",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 2
+        },
+        {
+          "type": "glossary",
+          "id": "poltroon",
+          "unit_id": "chapter-093-the-castaway",
+          "label": "poltroon",
           "content_status": "student-ready",
           "citation_status": "verified",
           "priority": 2
@@ -74815,6 +74878,15 @@
           "priority": 3
         },
         {
+          "type": "glossary",
+          "id": "surtout",
+          "unit_id": "chapter-068-the-blanket",
+          "label": "surtout",
+          "content_status": "student-ready",
+          "citation_status": "verified",
+          "priority": 3
+        },
+        {
           "type": "reference",
           "id": "apparatus-deep-ref-chapter-068-the-blanket-1",
           "unit_id": "chapter-068-the-blanket",
@@ -75019,6 +75091,15 @@
           "label": "Funeral: shipboard work",
           "content_status": "draft",
           "citation_status": "provisional",
+          "priority": 3
+        },
+        {
+          "type": "glossary",
+          "id": "peradventure",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "peradventure",
+          "content_status": "student-ready",
+          "citation_status": "verified",
           "priority": 3
         },
         {
@@ -76297,6 +76378,15 @@
           "label": "Prairie: whale evidence",
           "content_status": "draft",
           "citation_status": "provisional",
+          "priority": 3
+        },
+        {
+          "type": "glossary",
+          "id": "beadle",
+          "unit_id": "chapter-079-the-prairie",
+          "label": "beadle",
+          "content_status": "student-ready",
+          "citation_status": "verified",
           "priority": 3
         },
         {

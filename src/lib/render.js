@@ -30,6 +30,19 @@ function overlaps(aStart, aEnd, bStart, bEnd) {
   return aStart < bEnd && aEnd > bStart;
 }
 
+// True if any of `terms` occurs in `text` as a whole word (same boundary rule the inline marker
+// uses). Used to keep "ghost" glossary cards — terms that only appear as a substring of a larger
+// word, e.g. "helm" inside "overwhelmed" or "aft" inside "after" — out of a chapter's sidebar list.
+export function termInText(text, terms) {
+  const src = text ?? "";
+  for (const t of terms) {
+    const term = (t ?? "").trim();
+    if (term.length < 2) continue;
+    if (new RegExp(`(?<![A-Za-z0-9])${escapeRegExp(term)}(?![A-Za-z0-9])`, "i").test(src)) return true;
+  }
+  return false;
+}
+
 export function renderUnit(plainText, annotations = [], glossaryEntries = []) {
   const text = plainText ?? "";
 
@@ -106,19 +119,20 @@ export function renderUnit(plainText, annotations = [], glossaryEntries = []) {
     const inner = esc(text.slice(sp.start, sp.end));
     if (sp.type === "anno") {
       const id = escAttr(sp.id);
-      out += `<a class="anno-mark" id="mark-${id}" data-note="${id}" href="#note-${id}">${inner}</a>`;
+      out += `<a class="anno-mark" id="mark-${id}" data-note="${id}" href="#note-${id}" aria-describedby="note-${id}">${inner}</a>`;
     } else {
       const g = sp.entry;
       const gid = escAttr(g.id);
       const pid = `gpop-${gid}`;
+      // The definition span is visually hidden (CSS `.gloss-pop`) — it still serves screen readers
+      // via aria-describedby and is the content source the Margin card clones. There is no longer a
+      // floating popover; hovering a mark routes its content into the fixed Margin card instead.
       out +=
-        `<span class="gloss-wrap">` +
         `<button type="button" class="gloss-mark" id="gmark-${gid}" data-gloss="${gid}" aria-describedby="${pid}">${inner}</button>` +
-        `<span class="gloss-pop" role="tooltip" id="${pid}" hidden>` +
+        `<span class="gloss-pop" id="${pid}">` +
         `<span class="gp-term">${esc(g.term)}</span>` +
         (g.category ? `<span class="gp-cat">${esc(g.category)}</span>` : "") +
         `<span class="gp-def">${esc(g.definition ?? "")}</span>` +
-        `</span>` +
         `</span>`;
     }
     cursor = sp.end;

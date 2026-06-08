@@ -11,8 +11,8 @@
     "likely_retire_or_internal_only": "Generated or scaffold prose that should not become public without a fresh rewrite."
   },
   "counts": {
-    "glossary_entries": 491,
-    "public_glossary_entries": 114,
+    "glossary_entries": 501,
+    "public_glossary_entries": 124,
     "glossary_review_for_promotion": 139,
     "glossary_possible_rewrite": 94,
     "glossary_review_needed": 9,
@@ -5727,6 +5727,40 @@
       "weak_hits": []
     },
     {
+      "id": "anon",
+      "type": "glossary",
+      "label": "anon",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "An old adverb meaning soon, shortly, or presently; the set phrase \u201cever and anon\u201d means every now and then.",
+      "targets": [
+        "chapter-003-the-spouter-inn",
+        "chapter-022-merry-christmas",
+        "chapter-036-the-quarterdeck",
+        "chapter-047-the-mat-maker",
+        "chapter-061-stubb-kills-a-whale",
+        "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+        "chapter-076-the-battering-ram",
+        "chapter-094-a-squeeze-of-the-hand",
+        "chapter-133-the-chase-first-day"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
       "id": "astern",
       "type": "glossary",
       "label": "astern",
@@ -5757,6 +5791,61 @@
         "already-public-ready",
         "reader-obstacle-category",
         "multi-unit-term"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "beadle",
+      "type": "glossary",
+      "label": "beadle",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "A minor parish, town, or court officer who kept order and walked at the head of processions bearing a staff or mace as his badge of office.",
+      "targets": [
+        "chapter-079-the-prairie",
+        "chapter-090-heads-or-tails"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "belike",
+      "type": "glossary",
+      "label": "belike",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "An archaic adverb meaning probably, perhaps, or very likely, now gone from everyday English.",
+      "targets": [
+        "chapter-009-the-sermon",
+        "chapter-040-midnight-forecastle",
+        "chapter-102-a-bower-in-the-arsacides"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
       ],
       "weak_hits": []
     },
@@ -5809,6 +5898,47 @@
       "weak_hits": []
     },
     {
+      "id": "fain",
+      "type": "glossary",
+      "label": "fain",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "An archaic adverb meaning gladly or willingly; in some contexts it shades toward being obliged or constrained to do a thing for lack of a better choice.",
+      "targets": [
+        "chapter-003-the-spouter-inn",
+        "chapter-023-the-lee-shore",
+        "chapter-025-postscript",
+        "chapter-032-cetology",
+        "chapter-034-the-cabin-table",
+        "chapter-036-the-quarterdeck",
+        "chapter-054-the-town-ho-s-story",
+        "chapter-071-the-jeroboam-s-story",
+        "chapter-099-the-doubloon",
+        "chapter-104-the-fossil-whale",
+        "chapter-113-the-forge",
+        "chapter-119-the-candles",
+        "chapter-123-the-musket",
+        "chapter-124-the-needle",
+        "chapter-128-the-pequod-meets-the-rachel",
+        "chapter-130-the-hat"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
       "id": "fast-fish",
       "type": "glossary",
       "label": "Fast-Fish",
@@ -5853,6 +5983,60 @@
       "reasons": [
         "already-public-ready",
         "reader-obstacle-category"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "hartshorn",
+      "type": "glossary",
+      "label": "hartshorn",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "Smelling salts: an ammonia preparation once distilled from the shavings of a deer's (a hart's) antler, sniffed to revive a person who had fainted.",
+      "targets": [
+        "chapter-032-cetology",
+        "chapter-107-the-carpenter"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "hypo",
+      "type": "glossary",
+      "label": "hypo",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "A colloquial clip of \u201chypochondria\u201d in its older sense \u2014 not imagined illness but a fit of melancholy, gloom, and low spirits.",
+      "targets": [
+        "chapter-001-loomings",
+        "chapter-042-the-whiteness-of-the-whale"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
       ],
       "weak_hits": []
     },
@@ -5964,6 +6148,60 @@
       "weak_hits": []
     },
     {
+      "id": "peradventure",
+      "type": "glossary",
+      "label": "peradventure",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "An old adverb meaning perhaps, possibly, or by chance; it lends a line a deliberately antique, scriptural tone.",
+      "targets": [
+        "chapter-069-the-funeral",
+        "chapter-078-cistern-and-buckets"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "poltroon",
+      "type": "glossary",
+      "label": "poltroon",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "A term of open scorn for a base, spiritless coward \u2014 far stronger than merely timid.",
+      "targets": [
+        "chapter-093-the-castaway",
+        "chapter-133-the-chase-first-day"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
       "id": "porpoise",
       "type": "glossary",
       "label": "porpoises",
@@ -6056,6 +6294,62 @@
       "reasons": [
         "already-public-ready",
         "reader-obstacle-category"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "surtout",
+      "type": "glossary",
+      "label": "surtout",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "A man's heavy, close-fitting knee-length overcoat, standard outerwear in Melville's era.",
+      "targets": [
+        "chapter-068-the-blanket",
+        "chapter-098-stowing-down-and-clearing-up"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
+      ],
+      "weak_hits": []
+    },
+    {
+      "id": "wight",
+      "type": "glossary",
+      "label": "wight",
+      "category": "vocabulary",
+      "score": 30,
+      "state": "public-ready",
+      "text": "An archaic word for a person or living creature, often coloured with a touch of pity or mild contempt, as in \u201cpoor wight.\u201d",
+      "targets": [
+        "chapter-002-the-carpetbag",
+        "chapter-050-ahab-s-boat-and-crew-fedallah",
+        "chapter-074-the-sperm-whale-s-head-contrasted-view",
+        "chapter-093-the-castaway"
+      ],
+      "citations": [
+        "standard-ebooks-moby-dick",
+        "webster-1913"
+      ],
+      "status": {
+        "definition_status": "student-ready",
+        "citation_status": "verified"
+      },
+      "reasons": [
+        "already-public-ready",
+        "multi-unit-term",
+        "support-source-present"
       ],
       "weak_hits": []
     },

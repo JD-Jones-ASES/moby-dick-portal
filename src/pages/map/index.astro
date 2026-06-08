@@ -67,6 +67,12 @@ const stages = data.voyageMap.waypoints
     </div>
     <p class="map-caption">These markers are approximate display anchors — the novel rarely fixes an exact position, so each dot shows a stage's ocean region, not a charted point. Read the stages below in order; hover or tap a dot to find it.</p>
 
+    <div class="map-tip" id="map-tip" aria-hidden="true" hidden>
+      <span class="mt-meta"></span>
+      <span class="mt-title"></span>
+      <span class="mt-note"></span>
+    </div>
+
     <h2 class="section-h">Stages</h2>
     <ol style="list-style:none; padding:0; margin:0;">
       {stages.map((s) => (
@@ -89,7 +95,46 @@ const stages = data.voyageMap.waypoints
   <script is:inline>
     (function () {
       const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const tip = document.getElementById("map-tip");
+      const tipTitle = tip && tip.querySelector(".mt-title");
+      const tipMeta = tip && tip.querySelector(".mt-meta");
+      const tipNote = tip && tip.querySelector(".mt-note");
       let active = null;
+
+      // Build the tooltip's content from the matching stage row so no map data is duplicated into JS.
+      function fillTip(id) {
+        const li = document.getElementById("stage-" + id);
+        if (!li || !tip) return false;
+        const num = li.querySelector(".wlabel span");
+        const link = li.querySelector(".wlink");
+        const meta = li.querySelector(".wmeta");
+        const note = li.querySelector("p");
+        tipTitle.textContent = ((num ? num.textContent.trim() + " " : "") + (link ? link.textContent.trim() : "")).trim();
+        tipMeta.textContent = meta ? meta.textContent.trim() : "";
+        tipNote.textContent = note ? note.textContent.trim() : "";
+        return true;
+      }
+      // Anchor the tooltip to the dot's on-screen rect (position:fixed). Prefer above the dot; drop
+      // below if there's no room; clamp horizontally so edge stages stay fully on screen.
+      function positionTip(id) {
+        const dot = document.getElementById("dot-" + id);
+        if (!dot || !tip) return;
+        const r = dot.getBoundingClientRect();
+        const tr = tip.getBoundingClientRect();
+        let left = r.left + r.width / 2 - tr.width / 2;
+        left = Math.max(8, Math.min(left, window.innerWidth - tr.width - 8));
+        let top = r.top - tr.height - 12;
+        if (top < 8) top = r.bottom + 12;
+        tip.style.left = Math.round(left) + "px";
+        tip.style.top = Math.round(top) + "px";
+      }
+      function showTip(id) {
+        if (!tip || !fillTip(id)) return;
+        tip.hidden = false;          // unhide first so measurement is accurate
+        positionTip(id);
+      }
+      function hideTip() { if (tip) tip.hidden = true; }
+
       function clear() {
         document.querySelectorAll(".wp-dot.wp-active").forEach((d) => d.classList.remove("wp-active"));
         document.querySelectorAll(".waypoint.stage-active").forEach((s) => s.classList.remove("stage-active"));
@@ -111,9 +156,11 @@ const stages = data.voyageMap.waypoints
 
       document.querySelectorAll(".wp-hit").forEach((hit) => {
         const id = hit.dataset.card;
-        // Hover/focus highlights the matching stage row IN PLACE — never scrolls the page.
-        hit.addEventListener("mouseenter", () => highlight(id, false));
-        hit.addEventListener("focus", () => highlight(id, false));
+        // Hover/focus highlights the matching stage row IN PLACE (never scrolls) and shows the tooltip.
+        hit.addEventListener("mouseenter", () => { highlight(id, false); showTip(id); });
+        hit.addEventListener("mouseleave", hideTip);
+        hit.addEventListener("focus", () => { highlight(id, false); showTip(id); });
+        hit.addEventListener("blur", hideTip);
         hit.addEventListener("click", () => go(hit.dataset.href));
         hit.addEventListener("keydown", (e) => {
           if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(hit.dataset.href); }
@@ -124,7 +171,9 @@ const stages = data.voyageMap.waypoints
         li.addEventListener("mouseenter", () => highlight(id, false));
         li.addEventListener("focusin", () => highlight(id, false));
       });
-      document.addEventListener("keydown", (e) => { if (e.key === "Escape") clear(); });
+      // A scroll moves the dots out from under a fixed-position tooltip, so dismiss it.
+      window.addEventListener("scroll", hideTip, { passive: true });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") { clear(); hideTip(); } });
     })();
   </script>
 </Layout>

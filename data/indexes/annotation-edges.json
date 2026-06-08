@@ -1,6 +1,6 @@
 {
   "generated_from": "data/annotations/moby-dick.annotations.json",
-  "edge_count": 6509,
+  "edge_count": 6765,
   "edges": [
     {
       "source": "annotation:advocate-business-of-whaling",
@@ -441,6 +441,42 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-001-loomings-commonalty",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-001-loomings-commonalty",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-001-loomings-driving-off-the-spleen-and-regulating-the-circul",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-001-loomings-driving-off-the-spleen-and-regulating-the-circul",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-001-loomings-old-hunks",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-001-loomings-old-hunks",
+      "unit_id": "chapter-001-loomings",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-002-the-carpetbag-ashes-from-that-destroyed-city-gomorrah",
       "unit_id": "chapter-002-the-carpetbag",
       "type": "uses-source",
@@ -487,6 +523,18 @@
       "unit_id": "chapter-002-the-carpetbag",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-farrago",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-farrago",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-003-the-spouter-inn-like-another-cursed-jonah-by-which-name-indeed-t",
@@ -513,6 +561,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-settle",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-settle",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-003-the-spouter-inn-thirty-years",
       "unit_id": "chapter-003-the-spouter-inn",
       "type": "uses-source",
@@ -525,6 +585,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-topers",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-003-the-spouter-inn-topers",
+      "unit_id": "chapter-003-the-spouter-inn",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-004-the-counterpane-interminable-cretan-labyrinth-of-a-figure",
       "unit_id": "chapter-004-the-counterpane",
       "type": "uses-source",
@@ -535,6 +607,18 @@
       "unit_id": "chapter-004-the-counterpane",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-005-breakfast-bosky",
+      "unit_id": "chapter-005-breakfast",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-005-breakfast-bosky",
+      "unit_id": "chapter-005-breakfast",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-006-the-street-not-like-canaan-a-land-also-of-corn-and-wine",
@@ -573,6 +657,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-007-the-chapel-lees",
+      "unit_id": "chapter-007-the-chapel",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-007-the-chapel-lees",
+      "unit_id": "chapter-007-the-chapel",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-007-the-chapel-stave-my-soul-jove-himself-cannot",
       "unit_id": "chapter-007-the-chapel",
       "type": "uses-source",
@@ -607,6 +703,42 @@
       "unit_id": "chapter-009-the-sermon",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-cupidity",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-cupidity",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-essays-his-wretched-smile",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-essays-his-wretched-smile",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-hies",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-009-the-sermon-hies",
+      "unit_id": "chapter-009-the-sermon",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-009-the-sermon-one-of-the-smallest-strands-in-the-mighty-cable",
@@ -693,6 +825,54 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-012-biographical-for-the-nonce",
+      "unit_id": "chapter-012-biographical",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-012-biographical-for-the-nonce",
+      "unit_id": "chapter-012-biographical",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-012-biographical-vitiated",
+      "unit_id": "chapter-012-biographical",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-012-biographical-vitiated",
+      "unit_id": "chapter-012-biographical",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-013-wheelbarrow-a-noble-trump",
+      "unit_id": "chapter-013-wheelbarrow",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-013-wheelbarrow-a-noble-trump",
+      "unit_id": "chapter-013-wheelbarrow",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-013-wheelbarrow-clove-to-queequeg",
+      "unit_id": "chapter-013-wheelbarrow",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-013-wheelbarrow-clove-to-queequeg",
+      "unit_id": "chapter-013-wheelbarrow",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-013-wheelbarrow-tartar-air",
       "unit_id": "chapter-013-wheelbarrow",
       "type": "uses-source",
@@ -729,6 +909,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-016-the-ship-canting",
+      "unit_id": "chapter-016-the-ship",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-016-the-ship-canting",
+      "unit_id": "chapter-016-the-ship",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-016-the-ship-captain-bildad-if-i-had-followed-thy-advice",
       "unit_id": "chapter-016-the-ship",
       "type": "uses-source",
@@ -763,6 +955,18 @@
       "unit_id": "chapter-016-the-ship",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-016-the-ship-one-stiver",
+      "unit_id": "chapter-016-the-ship",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-016-the-ship-one-stiver",
+      "unit_id": "chapter-016-the-ship",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-016-the-ship-originally-settled-by-that-sect",
@@ -813,6 +1017,42 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-017-the-ramadan-castors",
+      "unit_id": "chapter-017-the-ramadan",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-017-the-ramadan-castors",
+      "unit_id": "chapter-017-the-ramadan",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-after-claps",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-after-claps",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-prate",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-prate",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-018-his-mark-remain-not-for-aye-a-belial-bondsman",
       "unit_id": "chapter-018-his-mark",
       "type": "uses-source",
@@ -823,6 +1063,18 @@
       "unit_id": "chapter-018-his-mark",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-skylarking",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-018-his-mark-skylarking",
+      "unit_id": "chapter-018-his-mark",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-018-his-mark-spurn-the-idol-bell-and-the-hideous-dragon",
@@ -837,6 +1089,54 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-020-all-astir-costermongers",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-costermongers",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-divers",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-divers",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-got-down-our-traps",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-got-down-our-traps",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-withal",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-020-all-astir-withal",
+      "unit_id": "chapter-020-all-astir",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-021-going-aboard-grinding-the-face-of-the-poor",
       "unit_id": "chapter-021-going-aboard",
       "type": "uses-source",
@@ -847,6 +1147,30 @@
       "unit_id": "chapter-021-going-aboard",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-022-merry-christmas-dismal-stave-of-psalmody",
+      "unit_id": "chapter-022-merry-christmas",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-022-merry-christmas-dismal-stave-of-psalmody",
+      "unit_id": "chapter-022-merry-christmas",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-022-merry-christmas-offing",
+      "unit_id": "chapter-022-merry-christmas",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-022-merry-christmas-offing",
+      "unit_id": "chapter-022-merry-christmas",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-023-the-lee-shore-leaps-thy-apotheosis",
@@ -873,6 +1197,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-024-the-advocate-conceit",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-024-the-advocate-conceit",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-024-the-advocate-mighty-job",
       "unit_id": "chapter-024-the-advocate",
       "type": "uses-source",
@@ -883,6 +1219,30 @@
       "unit_id": "chapter-024-the-advocate",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-024-the-advocate-puissant",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-024-the-advocate-puissant",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-024-the-advocate-the-world-scouts-at-us",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-024-the-advocate-the-world-scouts-at-us",
+      "unit_id": "chapter-024-the-advocate",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-025-postscript-head-is-solemnly-oiled-at-his-coronation",
@@ -904,6 +1264,18 @@
     },
     {
       "source": "annotation:auth-chapter-025-postscript-macassar-oil",
+      "unit_id": "chapter-025-postscript",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-025-postscript-meanly",
+      "unit_id": "chapter-025-postscript",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-025-postscript-meanly",
       "unit_id": "chapter-025-postscript",
       "type": "uses-source",
       "target": "source:webster-1913"
@@ -957,6 +1329,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-027-knights-and-squires-meet",
+      "unit_id": "chapter-027-knights-and-squires",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-027-knights-and-squires-meet",
+      "unit_id": "chapter-027-knights-and-squires",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-027-knights-and-squires-son-of-the-prince-of-the-powers-of-the-air",
       "unit_id": "chapter-027-knights-and-squires",
       "type": "uses-source",
@@ -981,6 +1365,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-029-enter-ahab-to-him-stubb-plaguey",
+      "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-029-enter-ahab-to-him-stubb-plaguey",
+      "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-030-the-pipe-thrones-of-the-sea-loving-danish-kings",
       "unit_id": "chapter-030-the-pipe",
       "type": "uses-source",
@@ -991,6 +1387,30 @@
       "unit_id": "chapter-030-the-pipe",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-031-queen-mab-such-a-phiz",
+      "unit_id": "chapter-031-queen-mab",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-031-queen-mab-such-a-phiz",
+      "unit_id": "chapter-031-queen-mab",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-032-cetology-for-a-ferule",
+      "unit_id": "chapter-032-cetology",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-032-cetology-for-a-ferule",
+      "unit_id": "chapter-032-cetology",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-032-cetology-linnaeus-declares",
@@ -1053,6 +1473,30 @@
       "target": "source:starbuck-history-of-american-whale-fishery"
     },
     {
+      "source": "annotation:auth-chapter-033-the-specksnyder-hustings",
+      "unit_id": "chapter-033-the-specksnyder",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-033-the-specksnyder-hustings",
+      "unit_id": "chapter-033-the-specksnyder",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-034-the-cabin-table-buckler",
+      "unit_id": "chapter-034-the-cabin-table",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-034-the-cabin-table-buckler",
+      "unit_id": "chapter-034-the-cabin-table",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-034-the-cabin-table-the-seven-imperial-electors",
       "unit_id": "chapter-034-the-cabin-table",
       "type": "uses-source",
@@ -1077,6 +1521,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-035-the-masthead-carking-cares",
+      "unit_id": "chapter-035-the-masthead",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-035-the-masthead-carking-cares",
+      "unit_id": "chapter-035-the-masthead",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-036-the-quarterdeck-ague",
+      "unit_id": "chapter-036-the-quarterdeck",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-036-the-quarterdeck-ague",
+      "unit_id": "chapter-036-the-quarterdeck",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-038-dusk-will-i-nill-i-the-ineffable-thing-has-tied-me-to",
       "unit_id": "chapter-038-dusk",
       "type": "uses-source",
@@ -1085,6 +1553,42 @@
     {
       "source": "annotation:auth-chapter-038-dusk-will-i-nill-i-the-ineffable-thing-has-tied-me-to",
       "unit_id": "chapter-038-dusk",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-039-first-night-watch-twigged",
+      "unit_id": "chapter-039-first-night-watch",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-039-first-night-watch-twigged",
+      "unit_id": "chapter-039-first-night-watch",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-040-midnight-forecastle-cove",
+      "unit_id": "chapter-040-midnight-forecastle",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-040-midnight-forecastle-cove",
+      "unit_id": "chapter-040-midnight-forecastle",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-040-midnight-forecastle-filliping",
+      "unit_id": "chapter-040-midnight-forecastle",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-040-midnight-forecastle-filliping",
+      "unit_id": "chapter-040-midnight-forecastle",
       "type": "uses-source",
       "target": "source:webster-1913"
     },
@@ -1111,6 +1615,18 @@
       "unit_id": "chapter-041-moby-dick",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-041-moby-dick-little-bruited-ashore",
+      "unit_id": "chapter-041-moby-dick",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-041-moby-dick-little-bruited-ashore",
+      "unit_id": "chapter-041-moby-dick",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-041-moby-dick-so-like-a-caryatid-he-patient-sits",
@@ -1161,6 +1677,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-042-the-whiteness-of-the-whale-legerdemain",
+      "unit_id": "chapter-042-the-whiteness-of-the-whale",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-042-the-whiteness-of-the-whale-legerdemain",
+      "unit_id": "chapter-042-the-whiteness-of-the-whale",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-042-the-whiteness-of-the-whale-rides-on-his-pallid-horse",
       "unit_id": "chapter-042-the-whiteness-of-the-whale",
       "type": "uses-source",
@@ -1185,6 +1713,42 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-044-the-chart-one-tithe",
+      "unit_id": "chapter-044-the-chart",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-044-the-chart-one-tithe",
+      "unit_id": "chapter-044-the-chart",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-045-the-affidavit-gainsaid",
+      "unit_id": "chapter-045-the-affidavit",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-045-the-affidavit-gainsaid",
+      "unit_id": "chapter-045-the-affidavit",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-045-the-affidavit-scout-at",
+      "unit_id": "chapter-045-the-affidavit",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-045-the-affidavit-scout-at",
+      "unit_id": "chapter-045-the-affidavit",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-045-the-affidavit-was-not-saul-of-tarsus-converted-from-unbelief-b",
       "unit_id": "chapter-045-the-affidavit",
       "type": "uses-source",
@@ -1197,6 +1761,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-046-surmises-cashier",
+      "unit_id": "chapter-046-surmises",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-046-surmises-cashier",
+      "unit_id": "chapter-046-surmises",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-047-the-mat-maker-this-were-the-loom-of-time-and-i-myself-were-a-s",
       "unit_id": "chapter-047-the-mat-maker",
       "type": "uses-source",
@@ -1207,6 +1783,18 @@
       "unit_id": "chapter-047-the-mat-maker",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-048-the-first-lowering-exordium",
+      "unit_id": "chapter-048-the-first-lowering",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-048-the-first-lowering-exordium",
+      "unit_id": "chapter-048-the-first-lowering",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-048-the-first-lowering-the-loggerhead-a-stout-sort-of-post-rooted-in-th",
@@ -1257,6 +1845,54 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-051-the-spirit-spout-most-unwonted-hour",
+      "unit_id": "chapter-051-the-spirit-spout",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-051-the-spirit-spout-most-unwonted-hour",
+      "unit_id": "chapter-051-the-spirit-spout",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-052-the-albatross-amain",
+      "unit_id": "chapter-052-the-albatross",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-052-the-albatross-amain",
+      "unit_id": "chapter-052-the-albatross",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-052-the-albatross-raiment",
+      "unit_id": "chapter-052-the-albatross",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-052-the-albatross-raiment",
+      "unit_id": "chapter-052-the-albatross",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-053-the-gam-finical",
+      "unit_id": "chapter-053-the-gam",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-053-the-gam-finical",
+      "unit_id": "chapter-053-the-gam",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-053-the-gam-noah-webster",
       "unit_id": "chapter-053-the-gam",
       "type": "uses-source",
@@ -1265,6 +1901,18 @@
     {
       "source": "annotation:auth-chapter-053-the-gam-noah-webster",
       "unit_id": "chapter-053-the-gam",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-cozening",
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-cozening",
+      "unit_id": "chapter-054-the-town-ho-s-story",
       "type": "uses-source",
       "target": "source:webster-1913"
     },
@@ -1279,6 +1927,42 @@
       "unit_id": "chapter-054-the-town-ho-s-story",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-poniard",
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-poniard",
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-romish",
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-054-the-town-ho-s-story-romish",
+      "unit_id": "chapter-054-the-town-ho-s-story",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-055-of-the-monstrous-pictures-of-whales-cap-sheaf",
+      "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-055-of-the-monstrous-pictures-of-whales-cap-sheaf",
+      "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-056-of-the-less-erroneous-pictures-of-wh-the-best-outline-pictures-are-in-scoresby",
@@ -1293,6 +1977,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-057-of-whales-in-paint-in-teeth-in-wood--busks",
+      "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-057-of-whales-in-paint-in-teeth-in-wood--busks",
+      "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-058-brit-instinct",
+      "unit_id": "chapter-058-brit",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-058-brit-instinct",
+      "unit_id": "chapter-058-brit",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-058-brit-that-wondrous-venetian-blind-in-their-mouths",
       "unit_id": "chapter-058-brit",
       "type": "uses-source",
@@ -1353,6 +2061,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-061-stubb-kills-a-whale-portly-burgher",
+      "unit_id": "chapter-061-stubb-kills-a-whale",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-061-stubb-kills-a-whale-portly-burgher",
+      "unit_id": "chapter-061-stubb-kills-a-whale",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-061-stubb-kills-a-whale-the-gay-header-in-reply",
       "unit_id": "chapter-061-stubb-kills-a-whale",
       "type": "uses-source",
@@ -1363,6 +2083,18 @@
       "unit_id": "chapter-061-stubb-kills-a-whale",
       "type": "uses-source",
       "target": "source:starbuck-history-of-american-whale-fishery"
+    },
+    {
+      "source": "annotation:auth-chapter-062-the-dart-disrated",
+      "unit_id": "chapter-062-the-dart",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-062-the-dart-disrated",
+      "unit_id": "chapter-062-the-dart",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-064-stubb-s-supper-as-they-fetched-elijah",
@@ -1377,6 +2109,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-064-stubb-s-supper-ejaculation",
+      "unit_id": "chapter-064-stubb-s-supper",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-064-stubb-s-supper-ejaculation",
+      "unit_id": "chapter-064-stubb-s-supper",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-065-the-whale-as-a-dish-et-tu-brute",
       "unit_id": "chapter-065-the-whale-as-a-dish",
       "type": "uses-source",
@@ -1389,6 +2133,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-065-the-whale-as-a-dish-indite",
+      "unit_id": "chapter-065-the-whale-as-a-dish",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-065-the-whale-as-a-dish-indite",
+      "unit_id": "chapter-065-the-whale-as-a-dish",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-066-the-shark-massacre-pantheistic-vitality-seemed-to-lurk-in-their-ver",
       "unit_id": "chapter-066-the-shark-massacre",
       "type": "uses-source",
@@ -1413,6 +2169,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-067-cutting-in-shamble",
+      "unit_id": "chapter-067-cutting-in",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-067-cutting-in-shamble",
+      "unit_id": "chapter-067-cutting-in",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-068-the-blanket-somewhat-resembling-the-thinnest-shreds-of-ising",
       "unit_id": "chapter-068-the-blanket",
       "type": "uses-source",
@@ -1425,6 +2193,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-069-the-funeral-i-ween",
+      "unit_id": "chapter-069-the-funeral",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-069-the-funeral-i-ween",
+      "unit_id": "chapter-069-the-funeral",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-069-the-funeral-poniards-in-the-whale",
       "unit_id": "chapter-069-the-funeral",
       "type": "uses-source",
@@ -1433,6 +2213,30 @@
     {
       "source": "annotation:auth-chapter-069-the-funeral-poniards-in-the-whale",
       "unit_id": "chapter-069-the-funeral",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-069-the-funeral-roods",
+      "unit_id": "chapter-069-the-funeral",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-069-the-funeral-roods",
+      "unit_id": "chapter-069-the-funeral",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-070-the-sphynx-hoary",
+      "unit_id": "chapter-070-the-sphynx",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-070-the-sphynx-hoary",
+      "unit_id": "chapter-070-the-sphynx",
       "type": "uses-source",
       "target": "source:webster-1913"
     },
@@ -1491,6 +2295,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-072-the-monkey-rope-calomel-and-jalap",
+      "unit_id": "chapter-072-the-monkey-rope",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-072-the-monkey-rope-calomel-and-jalap",
+      "unit_id": "chapter-072-the-monkey-rope",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-as-the-eager-israelites-did-at-the-new-bur",
       "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
       "type": "uses-source",
@@ -1501,6 +2317,18 @@
       "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-double-darbies",
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-double-darbies",
+      "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-gamboge-ghost-of-a-fedallah",
@@ -1527,6 +2355,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-075-the-right-whale-s-head-contrasted-vi-farthingale",
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-075-the-right-whale-s-head-contrasted-vi-farthingale",
+      "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-075-the-right-whale-s-head-contrasted-vi-those-wondrous-half-vertical-scimitar-shap",
       "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
       "type": "uses-source",
@@ -1549,6 +2389,18 @@
       "unit_id": "chapter-076-the-battering-ram",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-077-the-great-heidelburgh-tun-pelisse",
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-077-the-great-heidelburgh-tun-pelisse",
+      "unit_id": "chapter-077-the-great-heidelburgh-tun",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-077-the-great-heidelburgh-tun-sending-forth-beautiful-crystalline-shoots-as-wh",
@@ -1599,6 +2451,42 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-dogger",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-dogger",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-paregoric",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-paregoric",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-tilbury",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-tilbury",
+      "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-081-the-pequod-meets-the-virgin-to-have-an-entire-non-valvular-structure-of-the",
       "unit_id": "chapter-081-the-pequod-meets-the-virgin",
       "type": "uses-source",
@@ -1677,6 +2565,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-084-pitchpoling-cannikin",
+      "unit_id": "chapter-084-pitchpoling",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-084-pitchpoling-cannikin",
+      "unit_id": "chapter-084-pitchpoling",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-084-pitchpoling-the-entire-spear-is-some-ten-or-twelve-feet-in-l",
       "unit_id": "chapter-084-pitchpoling",
       "type": "uses-source",
@@ -1725,6 +2625,42 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-086-the-tail-zones",
+      "unit_id": "chapter-086-the-tail",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-086-the-tail-zones",
+      "unit_id": "chapter-086-the-tail",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-087-the-grand-armada-kentledge",
+      "unit_id": "chapter-087-the-grand-armada",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-087-the-grand-armada-kentledge",
+      "unit_id": "chapter-087-the-grand-armada",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-087-the-grand-armada-reticule",
+      "unit_id": "chapter-087-the-grand-armada",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-087-the-grand-armada-reticule",
+      "unit_id": "chapter-087-the-grand-armada",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-087-the-grand-armada-the-unborn-whale-lies-bent-like-a-tartar-s-bow",
       "unit_id": "chapter-087-the-grand-armada",
       "type": "uses-source",
@@ -1735,6 +2671,42 @@
       "unit_id": "chapter-087-the-grand-armada",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-088-schools-and-schoolmasters-as-years-and-dumps-increase",
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-088-schools-and-schoolmasters-as-years-and-dumps-increase",
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-088-schools-and-schoolmasters-en-bon-point",
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-088-schools-and-schoolmasters-en-bon-point",
+      "unit_id": "chapter-088-schools-and-schoolmasters",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-089-fast-fish-and-loose-fish-crim-con",
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-089-fast-fish-and-loose-fish-crim-con",
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-089-fast-fish-and-loose-fish-surpasses-justinian-s-pandects-and-the-bylaws-of",
@@ -1749,6 +2721,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-089-fast-fish-and-loose-fish-whale-trover",
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-089-fast-fish-and-loose-fish-whale-trover",
+      "unit_id": "chapter-089-fast-fish-and-loose-fish",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-090-heads-or-tails-largely-used-in-ladies-bodices",
       "unit_id": "chapter-090-heads-or-tails",
       "type": "uses-source",
@@ -1761,6 +2745,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-091-the-pequod-meets-the-rose-bud-diddled",
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-091-the-pequod-meets-the-rose-bud-diddled",
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-091-the-pequod-meets-the-rose-bud-nosegay",
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-091-the-pequod-meets-the-rose-bud-nosegay",
+      "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-091-the-pequod-meets-the-rose-bud-worth-a-gold-guinea-an-ounce-to-any-druggist",
       "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
       "type": "uses-source",
@@ -1785,6 +2793,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-092-ambergris-pomatum",
+      "unit_id": "chapter-092-ambergris",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-092-ambergris-pomatum",
+      "unit_id": "chapter-092-ambergris",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-092-ambergris-slatternly",
+      "unit_id": "chapter-092-ambergris",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-092-ambergris-slatternly",
+      "unit_id": "chapter-092-ambergris",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-092-ambergris-the-turks-use-it-in-cooking-and-also-carry-it-to",
       "unit_id": "chapter-092-ambergris",
       "type": "uses-source",
@@ -1797,6 +2829,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-094-a-squeeze-of-the-hand-tyros",
+      "unit_id": "chapter-094-a-squeeze-of-the-hand",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-094-a-squeeze-of-the-hand-tyros",
+      "unit_id": "chapter-094-a-squeeze-of-the-hand",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-095-the-cassock-canonicals",
+      "unit_id": "chapter-095-the-cassock",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-095-the-cassock-canonicals",
+      "unit_id": "chapter-095-the-cassock",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-095-the-cassock-such-an-idol-as-that-found-in-the-secret-groves",
       "unit_id": "chapter-095-the-cassock",
       "type": "uses-source",
@@ -1819,6 +2875,18 @@
       "unit_id": "chapter-096-the-try-works",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-097-the-lamp-pallet",
+      "unit_id": "chapter-097-the-lamp",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-097-the-lamp-pallet",
+      "unit_id": "chapter-097-the-lamp",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-097-the-lamp-the-purest-of-oil-in-its-unmanufactured-and-ther",
@@ -1833,6 +2901,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-098-stowing-down-and-clearing-up-holland",
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-098-stowing-down-and-clearing-up-holland",
+      "unit_id": "chapter-098-stowing-down-and-clearing-up",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-098-stowing-down-and-clearing-up-oh-the-metempsychosis-oh-pythagoras",
       "unit_id": "chapter-098-stowing-down-and-clearing-up",
       "type": "uses-source",
@@ -1855,6 +2935,18 @@
       "unit_id": "chapter-099-the-doubloon",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-100-leg-and-arm-half-seas-over",
+      "unit_id": "chapter-100-leg-and-arm",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-100-leg-and-arm-half-seas-over",
+      "unit_id": "chapter-100-leg-and-arm",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-100-leg-and-arm-samuel-enderby-of-london",
@@ -1876,6 +2968,18 @@
     },
     {
       "source": "annotation:auth-chapter-101-the-decanter-ankers-of-geneva",
+      "unit_id": "chapter-101-the-decanter",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-101-the-decanter-flip",
+      "unit_id": "chapter-101-the-decanter",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-101-the-decanter-flip",
       "unit_id": "chapter-101-the-decanter",
       "type": "uses-source",
       "target": "source:webster-1913"
@@ -1917,6 +3021,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-102-a-bower-in-the-arsacides-sconces",
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-102-a-bower-in-the-arsacides-sconces",
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-102-a-bower-in-the-arsacides-the-privilege-of-jonah-alone-the-privilege-of-di",
       "unit_id": "chapter-102-a-bower-in-the-arsacides",
       "type": "uses-source",
@@ -1939,6 +3055,18 @@
       "unit_id": "chapter-102-a-bower-in-the-arsacides",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-102-a-bower-in-the-arsacides-untagging-the-points-of-his-hose",
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-102-a-bower-in-the-arsacides-untagging-the-points-of-his-hose",
+      "unit_id": "chapter-102-a-bower-in-the-arsacides",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-103-measurement-of-the-whale-s-skeleton-captain-scoresby-s-estimate-of-seventy-tons",
@@ -2037,6 +3165,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-106-ahab-s-leg-bruited",
+      "unit_id": "chapter-106-ahab-s-leg",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-106-ahab-s-leg-bruited",
+      "unit_id": "chapter-106-ahab-s-leg",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-107-the-carpenter-multum-in-parvo-sheffield-contrivances",
       "unit_id": "chapter-107-the-carpenter",
       "type": "uses-source",
@@ -2045,6 +3185,30 @@
     {
       "source": "annotation:auth-chapter-107-the-carpenter-multum-in-parvo-sheffield-contrivances",
       "unit_id": "chapter-107-the-carpenter",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-108-ahab-and-the-carpenter-poser",
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-108-ahab-and-the-carpenter-poser",
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-108-ahab-and-the-carpenter-spavined",
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-108-ahab-and-the-carpenter-spavined",
+      "unit_id": "chapter-108-ahab-and-the-carpenter",
       "type": "uses-source",
       "target": "source:webster-1913"
     },
@@ -2059,6 +3223,30 @@
       "unit_id": "chapter-108-ahab-and-the-carpenter",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-109-ahab-and-starbuck-in-the-cabin-prating",
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-109-ahab-and-starbuck-in-the-cabin-prating",
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-109-ahab-and-starbuck-in-the-cabin-waxes",
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-109-ahab-and-starbuck-in-the-cabin-waxes",
+      "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-110-queequeg-in-his-coffin-a-departed-prophet-and-seer-of-his-island-who-by",
@@ -2073,6 +3261,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-110-queequeg-in-his-coffin-sinecures",
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-110-queequeg-in-his-coffin-sinecures",
+      "unit_id": "chapter-110-queequeg-in-his-coffin",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-111-the-pacific-bowing-your-head-to-pan",
       "unit_id": "chapter-111-the-pacific",
       "type": "uses-source",
@@ -2083,6 +3283,30 @@
       "unit_id": "chapter-111-the-pacific",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-112-the-blacksmith-care-killing-competency",
+      "unit_id": "chapter-112-the-blacksmith",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-112-the-blacksmith-care-killing-competency",
+      "unit_id": "chapter-112-the-blacksmith",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-112-the-blacksmith-in-crape",
+      "unit_id": "chapter-112-the-blacksmith",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-112-the-blacksmith-in-crape",
+      "unit_id": "chapter-112-the-blacksmith",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-113-the-forge-ego-non-baptizo-te-in-nomine-patris-sed-in-nomin",
@@ -2097,6 +3321,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-113-the-forge-fusee",
+      "unit_id": "chapter-113-the-forge",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-113-the-forge-fusee",
+      "unit_id": "chapter-113-the-forge",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-113-the-forge-lucifers",
+      "unit_id": "chapter-113-the-forge",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-113-the-forge-lucifers",
+      "unit_id": "chapter-113-the-forge",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-113-the-forge-pole-iron-and-rope",
       "unit_id": "chapter-113-the-forge",
       "type": "uses-source",
@@ -2109,6 +3357,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-116-the-dying-whale-orisons",
+      "unit_id": "chapter-116-the-dying-whale",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-116-the-dying-whale-orisons",
+      "unit_id": "chapter-116-the-dying-whale",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-118-the-quadrant-its-numerous-cabalistical-contrivances",
       "unit_id": "chapter-118-the-quadrant",
       "type": "uses-source",
@@ -2117,6 +3377,30 @@
     {
       "source": "annotation:auth-chapter-118-the-quadrant-its-numerous-cabalistical-contrivances",
       "unit_id": "chapter-118-the-quadrant",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-118-the-quadrant-wonted",
+      "unit_id": "chapter-118-the-quadrant",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-118-the-quadrant-wonted",
+      "unit_id": "chapter-118-the-quadrant",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-119-the-candles-flambeaux",
+      "unit_id": "chapter-119-the-candles",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-119-the-candles-flambeaux",
+      "unit_id": "chapter-119-the-candles",
       "type": "uses-source",
       "target": "source:webster-1913"
     },
@@ -2133,6 +3417,30 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-120-the-deck-towards-the-end-of-the-firs-coasting-smack",
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-120-the-deck-towards-the-end-of-the-firs-coasting-smack",
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-120-the-deck-towards-the-end-of-the-firs-hooroosh",
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-120-the-deck-towards-the-end-of-the-firs-hooroosh",
+      "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-boxes-of-lucifers-forward",
       "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
       "type": "uses-source",
@@ -2140,6 +3448,30 @@
     },
     {
       "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-boxes-of-lucifers-forward",
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-drive-down-a-beaver",
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-drive-down-a-beaver",
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-long-togs",
+      "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-121-midnight-the-forecastle-bulwarks-long-togs",
       "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
       "type": "uses-source",
       "target": "source:webster-1913"
@@ -2181,6 +3513,66 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-126-the-life-buoy-bandbox",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-126-the-life-buoy-bandbox",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-126-the-life-buoy-cruppered-with-a-coffin",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-126-the-life-buoy-cruppered-with-a-coffin",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-126-the-life-buoy-in-sooth",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-126-the-life-buoy-in-sooth",
+      "unit_id": "chapter-126-the-life-buoy",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-127-the-deck-a-mere-hap",
+      "unit_id": "chapter-127-the-deck",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-127-the-deck-a-mere-hap",
+      "unit_id": "chapter-127-the-deck",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-127-the-deck-arrant",
+      "unit_id": "chapter-127-the-deck",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-127-the-deck-arrant",
+      "unit_id": "chapter-127-the-deck",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-127-the-deck-the-gravedigger-in-the-play-sings-spade-in-hand",
       "unit_id": "chapter-127-the-deck",
       "type": "uses-source",
@@ -2205,6 +3597,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-128-the-pequod-meets-the-rachel-earnest-suit",
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-128-the-pequod-meets-the-rachel-earnest-suit",
+      "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-128-the-pequod-meets-the-rachel-she-was-rachel-weeping-for-her-children-because",
       "unit_id": "chapter-128-the-pequod-meets-the-rachel",
       "type": "uses-source",
@@ -2241,6 +3645,18 @@
       "target": "source:standard-ebooks-moby-dick"
     },
     {
+      "source": "annotation:auth-chapter-132-the-symphony-durst",
+      "unit_id": "chapter-132-the-symphony",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-132-the-symphony-durst",
+      "unit_id": "chapter-132-the-symphony",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-132-the-symphony-little-miriam-and-martha-laughing-eyed-elves-hee",
       "unit_id": "chapter-132-the-symphony",
       "type": "uses-source",
@@ -2251,6 +3667,30 @@
       "unit_id": "chapter-132-the-symphony",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-132-the-symphony-marge",
+      "unit_id": "chapter-132-the-symphony",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-132-the-symphony-marge",
+      "unit_id": "chapter-132-the-symphony",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-133-the-chase-first-day-argosy",
+      "unit_id": "chapter-133-the-chase-first-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-133-the-chase-first-day-argosy",
+      "unit_id": "chapter-133-the-chase-first-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-133-the-chase-first-day-blood-of-grapes-and-mulberries-cast-before-antio",
@@ -2275,6 +3715,42 @@
       "unit_id": "chapter-133-the-chase-first-day",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-133-the-chase-first-day-scud",
+      "unit_id": "chapter-133-the-chase-first-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-133-the-chase-first-day-scud",
+      "unit_id": "chapter-133-the-chase-first-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-134-the-chase-second-day-black-vomit",
+      "unit_id": "chapter-134-the-chase-second-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-134-the-chase-second-day-black-vomit",
+      "unit_id": "chapter-134-the-chase-second-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-chapter-134-the-chase-second-day-fagot-of-steel",
+      "unit_id": "chapter-134-the-chase-second-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-134-the-chase-second-day-fagot-of-steel",
+      "unit_id": "chapter-134-the-chase-second-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:auth-chapter-134-the-chase-second-day-far-more-wondrous-phenomenon-of-breaching",
@@ -2301,6 +3777,18 @@
       "target": "source:webster-1913"
     },
     {
+      "source": "annotation:auth-chapter-135-the-chase-third-day-fagged",
+      "unit_id": "chapter-135-the-chase-third-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-135-the-chase-third-day-fagged",
+      "unit_id": "chapter-135-the-chase-third-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
       "source": "annotation:auth-chapter-135-the-chase-third-day-like-satan-would-not-sink-to-hell-till-she-had-d",
       "unit_id": "chapter-135-the-chase-third-day",
       "type": "uses-source",
@@ -2311,6 +3799,54 @@
       "unit_id": "chapter-135-the-chase-third-day",
       "type": "uses-source",
       "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-135-the-chase-third-day-sable-raiment",
+      "unit_id": "chapter-135-the-chase-third-day",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-chapter-135-the-chase-third-day-sable-raiment",
+      "unit_id": "chapter-135-the-chase-third-day",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-epilogue-epilogue-main",
+      "unit_id": "epilogue-epilogue",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-epilogue-epilogue-main",
+      "unit_id": "epilogue-epilogue",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-frontmatter-etymology-usher",
+      "unit_id": "frontmatter-etymology",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-frontmatter-etymology-usher",
+      "unit_id": "frontmatter-etymology",
+      "type": "uses-source",
+      "target": "source:webster-1913"
+    },
+    {
+      "source": "annotation:auth-frontmatter-extracts-incontinently",
+      "unit_id": "frontmatter-extracts",
+      "type": "uses-source",
+      "target": "source:standard-ebooks-moby-dick"
+    },
+    {
+      "source": "annotation:auth-frontmatter-extracts-incontinently",
+      "unit_id": "frontmatter-extracts",
+      "type": "uses-source",
+      "target": "source:webster-1913"
     },
     {
       "source": "annotation:bachelor-contrast-joy",

@@ -5,7 +5,7 @@
     "study_inline_marks_per_paragraph": 4,
     "study_inline_marks_per_unit": 30
   },
-  "annotation_count": 2401,
+  "annotation_count": 2529,
   "warning_count": 0,
   "units": [
     {
@@ -66,30 +66,30 @@
       "unit_id": "frontmatter-etymology",
       "sequence": 4,
       "title": "Etymology",
-      "annotation_count": 10,
-      "inline_annotation_count": 0,
+      "annotation_count": 11,
+      "inline_annotation_count": 1,
       "by_kind": {
-        "context": 4,
+        "context": 5,
         "form": 1,
         "teacher-note": 2,
         "theme": 3
       },
       "by_depth": {
         "explore": 7,
-        "study": 1,
+        "study": 2,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 0,
+      "max_inline_marks_per_paragraph": 1,
       "warnings": []
     },
     {
       "unit_id": "frontmatter-extracts",
       "sequence": 5,
       "title": "Extracts",
-      "annotation_count": 21,
-      "inline_annotation_count": 1,
+      "annotation_count": 22,
+      "inline_annotation_count": 2,
       "by_kind": {
-        "context": 11,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "teacher-note": 2,
@@ -97,7 +97,7 @@
       },
       "by_depth": {
         "explore": 17,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -118,10 +118,10 @@
       "unit_id": "chapter-001-loomings",
       "sequence": 7,
       "title": "Loomings",
-      "annotation_count": 28,
-      "inline_annotation_count": 8,
+      "annotation_count": 31,
+      "inline_annotation_count": 11,
       "by_kind": {
-        "context": 15,
+        "context": 18,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -130,10 +130,10 @@
       },
       "by_depth": {
         "explore": 17,
-        "study": 9,
+        "study": 12,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
@@ -162,10 +162,10 @@
       "unit_id": "chapter-003-the-spouter-inn",
       "sequence": 9,
       "title": "The Spouter-Inn",
-      "annotation_count": 26,
-      "inline_annotation_count": 4,
+      "annotation_count": 29,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 13,
+        "context": 16,
         "difficult-material": 2,
         "form": 1,
         "map": 1,
@@ -174,7 +174,7 @@
       },
       "by_depth": {
         "explore": 18,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -206,10 +206,10 @@
       "unit_id": "chapter-005-breakfast",
       "sequence": 11,
       "title": "Breakfast",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 16,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -218,7 +218,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -250,10 +250,10 @@
       "unit_id": "chapter-007-the-chapel",
       "sequence": 13,
       "title": "The Chapel",
-      "annotation_count": 21,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -262,10 +262,10 @@
       },
       "by_depth": {
         "explore": 15,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
@@ -293,10 +293,10 @@
       "unit_id": "chapter-009-the-sermon",
       "sequence": 15,
       "title": "The Sermon",
-      "annotation_count": 27,
-      "inline_annotation_count": 9,
+      "annotation_count": 30,
+      "inline_annotation_count": 12,
       "by_kind": {
-        "context": 18,
+        "context": 21,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -304,10 +304,10 @@
       },
       "by_depth": {
         "explore": 14,
-        "study": 11,
+        "study": 14,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
@@ -358,10 +358,10 @@
       "unit_id": "chapter-012-biographical",
       "sequence": 18,
       "title": "Biographical",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -370,7 +370,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 5,
+        "study": 7,
         "teacher": 3
       },
       "max_inline_marks_per_paragraph": 2,
@@ -380,10 +380,10 @@
       "unit_id": "chapter-013-wheelbarrow",
       "sequence": 19,
       "title": "Wheelbarrow",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 2,
+        "context": 4,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -392,10 +392,10 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
@@ -444,10 +444,10 @@
       "unit_id": "chapter-016-the-ship",
       "sequence": 22,
       "title": "The Ship",
-      "annotation_count": 26,
-      "inline_annotation_count": 10,
+      "annotation_count": 28,
+      "inline_annotation_count": 12,
       "by_kind": {
-        "context": 17,
+        "context": 19,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -456,7 +456,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 13,
+        "study": 15,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -466,10 +466,10 @@
       "unit_id": "chapter-017-the-ramadan",
       "sequence": 23,
       "title": "The Ramadan",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 4,
+        "context": 5,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -478,7 +478,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -488,10 +488,10 @@
       "unit_id": "chapter-018-his-mark",
       "sequence": 24,
       "title": "His Mark",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 21,
+      "inline_annotation_count": 8,
       "by_kind": {
-        "context": 6,
+        "context": 9,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -500,7 +500,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -532,10 +532,10 @@
       "unit_id": "chapter-020-all-astir",
       "sequence": 26,
       "title": "All Astir",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 5,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -543,7 +543,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 2,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -574,10 +574,10 @@
       "unit_id": "chapter-022-merry-christmas",
       "sequence": 28,
       "title": "Merry Christmas",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "form": 3,
         "map": 2,
         "teacher-note": 2,
@@ -585,7 +585,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -616,10 +616,10 @@
       "unit_id": "chapter-024-the-advocate",
       "sequence": 30,
       "title": "The Advocate",
-      "annotation_count": 17,
-      "inline_annotation_count": 7,
+      "annotation_count": 20,
+      "inline_annotation_count": 10,
       "by_kind": {
-        "context": 9,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -628,7 +628,7 @@
       },
       "by_depth": {
         "explore": 4,
-        "study": 11,
+        "study": 14,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -638,10 +638,10 @@
       "unit_id": "chapter-025-postscript",
       "sequence": 31,
       "title": "Postscript",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -649,10 +649,10 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
@@ -681,10 +681,10 @@
       "unit_id": "chapter-027-knights-and-squires",
       "sequence": 33,
       "title": "Knights and Squires",
-      "annotation_count": 19,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -693,7 +693,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -725,10 +725,10 @@
       "unit_id": "chapter-029-enter-ahab-to-him-stubb",
       "sequence": 35,
       "title": "Enter Ahab; To Him, Stubb",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 4,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -737,10 +737,10 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
@@ -768,10 +768,10 @@
       "unit_id": "chapter-031-queen-mab",
       "sequence": 37,
       "title": "Queen Mab",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -780,20 +780,20 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
       "unit_id": "chapter-032-cetology",
       "sequence": 38,
       "title": "Cetology",
-      "annotation_count": 21,
-      "inline_annotation_count": 7,
+      "annotation_count": 22,
+      "inline_annotation_count": 8,
       "by_kind": {
-        "context": 12,
+        "context": 13,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -802,7 +802,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 10,
+        "study": 11,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -812,10 +812,10 @@
       "unit_id": "chapter-033-the-specksnyder",
       "sequence": 39,
       "title": "The Specksnyder",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 10,
+        "context": 11,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -823,7 +823,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -833,10 +833,10 @@
       "unit_id": "chapter-034-the-cabin-table",
       "sequence": 40,
       "title": "The Cabin-Table",
-      "annotation_count": 18,
-      "inline_annotation_count": 6,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -845,7 +845,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 8,
+        "study": 9,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 4,
@@ -855,17 +855,17 @@
       "unit_id": "chapter-035-the-masthead",
       "sequence": 41,
       "title": "The Masthead",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "teacher-note": 3,
         "theme": 4
       },
       "by_depth": {
         "explore": 7,
-        "study": 7,
+        "study": 8,
         "teacher": 3
       },
       "max_inline_marks_per_paragraph": 2,
@@ -875,10 +875,10 @@
       "unit_id": "chapter-036-the-quarterdeck",
       "sequence": 42,
       "title": "The Quarterdeck",
-      "annotation_count": 21,
-      "inline_annotation_count": 5,
+      "annotation_count": 22,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -887,7 +887,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -941,10 +941,10 @@
       "unit_id": "chapter-039-first-night-watch",
       "sequence": 45,
       "title": "First Night-Watch",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 16,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 2,
+        "context": 3,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -952,20 +952,20 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
       "unit_id": "chapter-040-midnight-forecastle",
       "sequence": 46,
       "title": "Midnight, Forecastle",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 4,
+        "context": 6,
         "difficult-material": 2,
         "form": 6,
         "map": 1,
@@ -974,7 +974,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -984,10 +984,10 @@
       "unit_id": "chapter-041-moby-dick",
       "sequence": 47,
       "title": "Moby Dick",
-      "annotation_count": 20,
-      "inline_annotation_count": 5,
+      "annotation_count": 21,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -996,7 +996,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1006,10 +1006,10 @@
       "unit_id": "chapter-042-the-whiteness-of-the-whale",
       "sequence": 48,
       "title": "The Whiteness of the Whale",
-      "annotation_count": 22,
-      "inline_annotation_count": 4,
+      "annotation_count": 23,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1018,7 +1018,7 @@
       },
       "by_depth": {
         "explore": 14,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1049,10 +1049,10 @@
       "unit_id": "chapter-044-the-chart",
       "sequence": 50,
       "title": "The Chart",
-      "annotation_count": 18,
-      "inline_annotation_count": 4,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -1061,7 +1061,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1071,10 +1071,10 @@
       "unit_id": "chapter-045-the-affidavit",
       "sequence": 51,
       "title": "The Affidavit",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 6,
+        "context": 8,
         "difficult-material": 1,
         "form": 4,
         "map": 1,
@@ -1083,7 +1083,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 6,
+        "study": 8,
         "teacher": 4
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1093,10 +1093,10 @@
       "unit_id": "chapter-046-surmises",
       "sequence": 52,
       "title": "Surmises",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "by_kind": {
-        "context": 1,
+        "context": 2,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1105,7 +1105,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1137,10 +1137,10 @@
       "unit_id": "chapter-048-the-first-lowering",
       "sequence": 54,
       "title": "The First Lowering",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 21,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -1149,7 +1149,7 @@
       },
       "by_depth": {
         "explore": 14,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1201,10 +1201,10 @@
       "unit_id": "chapter-051-the-spirit-spout",
       "sequence": 57,
       "title": "The Spirit-Spout",
-      "annotation_count": 18,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -1213,20 +1213,20 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
       "unit_id": "chapter-052-the-albatross",
       "sequence": 58,
       "title": "The Albatross",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 4,
         "map": 2,
@@ -1235,20 +1235,20 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
       "unit_id": "chapter-053-the-gam",
       "sequence": 59,
       "title": "The Gam",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 3,
         "map": 3,
@@ -1257,7 +1257,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1267,10 +1267,10 @@
       "unit_id": "chapter-054-the-town-ho-s-story",
       "sequence": 60,
       "title": "The Town-Ho \u2019s Story",
-      "annotation_count": 20,
-      "inline_annotation_count": 4,
+      "annotation_count": 23,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 8,
+        "context": 11,
         "difficult-material": 1,
         "form": 6,
         "map": 1,
@@ -1279,20 +1279,20 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     },
     {
       "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
       "sequence": 61,
       "title": "Of the Monstrous Pictures of Whales",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "by_kind": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 4,
         "map": 1,
@@ -1301,7 +1301,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1332,10 +1332,10 @@
       "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
       "sequence": 63,
       "title": "Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1344,7 +1344,7 @@
       },
       "by_depth": {
         "explore": 6,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -1354,10 +1354,10 @@
       "unit_id": "chapter-058-brit",
       "sequence": 64,
       "title": "Brit",
-      "annotation_count": 18,
-      "inline_annotation_count": 4,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 11,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -1366,7 +1366,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1419,10 +1419,10 @@
       "unit_id": "chapter-061-stubb-kills-a-whale",
       "sequence": 67,
       "title": "Stubb Kills a Whale",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -1431,7 +1431,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1441,10 +1441,10 @@
       "unit_id": "chapter-062-the-dart",
       "sequence": 68,
       "title": "The Dart",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -1452,10 +1452,10 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
@@ -1483,10 +1483,10 @@
       "unit_id": "chapter-064-stubb-s-supper",
       "sequence": 70,
       "title": "Stubb\u2019s Supper",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -1495,7 +1495,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1505,10 +1505,10 @@
       "unit_id": "chapter-065-the-whale-as-a-dish",
       "sequence": 71,
       "title": "The Whale as a Dish",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -1517,7 +1517,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1549,10 +1549,10 @@
       "unit_id": "chapter-067-cutting-in",
       "sequence": 73,
       "title": "Cutting In",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -1561,10 +1561,10 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
@@ -1593,10 +1593,10 @@
       "unit_id": "chapter-069-the-funeral",
       "sequence": 75,
       "title": "The Funeral",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 6,
+        "context": 8,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -1604,20 +1604,20 @@
       },
       "by_depth": {
         "explore": 13,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
       "unit_id": "chapter-070-the-sphynx",
       "sequence": 76,
       "title": "The Sphynx",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -1625,10 +1625,10 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
@@ -1657,10 +1657,10 @@
       "unit_id": "chapter-072-the-monkey-rope",
       "sequence": 78,
       "title": "The Monkey-Rope",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1669,7 +1669,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1679,10 +1679,10 @@
       "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
       "sequence": 79,
       "title": "Stubb and Flask Kill a Right Whale; and Then Have a Talk Over Him",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 18,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1691,7 +1691,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -1722,10 +1722,10 @@
       "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
       "sequence": 81,
       "title": "The Right Whale\u2019s Head\u2060\u2014Contrasted View",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 18,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 11,
+        "context": 12,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -1733,7 +1733,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1764,10 +1764,10 @@
       "unit_id": "chapter-077-the-great-heidelburgh-tun",
       "sequence": 83,
       "title": "The Great Heidelburgh Tun",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 10,
+        "context": 11,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -1775,7 +1775,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -1849,10 +1849,10 @@
       "unit_id": "chapter-081-the-pequod-meets-the-virgin",
       "sequence": 87,
       "title": "The Pequod Meets the Virgin",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 8,
       "by_kind": {
-        "context": 6,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -1861,7 +1861,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 7,
+        "study": 10,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -1913,10 +1913,10 @@
       "unit_id": "chapter-084-pitchpoling",
       "sequence": 90,
       "title": "Pitchpoling",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -1924,10 +1924,10 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
@@ -1955,10 +1955,10 @@
       "unit_id": "chapter-086-the-tail",
       "sequence": 92,
       "title": "The Tail",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 6,
       "by_kind": {
-        "context": 10,
+        "context": 11,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -1966,7 +1966,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -1976,10 +1976,10 @@
       "unit_id": "chapter-087-the-grand-armada",
       "sequence": 93,
       "title": "The Grand Armada",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 8,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -1988,20 +1988,20 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
       "unit_id": "chapter-088-schools-and-schoolmasters",
       "sequence": 94,
       "title": "Schools and Schoolmasters",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 11,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -2009,7 +2009,7 @@
       },
       "by_depth": {
         "explore": 7,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2019,10 +2019,10 @@
       "unit_id": "chapter-089-fast-fish-and-loose-fish",
       "sequence": 95,
       "title": "Fast-Fish and Loose-Fish",
-      "annotation_count": 18,
-      "inline_annotation_count": 3,
+      "annotation_count": 20,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 6,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2031,7 +2031,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -2062,10 +2062,10 @@
       "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
       "sequence": 97,
       "title": "The Pequod Meets the Rose-Bud",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 7,
+        "context": 9,
         "form": 4,
         "map": 3,
         "teacher-note": 2,
@@ -2073,7 +2073,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2083,10 +2083,10 @@
       "unit_id": "chapter-092-ambergris",
       "sequence": 98,
       "title": "Ambergris",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 10,
+        "context": 12,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -2094,10 +2094,10 @@
       },
       "by_depth": {
         "explore": 7,
-        "study": 8,
+        "study": 10,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 3,
+      "max_inline_marks_per_paragraph": 4,
       "warnings": []
     },
     {
@@ -2126,10 +2126,10 @@
       "unit_id": "chapter-094-a-squeeze-of-the-hand",
       "sequence": 100,
       "title": "A Squeeze of the Hand",
-      "annotation_count": 18,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -2138,7 +2138,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -2148,10 +2148,10 @@
       "unit_id": "chapter-095-the-cassock",
       "sequence": 101,
       "title": "The Cassock",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -2160,7 +2160,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -2192,10 +2192,10 @@
       "unit_id": "chapter-097-the-lamp",
       "sequence": 103,
       "title": "The Lamp",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 9,
+        "context": 10,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -2203,7 +2203,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2213,10 +2213,10 @@
       "unit_id": "chapter-098-stowing-down-and-clearing-up",
       "sequence": 104,
       "title": "Stowing Down and Clearing Up",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -2225,7 +2225,7 @@
       },
       "by_depth": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2257,10 +2257,10 @@
       "unit_id": "chapter-100-leg-and-arm",
       "sequence": 106,
       "title": "Leg and Arm",
-      "annotation_count": 19,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 4,
         "map": 3,
@@ -2269,7 +2269,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2279,10 +2279,10 @@
       "unit_id": "chapter-101-the-decanter",
       "sequence": 107,
       "title": "The Decanter",
-      "annotation_count": 19,
-      "inline_annotation_count": 7,
+      "annotation_count": 20,
+      "inline_annotation_count": 8,
       "by_kind": {
-        "context": 12,
+        "context": 13,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2291,7 +2291,7 @@
       },
       "by_depth": {
         "explore": 7,
-        "study": 10,
+        "study": 11,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -2301,10 +2301,10 @@
       "unit_id": "chapter-102-a-bower-in-the-arsacides",
       "sequence": 108,
       "title": "A Bower in the Arsacides",
-      "annotation_count": 21,
-      "inline_annotation_count": 6,
+      "annotation_count": 23,
+      "inline_annotation_count": 8,
       "by_kind": {
-        "context": 13,
+        "context": 15,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -2313,7 +2313,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 7,
+        "study": 9,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 3,
@@ -2388,10 +2388,10 @@
       "unit_id": "chapter-106-ahab-s-leg",
       "sequence": 112,
       "title": "Ahab\u2019s Leg",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "by_kind": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -2400,7 +2400,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2431,10 +2431,10 @@
       "unit_id": "chapter-108-ahab-and-the-carpenter",
       "sequence": 114,
       "title": "Ahab and the Carpenter",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "form": 6,
         "map": 1,
         "teacher-note": 2,
@@ -2442,7 +2442,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2452,10 +2452,10 @@
       "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
       "sequence": 115,
       "title": "Ahab and Starbuck in the Cabin",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 4,
+        "context": 6,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -2463,7 +2463,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2473,10 +2473,10 @@
       "unit_id": "chapter-110-queequeg-in-his-coffin",
       "sequence": 116,
       "title": "Queequeg in His Coffin",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 4,
+        "context": 5,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2485,7 +2485,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2516,10 +2516,10 @@
       "unit_id": "chapter-112-the-blacksmith",
       "sequence": 118,
       "title": "The Blacksmith",
-      "annotation_count": 15,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 7,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -2527,7 +2527,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2537,10 +2537,10 @@
       "unit_id": "chapter-113-the-forge",
       "sequence": 119,
       "title": "The Forge",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 8,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -2549,7 +2549,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 7,
+        "study": 9,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2603,10 +2603,10 @@
       "unit_id": "chapter-116-the-dying-whale",
       "sequence": 122,
       "title": "The Dying Whale",
-      "annotation_count": 15,
-      "inline_annotation_count": 1,
+      "annotation_count": 16,
+      "inline_annotation_count": 2,
       "by_kind": {
-        "context": 3,
+        "context": 4,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -2614,10 +2614,10 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
@@ -2646,10 +2646,10 @@
       "unit_id": "chapter-118-the-quadrant",
       "sequence": 124,
       "title": "The Quadrant",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 4,
+        "context": 5,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -2657,7 +2657,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2667,10 +2667,10 @@
       "unit_id": "chapter-119-the-candles",
       "sequence": 125,
       "title": "The Candles",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2679,7 +2679,7 @@
       },
       "by_depth": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2689,10 +2689,10 @@
       "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
       "sequence": 126,
       "title": "The Deck Towards the End of the First Night Watch",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 2,
+        "context": 4,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -2700,20 +2700,20 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
       "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
       "sequence": 127,
       "title": "Midnight.\u2060\u2014The Forecastle Bulwarks",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -2721,10 +2721,10 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
@@ -2816,10 +2816,10 @@
       "unit_id": "chapter-126-the-life-buoy",
       "sequence": 132,
       "title": "The Life-Buoy",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 4,
+        "context": 7,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -2828,7 +2828,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 4,
+        "study": 7,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2838,10 +2838,10 @@
       "unit_id": "chapter-127-the-deck",
       "sequence": 133,
       "title": "The Deck",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2850,7 +2850,7 @@
       },
       "by_depth": {
         "explore": 11,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 2,
@@ -2860,10 +2860,10 @@
       "unit_id": "chapter-128-the-pequod-meets-the-rachel",
       "sequence": 134,
       "title": "The Pequod Meets the Rachel",
-      "annotation_count": 18,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 5,
+        "context": 6,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -2871,7 +2871,7 @@
       },
       "by_depth": {
         "explore": 14,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2947,10 +2947,10 @@
       "unit_id": "chapter-132-the-symphony",
       "sequence": 138,
       "title": "The Symphony",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -2959,20 +2959,20 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 1,
+      "max_inline_marks_per_paragraph": 2,
       "warnings": []
     },
     {
       "unit_id": "chapter-133-the-chase-first-day",
       "sequence": 139,
       "title": "The Chase\u2060\u2014First Day",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -2981,7 +2981,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -2991,10 +2991,10 @@
       "unit_id": "chapter-134-the-chase-second-day",
       "sequence": 140,
       "title": "The Chase\u2060\u2014Second Day",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "by_kind": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -3003,7 +3003,7 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -3013,10 +3013,10 @@
       "unit_id": "chapter-135-the-chase-third-day",
       "sequence": 141,
       "title": "The Chase\u2060\u2014Third Day",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "by_kind": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -3025,7 +3025,7 @@
       },
       "by_depth": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "max_inline_marks_per_paragraph": 1,
@@ -3035,10 +3035,10 @@
       "unit_id": "epilogue-epilogue",
       "sequence": 142,
       "title": "Epilogue",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "by_kind": {
-        "context": 3,
+        "context": 4,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -3047,10 +3047,10 @@
       },
       "by_depth": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
-      "max_inline_marks_per_paragraph": 2,
+      "max_inline_marks_per_paragraph": 3,
       "warnings": []
     }
   ]

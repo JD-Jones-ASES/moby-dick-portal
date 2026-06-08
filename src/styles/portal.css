@@ -353,7 +353,33 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .wp-hit { fill: transparent; cursor: pointer; outline: none; }
 .wp-hit:focus-visible + .wp-dot, .wp-dot.wp-active { fill: var(--accent); r: var(--wp-active-r, 8); }
 .wp-hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 50%; }
+/* The visible dot ignores the pointer so the larger transparent hit circle catches every hover,
+   including over the dot's center — otherwise hovering the dot itself would miss the listener. */
+.wp-dot { pointer-events: none; }
 .map-caption { margin: 0.6rem 0 0; font-size: 0.85rem; font-style: italic; color: var(--ink-faint); }
+
+/* Floating tooltip shown when a voyage dot is hovered or focused. Positioned (position:fixed) in JS
+   from the dot's screen rect so it escapes the map's overflow:hidden clip. Purely visual — the hit
+   circle already carries a full aria-label — so it is aria-hidden and never captures the pointer. */
+.map-tip {
+  position: fixed;
+  z-index: 60;
+  max-width: 250px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  box-shadow: var(--shadow);
+  padding: 0.55rem 0.7rem;
+  font-family: var(--sans);
+  pointer-events: none;
+  display: grid;
+  gap: 0.2rem;
+}
+.map-tip[hidden] { display: none; }
+.map-tip .mt-meta { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold); font-weight: 700; }
+.map-tip .mt-title { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: 1rem; line-height: 1.2; }
+.map-tip .mt-note { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.42; }
+.map-tip .mt-note:empty { display: none; }
 
 .waypoint { border-bottom: 1px solid var(--line); padding: 0.8rem 0; scroll-margin-top: 76px; border-radius: 6px; }
 .waypoint .wlabel { font-family: var(--serif); font-weight: 700; }
@@ -362,8 +388,7 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .waypoint a.wlink { color: var(--ink); }
 .waypoint a.wlink:hover { color: var(--accent); }
 
-/* ---- Inline glossary marks + popover ---- */
-.gloss-wrap { position: relative; }
+/* ---- Inline glossary marks ---- */
 .gloss-mark {
   all: unset;
   display: inline;
@@ -386,32 +411,54 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
   text-decoration-color: var(--gloss);
 }
 
+/* The glossary definition span is visually hidden: it feeds screen readers (aria-describedby) and is
+   the content the Margin card clones. It is no longer a floating popover. */
 .gloss-pop {
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 7px);
-  z-index: 200;
-  width: max-content;
-  max-width: min(320px, 90vw);
-  background: var(--paper-raised);
-  border: 1px solid var(--line-strong);
-  border-radius: 9px;
-  box-shadow: var(--shadow);
-  padding: 0.6rem 0.75rem;
-  font-family: var(--sans);
-  font-size: 0.86rem;
-  line-height: 1.45;
-  color: var(--ink-soft);
-  white-space: normal;
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
-.gloss-pop.below { bottom: auto; top: calc(100% + 7px); }
-.gloss-pop.flip-left { left: auto; right: 0; }
-/* Transparent bridge over the 7px gap so the pointer can travel mark -> popover without dismissing it. */
-.gloss-pop::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 9px; }
-.gloss-pop.below::before { top: auto; bottom: 100%; }
-.gloss-pop .gp-term { font-family: var(--serif); font-weight: 700; font-size: 0.98rem; color: var(--ink); margin-right: 0.4rem; }
-.gloss-pop .gp-cat { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold); font-weight: 700; }
-.gloss-pop .gp-def { display: block; margin-top: 0.3rem; }
+
+/* ---- Margin card: the single fixed "what you last moused over" surface ----
+   Hovering/focusing any inline glossary mark OR study-note mark routes its content here, so the page
+   never jumps to the sidebar and no popover has to be positioned. It is fixed and independent of the
+   sidebar, so it stays usable in Focus mode. Persists showing the last item until the next hover or
+   the close button. */
+.margin-note {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 54;                 /* under the dock (55) so the dock stays tappable where they meet */
+  width: 340px;
+  max-width: calc(100vw - 2rem);
+  max-height: 44vh;
+  overflow-y: auto;
+  background: color-mix(in srgb, var(--paper-raised) 94%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--gloss);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 0.8rem 2rem 0.85rem 0.95rem;
+}
+.margin-note[hidden] { display: none; }
+.margin-note.is-note { border-left-color: var(--gold); }
+.mn-close {
+  position: absolute; top: 0.35rem; right: 0.4rem;
+  border: 0; background: transparent; color: var(--ink-faint);
+  font-size: 1.25rem; line-height: 1; cursor: pointer; padding: 0.15rem 0.35rem; border-radius: 6px;
+}
+.mn-close:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.mn-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.mn-kind { display: block; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-faint); font-weight: 700; margin-bottom: 0.4rem; }
+.margin-note .gp-cat { display: block; font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold); font-weight: 700; margin-bottom: 0.1rem; }
+.margin-note .gp-term { font-family: var(--serif); font-weight: 700; font-size: 1.15rem; color: var(--ink); }
+.margin-note .gp-def { display: block; margin-top: 0.3rem; font-size: 0.9rem; line-height: 1.5; color: var(--ink-soft); }
+.margin-note .claim { margin-bottom: 0.4rem; }
+.margin-note .anchor-q { font-family: var(--serif); font-style: italic; color: var(--ink); font-size: 1rem; display: block; margin-bottom: 0.4rem; }
+.margin-note .body { font-size: 0.9rem; line-height: 1.5; color: var(--ink-soft); margin: 0 0 0.5rem; }
+.margin-note .cite { font-size: 0.78rem; color: var(--ink-faint); margin: 0; }
+.margin-note .cite a { color: var(--accent-soft); }
 
 /* Reader tools row + legend */
 .reader-tools { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin: 0 0 1.25rem; font-size: 0.8rem; color: var(--ink-faint); }
@@ -495,18 +542,24 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
   position: absolute;
   right: 0;
   bottom: calc(100% + 0.5rem);
-  width: 250px;
+  /* Wide enough that the WIDTH row (label + three segmented buttons) fits on one line.
+     A flex column (not grid) keeps every row exactly the panel's content width — a grid
+     auto-column would size to the widest row's max-content and overflow the rounded border. */
+  width: 280px;
+  max-width: calc(100vw - 1.5rem);
   background: var(--paper-raised);
   border: 1px solid var(--line-strong);
   border-radius: 12px;
   box-shadow: var(--shadow);
   padding: 0.85rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.7rem;
 }
-.typo-row { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; }
-.typo-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); font-weight: 700; }
-.typo-ctl, .typo-seg { display: inline-flex; gap: 0.3rem; }
+.typo-row { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; min-width: 0; }
+.typo-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); font-weight: 700; flex: 0 0 auto; }
+/* wrap (right-aligned) as a safety net so a wider font/translation can never poke buttons past the box */
+.typo-ctl, .typo-seg { display: inline-flex; gap: 0.3rem; flex-wrap: wrap; justify-content: flex-end; }
 .typo-panel button {
   border: 1px solid var(--line-strong);
   background: var(--paper);
@@ -554,6 +607,8 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
   /* Comfortable touch targets on phones for every explicit control. */
   .typo-panel button { min-height: 44px; min-width: 44px; }
   .reader-dock .dock-btn { min-height: 44px; min-width: 44px; }
+  /* On phones the card spans the width and sits ABOVE the bottom-right dock (4rem clears it). */
+  .margin-note { left: 0.6rem; right: 0.6rem; bottom: 4rem; width: auto; max-width: none; max-height: 42vh; }
 }
 
 @media (prefers-reduced-motion: reduce) {

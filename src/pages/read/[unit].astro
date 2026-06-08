@@ -1,7 +1,7 @@
 ---
 import Layout from "../../components/Layout.astro";
 import { loadGuideData } from "../../lib/guide-data.js";
-import { renderUnit } from "../../lib/render.js";
+import { renderUnit, termInText } from "../../lib/render.js";
 import {
   unitHref, unitKicker, pathMeta, primaryClaim, claimInfo, externalCitations, sourceInfo, withBase
 } from "../../lib/site.js";
@@ -29,8 +29,12 @@ export async function getStaticPaths() {
 
     // One glossary array, used for BOTH the inline marks and the sidebar cards, so every
     // marked term is guaranteed a card to link to (mark-set is a subset of card-set).
+    // Require a whole-word occurrence in this unit's text so a term targeted only because it is a
+    // substring of a larger word (e.g. "helm" inside "overwhelmed", "aft" inside "after") never
+    // shows a sidebar card with nothing to point at.
     const glossary = data.glossary
       .filter((g) => (g.targets ?? []).includes(unit.unit_id))
+      .filter((g) => termInText(unit.plain_text, [g.term, ...(g.variants ?? [])]))
       .slice(0, 30);
 
     const { html, placed } = renderUnit(unit.plain_text, annotations, glossary);
@@ -202,6 +206,11 @@ function noteCitations(a) {
       </aside>
     </article>
   </div>
+
+  <aside class="margin-note" id="margin-note" aria-live="polite" aria-label="Last looked-up term or note" hidden>
+    <button type="button" class="mn-close" aria-label="Dismiss">×</button>
+    <div class="mn-content"></div>
+  </aside>
 
   <div class="reader-dock" aria-label="Reading controls">
     <button type="button" class="dock-btn" id="focus-toggle" aria-pressed="false" title="Focus mode — hide the sidebar (Esc to exit)">

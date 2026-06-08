@@ -8764,7 +8764,7 @@
       "source_id": "standard-ebooks-moby-dick",
       "title": "Moby Dick",
       "citation_status": "verified-from-vendored-opf",
-      "usage_count": 4596,
+      "usage_count": 4768,
       "units": [
         "frontmatter-titlepage",
         "frontmatter-imprint",
@@ -8909,6 +8909,24 @@
         "epilogue-epilogue"
       ],
       "usages": [
+        {
+          "type": "annotation",
+          "id": "auth-chapter-001-loomings-commonalty",
+          "unit_id": "chapter-001-loomings",
+          "label": "commonalty"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-001-loomings-driving-off-the-spleen-and-regulating-the-circul",
+          "unit_id": "chapter-001-loomings",
+          "label": "driving off the spleen and regulating the circulation"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-001-loomings-old-hunks",
+          "unit_id": "chapter-001-loomings",
+          "label": "old hunks"
+        },
         {
           "type": "annotation",
           "id": "broad-apparatus-chapter-001-loomings-2",
@@ -9205,6 +9223,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-farrago",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "farrago"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-003-the-spouter-inn-like-another-cursed-jonah-by-which-name-indeed-t",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "like another cursed Jonah (by which name indeed they called him)"
@@ -9217,9 +9241,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-settle",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "settle"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-003-the-spouter-inn-thirty-years",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "Thirty Years"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-topers",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "topers"
         },
         {
           "type": "annotation",
@@ -9457,6 +9493,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-005-breakfast-bosky",
+          "unit_id": "chapter-005-breakfast",
+          "label": "bosky"
+        },
+        {
+          "type": "annotation",
           "id": "breakfast-social-comedy",
           "unit_id": "chapter-005-breakfast",
           "label": "good laugh is a mighty good thing"
@@ -9652,6 +9694,12 @@
           "id": "auth-chapter-007-the-chapel-immortal-by-brevet",
           "unit_id": "chapter-007-the-chapel",
           "label": "immortal by brevet"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-007-the-chapel-lees",
+          "unit_id": "chapter-007-the-chapel",
+          "label": "lees"
         },
         {
           "type": "annotation",
@@ -9904,6 +9952,24 @@
           "id": "auth-chapter-009-the-sermon-bound-for-tarshish",
           "unit_id": "chapter-009-the-sermon",
           "label": "bound for Tarshish"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-cupidity",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "cupidity"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-essays-his-wretched-smile",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "essays his wretched smile"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-hies",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "hies"
         },
         {
           "type": "annotation",
@@ -10255,6 +10321,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-012-biographical-for-the-nonce",
+          "unit_id": "chapter-012-biographical",
+          "label": "For the nonce"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-012-biographical-vitiated",
+          "unit_id": "chapter-012-biographical",
+          "label": "vitiated"
+        },
+        {
+          "type": "annotation",
           "id": "biographical-queequeg-king",
           "unit_id": "chapter-012-biographical",
           "label": "son of a King"
@@ -10348,6 +10426,18 @@
           "id": "whole-book-density-chapter-012-biographical-3",
           "unit_id": "chapter-012-biographical",
           "label": "far away to the West and"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-013-wheelbarrow-a-noble-trump",
+          "unit_id": "chapter-013-wheelbarrow",
+          "label": "a noble trump"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-013-wheelbarrow-clove-to-queequeg",
+          "unit_id": "chapter-013-wheelbarrow",
+          "label": "clove to Queequeg"
         },
         {
           "type": "annotation",
@@ -10669,6 +10759,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-016-the-ship-canting",
+          "unit_id": "chapter-016-the-ship",
+          "label": "canting"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-016-the-ship-captain-bildad-if-i-had-followed-thy-advice",
           "unit_id": "chapter-016-the-ship",
           "label": "Captain Bildad, if I had followed thy advice"
@@ -10684,6 +10780,12 @@
           "id": "auth-chapter-016-the-ship-now-extinct-as-the-ancient-medes",
           "unit_id": "chapter-016-the-ship",
           "label": "now extinct as the ancient Medes"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-016-the-ship-one-stiver",
+          "unit_id": "chapter-016-the-ship",
+          "label": "one stiver"
         },
         {
           "type": "annotation",
@@ -10819,6 +10921,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-017-the-ramadan-castors",
+          "unit_id": "chapter-017-the-ramadan",
+          "label": "castors"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-017-the-ramadan-1",
           "unit_id": "chapter-017-the-ramadan",
           "label": "Queequeg thought he knew what he was about, I suppose; he seemed to be content; and there let him rest."
@@ -10915,9 +11023,27 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-018-his-mark-after-claps",
+          "unit_id": "chapter-018-his-mark",
+          "label": "after-claps"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-018-his-mark-prate",
+          "unit_id": "chapter-018-his-mark",
+          "label": "prate"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-018-his-mark-remain-not-for-aye-a-belial-bondsman",
           "unit_id": "chapter-018-his-mark",
           "label": "remain not for aye a Belial bondsman"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-018-his-mark-skylarking",
+          "unit_id": "chapter-018-his-mark",
+          "label": "skylarking"
         },
         {
           "type": "annotation",
@@ -11125,6 +11251,30 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-020-all-astir-costermongers",
+          "unit_id": "chapter-020-all-astir",
+          "label": "costermongers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-divers",
+          "unit_id": "chapter-020-all-astir",
+          "label": "divers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-got-down-our-traps",
+          "unit_id": "chapter-020-all-astir",
+          "label": "got down our traps"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-withal",
+          "unit_id": "chapter-020-all-astir",
+          "label": "withal"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-020-all-astir-1",
           "unit_id": "chapter-020-all-astir",
           "label": "So Queequeg and I got down our traps, resolving, however, to sleep ashore till the last."
@@ -11308,6 +11458,18 @@
           "id": "whole-book-density-chapter-021-going-aboard-3",
           "unit_id": "chapter-021-going-aboard",
           "label": "imperfect misty dawn, when we drew"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-022-merry-christmas-dismal-stave-of-psalmody",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "dismal stave of psalmody"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-022-merry-christmas-offing",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "offing"
         },
         {
           "type": "annotation",
@@ -11521,9 +11683,27 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-conceit",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "conceit"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-024-the-advocate-mighty-job",
           "unit_id": "chapter-024-the-advocate",
           "label": "mighty Job"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-puissant",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "puissant"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-the-world-scouts-at-us",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "the world scouts at us"
         },
         {
           "type": "annotation",
@@ -11620,6 +11800,12 @@
           "id": "auth-chapter-025-postscript-macassar-oil",
           "unit_id": "chapter-025-postscript",
           "label": "macassar oil"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-025-postscript-meanly",
+          "unit_id": "chapter-025-postscript",
+          "label": "meanly"
         },
         {
           "type": "annotation",
@@ -11827,6 +12013,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-027-knights-and-squires-meet",
+          "unit_id": "chapter-027-knights-and-squires",
+          "label": "meet"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-027-knights-and-squires-son-of-the-prince-of-the-powers-of-the-air",
           "unit_id": "chapter-027-knights-and-squires",
           "label": "son of the Prince of the Powers of the Air"
@@ -12031,6 +12223,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-029-enter-ahab-to-him-stubb-plaguey",
+          "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+          "label": "plaguey"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-029-enter-ahab-to-him-stubb-1",
           "unit_id": "chapter-029-enter-ahab-to-him-stubb",
           "label": "The warmly cool, clear, ringing, perfumed, overflowing, redundant days, were as crystal goblets of Persian sherbet, heaped up\u2060\u2014flaked up, with rose-water snow."
@@ -12217,6 +12415,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-031-queen-mab-such-a-phiz",
+          "unit_id": "chapter-031-queen-mab",
+          "label": "Such a phiz!"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-031-queen-mab-1",
           "unit_id": "chapter-031-queen-mab",
           "label": "Ahab seemed a pyramid, and I, like a blazing fool, kept kicking at it."
@@ -12304,6 +12508,12 @@
           "id": "whole-book-density-chapter-031-queen-mab-3",
           "unit_id": "chapter-031-queen-mab",
           "label": "You know the old man\u2019s ivory"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-032-cetology-for-a-ferule",
+          "unit_id": "chapter-032-cetology",
+          "label": "for a ferule"
         },
         {
           "type": "annotation",
@@ -12433,6 +12643,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-033-the-specksnyder-hustings",
+          "unit_id": "chapter-033-the-specksnyder",
+          "label": "hustings"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-033-the-specksnyder-1",
           "unit_id": "chapter-033-the-specksnyder",
           "label": "Literally this word means Fat-Cutter; usage, however, in time made it equivalent to Chief Harpooneer."
@@ -12520,6 +12736,12 @@
           "id": "whole-book-density-chapter-033-the-specksnyder-3",
           "unit_id": "chapter-033-the-specksnyder",
           "label": "Concerning the officers of the whale-craft"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-034-the-cabin-table-buckler",
+          "unit_id": "chapter-034-the-cabin-table",
+          "label": "buckler"
         },
         {
           "type": "annotation",
@@ -12631,6 +12853,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-035-the-masthead-carking-cares",
+          "unit_id": "chapter-035-the-masthead",
+          "label": "carking cares"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-035-the-masthead-1",
           "unit_id": "chapter-035-the-masthead",
           "label": "Now, as the business of standing mastheads, ashore or afloat, is a very ancient and interesting one, let us in some measure expatiate here."
@@ -12730,6 +12958,12 @@
           "id": "whole-book-density-chapter-035-the-masthead-3",
           "unit_id": "chapter-035-the-masthead",
           "label": "in due rotation with the other"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-036-the-quarterdeck-ague",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "ague"
         },
         {
           "type": "annotation",
@@ -13051,6 +13285,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-039-first-night-watch-twigged",
+          "unit_id": "chapter-039-first-night-watch",
+          "label": "twigged"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-039-first-night-watch-1",
           "unit_id": "chapter-039-first-night-watch",
           "label": "I heard not all his talk with Starbuck; but to my poor eye Starbuck then looked something as I the other evening felt."
@@ -13138,6 +13378,18 @@
           "id": "whole-book-density-chapter-039-first-night-watch-3",
           "unit_id": "chapter-039-first-night-watch",
           "label": "since, and that ha, ha\u2019s the"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-040-midnight-forecastle-cove",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "cove"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-040-midnight-forecastle-filliping",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "filliping"
         },
         {
           "type": "annotation",
@@ -13240,6 +13492,12 @@
           "id": "auth-chapter-041-moby-dick-chasing-with-curses-a-job-s-whale-round-the-worl",
           "unit_id": "chapter-041-moby-dick",
           "label": "chasing with curses a Job\u2019s whale round the world"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-041-moby-dick-little-bruited-ashore",
+          "unit_id": "chapter-041-moby-dick",
+          "label": "little bruited ashore"
         },
         {
           "type": "annotation",
@@ -13366,6 +13624,12 @@
           "id": "auth-chapter-042-the-whiteness-of-the-whale-great-jove-himself-being-made-incarnate-in-a-sno",
           "unit_id": "chapter-042-the-whiteness-of-the-whale",
           "label": "Great Jove himself being made incarnate in a snow-white bull"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-042-the-whiteness-of-the-whale-legerdemain",
+          "unit_id": "chapter-042-the-whiteness-of-the-whale",
+          "label": "legerdemain"
         },
         {
           "type": "annotation",
@@ -13585,6 +13849,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-044-the-chart-one-tithe",
+          "unit_id": "chapter-044-the-chart",
+          "label": "one tithe"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-044-the-chart-1",
           "unit_id": "chapter-044-the-chart",
           "label": "Almost every night they were brought out; almost every night some pencil marks were effaced, and others were substituted."
@@ -13684,6 +13954,18 @@
           "id": "affidavit-evidence-performance",
           "unit_id": "chapter-045-the-affidavit",
           "label": "natural verity"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-045-the-affidavit-gainsaid",
+          "unit_id": "chapter-045-the-affidavit",
+          "label": "gainsaid"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-045-the-affidavit-scout-at",
+          "unit_id": "chapter-045-the-affidavit",
+          "label": "scout at"
         },
         {
           "type": "annotation",
@@ -13798,6 +14080,12 @@
           "id": "whole-book-density-chapter-045-the-affidavit-3",
           "unit_id": "chapter-045-the-affidavit",
           "label": "a narrative in this book; and"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-046-surmises-cashier",
+          "unit_id": "chapter-046-surmises",
+          "label": "cashier"
         },
         {
           "type": "annotation",
@@ -13990,6 +14278,12 @@
           "id": "whole-book-density-chapter-047-the-mat-maker-3",
           "unit_id": "chapter-047-the-mat-maker",
           "label": "were lazily lounging about the decks"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-048-the-first-lowering-exordium",
+          "unit_id": "chapter-048-the-first-lowering",
+          "label": "exordium"
         },
         {
           "type": "annotation",
@@ -14323,6 +14617,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-051-the-spirit-spout-most-unwonted-hour",
+          "unit_id": "chapter-051-the-spirit-spout",
+          "label": "most unwonted hour"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-051-the-spirit-spout-1",
           "unit_id": "chapter-051-the-spirit-spout",
           "label": "For of these moonlight nights, it was his wont to mount to the mainmast head, and stand a lookout there, with the same precision as if it had been day."
@@ -14431,6 +14731,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-052-the-albatross-amain",
+          "unit_id": "chapter-052-the-albatross",
+          "label": "amain"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-052-the-albatross-raiment",
+          "unit_id": "chapter-052-the-albatross",
+          "label": "raiment"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-052-the-albatross-1",
           "unit_id": "chapter-052-the-albatross",
           "label": "As if the waves had been fullers, this craft was bleached like the skeleton of a stranded walrus."
@@ -14524,6 +14836,12 @@
           "id": "whole-book-density-chapter-052-the-albatross-3",
           "unit_id": "chapter-052-the-albatross",
           "label": "a good cruising ground for Right"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-053-the-gam-finical",
+          "unit_id": "chapter-053-the-gam",
+          "label": "finical"
         },
         {
           "type": "annotation",
@@ -14629,9 +14947,27 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-cozening",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "cozening"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-054-the-town-ho-s-story-like-mark-antony-for-days-and-days-along-his-gre",
           "unit_id": "chapter-054-the-town-ho-s-story",
           "label": "Like Mark Antony, for days and days along his green-turfed, flowery Nile"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-poniard",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "poniard"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-romish",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "Romish"
         },
         {
           "type": "annotation",
@@ -14746,6 +15082,12 @@
           "id": "whole-book-density-chapter-054-the-town-ho-s-story-3",
           "unit_id": "chapter-054-the-town-ho-s-story",
           "label": "watery region round about there, is"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-055-of-the-monstrous-pictures-of-whales-cap-sheaf",
+          "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+          "label": "cap-sheaf"
         },
         {
           "type": "annotation",
@@ -14941,6 +15283,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-057-of-whales-in-paint-in-teeth-in-wood--busks",
+          "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+          "label": "busks"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars-1",
           "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
           "label": "Any time these ten years, they tell me, has that man held up that picture, and exhibited that stump to an incredulous world."
@@ -15028,6 +15376,12 @@
           "id": "whole-book-density-chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars-3",
           "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
           "label": "go down to the London docks"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-058-brit-instinct",
+          "unit_id": "chapter-058-brit",
+          "label": "instinct"
         },
         {
           "type": "annotation",
@@ -15337,6 +15691,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-061-stubb-kills-a-whale-portly-burgher",
+          "unit_id": "chapter-061-stubb-kills-a-whale",
+          "label": "portly burgher"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-061-stubb-kills-a-whale-the-gay-header-in-reply",
           "unit_id": "chapter-061-stubb-kills-a-whale",
           "label": "the Gay-Header in reply"
@@ -15430,6 +15790,12 @@
           "id": "whole-book-density-chapter-061-stubb-kills-a-whale-3",
           "unit_id": "chapter-061-stubb-kills-a-whale",
           "label": "was a thing of portents, to"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-062-the-dart-disrated",
+          "unit_id": "chapter-062-the-dart",
+          "label": "disrated"
         },
         {
           "type": "annotation",
@@ -15619,6 +15985,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-064-stubb-s-supper-ejaculation",
+          "unit_id": "chapter-064-stubb-s-supper",
+          "label": "ejaculation"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-064-stubb-s-supper-1",
           "unit_id": "chapter-064-stubb-s-supper",
           "label": "But by those clanking links, the vast corpse itself, not the ship, is to be moored."
@@ -15712,6 +16084,12 @@
           "id": "auth-chapter-065-the-whale-as-a-dish-et-tu-brute",
           "unit_id": "chapter-065-the-whale-as-a-dish",
           "label": "Et tu Brute"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-065-the-whale-as-a-dish-indite",
+          "unit_id": "chapter-065-the-whale-as-a-dish",
+          "label": "indite"
         },
         {
           "type": "annotation",
@@ -15907,6 +16285,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-067-cutting-in-shamble",
+          "unit_id": "chapter-067-cutting-in",
+          "label": "shamble"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-067-cutting-in-1",
           "unit_id": "chapter-067-cutting-in",
           "label": "You would have thought we were offering up ten thousand red oxen to the sea gods."
@@ -16099,9 +16483,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-069-the-funeral-i-ween",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "I ween"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-069-the-funeral-poniards-in-the-whale",
           "unit_id": "chapter-069-the-funeral",
           "label": "poniards in the whale"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-069-the-funeral-roods",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "roods"
         },
         {
           "type": "annotation",
@@ -16216,6 +16612,12 @@
           "id": "whole-book-density-chapter-069-the-funeral-3",
           "unit_id": "chapter-069-the-funeral",
           "label": "The peeled white body of the"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-070-the-sphynx-hoary",
+          "unit_id": "chapter-070-the-sphynx",
+          "label": "hoary"
         },
         {
           "type": "annotation",
@@ -16429,6 +16831,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-072-the-monkey-rope-calomel-and-jalap",
+          "unit_id": "chapter-072-the-monkey-rope",
+          "label": "calomel and jalap"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-072-the-monkey-rope-1",
           "unit_id": "chapter-072-the-monkey-rope",
           "label": "There is no staying in any one place; for at one and the same time everything has to be done everywhere."
@@ -16528,6 +16936,12 @@
           "id": "auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-as-the-eager-israelites-did-at-the-new-bur",
           "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
           "label": "as the eager Israelites did at the new bursting fountains that poured from the smitten rock"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-double-darbies",
+          "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+          "label": "double-darbies"
         },
         {
           "type": "annotation",
@@ -16723,6 +17137,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-075-the-right-whale-s-head-contrasted-vi-farthingale",
+          "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+          "label": "farthingale"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-075-the-right-whale-s-head-contrasted-vi-those-wondrous-half-vertical-scimitar-shap",
           "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
           "label": "those wondrous, half vertical, scimitar-shaped slats of whalebone, say three hundred on a side"
@@ -16912,6 +17332,12 @@
           "id": "whole-book-density-chapter-076-the-battering-ram-3",
           "unit_id": "chapter-076-the-battering-ram",
           "label": "nonce, the Sperm Whale\u2019s head, I"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-077-the-great-heidelburgh-tun-pelisse",
+          "unit_id": "chapter-077-the-great-heidelburgh-tun",
+          "label": "pelisse"
         },
         {
           "type": "annotation",
@@ -17329,6 +17755,24 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-dogger",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "dogger"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-paregoric",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "paregoric"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-tilbury",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "tilbury"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-081-the-pequod-meets-the-virgin-to-have-an-entire-non-valvular-structure-of-the",
           "unit_id": "chapter-081-the-pequod-meets-the-virgin",
           "label": "to have an entire non-valvular structure of the blood-vessels"
@@ -17629,6 +18073,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-084-pitchpoling-cannikin",
+          "unit_id": "chapter-084-pitchpoling",
+          "label": "cannikin"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-084-pitchpoling-the-entire-spear-is-some-ten-or-twelve-feet-in-l",
           "unit_id": "chapter-084-pitchpoling",
           "label": "the entire spear is some ten or twelve feet in length; the staff is much slighter than that of the harpoon"
@@ -17833,6 +18283,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-086-the-tail-zones",
+          "unit_id": "chapter-086-the-tail",
+          "label": "zones"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-086-the-tail-1",
           "unit_id": "chapter-086-the-tail",
           "label": "The compact round body of its root expands into two broad, firm, flat palms or flukes, gradually shoaling away to less than an inch in thickness."
@@ -17920,6 +18376,18 @@
           "id": "whole-book-density-chapter-086-the-tail-3",
           "unit_id": "chapter-086-the-tail",
           "label": "soft eye of the antelope, and"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-087-the-grand-armada-kentledge",
+          "unit_id": "chapter-087-the-grand-armada",
+          "label": "kentledge"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-087-the-grand-armada-reticule",
+          "unit_id": "chapter-087-the-grand-armada",
+          "label": "reticule"
         },
         {
           "type": "annotation",
@@ -18025,6 +18493,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-088-schools-and-schoolmasters-as-years-and-dumps-increase",
+          "unit_id": "chapter-088-schools-and-schoolmasters",
+          "label": "as years and dumps increase"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-088-schools-and-schoolmasters-en-bon-point",
+          "unit_id": "chapter-088-schools-and-schoolmasters",
+          "label": "en bon point"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-088-schools-and-schoolmasters-1",
           "unit_id": "chapter-088-schools-and-schoolmasters",
           "label": "They generally are of two sorts; those composed almost entirely of females, and those mustering none but young vigorous males, or bulls, as they are familiarly designated."
@@ -18115,9 +18595,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-089-fast-fish-and-loose-fish-crim-con",
+          "unit_id": "chapter-089-fast-fish-and-loose-fish",
+          "label": "crim. con."
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-089-fast-fish-and-loose-fish-surpasses-justinian-s-pandects-and-the-bylaws-of",
           "unit_id": "chapter-089-fast-fish-and-loose-fish",
           "label": "surpasses Justinian\u2019s Pandects and the Bylaws of the Chinese Society for the Suppression of Meddling"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-089-fast-fish-and-loose-fish-whale-trover",
+          "unit_id": "chapter-089-fast-fish-and-loose-fish",
+          "label": "whale-trover"
         },
         {
           "type": "annotation",
@@ -18319,6 +18811,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-091-the-pequod-meets-the-rose-bud-diddled",
+          "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+          "label": "diddled"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-091-the-pequod-meets-the-rose-bud-nosegay",
+          "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+          "label": "nosegay"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-091-the-pequod-meets-the-rose-bud-worth-a-gold-guinea-an-ounce-to-any-druggist",
           "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
           "label": "worth a gold guinea an ounce to any druggist"
@@ -18430,6 +18934,18 @@
           "id": "auth-chapter-092-ambergris-paul-in-corinthians-about-corruption-and-incorru",
           "unit_id": "chapter-092-ambergris",
           "label": "Paul in Corinthians, about corruption and incorruption"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-092-ambergris-pomatum",
+          "unit_id": "chapter-092-ambergris",
+          "label": "pomatum"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-092-ambergris-slatternly",
+          "unit_id": "chapter-092-ambergris",
+          "label": "slatternly"
         },
         {
           "type": "annotation",
@@ -18613,6 +19129,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-094-a-squeeze-of-the-hand-tyros",
+          "unit_id": "chapter-094-a-squeeze-of-the-hand",
+          "label": "tyros"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-094-a-squeeze-of-the-hand-1",
           "unit_id": "chapter-094-a-squeeze-of-the-hand",
           "label": "It was our business to squeeze these lumps back into fluid."
@@ -18718,6 +19240,12 @@
           "id": "whole-book-density-chapter-094-a-squeeze-of-the-hand-3",
           "unit_id": "chapter-094-a-squeeze-of-the-hand",
           "label": "That whale of Stubb\u2019s, so dearly"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-095-the-cassock-canonicals",
+          "unit_id": "chapter-095-the-cassock",
+          "label": "canonicals"
         },
         {
           "type": "annotation",
@@ -18925,6 +19453,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-097-the-lamp-pallet",
+          "unit_id": "chapter-097-the-lamp",
+          "label": "pallet"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-097-the-lamp-the-purest-of-oil-in-its-unmanufactured-and-ther",
           "unit_id": "chapter-097-the-lamp",
           "label": "the purest of oil, in its unmanufactured, and, therefore, unvitiated state; a fluid unknown to solar, lunar, or astral contrivances ashore"
@@ -19018,6 +19552,12 @@
           "id": "whole-book-density-chapter-097-the-lamp-3",
           "unit_id": "chapter-097-the-lamp",
           "label": "the Pequod \u2019s try-works to the"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-098-stowing-down-and-clearing-up-holland",
+          "unit_id": "chapter-098-stowing-down-and-clearing-up",
+          "label": "Holland"
         },
         {
           "type": "annotation",
@@ -19219,6 +19759,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-100-leg-and-arm-half-seas-over",
+          "unit_id": "chapter-100-leg-and-arm",
+          "label": "half seas over"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-100-leg-and-arm-samuel-enderby-of-london",
           "unit_id": "chapter-100-leg-and-arm",
           "label": "Samuel Enderby , of London"
@@ -19336,6 +19882,12 @@
           "id": "auth-chapter-101-the-decanter-ankers-of-geneva",
           "unit_id": "chapter-101-the-decanter",
           "label": "ankers of Geneva"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-101-the-decanter-flip",
+          "unit_id": "chapter-101-the-decanter",
+          "label": "flip"
         },
         {
           "type": "annotation",
@@ -19459,6 +20011,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-102-a-bower-in-the-arsacides-sconces",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "sconces"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-102-a-bower-in-the-arsacides-the-privilege-of-jonah-alone-the-privilege-of-di",
           "unit_id": "chapter-102-a-bower-in-the-arsacides",
           "label": "the privilege of Jonah alone; the privilege of discoursing upon the joists and beams"
@@ -19468,6 +20026,12 @@
           "id": "auth-chapter-102-a-bower-in-the-arsacides-the-weaver-god-he-weaves-and-by-that-weaving-is",
           "unit_id": "chapter-102-a-bower-in-the-arsacides",
           "label": "the weaver-god, he weaves; and by that weaving is he deafened"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-102-a-bower-in-the-arsacides-untagging-the-points-of-his-hose",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "untagging the points of his hose"
         },
         {
           "type": "annotation",
@@ -19891,6 +20455,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-106-ahab-s-leg-bruited",
+          "unit_id": "chapter-106-ahab-s-leg",
+          "label": "bruited"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-106-ahab-s-leg-1",
           "unit_id": "chapter-106-ahab-s-leg",
           "label": "Yea, more than equally, thought Ahab; since both the ancestry and posterity of Grief go further than the ancestry and posterity of Joy."
@@ -20083,6 +20653,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-108-ahab-and-the-carpenter-poser",
+          "unit_id": "chapter-108-ahab-and-the-carpenter",
+          "label": "poser"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-108-ahab-and-the-carpenter-spavined",
+          "unit_id": "chapter-108-ahab-and-the-carpenter",
+          "label": "spavined"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-108-ahab-and-the-carpenter-that-old-greek-prometheus-who-made-men-they-say",
           "unit_id": "chapter-108-ahab-and-the-carpenter",
           "label": "that old Greek, Prometheus, who made men, they say, should have been a blacksmith"
@@ -20170,6 +20752,18 @@
           "id": "whole-book-density-chapter-108-ahab-and-the-carpenter-3",
           "unit_id": "chapter-108-ahab-and-the-carpenter",
           "label": "light of two lanterns busily filing"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-109-ahab-and-starbuck-in-the-cabin-prating",
+          "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+          "label": "prating"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-109-ahab-and-starbuck-in-the-cabin-waxes",
+          "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+          "label": "waxes"
         },
         {
           "type": "annotation",
@@ -20266,6 +20860,12 @@
           "id": "auth-chapter-110-queequeg-in-his-coffin-a-departed-prophet-and-seer-of-his-island-who-by",
           "unit_id": "chapter-110-queequeg-in-his-coffin",
           "label": "a departed prophet and seer of his island, who, by those hieroglyphic marks, had written out on his body a complete theory of the heavens and the earth"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-110-queequeg-in-his-coffin-sinecures",
+          "unit_id": "chapter-110-queequeg-in-his-coffin",
+          "label": "sinecures"
         },
         {
           "type": "annotation",
@@ -20455,6 +21055,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-112-the-blacksmith-care-killing-competency",
+          "unit_id": "chapter-112-the-blacksmith",
+          "label": "care-killing competency"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-112-the-blacksmith-in-crape",
+          "unit_id": "chapter-112-the-blacksmith",
+          "label": "in crape"
+        },
+        {
+          "type": "annotation",
           "id": "blacksmith-perth-backstory",
           "unit_id": "chapter-112-the-blacksmith",
           "label": "Perth"
@@ -20548,6 +21160,18 @@
           "id": "auth-chapter-113-the-forge-ego-non-baptizo-te-in-nomine-patris-sed-in-nomin",
           "unit_id": "chapter-113-the-forge",
           "label": "Ego non baptizo te in nomine patris, sed in nomine diaboli"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-113-the-forge-fusee",
+          "unit_id": "chapter-113-the-forge",
+          "label": "fusee"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-113-the-forge-lucifers",
+          "unit_id": "chapter-113-the-forge",
+          "label": "lucifers"
         },
         {
           "type": "annotation",
@@ -20833,6 +21457,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-116-the-dying-whale-orisons",
+          "unit_id": "chapter-116-the-dying-whale",
+          "label": "orisons"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-116-the-dying-whale-1",
           "unit_id": "chapter-116-the-dying-whale",
           "label": "For next day after encountering the gay Bachelor , whales were seen and four were slain; and one of them by Ahab."
@@ -21031,6 +21661,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-118-the-quadrant-wonted",
+          "unit_id": "chapter-118-the-quadrant",
+          "label": "wonted"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-118-the-quadrant-1",
           "unit_id": "chapter-118-the-quadrant",
           "label": "It was hard upon high noon; and Ahab, seated in the bows of his high-hoisted boat, was about taking his wonted daily observation of the sun to determine his latitude."
@@ -21124,6 +21760,12 @@
           "id": "whole-book-density-chapter-118-the-quadrant-3",
           "unit_id": "chapter-118-the-quadrant",
           "label": "near; and every day when Ahab"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-119-the-candles-flambeaux",
+          "unit_id": "chapter-119-the-candles",
+          "label": "flambeaux"
         },
         {
           "type": "annotation",
@@ -21229,6 +21871,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-120-the-deck-towards-the-end-of-the-firs-coasting-smack",
+          "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+          "label": "coasting smack"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-120-the-deck-towards-the-end-of-the-firs-hooroosh",
+          "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+          "label": "hooroosh"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-120-the-deck-towards-the-end-of-the-first-night-watch-1",
           "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
           "label": "If I had skysail poles, I\u2019d sway them up now.\u201d\n\n \u201cSir!\u2060\u2014in God\u2019s name!\u2060\u2014sir?\u201d\n\n \u201cWell.\u201d\n\n \u201cThe anchors are working, sir."
@@ -21328,6 +21982,18 @@
           "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-boxes-of-lucifers-forward",
           "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
           "label": "boxes of lucifers forward"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-drive-down-a-beaver",
+          "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+          "label": "drive down a beaver"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-long-togs",
+          "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+          "label": "long-togs"
         },
         {
           "type": "annotation",
@@ -21811,6 +22477,24 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-bandbox",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "bandbox"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-cruppered-with-a-coffin",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "Cruppered with a coffin"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-in-sooth",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "in sooth"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-chapter-126-the-life-buoy-1",
           "unit_id": "chapter-126-the-life-buoy",
           "label": "The Christian or civilized part of the crew said it was mermaids, and shuddered; but the pagan harpooneers remained unappalled."
@@ -21913,6 +22597,18 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-127-the-deck-a-mere-hap",
+          "unit_id": "chapter-127-the-deck",
+          "label": "a mere hap"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-127-the-deck-arrant",
+          "unit_id": "chapter-127-the-deck",
+          "label": "arrant"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-127-the-deck-the-gravedigger-in-the-play-sings-spade-in-hand",
           "unit_id": "chapter-127-the-deck",
           "label": "the gravedigger in the play sings, spade in hand"
@@ -22012,6 +22708,12 @@
           "id": "whole-book-density-chapter-127-the-deck-3",
           "unit_id": "chapter-127-the-deck",
           "label": "vice-bench and the open hatchway; the"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-128-the-pequod-meets-the-rachel-earnest-suit",
+          "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+          "label": "earnest suit"
         },
         {
           "type": "annotation",
@@ -22411,9 +23113,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-132-the-symphony-durst",
+          "unit_id": "chapter-132-the-symphony",
+          "label": "durst"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-132-the-symphony-little-miriam-and-martha-laughing-eyed-elves-hee",
           "unit_id": "chapter-132-the-symphony",
           "label": "little Miriam and Martha, laughing-eyed elves, heedlessly gambol around their old sire"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-132-the-symphony-marge",
+          "unit_id": "chapter-132-the-symphony",
+          "label": "marge"
         },
         {
           "type": "annotation",
@@ -22507,6 +23221,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-133-the-chase-first-day-argosy",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "argosy"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-133-the-chase-first-day-blood-of-grapes-and-mulberries-cast-before-antio",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "blood of grapes and mulberries cast before Antiochus\u2019s elephants in the book of Maccabees"
@@ -22516,6 +23236,12 @@
           "id": "auth-chapter-133-the-chase-first-day-not-the-white-bull-jupiter-swimming-away-with-ra",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "Not the white bull Jupiter swimming away with ravished Europa clinging to his graceful horns"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-133-the-chase-first-day-scud",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "scud"
         },
         {
           "type": "annotation",
@@ -22606,6 +23332,18 @@
           "id": "whole-book-density-chapter-133-the-chase-first-day-3",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "man\u2060\u2014as his wont at intervals\u2060\u2014stepped forth"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-134-the-chase-second-day-black-vomit",
+          "unit_id": "chapter-134-the-chase-second-day",
+          "label": "black vomit"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-134-the-chase-second-day-fagot-of-steel",
+          "unit_id": "chapter-134-the-chase-second-day",
+          "label": "fagot of steel"
         },
         {
           "type": "annotation",
@@ -22711,9 +23449,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-135-the-chase-third-day-fagged",
+          "unit_id": "chapter-135-the-chase-third-day",
+          "label": "fagged"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-135-the-chase-third-day-like-satan-would-not-sink-to-hell-till-she-had-d",
           "unit_id": "chapter-135-the-chase-third-day",
           "label": "like Satan, would not sink to hell till she had dragged a living part of heaven along with her"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-135-the-chase-third-day-sable-raiment",
+          "unit_id": "chapter-135-the-chase-third-day",
+          "label": "sable raiment"
         },
         {
           "type": "annotation",
@@ -22804,6 +23554,12 @@
           "id": "whole-book-density-chapter-135-the-chase-third-day-3",
           "unit_id": "chapter-135-the-chase-third-day",
           "label": "and fresh, and once more the"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-epilogue-epilogue-main",
+          "unit_id": "epilogue-epilogue",
+          "label": "main"
         },
         {
           "type": "annotation",
@@ -22915,6 +23671,12 @@
         },
         {
           "type": "annotation",
+          "id": "auth-frontmatter-etymology-usher",
+          "unit_id": "frontmatter-etymology",
+          "label": "Usher"
+        },
+        {
+          "type": "annotation",
           "id": "broad-apparatus-frontmatter-etymology-1",
           "unit_id": "frontmatter-etymology",
           "label": "He loved to dust his old grammars; it somehow mildly reminded him of his mortality."
@@ -22948,6 +23710,12 @@
           "id": "whole-book-density-frontmatter-etymology-3",
           "unit_id": "frontmatter-etymology",
           "label": "He was ever dusting his old"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-frontmatter-extracts-incontinently",
+          "unit_id": "frontmatter-extracts",
+          "label": "incontinently"
         },
         {
           "type": "annotation",
@@ -24307,6 +25075,12 @@
         },
         {
           "type": "glossary",
+          "id": "hypo",
+          "unit_id": "chapter-001-loomings",
+          "label": "hypo"
+        },
+        {
+          "type": "glossary",
           "id": "hypos",
           "unit_id": "chapter-001-loomings",
           "label": "hypos"
@@ -24541,6 +25315,12 @@
         },
         {
           "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-002-the-carpetbag",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
           "id": "aboard",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "aboard"
@@ -24550,6 +25330,12 @@
           "id": "aft",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "aft"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -24586,6 +25372,12 @@
           "id": "case",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "case"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -25192,6 +25984,12 @@
           "id": "apparatus-deep-gloss-chapter-009-the-sermon-1",
           "unit_id": "chapter-009-the-sermon",
           "label": "Ch. 9 Sermon: wider evidence and trust"
+        },
+        {
+          "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "belike"
         },
         {
           "type": "glossary",
@@ -26545,6 +27343,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-022-merry-christmas-1",
           "unit_id": "chapter-022-merry-christmas",
           "label": "Ch. 22 Merry Christmas: wider scene detail"
@@ -26707,6 +27511,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-023-the-lee-shore",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "gale",
           "unit_id": "chapter-023-the-lee-shore",
           "label": "gale"
@@ -26860,6 +27670,12 @@
           "id": "apparatus-wide-gloss-chapter-025-postscript-1",
           "unit_id": "chapter-025-postscript",
           "label": "Postscript: shipboard work"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-025-postscript",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -27355,9 +28171,21 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-032-cetology",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "forecastle-deck",
           "unit_id": "chapter-032-cetology",
           "label": "forecastle"
+        },
+        {
+          "type": "glossary",
+          "id": "hartshorn",
+          "unit_id": "chapter-032-cetology",
+          "label": "hartshorn"
         },
         {
           "type": "glossary",
@@ -27508,6 +28336,12 @@
           "id": "daggoo",
           "unit_id": "chapter-034-the-cabin-table",
           "label": "Daggoo"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-034-the-cabin-table",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -27715,6 +28549,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-036-the-quarterdeck-1",
           "unit_id": "chapter-036-the-quarterdeck",
           "label": "Ch. 36 Quarterdeck: wider shipboard work"
@@ -27754,6 +28594,12 @@
           "id": "doubloon",
           "unit_id": "chapter-036-the-quarterdeck",
           "label": "doubloon"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -28039,6 +28885,12 @@
         },
         {
           "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "belike"
+        },
+        {
+          "type": "glossary",
           "id": "brace",
           "unit_id": "chapter-040-midnight-forecastle",
           "label": "brace"
@@ -28258,6 +29110,12 @@
           "id": "hammock",
           "unit_id": "chapter-042-the-whiteness-of-the-whale",
           "label": "hammock"
+        },
+        {
+          "type": "glossary",
+          "id": "hypo",
+          "unit_id": "chapter-042-the-whiteness-of-the-whale",
+          "label": "hypo"
         },
         {
           "type": "glossary",
@@ -28498,6 +29356,12 @@
           "id": "monomania",
           "unit_id": "chapter-046-surmises",
           "label": "monomania"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-047-the-mat-maker",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -28813,6 +29677,12 @@
         },
         {
           "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-050-ahab-s-boat-and-crew-fedallah",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-051-the-spirit-spout-1",
           "unit_id": "chapter-051-the-spirit-spout",
           "label": "Ch. 51 Spirit-Spout: wider scene detail"
@@ -29008,6 +29878,12 @@
           "id": "cooper",
           "unit_id": "chapter-054-the-town-ho-s-story",
           "label": "cooper"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -29344,6 +30220,12 @@
           "id": "whaleboat",
           "unit_id": "chapter-060-the-line",
           "label": "whaleboat"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-061-stubb-kills-a-whale",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -29719,6 +30601,12 @@
         },
         {
           "type": "glossary",
+          "id": "surtout",
+          "unit_id": "chapter-068-the-blanket",
+          "label": "surtout"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-069-the-funeral-1",
           "unit_id": "chapter-069-the-funeral",
           "label": "Ch. 69 Funeral: wider shipboard work"
@@ -29740,6 +30628,12 @@
           "id": "apparatus-wide-gloss-chapter-069-the-funeral-1",
           "unit_id": "chapter-069-the-funeral",
           "label": "Funeral: shipboard work"
+        },
+        {
+          "type": "glossary",
+          "id": "peradventure",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "peradventure"
         },
         {
           "type": "glossary",
@@ -29800,6 +30694,12 @@
           "id": "cabalistical",
           "unit_id": "chapter-071-the-jeroboam-s-story",
           "label": "cabalistical"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-071-the-jeroboam-s-story",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -29887,6 +30787,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-ov-1",
           "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
           "label": "Ch. 73 Stubb and Flask Kill: wider whale evidence"
@@ -29947,6 +30853,12 @@
         },
         {
           "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-075-the-right-whale-s-head-contrasted-view-1",
           "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
           "label": "Ch. 75 Right Whale\u2019s Head: wider whale evidence"
@@ -29974,6 +30886,12 @@
           "id": "sounding",
           "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
           "label": "sounding"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-076-the-battering-ram",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -30049,6 +30967,12 @@
         },
         {
           "type": "glossary",
+          "id": "peradventure",
+          "unit_id": "chapter-078-cistern-and-buckets",
+          "label": "peradventure"
+        },
+        {
+          "type": "glossary",
           "id": "sagacious",
           "unit_id": "chapter-078-cistern-and-buckets",
           "label": "sagacious"
@@ -30094,6 +31018,12 @@
           "id": "apparatus-wide-gloss-chapter-079-the-prairie-1",
           "unit_id": "chapter-079-the-prairie",
           "label": "Prairie: whale evidence"
+        },
+        {
+          "type": "glossary",
+          "id": "beadle",
+          "unit_id": "chapter-079-the-prairie",
+          "label": "beadle"
         },
         {
           "type": "glossary",
@@ -30541,6 +31471,12 @@
         },
         {
           "type": "glossary",
+          "id": "beadle",
+          "unit_id": "chapter-090-heads-or-tails",
+          "label": "beadle"
+        },
+        {
+          "type": "glossary",
           "id": "sagacious",
           "unit_id": "chapter-090-heads-or-tails",
           "label": "sagacious"
@@ -30637,9 +31573,27 @@
         },
         {
           "type": "glossary",
+          "id": "poltroon",
+          "unit_id": "chapter-093-the-castaway",
+          "label": "poltroon"
+        },
+        {
+          "type": "glossary",
           "id": "shipmate",
           "unit_id": "chapter-093-the-castaway",
           "label": "shipmate"
+        },
+        {
+          "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-093-the-castaway",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-094-a-squeeze-of-the-hand",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -30811,6 +31765,12 @@
         },
         {
           "type": "glossary",
+          "id": "surtout",
+          "unit_id": "chapter-098-stowing-down-and-clearing-up",
+          "label": "surtout"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-099-the-doubloon-1",
           "unit_id": "chapter-099-the-doubloon",
           "label": "Ch. 99 Doubloon: wider performed speech"
@@ -30832,6 +31792,12 @@
           "id": "doubloon",
           "unit_id": "chapter-099-the-doubloon",
           "label": "doubloon"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-099-the-doubloon",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -30931,6 +31897,12 @@
         },
         {
           "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "belike"
+        },
+        {
+          "type": "glossary",
           "id": "capstan",
           "unit_id": "chapter-102-a-bower-in-the-arsacides",
           "label": "capstan"
@@ -30994,6 +31966,12 @@
           "id": "cables",
           "unit_id": "chapter-104-the-fossil-whale",
           "label": "cables"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-104-the-fossil-whale",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -31096,6 +32074,12 @@
           "id": "carpenter",
           "unit_id": "chapter-107-the-carpenter",
           "label": "carpenter"
+        },
+        {
+          "type": "glossary",
+          "id": "hartshorn",
+          "unit_id": "chapter-107-the-carpenter",
+          "label": "hartshorn"
         },
         {
           "type": "glossary",
@@ -31294,6 +32278,12 @@
           "id": "blacksmith",
           "unit_id": "chapter-113-the-forge",
           "label": "blacksmith"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-113-the-forge",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -31501,6 +32491,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-119-the-candles",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "gunwale",
           "unit_id": "chapter-119-the-candles",
           "label": "gunwale"
@@ -31597,6 +32593,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-123-the-musket",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "hawser",
           "unit_id": "chapter-123-the-musket",
           "label": "hawser"
@@ -31672,6 +32674,12 @@
           "id": "compass",
           "unit_id": "chapter-124-the-needle",
           "label": "compass"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-124-the-needle",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -31783,6 +32791,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "larboard",
           "unit_id": "chapter-128-the-pequod-meets-the-rachel",
           "label": "larboard"
@@ -31852,6 +32866,12 @@
           "id": "despot",
           "unit_id": "chapter-130-the-hat",
           "label": "despot"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-130-the-hat",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -31939,6 +32959,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparatus-deep-gloss-chapter-133-the-chase-first-day-1",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "Ch. 133 Chase: wider scene detail"
@@ -31972,6 +32998,12 @@
           "id": "moby-dick",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "Moby Dick"
+        },
+        {
+          "type": "glossary",
+          "id": "poltroon",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "poltroon"
         },
         {
           "type": "glossary",
@@ -36631,7 +37663,7 @@
       "source_id": "webster-1913",
       "title": "Webster's Unabridged Dictionary",
       "citation_status": "verified",
-      "usage_count": 307,
+      "usage_count": 479,
       "units": [
         "frontmatter-etymology",
         "frontmatter-extracts",
@@ -36665,6 +37697,7 @@
         "chapter-028-ahab",
         "chapter-029-enter-ahab-to-him-stubb",
         "chapter-030-the-pipe",
+        "chapter-031-queen-mab",
         "chapter-032-cetology",
         "chapter-033-the-specksnyder",
         "chapter-034-the-cabin-table",
@@ -36672,6 +37705,7 @@
         "chapter-036-the-quarterdeck",
         "chapter-037-sunset",
         "chapter-038-dusk",
+        "chapter-039-first-night-watch",
         "chapter-040-midnight-forecastle",
         "chapter-041-moby-dick",
         "chapter-042-the-whiteness-of-the-whale",
@@ -36687,29 +37721,42 @@
         "chapter-054-the-town-ho-s-story",
         "chapter-055-of-the-monstrous-pictures-of-whales",
         "chapter-056-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes",
+        "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+        "chapter-058-brit",
         "chapter-059-squid",
         "chapter-061-stubb-kills-a-whale",
+        "chapter-062-the-dart",
         "chapter-064-stubb-s-supper",
+        "chapter-065-the-whale-as-a-dish",
         "chapter-066-the-shark-massacre",
         "chapter-067-cutting-in",
         "chapter-068-the-blanket",
         "chapter-069-the-funeral",
+        "chapter-070-the-sphynx",
         "chapter-071-the-jeroboam-s-story",
         "chapter-072-the-monkey-rope",
         "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
         "chapter-074-the-sperm-whale-s-head-contrasted-view",
+        "chapter-075-the-right-whale-s-head-contrasted-view",
         "chapter-076-the-battering-ram",
         "chapter-077-the-great-heidelburgh-tun",
         "chapter-078-cistern-and-buckets",
         "chapter-079-the-prairie",
         "chapter-081-the-pequod-meets-the-virgin",
+        "chapter-084-pitchpoling",
+        "chapter-086-the-tail",
         "chapter-087-the-grand-armada",
+        "chapter-088-schools-and-schoolmasters",
         "chapter-089-fast-fish-and-loose-fish",
         "chapter-090-heads-or-tails",
         "chapter-091-the-pequod-meets-the-rose-bud",
+        "chapter-092-ambergris",
         "chapter-093-the-castaway",
         "chapter-094-a-squeeze-of-the-hand",
+        "chapter-095-the-cassock",
         "chapter-096-the-try-works",
+        "chapter-097-the-lamp",
+        "chapter-098-stowing-down-and-clearing-up",
         "chapter-099-the-doubloon",
         "chapter-100-leg-and-arm",
         "chapter-101-the-decanter",
@@ -36717,9 +37764,13 @@
         "chapter-104-the-fossil-whale",
         "chapter-106-ahab-s-leg",
         "chapter-107-the-carpenter",
+        "chapter-108-ahab-and-the-carpenter",
+        "chapter-109-ahab-and-starbuck-in-the-cabin",
         "chapter-110-queequeg-in-his-coffin",
+        "chapter-112-the-blacksmith",
         "chapter-113-the-forge",
         "chapter-115-the-pequod-meets-the-bachelor",
+        "chapter-116-the-dying-whale",
         "chapter-117-the-whale-watch",
         "chapter-118-the-quadrant",
         "chapter-119-the-candles",
@@ -36728,6 +37779,8 @@
         "chapter-123-the-musket",
         "chapter-124-the-needle",
         "chapter-126-the-life-buoy",
+        "chapter-127-the-deck",
+        "chapter-128-the-pequod-meets-the-rachel",
         "chapter-129-the-cabin",
         "chapter-130-the-hat",
         "chapter-132-the-symphony",
@@ -36739,9 +37792,57 @@
       "usages": [
         {
           "type": "annotation",
+          "id": "auth-chapter-001-loomings-commonalty",
+          "unit_id": "chapter-001-loomings",
+          "label": "commonalty"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-001-loomings-driving-off-the-spleen-and-regulating-the-circul",
+          "unit_id": "chapter-001-loomings",
+          "label": "driving off the spleen and regulating the circulation"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-001-loomings-old-hunks",
+          "unit_id": "chapter-001-loomings",
+          "label": "old hunks"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-farrago",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "farrago"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-settle",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "settle"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-003-the-spouter-inn-topers",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "topers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-005-breakfast-bosky",
+          "unit_id": "chapter-005-breakfast",
+          "label": "bosky"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-007-the-chapel-immortal-by-brevet",
           "unit_id": "chapter-007-the-chapel",
           "label": "immortal by brevet"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-007-the-chapel-lees",
+          "unit_id": "chapter-007-the-chapel",
+          "label": "lees"
         },
         {
           "type": "annotation",
@@ -36751,9 +37852,51 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-cupidity",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "cupidity"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-essays-his-wretched-smile",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "essays his wretched smile"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-009-the-sermon-hies",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "hies"
+        },
+        {
+          "type": "annotation",
           "id": "curated-earlybook-chapter-010-a-bosom-friend-phrenologically-an-excellent-one",
           "unit_id": "chapter-010-a-bosom-friend",
           "label": "phrenologically an excellent one"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-012-biographical-for-the-nonce",
+          "unit_id": "chapter-012-biographical",
+          "label": "For the nonce"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-012-biographical-vitiated",
+          "unit_id": "chapter-012-biographical",
+          "label": "vitiated"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-013-wheelbarrow-a-noble-trump",
+          "unit_id": "chapter-013-wheelbarrow",
+          "label": "a noble trump"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-013-wheelbarrow-clove-to-queequeg",
+          "unit_id": "chapter-013-wheelbarrow",
+          "label": "clove to Queequeg"
         },
         {
           "type": "annotation",
@@ -36763,9 +37906,99 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-016-the-ship-canting",
+          "unit_id": "chapter-016-the-ship",
+          "label": "canting"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-016-the-ship-one-stiver",
+          "unit_id": "chapter-016-the-ship",
+          "label": "one stiver"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-017-the-ramadan-castors",
+          "unit_id": "chapter-017-the-ramadan",
+          "label": "castors"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-018-his-mark-after-claps",
+          "unit_id": "chapter-018-his-mark",
+          "label": "after-claps"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-018-his-mark-prate",
+          "unit_id": "chapter-018-his-mark",
+          "label": "prate"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-018-his-mark-skylarking",
+          "unit_id": "chapter-018-his-mark",
+          "label": "skylarking"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-costermongers",
+          "unit_id": "chapter-020-all-astir",
+          "label": "costermongers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-divers",
+          "unit_id": "chapter-020-all-astir",
+          "label": "divers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-got-down-our-traps",
+          "unit_id": "chapter-020-all-astir",
+          "label": "got down our traps"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-020-all-astir-withal",
+          "unit_id": "chapter-020-all-astir",
+          "label": "withal"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-022-merry-christmas-dismal-stave-of-psalmody",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "dismal stave of psalmody"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-022-merry-christmas-offing",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "offing"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-023-the-lee-shore-leaps-thy-apotheosis",
           "unit_id": "chapter-023-the-lee-shore",
           "label": "leaps thy apotheosis"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-conceit",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "conceit"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-puissant",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "puissant"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-024-the-advocate-the-world-scouts-at-us",
+          "unit_id": "chapter-024-the-advocate",
+          "label": "the world scouts at us"
         },
         {
           "type": "annotation",
@@ -36775,9 +38008,63 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-025-postscript-meanly",
+          "unit_id": "chapter-025-postscript",
+          "label": "meanly"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-027-knights-and-squires-meet",
+          "unit_id": "chapter-027-knights-and-squires",
+          "label": "meet"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-029-enter-ahab-to-him-stubb-a-kind-of-tic-dolly-row",
           "unit_id": "chapter-029-enter-ahab-to-him-stubb",
           "label": "a kind of Tic-Dolly-row"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-029-enter-ahab-to-him-stubb-plaguey",
+          "unit_id": "chapter-029-enter-ahab-to-him-stubb",
+          "label": "plaguey"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-031-queen-mab-such-a-phiz",
+          "unit_id": "chapter-031-queen-mab",
+          "label": "Such a phiz!"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-032-cetology-for-a-ferule",
+          "unit_id": "chapter-032-cetology",
+          "label": "for a ferule"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-033-the-specksnyder-hustings",
+          "unit_id": "chapter-033-the-specksnyder",
+          "label": "hustings"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-034-the-cabin-table-buckler",
+          "unit_id": "chapter-034-the-cabin-table",
+          "label": "buckler"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-035-the-masthead-carking-cares",
+          "unit_id": "chapter-035-the-masthead",
+          "label": "carking cares"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-036-the-quarterdeck-ague",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "ague"
         },
         {
           "type": "annotation",
@@ -36799,6 +38086,30 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-039-first-night-watch-twigged",
+          "unit_id": "chapter-039-first-night-watch",
+          "label": "twigged"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-040-midnight-forecastle-cove",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "cove"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-040-midnight-forecastle-filliping",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "filliping"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-041-moby-dick-little-bruited-ashore",
+          "unit_id": "chapter-041-moby-dick",
+          "label": "little bruited ashore"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-041-moby-dick-so-like-a-caryatid-he-patient-sits",
           "unit_id": "chapter-041-moby-dick",
           "label": "so like a Caryatid, he patient sits"
@@ -36811,15 +38122,135 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-042-the-whiteness-of-the-whale-legerdemain",
+          "unit_id": "chapter-042-the-whiteness-of-the-whale",
+          "label": "legerdemain"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-044-the-chart-one-tithe",
+          "unit_id": "chapter-044-the-chart",
+          "label": "one tithe"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-045-the-affidavit-gainsaid",
+          "unit_id": "chapter-045-the-affidavit",
+          "label": "gainsaid"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-045-the-affidavit-scout-at",
+          "unit_id": "chapter-045-the-affidavit",
+          "label": "scout at"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-046-surmises-cashier",
+          "unit_id": "chapter-046-surmises",
+          "label": "cashier"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-048-the-first-lowering-exordium",
+          "unit_id": "chapter-048-the-first-lowering",
+          "label": "exordium"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-048-the-first-lowering-the-loggerhead-a-stout-sort-of-post-rooted-in-th",
           "unit_id": "chapter-048-the-first-lowering",
           "label": "the loggerhead, a stout sort of post rooted in the keel"
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-051-the-spirit-spout-most-unwonted-hour",
+          "unit_id": "chapter-051-the-spirit-spout",
+          "label": "most unwonted hour"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-052-the-albatross-amain",
+          "unit_id": "chapter-052-the-albatross",
+          "label": "amain"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-052-the-albatross-raiment",
+          "unit_id": "chapter-052-the-albatross",
+          "label": "raiment"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-053-the-gam-finical",
+          "unit_id": "chapter-053-the-gam",
+          "label": "finical"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-053-the-gam-noah-webster",
           "unit_id": "chapter-053-the-gam",
           "label": "Noah Webster"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-cozening",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "cozening"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-poniard",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "poniard"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-054-the-town-ho-s-story-romish",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "Romish"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-055-of-the-monstrous-pictures-of-whales-cap-sheaf",
+          "unit_id": "chapter-055-of-the-monstrous-pictures-of-whales",
+          "label": "cap-sheaf"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-057-of-whales-in-paint-in-teeth-in-wood--busks",
+          "unit_id": "chapter-057-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars",
+          "label": "busks"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-058-brit-instinct",
+          "unit_id": "chapter-058-brit",
+          "label": "instinct"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-061-stubb-kills-a-whale-portly-burgher",
+          "unit_id": "chapter-061-stubb-kills-a-whale",
+          "label": "portly burgher"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-062-the-dart-disrated",
+          "unit_id": "chapter-062-the-dart",
+          "label": "disrated"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-064-stubb-s-supper-ejaculation",
+          "unit_id": "chapter-064-stubb-s-supper",
+          "label": "ejaculation"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-065-the-whale-as-a-dish-indite",
+          "unit_id": "chapter-065-the-whale-as-a-dish",
+          "label": "indite"
         },
         {
           "type": "annotation",
@@ -36835,9 +38266,21 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-067-cutting-in-shamble",
+          "unit_id": "chapter-067-cutting-in",
+          "label": "shamble"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-068-the-blanket-somewhat-resembling-the-thinnest-shreds-of-ising",
           "unit_id": "chapter-068-the-blanket",
           "label": "somewhat resembling the thinnest shreds of isinglass"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-069-the-funeral-i-ween",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "I ween"
         },
         {
           "type": "annotation",
@@ -36847,15 +38290,51 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-069-the-funeral-roods",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "roods"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-070-the-sphynx-hoary",
+          "unit_id": "chapter-070-the-sphynx",
+          "label": "hoary"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-071-the-jeroboam-s-story-the-long-togged-scaramouch-the-town-ho-s-company",
           "unit_id": "chapter-071-the-jeroboam-s-story",
           "label": "the long-togged scaramouch the Town-Ho \u2019s company told us of"
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-072-the-monkey-rope-calomel-and-jalap",
+          "unit_id": "chapter-072-the-monkey-rope",
+          "label": "calomel and jalap"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-double-darbies",
+          "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+          "label": "double-darbies"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-073-stubb-and-flask-kill-a-right-whale-a-gamboge-ghost-of-a-fedallah",
           "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
           "label": "gamboge ghost of a Fedallah"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-075-the-right-whale-s-head-contrasted-vi-farthingale",
+          "unit_id": "chapter-075-the-right-whale-s-head-contrasted-view",
+          "label": "farthingale"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-077-the-great-heidelburgh-tun-pelisse",
+          "unit_id": "chapter-077-the-great-heidelburgh-tun",
+          "label": "pelisse"
         },
         {
           "type": "annotation",
@@ -36871,9 +38350,135 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-dogger",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "dogger"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-paregoric",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "paregoric"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-081-the-pequod-meets-the-virgin-tilbury",
+          "unit_id": "chapter-081-the-pequod-meets-the-virgin",
+          "label": "tilbury"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-084-pitchpoling-cannikin",
+          "unit_id": "chapter-084-pitchpoling",
+          "label": "cannikin"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-086-the-tail-zones",
+          "unit_id": "chapter-086-the-tail",
+          "label": "zones"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-087-the-grand-armada-kentledge",
+          "unit_id": "chapter-087-the-grand-armada",
+          "label": "kentledge"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-087-the-grand-armada-reticule",
+          "unit_id": "chapter-087-the-grand-armada",
+          "label": "reticule"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-088-schools-and-schoolmasters-as-years-and-dumps-increase",
+          "unit_id": "chapter-088-schools-and-schoolmasters",
+          "label": "as years and dumps increase"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-088-schools-and-schoolmasters-en-bon-point",
+          "unit_id": "chapter-088-schools-and-schoolmasters",
+          "label": "en bon point"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-089-fast-fish-and-loose-fish-crim-con",
+          "unit_id": "chapter-089-fast-fish-and-loose-fish",
+          "label": "crim. con."
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-089-fast-fish-and-loose-fish-whale-trover",
+          "unit_id": "chapter-089-fast-fish-and-loose-fish",
+          "label": "whale-trover"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-091-the-pequod-meets-the-rose-bud-diddled",
+          "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+          "label": "diddled"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-091-the-pequod-meets-the-rose-bud-nosegay",
+          "unit_id": "chapter-091-the-pequod-meets-the-rose-bud",
+          "label": "nosegay"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-092-ambergris-pomatum",
+          "unit_id": "chapter-092-ambergris",
+          "label": "pomatum"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-092-ambergris-slatternly",
+          "unit_id": "chapter-092-ambergris",
+          "label": "slatternly"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-094-a-squeeze-of-the-hand-tyros",
+          "unit_id": "chapter-094-a-squeeze-of-the-hand",
+          "label": "tyros"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-095-the-cassock-canonicals",
+          "unit_id": "chapter-095-the-cassock",
+          "label": "canonicals"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-097-the-lamp-pallet",
+          "unit_id": "chapter-097-the-lamp",
+          "label": "pallet"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-098-stowing-down-and-clearing-up-holland",
+          "unit_id": "chapter-098-stowing-down-and-clearing-up",
+          "label": "Holland"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-100-leg-and-arm-half-seas-over",
+          "unit_id": "chapter-100-leg-and-arm",
+          "label": "half seas over"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-101-the-decanter-ankers-of-geneva",
           "unit_id": "chapter-101-the-decanter",
           "label": "ankers of Geneva"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-101-the-decanter-flip",
+          "unit_id": "chapter-101-the-decanter",
+          "label": "flip"
         },
         {
           "type": "annotation",
@@ -36883,9 +38488,87 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-102-a-bower-in-the-arsacides-sconces",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "sconces"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-102-a-bower-in-the-arsacides-untagging-the-points-of-his-hose",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "untagging the points of his hose"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-106-ahab-s-leg-bruited",
+          "unit_id": "chapter-106-ahab-s-leg",
+          "label": "bruited"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-107-the-carpenter-multum-in-parvo-sheffield-contrivances",
           "unit_id": "chapter-107-the-carpenter",
           "label": "multum in parvo , Sheffield contrivances"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-108-ahab-and-the-carpenter-poser",
+          "unit_id": "chapter-108-ahab-and-the-carpenter",
+          "label": "poser"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-108-ahab-and-the-carpenter-spavined",
+          "unit_id": "chapter-108-ahab-and-the-carpenter",
+          "label": "spavined"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-109-ahab-and-starbuck-in-the-cabin-prating",
+          "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+          "label": "prating"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-109-ahab-and-starbuck-in-the-cabin-waxes",
+          "unit_id": "chapter-109-ahab-and-starbuck-in-the-cabin",
+          "label": "waxes"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-110-queequeg-in-his-coffin-sinecures",
+          "unit_id": "chapter-110-queequeg-in-his-coffin",
+          "label": "sinecures"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-112-the-blacksmith-care-killing-competency",
+          "unit_id": "chapter-112-the-blacksmith",
+          "label": "care-killing competency"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-112-the-blacksmith-in-crape",
+          "unit_id": "chapter-112-the-blacksmith",
+          "label": "in crape"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-113-the-forge-fusee",
+          "unit_id": "chapter-113-the-forge",
+          "label": "fusee"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-113-the-forge-lucifers",
+          "unit_id": "chapter-113-the-forge",
+          "label": "lucifers"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-116-the-dying-whale-orisons",
+          "unit_id": "chapter-116-the-dying-whale",
+          "label": "orisons"
         },
         {
           "type": "annotation",
@@ -36895,9 +38578,117 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-118-the-quadrant-wonted",
+          "unit_id": "chapter-118-the-quadrant",
+          "label": "wonted"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-119-the-candles-flambeaux",
+          "unit_id": "chapter-119-the-candles",
+          "label": "flambeaux"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-120-the-deck-towards-the-end-of-the-firs-coasting-smack",
+          "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+          "label": "coasting smack"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-120-the-deck-towards-the-end-of-the-firs-hooroosh",
+          "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
+          "label": "hooroosh"
+        },
+        {
+          "type": "annotation",
           "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-boxes-of-lucifers-forward",
           "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
           "label": "boxes of lucifers forward"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-drive-down-a-beaver",
+          "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+          "label": "drive down a beaver"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-121-midnight-the-forecastle-bulwarks-long-togs",
+          "unit_id": "chapter-121-midnight-the-forecastle-bulwarks",
+          "label": "long-togs"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-bandbox",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "bandbox"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-cruppered-with-a-coffin",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "Cruppered with a coffin"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-126-the-life-buoy-in-sooth",
+          "unit_id": "chapter-126-the-life-buoy",
+          "label": "in sooth"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-127-the-deck-a-mere-hap",
+          "unit_id": "chapter-127-the-deck",
+          "label": "a mere hap"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-127-the-deck-arrant",
+          "unit_id": "chapter-127-the-deck",
+          "label": "arrant"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-128-the-pequod-meets-the-rachel-earnest-suit",
+          "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+          "label": "earnest suit"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-132-the-symphony-durst",
+          "unit_id": "chapter-132-the-symphony",
+          "label": "durst"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-132-the-symphony-marge",
+          "unit_id": "chapter-132-the-symphony",
+          "label": "marge"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-133-the-chase-first-day-argosy",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "argosy"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-133-the-chase-first-day-scud",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "scud"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-134-the-chase-second-day-black-vomit",
+          "unit_id": "chapter-134-the-chase-second-day",
+          "label": "black vomit"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-134-the-chase-second-day-fagot-of-steel",
+          "unit_id": "chapter-134-the-chase-second-day",
+          "label": "fagot of steel"
         },
         {
           "type": "annotation",
@@ -36907,15 +38698,51 @@
         },
         {
           "type": "annotation",
+          "id": "auth-chapter-135-the-chase-third-day-fagged",
+          "unit_id": "chapter-135-the-chase-third-day",
+          "label": "fagged"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-chapter-135-the-chase-third-day-sable-raiment",
+          "unit_id": "chapter-135-the-chase-third-day",
+          "label": "sable raiment"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-epilogue-epilogue-main",
+          "unit_id": "epilogue-epilogue",
+          "label": "main"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-frontmatter-etymology-usher",
+          "unit_id": "frontmatter-etymology",
+          "label": "Usher"
+        },
+        {
+          "type": "annotation",
           "id": "source-index-webster-1913",
           "unit_id": "frontmatter-etymology",
           "label": "The pale Usher\u2060\u2014threadbare in coat, heart, body, and brain; I see him"
+        },
+        {
+          "type": "annotation",
+          "id": "auth-frontmatter-extracts-incontinently",
+          "unit_id": "frontmatter-extracts",
+          "label": "incontinently"
         },
         {
           "type": "glossary",
           "id": "bulwarks",
           "unit_id": "chapter-001-loomings",
           "label": "bulwarks"
+        },
+        {
+          "type": "glossary",
+          "id": "hypo",
+          "unit_id": "chapter-001-loomings",
+          "label": "hypo"
         },
         {
           "type": "glossary",
@@ -36973,6 +38800,18 @@
         },
         {
           "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-002-the-carpetbag",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "bulwarks",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "bulwarks"
@@ -36982,6 +38821,12 @@
           "id": "cannibal",
           "unit_id": "chapter-003-the-spouter-inn",
           "label": "cannibal"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-003-the-spouter-inn",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -37126,6 +38971,12 @@
           "id": "pulpit",
           "unit_id": "chapter-008-the-pulpit",
           "label": "pulpit"
+        },
+        {
+          "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-009-the-sermon",
+          "label": "belike"
         },
         {
           "type": "glossary",
@@ -37411,6 +39262,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-022-merry-christmas",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparition",
           "unit_id": "chapter-022-merry-christmas",
           "label": "apparition"
@@ -37459,6 +39316,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-023-the-lee-shore",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "lee",
           "unit_id": "chapter-023-the-lee-shore",
           "label": "lee"
@@ -37498,6 +39361,12 @@
           "id": "vocation",
           "unit_id": "chapter-024-the-advocate",
           "label": "vocation"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-025-postscript",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -37591,6 +39460,18 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-032-cetology",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
+          "id": "hartshorn",
+          "unit_id": "chapter-032-cetology",
+          "label": "hartshorn"
+        },
+        {
+          "type": "glossary",
           "id": "windward",
           "unit_id": "chapter-032-cetology",
           "label": "windward"
@@ -37600,6 +39481,12 @@
           "id": "vocation",
           "unit_id": "chapter-033-the-specksnyder",
           "label": "vocation"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-034-the-cabin-table",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -37645,6 +39532,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "blasphemy",
           "unit_id": "chapter-036-the-quarterdeck",
           "label": "blasphemy"
@@ -37654,6 +39547,12 @@
           "id": "doubloon",
           "unit_id": "chapter-036-the-quarterdeck",
           "label": "doubloon"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-036-the-quarterdeck",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -37753,6 +39652,12 @@
         },
         {
           "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-040-midnight-forecastle",
+          "label": "belike"
+        },
+        {
+          "type": "glossary",
           "id": "squall",
           "unit_id": "chapter-040-midnight-forecastle",
           "label": "squall"
@@ -37816,6 +39721,12 @@
           "id": "apparition",
           "unit_id": "chapter-042-the-whiteness-of-the-whale",
           "label": "apparition"
+        },
+        {
+          "type": "glossary",
+          "id": "hypo",
+          "unit_id": "chapter-042-the-whiteness-of-the-whale",
+          "label": "hypo"
         },
         {
           "type": "glossary",
@@ -37894,6 +39805,12 @@
           "id": "monomania",
           "unit_id": "chapter-046-surmises",
           "label": "monomania"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-047-the-mat-maker",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -37999,6 +39916,12 @@
         },
         {
           "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-050-ahab-s-boat-and-crew-fedallah",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
           "id": "apparition",
           "unit_id": "chapter-051-the-spirit-spout",
           "label": "apparition"
@@ -38071,6 +39994,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-054-the-town-ho-s-story",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "flank",
           "unit_id": "chapter-054-the-town-ho-s-story",
           "label": "flank"
@@ -38119,6 +40048,12 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-061-stubb-kills-a-whale",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparition",
           "unit_id": "chapter-061-stubb-kills-a-whale",
           "label": "apparition"
@@ -38161,9 +40096,27 @@
         },
         {
           "type": "glossary",
+          "id": "surtout",
+          "unit_id": "chapter-068-the-blanket",
+          "label": "surtout"
+        },
+        {
+          "type": "glossary",
+          "id": "peradventure",
+          "unit_id": "chapter-069-the-funeral",
+          "label": "peradventure"
+        },
+        {
+          "type": "glossary",
           "id": "cabalistical",
           "unit_id": "chapter-071-the-jeroboam-s-story",
           "label": "cabalistical"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-071-the-jeroboam-s-story",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38179,9 +40132,27 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-073-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "portent",
           "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
           "label": "portent"
+        },
+        {
+          "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-074-the-sperm-whale-s-head-contrasted-view",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-076-the-battering-ram",
+          "label": "anon"
         },
         {
           "type": "glossary",
@@ -38203,9 +40174,21 @@
         },
         {
           "type": "glossary",
+          "id": "peradventure",
+          "unit_id": "chapter-078-cistern-and-buckets",
+          "label": "peradventure"
+        },
+        {
+          "type": "glossary",
           "id": "sagacious",
           "unit_id": "chapter-078-cistern-and-buckets",
           "label": "sagacious"
+        },
+        {
+          "type": "glossary",
+          "id": "beadle",
+          "unit_id": "chapter-079-the-prairie",
+          "label": "beadle"
         },
         {
           "type": "glossary",
@@ -38269,6 +40252,12 @@
         },
         {
           "type": "glossary",
+          "id": "beadle",
+          "unit_id": "chapter-090-heads-or-tails",
+          "label": "beadle"
+        },
+        {
+          "type": "glossary",
           "id": "sagacious",
           "unit_id": "chapter-090-heads-or-tails",
           "label": "sagacious"
@@ -38293,6 +40282,24 @@
         },
         {
           "type": "glossary",
+          "id": "poltroon",
+          "unit_id": "chapter-093-the-castaway",
+          "label": "poltroon"
+        },
+        {
+          "type": "glossary",
+          "id": "wight",
+          "unit_id": "chapter-093-the-castaway",
+          "label": "wight"
+        },
+        {
+          "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-094-a-squeeze-of-the-hand",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "malice",
           "unit_id": "chapter-094-a-squeeze-of-the-hand",
           "label": "malice"
@@ -38302,6 +40309,12 @@
           "id": "monomania",
           "unit_id": "chapter-096-the-try-works",
           "label": "monomania"
+        },
+        {
+          "type": "glossary",
+          "id": "surtout",
+          "unit_id": "chapter-098-stowing-down-and-clearing-up",
+          "label": "surtout"
         },
         {
           "type": "glossary",
@@ -38317,6 +40330,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-099-the-doubloon",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "monomania",
           "unit_id": "chapter-099-the-doubloon",
           "label": "monomania"
@@ -38329,9 +40348,21 @@
         },
         {
           "type": "glossary",
+          "id": "belike",
+          "unit_id": "chapter-102-a-bower-in-the-arsacides",
+          "label": "belike"
+        },
+        {
+          "type": "glossary",
           "id": "subterranean",
           "unit_id": "chapter-102-a-bower-in-the-arsacides",
           "label": "subterranean"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-104-the-fossil-whale",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38344,6 +40375,12 @@
           "id": "monomania",
           "unit_id": "chapter-106-ahab-s-leg",
           "label": "monomania"
+        },
+        {
+          "type": "glossary",
+          "id": "hartshorn",
+          "unit_id": "chapter-107-the-carpenter",
+          "label": "hartshorn"
         },
         {
           "type": "glossary",
@@ -38368,6 +40405,12 @@
           "id": "bellows",
           "unit_id": "chapter-113-the-forge",
           "label": "bellows"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-113-the-forge",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38419,6 +40462,12 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-119-the-candles",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "tempest",
           "unit_id": "chapter-119-the-candles",
           "label": "tempest"
@@ -38428,6 +40477,12 @@
           "id": "tempest",
           "unit_id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch",
           "label": "tempest"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-123-the-musket",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38449,9 +40504,21 @@
         },
         {
           "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-124-the-needle",
+          "label": "fain"
+        },
+        {
+          "type": "glossary",
           "id": "life-buoy",
           "unit_id": "chapter-126-the-life-buoy",
           "label": "life-buoy"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-128-the-pequod-meets-the-rachel",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38464,6 +40531,12 @@
           "id": "despot",
           "unit_id": "chapter-130-the-hat",
           "label": "despot"
+        },
+        {
+          "type": "glossary",
+          "id": "fain",
+          "unit_id": "chapter-130-the-hat",
+          "label": "fain"
         },
         {
           "type": "glossary",
@@ -38491,9 +40564,21 @@
         },
         {
           "type": "glossary",
+          "id": "anon",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "anon"
+        },
+        {
+          "type": "glossary",
           "id": "apparition",
           "unit_id": "chapter-133-the-chase-first-day",
           "label": "apparition"
+        },
+        {
+          "type": "glossary",
+          "id": "poltroon",
+          "unit_id": "chapter-133-the-chase-first-day",
+          "label": "poltroon"
         },
         {
           "type": "glossary",

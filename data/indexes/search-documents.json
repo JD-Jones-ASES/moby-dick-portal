@@ -232,20 +232,22 @@
         "why_it_matters": "This frontmatter prepares students for the novel's method. Moby-Dick will chase the whale through plot, science, religion, myth, and language, and none of those approaches will be complete by itself."
       },
       "excerpt": "The pale Usher\u2060\u2014threadbare in coat, heart, body, and brain; I see him now. He was ever dusting his old lexicons and grammars, with a queer handkerchief, mockingly embellished with all the gay flags of all the known nations of the world. He loved to dust his old grammars; it somehow mildly reminded him of his mortality.\n\n \u201cWhile you take in hand to school oth",
-      "annotation_count": 10,
-      "inline_annotation_count": 0,
+      "annotation_count": 11,
+      "inline_annotation_count": 1,
       "kinds": {
-        "context": 4,
+        "context": 5,
         "form": 1,
         "teacher-note": 2,
         "theme": 3
       },
       "depths": {
         "explore": 7,
-        "study": 1,
+        "study": 2,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "form:preface",
         "function:prefatory",
         "kind:context",
@@ -318,10 +320,10 @@
         "why_it_matters": "The extracts teach students how to read the book's scale. Melville wants the whale to exceed one genre or explanation, so he opens with many voices before giving us Ishmael's."
       },
       "excerpt": "It will be seen that this mere painstaking burrower and grub-worm of a poor devil of a Sub-Sub appears to have gone through the long Vaticans and street-stalls of the earth, picking up whatever random allusions to whales he could anyways find in any book whatsoever, sacred or profane. Therefore you must not, in every case at least, take the higgledy-piggledy",
-      "annotation_count": 21,
-      "inline_annotation_count": 1,
+      "annotation_count": 22,
+      "inline_annotation_count": 2,
       "kinds": {
-        "context": 11,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "teacher-note": 2,
@@ -329,10 +331,12 @@
       },
       "depths": {
         "explore": 17,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:ahabs-pipe",
         "entity:gabriel",
@@ -402,7 +406,8 @@
         "the-masthead"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -465,10 +470,10 @@
         "why_it_matters": "This chapter establishes the narrator's voice: comic, learned, unstable, and surprisingly direct about depression and escape. It also makes the voyage psychological before it becomes nautical."
       },
       "excerpt": "Call me Ishmael. Some years ago\u2060\u2014never mind how long precisely\u2060\u2014having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whe",
-      "annotation_count": 28,
-      "inline_annotation_count": 8,
+      "annotation_count": 31,
+      "inline_annotation_count": 11,
       "kinds": {
-        "context": 15,
+        "context": 18,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -477,13 +482,15 @@
       },
       "depths": {
         "explore": 17,
-        "study": 9,
+        "study": 12,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:slavery-coercion-language",
         "entity:forecastle",
         "entity:manhattan",
@@ -559,7 +566,8 @@
         "melville-israel-potter-gutenberg",
         "milton-paradise-lost-gutenberg",
         "standard-ebooks-moby-dick",
-        "us-census-1860-population"
+        "us-census-1860-population",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -712,10 +720,10 @@
         "why_it_matters": "This is the first major test of Ishmael's assumptions. Melville uses comedy and fear to begin one of the book's central relationships."
       },
       "excerpt": "Entering that gable-ended Spouter-Inn, you found yourself in a wide, low, straggling entry with old-fashioned wainscots, reminding one of the bulwarks of some condemned old craft. On one side hung a very large oil-painting so thoroughly besmoked, and every way defaced, that in the unequal cross-lights by which you viewed it, it was only by diligent study and",
-      "annotation_count": 26,
-      "inline_annotation_count": 4,
+      "annotation_count": 29,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 13,
+        "context": 16,
         "difficult-material": 2,
         "form": 1,
         "map": 1,
@@ -724,13 +732,14 @@
       },
       "depths": {
         "explore": 18,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "difficulty:religious-prejudice",
         "entity:bachelor",
@@ -809,7 +818,8 @@
         "britannica-thirty-years-war",
         "jonah-kjv-crossref",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -954,10 +964,10 @@
         "why_it_matters": "The chapter humanizes whalemen before romanticizing them. It also shows that Ishmael's narration often corrects itself."
       },
       "excerpt": "I quickly followed suit, and descending into the barroom accosted the grinning landlord very pleasantly. I cherished no malice towards him, though he had been skylarking with me not a little in the matter of my bedfellow.\n\n However, a good laugh is a mighty good thing, and rather too scarce a good thing; the more\u2019s the pity. So, if any one man, in his own pr",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 16,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -966,10 +976,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "form:comic",
         "form:method",
@@ -1027,7 +1039,8 @@
       ],
       "entities": [],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -1164,10 +1177,10 @@
         "why_it_matters": "This chapter sets a funeral shadow over the adventure. It also prepares the way for Father Mapple's sermon and the book's recurring biblical frame."
       },
       "excerpt": "In this same New Bedford there stands a Whaleman\u2019s Chapel, and few are the moody fishermen, shortly bound for the Indian Ocean or Pacific, who fail to make a Sunday visit to the spot. I am sure that I did not.\n\n Returning from my first morning stroll, I again sallied out upon this special errand. The sky had changed from clear, sunny cold, to driving sleet a",
-      "annotation_count": 21,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -1176,7 +1189,7 @@
       },
       "depths": {
         "explore": 15,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
@@ -1398,10 +1411,10 @@
         "why_it_matters": "The sermon gives students a key biblical pattern for the whole novel. It also raises the question of whether Ahab, Ishmael, or anyone else can recognize a warning in time."
       },
       "excerpt": "Father Mapple rose, and in a mild voice of unassuming authority ordered the scattered people to condense. \u201cStarboard gangway, there! side away to larboard\u2060\u2014larboard gangway to starboard! Midships! midships!\u201d\n\n There was a low rumbling of heavy sea-boots among the benches, and a still slighter shuffling of women\u2019s shoes, and all was quiet again, and every eye",
-      "annotation_count": 27,
-      "inline_annotation_count": 9,
+      "annotation_count": 30,
+      "inline_annotation_count": 12,
       "kinds": {
-        "context": 18,
+        "context": 21,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -1409,13 +1422,14 @@
       },
       "depths": {
         "explore": 14,
-        "study": 11,
+        "study": 14,
         "teacher": 2
       },
       "tags": [
         "allusion:biblical",
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "entity:delight",
         "entity:starbuck-conscience",
         "entity:the-cabin",
@@ -1473,7 +1487,8 @@
       "sources": [
         "jonah-kjv-crossref",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -1723,10 +1738,10 @@
         "why_it_matters": "The chapter gives Queequeg a history and motive. It asks students to see him as a full character, not simply as Ishmael's first surprise."
       },
       "excerpt": "Queequeg was a native of Rokovoko, an island far away to the West and South. It is not down in any map; true places never are.\n\n When a new-hatched savage running wild about his native woodlands in a grass clout, followed by the nibbling goats, as if he were a green sapling; even then, in Queequeg\u2019s ambitious soul, lurked a strong desire to see something mor",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -1735,10 +1750,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 5,
+        "study": 7,
         "teacher": 3
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:queequeg",
         "entity:sag-harbor",
@@ -1801,7 +1818,8 @@
       ],
       "sources": [
         "britannica-peter-the-great",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -1833,10 +1851,10 @@
         "why_it_matters": "Queequeg's courage becomes practical rather than merely described. The chapter also moves the story from shore friendship toward the whaling voyage."
       },
       "excerpt": "Next morning, Monday, after disposing of the embalmed head to a barber, for a block, I settled my own and comrade\u2019s bill; using, however, my comrade\u2019s money. The grinning landlord, as well as the boarders, seemed amazingly tickled at the sudden friendship which had sprung up between me and Queequeg\u2060\u2014especially as Peter Coffin\u2019s cock and bull stories about hi",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 2,
+        "context": 4,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -1845,7 +1863,7 @@
       },
       "depths": {
         "explore": 9,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -2153,10 +2171,10 @@
         "why_it_matters": "This chapter commits Ishmael and Queequeg to the voyage. It also introduces the Pequod as more than transportation: it is a symbolic world built from violence, labor, and profit."
       },
       "excerpt": "In bed we concocted our plans for the morrow. But to my surprise and no small concern, Queequeg now gave me to understand, that he had been diligently consulting Yojo\u2060\u2014the name of his black little god\u2060\u2014and Yojo had told him two or three times over, and strongly insisted upon it everyway, that instead of our going together among the whaling-fleet in harbor, a",
-      "annotation_count": 26,
-      "inline_annotation_count": 10,
+      "annotation_count": 28,
+      "inline_annotation_count": 12,
       "kinds": {
-        "context": 17,
+        "context": 19,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -2165,13 +2183,14 @@
       },
       "depths": {
         "explore": 11,
-        "study": 13,
+        "study": 15,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:bildad",
         "entity:peleg",
@@ -2238,7 +2257,8 @@
         "britannica-thirty-nine-articles",
         "britannica-thomas-becket",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -2271,10 +2291,10 @@
         "why_it_matters": "The chapter is useful for discussing cross-cultural friendship without pretending Ishmael has become fully enlightened. Care and misunderstanding coexist."
       },
       "excerpt": "As Queequeg\u2019s Ramadan, or Fasting and Humiliation, was to continue all day, I did not choose to disturb him till towards nightfall; for I cherish the greatest respect towards everybody\u2019s religious obligations, never mind how comical, and could not find it in my heart to undervalue even a congregation of ants worshipping a toadstool; or those other creatures ",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 4,
+        "context": 5,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2283,10 +2303,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "difficulty:religious-prejudice",
         "entity:atlantic-ocean",
@@ -2342,7 +2364,8 @@
         "atlantic-ocean"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -2375,10 +2398,10 @@
         "why_it_matters": "The chapter tests whether the friendship can survive institutional suspicion. It also makes Queequeg's labor value impossible for the owners to ignore."
       },
       "excerpt": "As we were walking down the end of the wharf towards the ship, Queequeg carrying his harpoon, Captain Peleg in his gruff voice loudly hailed us from his wigwam, saying he had not suspected my friend was a cannibal, and furthermore announcing that he let no cannibals on board that craft, unless they previously produced their papers.\n\n \u201cWhat do you mean by tha",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 21,
+      "inline_annotation_count": 8,
       "kinds": {
-        "context": 6,
+        "context": 9,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -2387,12 +2410,13 @@
       },
       "depths": {
         "explore": 10,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:queequeg",
         "entity:whaleboat",
@@ -2453,7 +2477,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -2591,10 +2616,10 @@
         "why_it_matters": "This chapter turns preparation into suspense. Students can see how Melville delays Ahab in order to make his eventual entrance heavier."
       },
       "excerpt": "A day or two passed, and there was great activity aboard the Pequod . Not only were the old sails being mended, but new sails were coming on board, and bolts of canvas, and coils of rigging; in short, everything betokened that the ship\u2019s preparations were hurrying to a close. Captain Peleg seldom or never went ashore, but sat in his wigwam keeping a sharp lo",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 5,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -2602,10 +2627,12 @@
       },
       "depths": {
         "explore": 12,
-        "study": 2,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:aunt-charity",
         "entity:pequod",
         "form:method",
@@ -2659,7 +2686,8 @@
         "pequod"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -2790,10 +2818,10 @@
         "why_it_matters": "The voyage finally begins. The Christmas setting adds irony: a day associated with birth opens a journey toward death."
       },
       "excerpt": "At length, towards noon, upon the final dismissal of the ship\u2019s riggers, and after the Pequod had been hauled out from the wharf, and after the ever-thoughtful Charity had come off in a whaleboat, with her last gift\u2060\u2014a nightcap for Stubb, the second mate, her brother-in-law, and a spare Bible for the steward\u2060\u2014after all this, the two Captains, Peleg and Bilda",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "form": 3,
         "map": 2,
         "teacher-note": 2,
@@ -2801,10 +2829,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:ahab",
         "entity:coverage-entity-early-pequod-shipboard",
         "entity:pequod",
@@ -2860,7 +2890,8 @@
         "pequod"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -2992,10 +3023,10 @@
         "why_it_matters": "The chapter is Melville's defense of his subject. It turns whaling into a way of thinking about labor, history, and empire."
       },
       "excerpt": "As Queequeg and I are now fairly embarked in this business of whaling; and as this business of whaling has somehow come to be regarded among landsmen as a rather unpoetical and disreputable pursuit; therefore, I am all anxiety to convince ye, ye landsmen, of the injustice hereby done to us hunters of whales.\n\n In the first place, it may be deemed almost supe",
-      "annotation_count": 17,
-      "inline_annotation_count": 7,
+      "annotation_count": 20,
+      "inline_annotation_count": 10,
       "kinds": {
-        "context": 9,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -3004,13 +3035,14 @@
       },
       "depths": {
         "explore": 4,
-        "study": 11,
+        "study": 14,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "function:whaling-labor",
         "kind:context",
@@ -3060,7 +3092,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -3093,10 +3126,10 @@
         "why_it_matters": "This short add-on keeps the satire going and links whaling to monarchy, status, and public ceremony."
       },
       "excerpt": "In behalf of the dignity of whaling, I would fain advance naught but substantiated facts. But after embattling his facts, an advocate who should wholly suppress a not unreasonable surmise, which might tell eloquently upon his cause\u2060\u2014such an advocate, would he not be blameworthy?\n\n It is well known that at the coronation of kings and queens, even modern ones,",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -3104,7 +3137,7 @@
       },
       "depths": {
         "explore": 10,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
@@ -3303,10 +3336,10 @@
         "why_it_matters": "The chapter rounds out the officers and the ship's social structure. It also stresses that the Pequod is a global working crew, not a purely American one."
       },
       "excerpt": "Stubb was the second mate. He was a native of Cape Cod; and hence, according to local usage, was called a Cape-Cod-man. A happy-go-lucky; neither craven nor valiant; taking perils as they came with an indifferent air; and while engaged in the most imminent crisis of the chase, toiling away, calm and collected as a journeyman joiner engaged for the year. Good",
-      "annotation_count": 19,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -3315,12 +3348,13 @@
       },
       "depths": {
         "explore": 11,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:azores",
         "entity:daggoo",
@@ -3377,7 +3411,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -3519,10 +3554,10 @@
         "why_it_matters": "The chapter gives an early sign of the command climate aboard the Pequod. It also introduces Stubb's humor as a coping style."
       },
       "excerpt": "Some days elapsed, and ice and icebergs all astern, the Pequod now went rolling through the bright Quito spring, which, at sea, almost perpetually reigns on the threshold of the eternal August of the Tropic. The warmly cool, clear, ringing, perfumed, overflowing, redundant days, were as crystal goblets of Persian sherbet, heaped up\u2060\u2014flaked up, with rose-wate",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 4,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -3531,7 +3566,7 @@
       },
       "depths": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -3736,10 +3771,10 @@
         "why_it_matters": "The chapter adds another warning system before Ahab states his mission. It also lets students see humor as part of the novel's dark machinery."
       },
       "excerpt": "Next morning Stubb accosted Flask.\n\n \u201cSuch a queer dream, King-Post, I never had. You know the old man\u2019s ivory leg, well I dreamed he kicked me with it; and when I tried to kick back, upon my soul, my little man, I kicked my leg right off! And then, presto! Ahab seemed a pyramid, and I, like a blazing fool, kept kicking at it. But what was still more curious",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -3748,10 +3783,12 @@
       },
       "depths": {
         "explore": 9,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:stubb",
         "form:method",
@@ -3813,7 +3850,8 @@
       ],
       "sources": [
         "bulfinch-age-of-fable",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -3845,10 +3883,10 @@
         "why_it_matters": "This is one of the book's strangest formal chapters. It shows how Melville turns mock scholarship into a way of thinking about limits, order, and language."
       },
       "excerpt": "Already we are boldly launched upon the deep; but soon we shall be lost in its unshored, harbourless immensities. Ere that come to pass; ere the Pequod \u2019s weedy hull rolls side by side with the barnacled hulls of the leviathan; at the outset it is but well to attend to a matter almost indispensable to a thorough appreciative understanding of the more special",
-      "annotation_count": 21,
-      "inline_annotation_count": 7,
+      "annotation_count": 22,
+      "inline_annotation_count": 8,
       "kinds": {
-        "context": 12,
+        "context": 13,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -3857,13 +3895,14 @@
       },
       "depths": {
         "explore": 9,
-        "study": 10,
+        "study": 11,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:historical-context",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:race-colonial-language",
         "entity:epic-catalog",
@@ -3929,7 +3968,8 @@
         "darwin-voyage-beagle-gutenberg",
         "king-james-bible",
         "scoresby-arctic-regions-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -3961,10 +4001,10 @@
         "why_it_matters": "Students get a clear look at shipboard hierarchy before the cabin scenes begin. It also hints that Ahab knows how to use maritime custom while bending it to his own ends."
       },
       "excerpt": "Concerning the officers of the whale-craft, this seems as good a place as any to set down a little domestic peculiarity on shipboard, arising from the existence of the harpooneer class of officers, a class unknown of course in any other marine than the whale-fleet.\n\n The large importance attached to the harpooneer\u2019s vocation is evinced by the fact, that orig",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 10,
+        "context": 11,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -3972,11 +4012,12 @@
       },
       "depths": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "function:whaling-labor",
         "kind:context",
@@ -4025,7 +4066,8 @@
       "sources": [
         "scoresby-arctic-regions-gutenberg",
         "standard-ebooks-moby-dick",
-        "starbuck-history-of-american-whale-fishery"
+        "starbuck-history-of-american-whale-fishery",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -4056,10 +4098,10 @@
         "why_it_matters": "The chapter makes the ship's hierarchy visible through meal customs. It also shows that Ahab's power is built into daily ritual, not just into orders."
       },
       "excerpt": "It is noon; and Dough-Boy, the steward, thrusting his pale loaf-of-bread face from the cabin-scuttle, announces dinner to his lord and master; who, sitting in the lee quarter-boat, has just been taking an observation of the sun; and is now mutely reckoning the latitude on the smooth, medallion-shaped tablet, reserved for that daily purpose on the upper part ",
-      "annotation_count": 18,
-      "inline_annotation_count": 6,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -4068,13 +4110,14 @@
       },
       "depths": {
         "explore": 8,
-        "study": 8,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "form:method",
         "function:character",
@@ -4136,7 +4179,8 @@
       "sources": [
         "britannica-holy-roman-empire",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -4169,20 +4213,22 @@
         "why_it_matters": "This chapter slows the action into a study of perception and risk. It also gives the novel one of its clearest meditations on distraction, imagination, and the danger of drifting from the task at hand."
       },
       "excerpt": "It was during the more pleasant weather, that in due rotation with the other seamen my first masthead came round.\n\n In most American whalemen the mastheads are manned almost simultaneously with the vessel\u2019s leaving her port; even though she may have fifteen thousand miles, and more, to sail ere reaching her proper cruising ground. And if, after a three, four",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "teacher-note": 3,
         "theme": 4
       },
       "depths": {
         "explore": 7,
-        "study": 7,
+        "study": 8,
         "teacher": 3
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:compass",
         "entity:ishmael",
         "entity:labor",
@@ -4233,7 +4279,8 @@
         "labor"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -4265,10 +4312,10 @@
         "why_it_matters": "This is the central plot turn. The Pequod stops being merely a workplace and becomes the instrument of Ahab's private vengeance."
       },
       "excerpt": "Enter Ahab: Then, all.\n\n It was not a great while after the affair of the pipe, that one morning shortly after breakfast, Ahab, as was his wont, ascended the cabin-gangway to the deck. There most sea-captains usually walk at that hour, as country gentlemen, after the same meal, take a few turns in the garden.\n\n Soon his steady, ivory stride was heard, as to ",
-      "annotation_count": 21,
-      "inline_annotation_count": 5,
+      "annotation_count": 22,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -4277,10 +4324,11 @@
       },
       "depths": {
         "explore": 12,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:lexical",
         "difficulty:mental-health-language",
@@ -4612,10 +4660,10 @@
         "why_it_matters": "This chapter gives Stubb his defining tone: comic fatalism. It also shows how the crew absorbs Ahab's growing menace in small, ordinary moments."
       },
       "excerpt": "Foretop.\n\n Stubb solus, and mending a brace.\n\n Ha! ha! ha! ha! hem! clear my throat!\u2060\u2014I\u2019ve been thinking over it ever since, and that ha, ha\u2019s the final consequence. Why so? Because a laugh\u2019s the wisest, easiest answer to all that\u2019s queer; and come what will, one comfort\u2019s always left\u2060\u2014that unfailing comfort is, it\u2019s all predestinated. I heard not all his ta",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 16,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 2,
+        "context": 3,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -4623,10 +4671,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:stubb",
         "form:performance",
         "form:voice",
@@ -4681,7 +4731,8 @@
         "stubb"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -4712,10 +4763,10 @@
         "why_it_matters": "The chapter shows the Pequod as a mixed, global workplace, not just a backdrop for Ahab. Its theatrical form also lets Melville build tension through sound, movement, and shifting voices."
       },
       "excerpt": "Harpooneers and sailors .\n\n Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.\n\n Farewell and adieu to you, Spanish ladies!\n\n Farewell and adieu to you, ladies of Spain!\n\n Our captain\u2019s commanded.\u2060\u2014\n\n 1st Nantucket sailor .\n\n Oh, boys, don\u2019t be sentimental; it\u2019s bad for the digestion! Ta",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 4,
+        "context": 6,
         "difficult-material": 2,
         "form": 6,
         "map": 1,
@@ -4724,12 +4775,13 @@
       },
       "depths": {
         "explore": 8,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:mental-health-language",
         "difficulty:race-colonial-language",
         "function:theatrical",
@@ -4782,7 +4834,8 @@
       "entities": [],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -4815,10 +4868,10 @@
         "why_it_matters": "This is the explanatory bridge between the oath and the hunt. It shows how fact, rumor, trauma, and symbolism merge around Moby Dick."
       },
       "excerpt": "I, Ishmael, was one of that crew; my shouts had gone up with the rest; my oath had been welded with theirs; and stronger I shouted, and more did I hammer and clinch my oath, because of the dread in my soul. A wild, mystical, sympathetical feeling was in me; Ahab\u2019s quenchless feud seemed mine. With greedy ears I learned the history of that murderous monster a",
-      "annotation_count": 20,
-      "inline_annotation_count": 5,
+      "annotation_count": 21,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -4827,7 +4880,7 @@
       },
       "depths": {
         "explore": 11,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
@@ -4932,10 +4985,10 @@
         "why_it_matters": "This is one of the novel's major interpretive chapters. It helps students see that Moby Dick is both a whale in the plot and a symbol that resists simple decoding."
       },
       "excerpt": "What the white whale was to Ahab, has been hinted; what, at times, he was to me, as yet remains unsaid.\n\n Aside from those more obvious considerations touching Moby Dick, which could not but occasionally awaken in any man\u2019s soul some alarm, there was another thought, or rather vague, nameless horror concerning him, which at times by its intensity completely ",
-      "annotation_count": 22,
-      "inline_annotation_count": 4,
+      "annotation_count": 23,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -4944,7 +4997,7 @@
       },
       "depths": {
         "explore": 14,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -5143,10 +5196,10 @@
         "why_it_matters": "The chapter connects madness to method. Students can see that Ahab is dangerous partly because he is disciplined and intelligent."
       },
       "excerpt": "Had you followed Captain Ahab down into his cabin after the squall that took place on the night succeeding that wild ratification of his purpose with his crew, you would have seen him go to a locker in the transom, and bringing out a large wrinkled roll of yellowish sea charts, spread them before him on his screwed-down table. Then seating himself before it,",
-      "annotation_count": 18,
-      "inline_annotation_count": 4,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -5155,12 +5208,13 @@
       },
       "depths": {
         "explore": 10,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:mental-health-language",
         "entity:ahab",
         "entity:prometheus",
@@ -5225,7 +5279,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "matthew-fontaine-maury",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -5258,10 +5313,10 @@
         "why_it_matters": "This is one of the novel's clearest mixes of fact and argument. It makes the story feel documented while also showing how hard it is to prove the truth of something so extreme."
       },
       "excerpt": "So far as what there may be of a narrative in this book; and, indeed, as indirectly touching one or two very interesting and curious particulars in the habits of sperm whales, the foregoing chapter, in its earlier part, is as important a one as will be found in this volume; but the leading matter of it requires to be still further and more familiarly enlarge",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 6,
+        "context": 8,
         "difficult-material": 1,
         "form": 4,
         "map": 1,
@@ -5270,12 +5325,13 @@
       },
       "depths": {
         "explore": 10,
-        "study": 6,
+        "study": 8,
         "teacher": 4
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:giant-squid",
         "entity:shakespearean-tragedy",
@@ -5337,7 +5393,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -5370,10 +5427,10 @@
         "why_it_matters": "This chapter clarifies the political problem of Ahab's command. He cannot simply desire; he must manage people and incentives."
       },
       "excerpt": "Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman\u2019s ways, altogether to abandon the ",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "kinds": {
-        "context": 1,
+        "context": 2,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -5382,10 +5439,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:ahab",
         "form:method",
@@ -5454,7 +5513,8 @@
         "ahab"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -5599,10 +5659,10 @@
         "why_it_matters": "The chapter turns whaling from concept into action. It also reveals that Ahab has been concealing part of the voyage's machinery."
       },
       "excerpt": "The phantoms, for so they then seemed, were flitting on the other side of the deck, and, with a noiseless celerity, were casting loose the tackles and bands of the boat which swung there. This boat had always been deemed one of the spare boats, though technically called the captain\u2019s, on account of its hanging from the starboard quarter. The figure that now ",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 21,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -5611,11 +5671,12 @@
       },
       "depths": {
         "explore": 14,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:race-colonial-language",
         "entity:agency",
@@ -5926,10 +5987,10 @@
         "why_it_matters": "The chapter builds atmosphere and momentum. The hunt begins to feel guided by signs no one can fully interpret."
       },
       "excerpt": "Days, weeks passed, and under easy sail, the ivory Pequod had slowly swept across four several cruising-grounds; that off the Azores; off the Cape de Verdes; on the Plate (so called), being off the mouth of the Rio de la Plata; and the Carrol Ground, an unstaked, watery locality, southerly from St. \u00a0Helena.\n\n It was while gliding through these latter waters ",
-      "annotation_count": 18,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -5938,12 +5999,13 @@
       },
       "depths": {
         "explore": 11,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:cape-good-hope",
         "entity:moby-dick",
@@ -6004,7 +6066,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6036,10 +6099,10 @@
         "why_it_matters": "The chapter turns a ship-to-ship encounter into an omen. It also widens the voyage beyond the Pequod, reminding students that other whalemen are moving through the same dangerous world."
       },
       "excerpt": "Southeastward from the Cape, off the distant Crozetts, a good cruising ground for Right Whalemen, a sail loomed ahead, the Goney (Albatross) by name. As she slowly drew nigh, from my lofty perch at the foremast-head, I had a good view of that sight so remarkable to a tyro in the far ocean fisheries\u2060\u2014a whaler at sea, and long absent from home.\n\n As if the wav",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 4,
         "map": 2,
@@ -6048,10 +6111,12 @@
       },
       "depths": {
         "explore": 12,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:mental-health-language",
         "entity:crozet-islands",
         "entity:kerguelen",
@@ -6112,7 +6177,8 @@
         "kerguelen"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6145,10 +6211,10 @@
         "why_it_matters": "The chapter gives students a key piece of whaling culture and a name for one of the novel's most important social rituals. It also helps explain how news and stories move across the ocean."
       },
       "excerpt": "The ostensible reason why Ahab did not go on board of the whaler we had spoken was this: the wind and sea betokened storms. But even had this not been the case, he would not after all, perhaps, have boarded her\u2060\u2014judging by his subsequent conduct on similar occasions\u2060\u2014if so it had been that, by the process of hailing, he had obtained a negative answer to the ",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 3,
         "map": 3,
@@ -6157,7 +6223,7 @@
       },
       "depths": {
         "explore": 9,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -6254,10 +6320,10 @@
         "why_it_matters": "This is one of the novel's biggest stories within the story. It echoes Ahab's plot, makes Moby Dick's danger concrete, and shows how Melville uses oral storytelling to mix suspense, testimony, and secrecy."
       },
       "excerpt": "As told at the Golden Inn.\n\n The Cape of Good Hope, and all the watery region round about there, is much like some noted four corners of a great highway, where you meet more travellers than in any other part.\n\n It was not very long after speaking the Goney that another homeward-bound whaleman, the Town-Ho , 9 was encountered. She was manned almost wholly by ",
-      "annotation_count": 20,
-      "inline_annotation_count": 4,
+      "annotation_count": 23,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 8,
+        "context": 11,
         "difficult-material": 1,
         "form": 6,
         "map": 1,
@@ -6266,12 +6332,13 @@
       },
       "depths": {
         "explore": 12,
-        "study": 6,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:cape-verde",
         "entity:radney",
@@ -6330,7 +6397,8 @@
       ],
       "sources": [
         "shakespeare-complete-works-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6363,10 +6431,10 @@
         "why_it_matters": "The chapter makes representation itself a classroom issue. It teaches students to question easy images and to see how difficult it is to make a believable picture of the whale."
       },
       "excerpt": "I shall ere long paint to you as well as one can without canvas, something like the true form of the whale as he actually appears to the eye of the whaleman when in his own absolute body the whale is moored alongside the whale-ship so that he can be fairly stepped upon there. It may be worth while, therefore, previously to advert to those curious imaginary p",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "kinds": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 4,
         "map": 1,
@@ -6375,10 +6443,12 @@
       },
       "depths": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:coverage-entity-whale-images-and-signs",
         "form:method",
@@ -6435,7 +6505,8 @@
         "coverage-entity-whale-images-and-signs"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6561,10 +6632,10 @@
         "why_it_matters": "This is one of the book's clearest examples of how obsession changes perception. Melville also shows that whales belong not just to biology, but to art, myth, and the way people make meaning from what they see."
       },
       "excerpt": "On Tower-hill, as you go down to the London docks, you may have seen a crippled beggar (or kedger , as the sailors say) holding a painted board before him, representing the tragic scene in which he lost his leg. There are three whales and three boats; and one of the boats (presumed to contain the missing leg in all its original integrity) is being crunched b",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -6573,10 +6644,12 @@
       },
       "depths": {
         "explore": 6,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "form:visual-culture",
         "function:cetology",
@@ -6631,7 +6704,8 @@
       ],
       "entities": [],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6664,10 +6738,10 @@
         "why_it_matters": "The chapter links whale life to the book's larger philosophy of danger and vulnerability. It also shows how Melville can begin with marine ecology and end with a large claim about what it means to live in the world."
       },
       "excerpt": "Steering northeastward from the Crozetts, we fell in with vast meadows of brit, the minute, yellow substance, upon which the Right Whale largely feeds. For leagues and leagues it undulated round us, so that we seemed to be sailing through boundless fields of ripe and golden wheat.\n\n On the second day, numbers of Right Whales were seen, who, secure from the a",
-      "annotation_count": 18,
-      "inline_annotation_count": 4,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 11,
+        "context": 12,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -6676,12 +6750,13 @@
       },
       "depths": {
         "explore": 9,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:race-colonial-language",
         "entity:ecology",
@@ -6742,7 +6817,8 @@
       "sources": [
         "king-james-bible",
         "noaa-north-atlantic-right-whale",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -6976,10 +7052,10 @@
         "why_it_matters": "This chapter shows Stubb's mix of humor and competence under pressure. It also reminds students that whaling can turn from boredom to violence in a few seconds."
       },
       "excerpt": "If to Starbuck the apparition of the Squid was a thing of portents, to Queequeg it was quite a different object.\n\n \u201cWhen you see him \u2019quid,\u201d said the savage, honing his harpoon in the bow of his hoisted boat, \u201cthen you quick see him \u2019parm whale.\u201d\n\n The next day was exceedingly still and sultry, and with nothing special to engage them, the Pequod \u2019s crew coul",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -6988,11 +7064,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:violence-body-harm",
         "entity:stubb",
@@ -7052,7 +7129,8 @@
       "sources": [
         "beale-sperm-whale-bhl",
         "standard-ebooks-moby-dick",
-        "starbuck-history-of-american-whale-fishery"
+        "starbuck-history-of-american-whale-fishery",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -7084,10 +7162,10 @@
         "why_it_matters": "This technical chapter makes the chase scenes easier to read and much more physical. It also reminds students that whaling is labor that pushes bodies past their limit."
       },
       "excerpt": "A word concerning an incident in the last chapter.\n\n According to the invariable usage of the fishery, the whaleboat pushes off from the ship, with the headsman or whale-killer as temporary steersman, and the harpooneer or whale-fastener pulling the foremost oar, the one known as the harpooneer-oar. Now it needs a strong, nervous arm to strike the first iron",
-      "annotation_count": 15,
-      "inline_annotation_count": 3,
+      "annotation_count": 16,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -7095,10 +7173,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "function:whaling-labor",
         "kind:context",
         "kind:form",
@@ -7144,7 +7224,8 @@
       ],
       "entities": [],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -7265,10 +7346,10 @@
         "why_it_matters": "The chapter makes whaling feel both practical and disturbing. It also shows that even a successful kill does not satisfy Ahab's larger obsession."
       },
       "excerpt": "Stubb\u2019s whale had been killed some distance from the ship. It was a calm; so, forming a tandem of three boats, we commenced the slow business of towing the trophy to the Pequod . And now, as we eighteen men with our thirty-six arms, and one hundred and eighty thumbs and fingers, slowly toiled hour after hour upon that inert, sluggish corpse in the sea; and i",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -7277,12 +7358,13 @@
       },
       "depths": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:general-difficult-material",
         "difficulty:violence-body-harm",
         "entity:stubb",
@@ -7344,7 +7426,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -7377,10 +7460,10 @@
         "why_it_matters": "The chapter connects appetite to violence and exposes double standards around eating. It also keeps the novel's whale obsession grounded in the body, not just in ideas."
       },
       "excerpt": "That mortal man should feed upon the creature that feeds his lamp, and, like Stubb, eat him by his own light, as you may say; this seems so outlandish a thing that one must needs go a little into the history and philosophy of it.\n\n It is upon record, that three centuries ago the tongue of the Right Whale was esteemed a great delicacy in France, and commanded",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -7389,12 +7472,13 @@
       },
       "depths": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "form:method",
         "function:whaling-labor",
@@ -7450,7 +7534,8 @@
       "entities": [],
       "sources": [
         "shakespeare-complete-works-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -7586,10 +7671,10 @@
         "why_it_matters": "This chapter explains the physical work behind whale oil. It also shows how whaling turns the ship itself into a tilted, dangerous machine."
       },
       "excerpt": "It was a Saturday night, and such a Sabbath as followed! Ex officio professors of Sabbath breaking are all whalemen. The ivory Pequod was turned into what seemed a shamble; every sailor a butcher. You would have thought we were offering up ten thousand red oxen to the sea gods.\n\n In the first place, the enormous cutting tackles, among other ponderous things ",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -7598,7 +7683,7 @@
       },
       "depths": {
         "explore": 9,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -7802,10 +7887,10 @@
         "why_it_matters": "This chapter turns a dead whale into a symbol of public mourning, theft, and superstition. It also shows Melville moving from concrete shipboard labor into a bigger argument about memory, precedent, and false authority."
       },
       "excerpt": "\u201cHaul in the chains! Let the carcase go astern!\u201d\n\n The vast tackles have now done their duty. The peeled white body of the beheaded whale flashes like a marble sepulchre; though changed in hue, it has not perceptibly lost anything in bulk. It is still colossal. Slowly it floats more and more away, the water round it torn and splashed by the insatiate sharks,",
-      "annotation_count": 20,
-      "inline_annotation_count": 3,
+      "annotation_count": 22,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 6,
+        "context": 8,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -7813,7 +7898,7 @@
       },
       "depths": {
         "explore": 13,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
@@ -7909,10 +7994,10 @@
         "why_it_matters": "This chapter shows Ahab's habit of treating the world as if it must answer him. It also turns a whale head into a symbol of mystery that refuses to explain itself."
       },
       "excerpt": "It should not have been omitted that previous to completely stripping the body of the leviathan, he was beheaded. Now, the beheading of the Sperm Whale is a scientific anatomical feat, upon which experienced whale surgeons very much pride themselves: and not without reason.\n\n Consider that the whale has nothing that can properly be called a neck; on the cont",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -7920,13 +8005,14 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
+        "claim:lexical",
         "entity:ahab",
         "entity:moby-dick",
         "form:method",
@@ -7984,7 +8070,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -8126,10 +8213,10 @@
         "why_it_matters": "This is one of the novel's clearest metaphors for human interdependence. It also shows how ship labor turns friendship into something physically dangerous."
       },
       "excerpt": "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there. There is no staying in any one place; for at one and the same time everything has to be done everywhere. It is much the same with him who endeavors the description of",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -8138,10 +8225,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:ishmael",
         "entity:monkey-rope",
@@ -8204,7 +8293,8 @@
         "queequeg"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -8237,10 +8327,10 @@
         "why_it_matters": "The chapter shows ordinary shipwork continuing even when the novel pauses for whale anatomy. It also deepens the ship's atmosphere of superstition, because the crew keeps explaining events through luck, omens, and rumor."
       },
       "excerpt": "It must be borne in mind that all this time we have a Sperm Whale\u2019s prodigious head hanging to the Pequod \u2019s side. But we must let it continue hanging there a while till we can get a chance to attend to it. For the present other matters press, and the best we can do now for the head, is to pray heaven the tackles may hold.\n\n Now, during the past night and fo",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 18,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 7,
+        "context": 8,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -8249,7 +8339,7 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
@@ -8443,10 +8533,10 @@
         "why_it_matters": "The chapter deepens the book's mock-scientific method and shows how much perception depends on metaphor. It also completes the contrast with the sperm whale's head so students can see the difference rather than just hear it named."
       },
       "excerpt": "Crossing the deck, let us now have a good long look at the Right Whale\u2019s head.\n\n As in general shape the noble Sperm Whale\u2019s head may be compared to a Roman war-chariot (especially in front, where it is so broadly rounded); so, at a broad view, the Right Whale\u2019s head bears a rather inelegant resemblance to a gigantic galliot-toed shoe. Two hundred years ago ",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 18,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 11,
+        "context": 12,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -8454,11 +8544,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "function:cetology",
         "kind:context",
@@ -8508,7 +8599,8 @@
       "sources": [
         "noaa-north-atlantic-right-whale",
         "scoresby-arctic-regions-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -8633,10 +8725,10 @@
         "why_it_matters": "The chapter makes the whale's body into both a scientific object and a container of wealth. It helps students see how Melville mixes anatomy, labor, and metaphor instead of separating them."
       },
       "excerpt": "Now comes the Baling of the Case. But to comprehend it aright, you must know something of the curious internal structure of the thing operated upon.\n\n Regarding the Sperm Whale\u2019s head as a solid oblong, you may, on an inclined plane, sideways divide it into two quoins, 17 whereof the lower is the bony structure, forming the cranium and jaws, and the upper an",
-      "annotation_count": 17,
-      "inline_annotation_count": 4,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 10,
+        "context": 11,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -8644,11 +8736,12 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "entity:giant-cask",
         "form:method",
@@ -8701,7 +8794,8 @@
       "sources": [
         "beale-sperm-whale-bhl",
         "heidelberg-castle-tun",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9038,10 +9132,10 @@
         "why_it_matters": "The chapter widens the voyage beyond the Pequod and shows how whaling connects ships from different nations in the same violent economy. It also mixes comedy with real danger, one of Melville's most characteristic moves."
       },
       "excerpt": "The predestinated day arrived, and we duly met the ship Jungfrau , Derick De\u00a0Deer, master, of Bremen.\n\n At one time the greatest whaling people in the world, the Dutch and Germans are now among the least; but here and there at very wide intervals of latitude and longitude, you still occasionally meet with their flag in the Pacific.\n\n For some reason, the Jun",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 8,
       "kinds": {
-        "context": 6,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 2,
@@ -9050,12 +9144,13 @@
       },
       "depths": {
         "explore": 8,
-        "study": 7,
+        "study": 10,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:mental-health-language",
         "form:gam",
@@ -9113,7 +9208,8 @@
       "sources": [
         "beale-sperm-whale-bhl",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9353,10 +9449,10 @@
         "why_it_matters": "The chapter turns whaling into exact, high-risk labor instead of vague adventure. It also shows how Melville can move from technical detail to comedy and violence in the same scene."
       },
       "excerpt": "To make them run easily and swiftly, the axles of carriages are anointed; and for much the same purpose, some whalers perform an analogous operation upon their boat; they grease the bottom. Nor is it to be doubted that as such a procedure can do no harm, it may possibly be of no contemptible advantage; considering that oil and water are hostile; that oil is ",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -9364,11 +9460,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "form:method",
         "function:whaling-labor",
@@ -9419,7 +9516,8 @@
       "entities": [],
       "sources": [
         "beale-sperm-whale-bhl",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9539,10 +9637,10 @@
         "why_it_matters": "Melville turns a single body part into a lesson in form, force, and interpretation. The chapter is useful for seeing how the novel can make scientific description feel philosophical and poetic at once."
       },
       "excerpt": "Other poets have warbled the praises of the soft eye of the antelope, and the lovely plumage of the bird that never alights; less celestial, I celebrate a tail.\n\n Reckoning the largest sized Sperm Whale\u2019s tail to begin at that point of the trunk where it tapers to about the girth of a man, it comprises upon its upper surface alone, an area of at least fifty ",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 6,
       "kinds": {
-        "context": 10,
+        "context": 11,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -9550,13 +9648,14 @@
       },
       "depths": {
         "explore": 9,
-        "study": 7,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
+        "claim:lexical",
         "entity:moby-dick",
         "form:method",
         "function:cetology",
@@ -9609,7 +9708,8 @@
         "bulfinch-age-of-fable",
         "king-james-bible",
         "milton-paradise-lost-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9640,10 +9740,10 @@
         "why_it_matters": "This chapter enlarges the scale of the voyage and shows the world of whaling as global, crowded, and unstable. It also gives students one of Melville's most vivid scenes of herd behavior, pursuit, and confusion."
       },
       "excerpt": "The long and narrow peninsula of Malacca, extending southeastward from the territories of Birmah, forms the most southerly point of all Asia. In a continuous line from that peninsula stretch the long islands of Sumatra, Java, Bally, and Timor; which, with many others, form a vast mole, or rampart, lengthwise connecting Asia with Australia, and dividing the l",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 8,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -9652,11 +9752,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 5,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:mental-health-language",
         "entity:java-sea",
@@ -9718,7 +9819,8 @@
       ],
       "sources": [
         "beale-sperm-whale-bhl",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9751,10 +9853,10 @@
         "why_it_matters": "This chapter deepens the book's cetology and gives students a clear example of Melville using animal life to think about gender, age, and social order."
       },
       "excerpt": "The previous chapter gave account of an immense body or herd of Sperm Whales, and there was also then given the probable cause inducing those vast aggregations.\n\n Now, though such great bodies are at times encountered, yet, as must have been seen, even at the present day, small detached bands are occasionally observed, embracing from twenty to fifty individu",
-      "annotation_count": 15,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 11,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -9762,10 +9864,12 @@
       },
       "depths": {
         "explore": 7,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "function:cetology",
         "function:whaling-labor",
         "kind:context",
@@ -9813,7 +9917,8 @@
       ],
       "entities": [],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -9844,10 +9949,10 @@
         "why_it_matters": "This chapter shows Melville's habit of turning technical details into political thought. It is especially useful for discussions of ownership, colonialism, and legal language."
       },
       "excerpt": "The allusion to the waif and waif-poles in the last chapter but one, necessitates some account of the laws and regulations of the whale fishery, of which the waif may be deemed the grand symbol and badge.\n\n It frequently happens that when several ships are cruising in company, a whale may be struck by one vessel, then escape, and be finally killed and captur",
-      "annotation_count": 18,
-      "inline_annotation_count": 3,
+      "annotation_count": 20,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 6,
+        "context": 8,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -9856,12 +9961,13 @@
       },
       "depths": {
         "explore": 10,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:slavery-coercion-language",
         "entity:coverage-entity-head-body-law-scale",
         "entity:fast-fish-loose-fish",
@@ -9920,7 +10026,8 @@
       ],
       "sources": [
         "britannica-pandects",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10050,10 +10157,10 @@
         "why_it_matters": "The chapter mixes comedy, commerce, and decay. It shows how even a horrible-smelling whale can still be valuable, and it introduces ambergris as one of the book's strangest whale products."
       },
       "excerpt": "It was a week or two after the last whaling scene recounted, and when we were slowly sailing over a sleepy, vapory, midday sea, that the many noses on the Pequod \u2019s deck proved more vigilant discoverers than the three pairs of eyes aloft. A peculiar and not very pleasant smell was smelt in the sea.\n\n \u201cI will bet something now,\u201d said Stubb, \u201cthat somewhere he",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 7,
+        "context": 9,
         "form": 4,
         "map": 3,
         "teacher-note": 2,
@@ -10061,11 +10168,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "entity:rose-bud",
         "form:gam",
@@ -10120,7 +10228,8 @@
       ],
       "sources": [
         "smithsonian-ambergris",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10150,10 +10259,10 @@
         "why_it_matters": "This digression matters because Melville keeps turning the whale into a scientific and commercial object. It also shows how the novel can move from slapstick smell to a serious argument about value and perception."
       },
       "excerpt": "Now this ambergris is a very curious substance, and so important as an article of commerce, that in 1791 a certain Nantucket-born Captain Coffin was examined at the bar of the English House of Commons on that subject. For at that time, and indeed until a comparatively late day, the precise origin of ambergris remained, like amber itself, a problem to the lea",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 10,
+        "context": 12,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -10161,13 +10270,14 @@
       },
       "depths": {
         "explore": 7,
-        "study": 8,
+        "study": 10,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:historical-context",
+        "claim:lexical",
         "function:whaling-labor",
         "kind:context",
         "kind:form",
@@ -10216,7 +10326,8 @@
       "sources": [
         "king-james-bible",
         "smithsonian-ambergris",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10352,10 +10463,10 @@
         "why_it_matters": "This chapter matters because it makes physical labor shape emotion and thought. It also shows Melville's habit of finding tenderness inside industrial work without pretending the work is harmless."
       },
       "excerpt": "That whale of Stubb\u2019s, so dearly purchased, was duly brought to the Pequod \u2019s side, where all those cutting and hoisting operations previously detailed, were regularly gone through, even to the baling of the Heidelburgh Tun, or Case.\n\n While some were occupied with this latter duty, others were employed in dragging away the larger tubs, so soon as filled wit",
-      "annotation_count": 18,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -10364,10 +10475,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:mental-health-language",
         "entity:the-try-works",
         "entity:try-works",
@@ -10425,7 +10538,8 @@
         "try-works"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10458,10 +10572,10 @@
         "why_it_matters": "The chapter is a sharp example of Melville turning labor into ritual imagery. It also shows how the whale gets converted from body to commodity through very physical work."
       },
       "excerpt": "Had you stepped on board the Pequod at a certain juncture of this post-mortemizing of the whale; and had you strolled forward nigh the windlass, pretty sure am I that you would have scanned with no small curiosity a very strange, enigmatical object, which you would have seen there, lying along lengthwise in the lee scuppers. Not the wondrous cistern in the w",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 6,
+        "context": 7,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -10470,12 +10584,13 @@
       },
       "depths": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:general-difficult-material",
         "form:method",
         "function:whaling-labor",
@@ -10538,7 +10653,8 @@
       "entities": [],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10681,10 +10797,10 @@
         "why_it_matters": "The chapter makes the connection between whales and everyday illumination impossible to miss. It also turns a practical fact into a small argument about how the sea's labor reaches inland life."
       },
       "excerpt": "Had you descended from the Pequod \u2019s try-works to the Pequod \u2019s forecastle, where the off duty watch were sleeping, for one single moment you would have almost thought you were standing in some illuminated shrine of canonized kings and counsellors. There they lay in their triangular oaken vaults, each mariner a chiselled muteness; a score of lamps flashing u",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 9,
+        "context": 10,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -10692,11 +10808,12 @@
       },
       "depths": {
         "explore": 9,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "function:whaling-labor",
         "kind:context",
@@ -10744,7 +10861,8 @@
       "sources": [
         "beale-sperm-whale-bhl",
         "project-gutenberg-aladdin",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10774,10 +10892,10 @@
         "why_it_matters": "This chapter captures the grind of whale work better than any single chase scene. It also shows the novel's larger pattern: labor, cleanup, and renewed danger repeat before anyone gets much rest."
       },
       "excerpt": "Already has it been related how the great leviathan is afar off descried from the masthead; how he is chased over the watery moors, and slaughtered in the valleys of the deep; how he is then towed alongside and beheaded; and how (on the principle which entitled the headsman of old to the garments in which the beheaded was killed) his great padded surtout bec",
-      "annotation_count": 16,
-      "inline_annotation_count": 4,
+      "annotation_count": 17,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 8,
+        "context": 9,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -10786,12 +10904,13 @@
       },
       "depths": {
         "explore": 8,
-        "study": 6,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:violence-body-harm",
         "form:method",
         "function:whaling-labor",
@@ -10845,7 +10964,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -10988,10 +11108,10 @@
         "why_it_matters": "The chapter gives Ahab another version of obsession's cost in the body. It also deepens the novel's network of ship encounters, where other lives and injuries reflect his own hunt."
       },
       "excerpt": "The Pequod , of Nantucket, Meets the Samuel Enderby , of London.\n\n \u201cShip, ahoy! Hast seen the White Whale?\u201d\n\n So cried Ahab, once more hailing a ship showing English colours, bearing down under the stern. Trumpet to mouth, the old man was standing in his hoisted quarter-boat, his ivory leg plainly revealed to the stranger captain, who was carelessly reclinin",
-      "annotation_count": 19,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 4,
         "map": 3,
@@ -11000,12 +11120,13 @@
       },
       "depths": {
         "explore": 12,
-        "study": 5,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:violence-body-harm",
         "entity:ahab",
         "entity:boomer",
@@ -11072,7 +11193,8 @@
       ],
       "sources": [
         "standard-ebooks-moby-dick",
-        "starbuck-history-of-american-whale-fishery"
+        "starbuck-history-of-american-whale-fishery",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -11104,10 +11226,10 @@
         "why_it_matters": "The chapter places whaling inside a larger history of trade, national rivalry, and shipboard abundance. It also gives one of the book's clearest comic contrasts between grim labor and generous eating and drinking."
       },
       "excerpt": "Ere the English ship fades from sight, be it set down here, that she hailed from London, and was named after the late Samuel Enderby, merchant of that city, the original of the famous whaling house of Enderby\u00a0& Sons; a house which in my poor whaleman\u2019s opinion, comes not far behind the united royal houses of the Tudors and Bourbons, in point of real historic",
-      "annotation_count": 19,
-      "inline_annotation_count": 7,
+      "annotation_count": 20,
+      "inline_annotation_count": 8,
       "kinds": {
-        "context": 12,
+        "context": 13,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -11116,7 +11238,7 @@
       },
       "depths": {
         "explore": 7,
-        "study": 10,
+        "study": 11,
         "teacher": 2
       },
       "tags": [
@@ -11215,10 +11337,10 @@
         "why_it_matters": "This chapter pushes the book deeper into whale anatomy and display. It also turns a skeleton into a scene of wonder, helping students see how Melville mixes science, storytelling, and reverence."
       },
       "excerpt": "Hitherto, in descriptively treating of the Sperm Whale, I have chiefly dwelt upon the marvels of his outer aspect; or separately and in detail upon some few interior structural features. But to a large and thorough sweeping comprehension of him, it behooves me now to unbutton him still further, and untagging the points of his hose, unbuckling his garters, an",
-      "annotation_count": 21,
-      "inline_annotation_count": 6,
+      "annotation_count": 23,
+      "inline_annotation_count": 8,
       "kinds": {
-        "context": 13,
+        "context": 15,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -11227,7 +11349,7 @@
       },
       "depths": {
         "explore": 12,
-        "study": 7,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
@@ -11649,10 +11771,10 @@
         "why_it_matters": "The chapter keeps Ahab embodied rather than abstract. His obsession is tied to pain, disability, command, and pride."
       },
       "excerpt": "The precipitating manner in which Captain Ahab had quitted the Samuel Enderby of London, had not been unattended with some small violence to his own person. He had lighted with such energy upon a thwart of his boat that his ivory leg had received a half-splintering shock. And when after gaining his own deck, and his own pivot-hole there, he so vehemently whe",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 2,
       "kinds": {
-        "context": 2,
+        "context": 3,
         "difficult-material": 2,
         "form": 2,
         "map": 1,
@@ -11661,10 +11783,12 @@
       },
       "depths": {
         "explore": 12,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:mental-health-language",
         "entity:ahab",
         "entity:perth",
@@ -11723,7 +11847,8 @@
         "perth"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -11855,10 +11980,10 @@
         "why_it_matters": "This chapter keeps Ahab physical, vulnerable, and unsettlingly self-aware. It also links his private injury to the larger themes of debt, control, and the body's stubborn presence in the novel."
       },
       "excerpt": "The Deck\u2060\u2014First Night Watch.\n\n Carpenter standing before his vice-bench, and by the light of two lanterns busily filing the ivory joist for the leg, which joist is firmly fixed in the vice. Slabs of ivory, leather straps, pads, screws, and various tools of all sorts lying about the bench. Forward, the red flame of the forge is seen, where the blacksmith is a",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "form": 6,
         "map": 1,
         "teacher-note": 2,
@@ -11866,12 +11991,13 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "entity:ahab",
         "form:performance",
         "form:voice",
@@ -11927,7 +12053,8 @@
       ],
       "sources": [
         "bulfinch-age-of-fable",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -11958,10 +12085,10 @@
         "why_it_matters": "This is a key Ahab-Starbuck conflict. It shows that the ship's economic purpose and moral order still have defenders, but Ahab can overpower them."
       },
       "excerpt": "According to usage they were pumping the ship next morning; and lo! no inconsiderable oil came up with the water; the casks below must have sprung a bad leak. Much concern was shown; and Starbuck went down into the cabin to report this unfavourable affair. 21\n\n Now, from the South and West the Pequod was drawing nigh to Formosa and the Bashee Isles, between ",
-      "annotation_count": 16,
-      "inline_annotation_count": 1,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 4,
+        "context": 6,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -11969,10 +12096,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:ahab",
         "entity:starbuck",
         "function:character",
@@ -12032,7 +12161,8 @@
       ],
       "sources": [
         "melville-bartleby-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -12063,10 +12193,10 @@
         "why_it_matters": "The chapter prepares the epilogue without announcing it. It also returns emotional attention to Queequeg after many chapters of shipboard systems and Ahab's will."
       },
       "excerpt": "Upon searching, it was found that the casks last struck into the hold were perfectly sound, and that the leak must be further off. So, it being calm weather, they broke out deeper and deeper, disturbing the slumbers of the huge ground-tier butts; and from that black midnight sending those gigantic moles into the daylight above. So deep did they go; and so an",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 4,
+        "context": 5,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -12075,12 +12205,13 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:historical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:coffin",
         "entity:queequeg",
@@ -12139,7 +12270,8 @@
       ],
       "sources": [
         "melville-typee-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -12275,10 +12407,10 @@
         "why_it_matters": "This chapter gives one of the book's clearest portraits of damaged labor. It also shows that whaling attracts men who are running from grief as much as men chasing profit."
       },
       "excerpt": "Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in preparation for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab\u2019s leg, but still retained it on deck, fast ",
-      "annotation_count": 15,
-      "inline_annotation_count": 1,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 7,
+        "context": 9,
         "form": 2,
         "map": 1,
         "teacher-note": 2,
@@ -12286,10 +12418,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "form:method",
         "function:character",
         "function:whaling-labor",
@@ -12339,7 +12473,8 @@
       ],
       "entities": [],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -12371,10 +12506,10 @@
         "why_it_matters": "This chapter makes Ahab's obsession tangible. The harpoon becomes a physical extension of his will."
       },
       "excerpt": "With matted beard, and swathed in a bristling sharkskin apron, about midday, Perth was standing between his forge and anvil, the latter placed upon an ironwood log, with one hand holding a pike-head in the coals, and with the other at his forge\u2019s lungs, when Captain Ahab came along, carrying in his hand a small rusty-looking leathern bag. While yet a little ",
-      "annotation_count": 18,
-      "inline_annotation_count": 5,
+      "annotation_count": 20,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 8,
+        "context": 10,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -12383,13 +12518,14 @@
       },
       "depths": {
         "explore": 9,
-        "study": 7,
+        "study": 9,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:religious-prejudice",
         "entity:ahab",
         "entity:coverage-entity-craft-and-instrument-pressure",
@@ -12452,7 +12588,8 @@
         "brewer-mother-careys-chickens",
         "bulfinch-age-of-fable",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -12685,10 +12822,10 @@
         "why_it_matters": "The chapter gives Ahab one of his more reflective moments, but it does not soften him. It helps students see how he keeps translating natural events into a private metaphysics."
       },
       "excerpt": "Not seldom in this life, when, on the right side, fortune\u2019s favourites sail close by us, we, though all adroop before, catch somewhat of the rushing breeze, and joyfully feel our bagging sails fill out. So seemed it with the Pequod . For next day after encountering the gay Bachelor , whales were seen and four were slain; and one of them by Ahab.\n\n It was far",
-      "annotation_count": 15,
-      "inline_annotation_count": 1,
+      "annotation_count": 16,
+      "inline_annotation_count": 2,
       "kinds": {
-        "context": 3,
+        "context": 4,
         "form": 1,
         "map": 1,
         "teacher-note": 2,
@@ -12696,10 +12833,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:ahab",
         "entity:moby-dick",
         "function:narrative",
@@ -12752,7 +12891,8 @@
         "moby-dick"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -12894,10 +13034,10 @@
         "why_it_matters": "The chapter dramatizes Ahab's rejection of limits. He refuses a world that can guide position but not meaning."
       },
       "excerpt": "The season for the Line at length drew near; and every day when Ahab, coming from his cabin, cast his eyes aloft, the vigilant helmsman would ostentatiously handle his spokes, and the eager mariners quickly run to the braces, and would stand there with all their eyes centrally fixed on the nailed doubloon; impatient for the order to point the ship\u2019s prow for",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 4,
+        "context": 5,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -12905,7 +13045,7 @@
       },
       "depths": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
@@ -13000,10 +13140,10 @@
         "why_it_matters": "This chapter raises the voyage to apocalyptic intensity. It also contrasts natural terror with Ahab's refusal to submit."
       },
       "excerpt": "Warmest climes but nurse the cruellest fangs: the tiger of Bengal crouches in spiced groves of ceaseless verdure. Skies the most effulgent but basket the deadliest thunders: gorgeous Cuba knows tornadoes that never swept tame northern lands. So, too, it is, that in these resplendent Japanese seas the mariner encounters the direst of all storms, the Typhoon. ",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 5,
+        "context": 6,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -13012,12 +13152,13 @@
       },
       "depths": {
         "explore": 12,
-        "study": 3,
+        "study": 4,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:the-candles",
         "form:method",
@@ -13073,7 +13214,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -13106,10 +13248,10 @@
         "why_it_matters": "The chapter shows command turning into performance. It also makes clear that Ahab can hear practical advice and still reject it when it threatens his sense of control."
       },
       "excerpt": "Ahab standing by the helm. Starbuck approaching him.\n\n \u201cWe must send down the main-top-sail yard, sir. The band is working loose and the lee lift is half-stranded. Shall I strike it, sir?\u201d\n\n \u201cStrike nothing; lash it. If I had skysail poles, I\u2019d sway them up now.\u201d\n\n \u201cSir!\u2060\u2014in God\u2019s name!\u2060\u2014sir?\u201d\n\n \u201cWell.\u201d\n\n \u201cThe anchors are working, sir. Shall I get them inboa",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 2,
+        "context": 4,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -13117,10 +13259,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "entity:ahab",
         "form:performance",
         "form:voice",
@@ -13182,7 +13326,8 @@
         "ahab"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -13213,10 +13358,10 @@
         "why_it_matters": "This chapter shows how sailors manage fear with wit and technical talk. It also keeps the storm sequence human, noisy, and grounded in ordinary labor."
       },
       "excerpt": "Stubb and Flask mounted on them, and passing additional lashings over the anchors there hanging.\n\n \u201cNo, Stubb; you may pound that knot there as much as you please, but you will never pound into me what you were just now saying. And how long ago is it since you said the very contrary? Didn\u2019t you once say that whatever ship Ahab sails in, that ship should pay ",
-      "annotation_count": 16,
-      "inline_annotation_count": 3,
+      "annotation_count": 18,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "form": 5,
         "map": 1,
         "teacher-note": 2,
@@ -13224,7 +13369,7 @@
       },
       "depths": {
         "explore": 11,
-        "study": 3,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
@@ -13722,10 +13867,10 @@
         "why_it_matters": "This chapter prepares Ishmael's survival. It also shows Melville's habit of making objects change meaning under pressure."
       },
       "excerpt": "Steering now southeastward by Ahab\u2019s levelled steel, and her progress solely determined by Ahab\u2019s level log and line; the Pequod held on her path towards the Equator. Making so long a passage through such unfrequented waters, descrying no ships, and ere long, sideways impelled by unvarying trade winds, over waves monotonously mild; all these seemed the stran",
-      "annotation_count": 17,
-      "inline_annotation_count": 2,
+      "annotation_count": 20,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 4,
+        "context": 7,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -13734,10 +13879,12 @@
       },
       "depths": {
         "explore": 11,
-        "study": 4,
+        "study": 7,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:slavery-coercion-language",
         "entity:coffin",
         "entity:queequeg-coffin",
@@ -13800,7 +13947,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -13832,10 +13980,10 @@
         "why_it_matters": "The chapter keeps symbolic pressure high without leaving shipboard labor behind. Practical work and metaphysical dread occupy the same deck."
       },
       "excerpt": "The coffin laid upon two line-tubs, between the vice-bench and the open hatchway; the Carpenter caulking its seams; the string of twisted oakum slowly unwinding from a large roll of it placed in the bosom of his frock.\u2060\u2014Ahab comes slowly from the cabin-gangway, and hears Pip following him.\n\n \u201cBack, lad; I will be with ye again presently. He goes! Not this ha",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -13844,12 +13992,13 @@
       },
       "depths": {
         "explore": 11,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:religious-prejudice",
         "entity:coffin",
         "form:method",
@@ -13909,7 +14058,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "shakespeare-complete-works-gutenberg",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -13941,10 +14091,10 @@
         "why_it_matters": "This is one of Ahab's clearest moral failures. He chooses revenge over another captain's children, making the cost of obsession painfully concrete."
       },
       "excerpt": "Next day, a large ship, the Rachel , was descried, bearing directly down upon the Pequod , all her spars thickly clustering with men. At the time the Pequod was making good speed through the water; but as the broad-winged windward stranger shot nigh to her, the boastful sails all fell together as blank bladders that are burst, and all life fled from the smit",
-      "annotation_count": 18,
-      "inline_annotation_count": 2,
+      "annotation_count": 19,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 5,
+        "context": 6,
         "form": 3,
         "map": 1,
         "teacher-note": 2,
@@ -13952,12 +14102,13 @@
       },
       "depths": {
         "explore": 14,
-        "study": 2,
+        "study": 3,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "entity:ahab",
         "entity:captain-gardiner",
         "entity:rachel",
@@ -14016,7 +14167,8 @@
       ],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -14369,10 +14521,10 @@
         "why_it_matters": "This is the strongest late challenge to Ahab's course. It makes the ending feel tragic rather than merely inevitable."
       },
       "excerpt": "It was a clear steel-blue day. The firmaments of air and sea were hardly separable in that all-pervading azure; only, the pensive air was transparently pure and soft, with a woman\u2019s look, and the robust and manlike sea heaved with long, strong, lingering swells, as Samson\u2019s chest in his sleep.\n\n Hither, and thither, on high, glided the snow-white wings of sm",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -14381,12 +14533,13 @@
       },
       "depths": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "form:method",
         "function:narrative",
@@ -14438,7 +14591,8 @@
       "entities": [],
       "sources": [
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -14470,10 +14624,10 @@
         "why_it_matters": "The final action begins here. The chapter turns long-building obsession into direct confrontation."
       },
       "excerpt": "That night, in the mid-watch, when the old man\u2060\u2014as his wont at intervals\u2060\u2014stepped forth from the scuttle in which he leaned, and went to his pivot-hole, he suddenly thrust out his face fiercely, snuffing up the sea air as a sagacious ship\u2019s dog will, in drawing nigh to some barbarous isle. He declared that a whale must be near. Soon that peculiar odor, somet",
-      "annotation_count": 17,
-      "inline_annotation_count": 3,
+      "annotation_count": 19,
+      "inline_annotation_count": 5,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 2,
         "map": 1,
@@ -14482,13 +14636,14 @@
       },
       "depths": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
         "claim:biblical-context",
         "claim:classical-context",
+        "claim:lexical",
         "difficulty:violence-body-harm",
         "entity:ahab",
         "entity:moby-dick",
@@ -14548,7 +14703,8 @@
       "sources": [
         "bulfinch-age-of-fable",
         "king-james-bible",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -14580,10 +14736,10 @@
         "why_it_matters": "The chapter shows the logic of obsession at its most dangerous: every reason to stop becomes fuel for continuing."
       },
       "excerpt": "At daybreak, the three mastheads were punctually manned afresh.\n\n \u201cD\u2019ye see him?\u201d cried Ahab after allowing a little space for the light to spread.\n\n \u201cSee nothing, sir.\u201d\n\n \u201cTurn up all hands and make sail! he travels faster than I thought for;\u2060\u2014the topgallant sails!\u2060\u2014aye, they should have been kept on her all night. But no matter\u2060\u2014\u2019tis but resting for the ru",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 18,
+      "inline_annotation_count": 4,
       "kinds": {
-        "context": 3,
+        "context": 5,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -14592,11 +14748,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 4,
+        "study": 6,
         "teacher": 2
       },
       "tags": [
         "authored:shakespeare-grade",
+        "claim:lexical",
         "claim:nautical-whaling",
         "difficulty:race-colonial-language",
         "entity:ahab",
@@ -14657,7 +14814,8 @@
       ],
       "sources": [
         "beale-sperm-whale-bhl",
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",
@@ -14689,10 +14847,10 @@
         "why_it_matters": "This is the novel's catastrophe. It completes the revenge plot while leaving Ishmael's survival for the epilogue to explain."
       },
       "excerpt": "The morning of the third day dawned fair and fresh, and once more the solitary night-man at the foremasthead was relieved by crowds of the daylight lookouts, who dotted every mast and almost every spar.\n\n \u201cD\u2019ye see him?\u201d cried Ahab; but the whale was not yet in sight.\n\n \u201cIn his infallible wake, though; but follow that wake, that\u2019s all. Helm there; steady, as",
-      "annotation_count": 17,
-      "inline_annotation_count": 5,
+      "annotation_count": 19,
+      "inline_annotation_count": 7,
       "kinds": {
-        "context": 5,
+        "context": 7,
         "difficult-material": 1,
         "form": 1,
         "map": 1,
@@ -14701,7 +14859,7 @@
       },
       "depths": {
         "explore": 9,
-        "study": 6,
+        "study": 8,
         "teacher": 2
       },
       "tags": [
@@ -14805,10 +14963,10 @@
         "why_it_matters": "Without the epilogue, the narration has no survivor. The ending also turns an object associated with death into the means of preserving the story."
       },
       "excerpt": "The drama\u2019s done. Why then here does anyone step forth?\u2060\u2014Because one did survive the wreck.\n\n It so chanced, that after the Parsee\u2019s disappearance, I was he whom the Fates ordained to take the place of Ahab\u2019s bowsman, when that bowsman assumed the vacant post; the same, who, when on the last day the three men were tossed from out of the rocking boat, was dro",
-      "annotation_count": 16,
-      "inline_annotation_count": 2,
+      "annotation_count": 17,
+      "inline_annotation_count": 3,
       "kinds": {
-        "context": 3,
+        "context": 4,
         "difficult-material": 1,
         "form": 3,
         "map": 1,
@@ -14817,10 +14975,12 @@
       },
       "depths": {
         "explore": 10,
-        "study": 4,
+        "study": 5,
         "teacher": 2
       },
       "tags": [
+        "authored:shakespeare-grade",
+        "claim:lexical",
         "difficulty:race-colonial-language",
         "entity:ishmael-witness",
         "form:method",
@@ -14878,7 +15038,8 @@
         "ishmael-witness"
       ],
       "sources": [
-        "standard-ebooks-moby-dick"
+        "standard-ebooks-moby-dick",
+        "webster-1913"
       ],
       "review_queues": [
         "citation",

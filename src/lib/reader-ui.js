@@ -26,7 +26,7 @@ function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
 
 export function initReader() {
-  const gloss = initGlossaryAndNotes();
+  const margin = initMarginNote();
   initDensityToggle();
   const typo = initTypography();
   const focus = initFocusMode();
@@ -40,120 +40,147 @@ export function initReader() {
   runInPageFind();
   window.addEventListener("hashchange", runInPageFind);
 
-  // Single coordinated Escape handler: a glossary popover wins first, then focus mode exits.
+  // Single coordinated Escape handler: dismiss the Margin card first, then exit focus mode.
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    if (gloss && gloss.isOpen()) { gloss.hideAllPops(); return; }
+    if (margin && margin.isOpen()) { margin.hide(); return; }
     if (focus && focus.isOn()) { focus.exit(); }
   });
 
   // Expose for future surfaces (Phase 2 search hand-off) without re-querying.
-  return { gloss, typo, focus };
+  return { margin, typo, focus };
 }
 
 // ---------------------------------------------------------------------------
-// Study-note <-> mark sync + glossary marks + popovers  (ported from inline script)
+// Margin card: the single fixed surface for "the last thing you moused over".
+//
+// Hovering/focusing any inline glossary mark OR study-note mark — or its sidebar card — routes that
+// item's content into one fixed card, so the page never jumps to the sidebar and no popover has to
+// be positioned. Two modes, so it never permanently covers the prose:
+//   - HOVER / focus = a transient peek that fades a moment after you move away (keeps the page clean).
+//   - CLICK a mark or card = pin it open; it then persists until the close button, Escape, or you
+//     click another mark. A pinned card ignores incidental hovers so your reference stays put.
+// It lives outside the (hideable) sidebar, so it still works in Focus mode.
 // ---------------------------------------------------------------------------
-function initGlossaryAndNotes() {
-  const scrollOpts = { block: "nearest", behavior: REDUCE ? "auto" : "smooth" };
-
-  // ---- Study-note <-> mark sync ----
-  function clearAnno() {
-    document.querySelectorAll(".anno-mark.active, .note.active").forEach((el) => el.classList.remove("active"));
-  }
-  function activateAnno(id) {
-    clearAnno();
-    const m = document.getElementById("mark-" + id);
-    const n = document.getElementById("note-" + id);
-    if (m) m.classList.add("active");
-    if (n) { n.classList.add("active"); }
-  }
-  document.querySelectorAll(".anno-mark").forEach((m) =>
-    m.addEventListener("click", () => activateAnno(m.dataset.note))
-  );
-  document.querySelectorAll(".note[id^='note-']").forEach((n) =>
-    n.addEventListener("click", () => activateAnno(n.id.replace(/^note-/, "")))
-  );
-
-  // ---- Glossary marks <-> cards + popover ----
-  // openMark = id of the currently shown popover; pinned = it was opened by an explicit
-  // click (mark or card) and should survive pointer-leave until Escape / outside / another open.
-  let openMark = null;
+const MN_HIDE_DELAY = 1500;
+function initMarginNote() {
+  const box = document.getElementById("margin-note");
+  const content = box && box.querySelector(".mn-content");
+  const closeBtn = box && box.querySelector(".mn-close");
+  if (!box || !content) return null;
+  const scrollOpts = { block: "center", behavior: REDUCE ? "auto" : "smooth" };
   let pinned = false;
-  let popHovered = false;
-  function hideAllPops() {
-    document.querySelectorAll(".gloss-pop:not([hidden])").forEach((p) => {
-      p.hidden = true;
-      p.classList.remove("below", "flip-left");
-    });
-    document.querySelectorAll(".gloss-mark.active, .gloss.active").forEach((el) => el.classList.remove("active"));
-    openMark = null;
-    pinned = false;
-    popHovered = false;
+  let hideTimer = 0;
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
   }
-  function placePop(mark, pop) {
-    pop.hidden = false;
-    pop.classList.remove("below", "flip-left");
-    if (mark.getBoundingClientRect().top < 150) pop.classList.add("below");
-    if (pop.getBoundingClientRect().right > window.innerWidth - 8) pop.classList.add("flip-left");
+  function clearActive() {
+    document.querySelectorAll(".anno-mark.active, .note.active, .gloss-mark.active, .gloss.active")
+      .forEach((node) => node.classList.remove("active"));
   }
-  // scroll defaults to false: hovering/focusing a term reveals its popover and highlights its
-  // sidebar card IN PLACE and never moves the page. Only an explicit click scrolls (a sidebar
-  // card click brings its word into view in the prose).
-  function showGloss(id, fromCard, scroll = false) {
-    const mark = document.getElementById("gmark-" + id);
+  function cancelHide() { if (hideTimer) { clearTimeout(hideTimer); hideTimer = 0; } }
+  function scheduleHide() { if (pinned) return; cancelHide(); hideTimer = setTimeout(hide, MN_HIDE_DELAY); }
+  function hide() { cancelHide(); pinned = false; box.hidden = true; box.classList.remove("is-note"); clearActive(); }
+  function present(kind, isNote, nodes, markEl, sidebarEl, pin) {
+    cancelHide();
+    clearActive();
+    box.classList.toggle("is-note", isNote);
+    content.replaceChildren(el("span", "mn-kind", kind), ...nodes);
+    box.hidden = false;
+    box.scrollTop = 0;
+    if (markEl) markEl.classList.add("active");
+    if (sidebarEl) sidebarEl.classList.add("active");
+    if (pin) pinned = true;
+  }
+
+  // Glossary: build fresh card content from the hidden gloss-pop definition span (falls back to the
+  // sidebar card if a term has a sidebar card but no inline mark on this page).
+  function showGloss(id, markEl, pin) {
     const pop = document.getElementById("gpop-" + id);
     const card = document.getElementById("gcard-" + id);
-    if (mark) mark.classList.add("active");
-    if (card) card.classList.add("active");
-    if (mark && pop) placePop(mark, pop);
-    if (scroll) {
-      if (fromCard && mark) mark.scrollIntoView(scrollOpts);
-      else if (!fromCard && card) card.scrollIntoView(scrollOpts);
+    let cat = "", term = "", def = "";
+    if (pop) {
+      const c = pop.querySelector(".gp-cat"); if (c) cat = c.textContent;
+      const t = pop.querySelector(".gp-term"); if (t) term = t.textContent;
+      const d = pop.querySelector(".gp-def"); if (d) def = d.textContent;
+    } else if (card) {
+      const c = card.querySelector(".cat"); if (c) cat = c.textContent;
+      const dt = card.querySelector("dt"); if (dt && dt.firstChild) term = dt.firstChild.textContent.trim();
+      const dd = card.querySelector("dd"); if (dd) def = dd.textContent;
     }
-    openMark = id;
+    const nodes = [];
+    if (cat) nodes.push(el("span", "gp-cat", cat));
+    nodes.push(el("span", "gp-term", term));
+    nodes.push(el("span", "gp-def", def));
+    present("Glossary", false, nodes, markEl || document.getElementById("gmark-" + id), card, pin);
   }
+
+  // Study note: clone the sidebar note's children (claim badge, quoted anchor, body, citation). The
+  // cloned anchor link still points at the in-prose mark, so it works as an explicit "see it in
+  // context" link from inside the card.
+  function showNote(id, markEl, pin) {
+    const note = document.getElementById("note-" + id);
+    if (!note) return;
+    const nodes = [...note.children].map((c) => c.cloneNode(true));
+    present("Study note", true, nodes, markEl || document.getElementById("mark-" + id), note, pin);
+  }
+
+  // ---- Inline marks: hover/focus peek; click pins (and never jumps the page) ----
   document.querySelectorAll(".gloss-mark").forEach((mark) => {
     const id = mark.dataset.gloss;
-    const pop = document.getElementById("gpop-" + id);
-    mark.addEventListener("mouseenter", () => {
-      if (openMark === id) return;
-      if (openMark) hideAllPops();
-      showGloss(id, false);
-    });
-    mark.addEventListener("mouseleave", () => {
-      // defer so a move into the popover (which sets popHovered) can cancel the close
-      setTimeout(() => {
-        if (openMark === id && !pinned && !popHovered) hideAllPops();
-      }, 90);
-    });
-    mark.addEventListener("focus", () => { if (openMark !== id) { hideAllPops(); showGloss(id, false); } });
-    mark.addEventListener("blur", () => { if (openMark === id && !pinned) hideAllPops(); });
-    mark.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (openMark === id && pinned) hideAllPops();
-      else { hideAllPops(); showGloss(id, false); pinned = true; }
-    });
-    if (pop) {
-      pop.addEventListener("mouseenter", () => { popHovered = true; openMark = id; });
-      pop.addEventListener("mouseleave", () => { popHovered = false; if (openMark === id && !pinned) hideAllPops(); });
-    }
+    mark.addEventListener("mouseenter", () => { if (!pinned) showGloss(id, mark, false); });
+    mark.addEventListener("mouseleave", scheduleHide);
+    mark.addEventListener("focus", () => { if (!pinned) showGloss(id, mark, false); });
+    mark.addEventListener("blur", scheduleHide);
+    mark.addEventListener("click", (e) => { e.preventDefault(); showGloss(id, mark, true); });
   });
-  document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
-    const id = card.dataset.gloss;
-    // Click a card -> scroll its word into view in the prose (explicit "find it"); focus alone
-    // (keyboard tab) only highlights, no scroll.
-    card.addEventListener("click", () => { hideAllPops(); showGloss(id, true, true); pinned = true; });
-    card.addEventListener("focus", () => { if (openMark === id) return; hideAllPops(); showGloss(id, true, false); pinned = true; });
-  });
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
-  });
-  document.addEventListener("focusin", (e) => {
-    if (openMark && !e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
+  document.querySelectorAll(".anno-mark").forEach((mark) => {
+    const id = mark.dataset.note;
+    mark.addEventListener("mouseenter", () => { if (!pinned) showNote(id, mark, false); });
+    mark.addEventListener("mouseleave", scheduleHide);
+    mark.addEventListener("focus", () => { if (!pinned) showNote(id, mark, false); });
+    mark.addEventListener("blur", scheduleHide);
+    // Was an <a href="#note-…"> that jumped the page — now it pins the note in the card instead.
+    mark.addEventListener("click", (e) => { e.preventDefault(); showNote(id, mark, true); });
   });
 
-  return { hideAllPops, isOpen: () => openMark !== null };
+  // ---- Sidebar cards: hover peeks; click pins and brings the passage into view ----
+  document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
+    const id = card.dataset.gloss;
+    card.addEventListener("mouseenter", () => { if (!pinned) showGloss(id, null, false); });
+    card.addEventListener("mouseleave", scheduleHide);
+    card.addEventListener("focus", () => { if (!pinned) showGloss(id, null, false); });
+    card.addEventListener("blur", scheduleHide);
+    card.addEventListener("click", () => {
+      showGloss(id, null, true);
+      const mark = document.getElementById("gmark-" + id);
+      if (mark) mark.scrollIntoView(scrollOpts);
+    });
+  });
+  document.querySelectorAll(".note[id^='note-']").forEach((note) => {
+    const id = note.id.replace(/^note-/, "");
+    note.addEventListener("mouseenter", () => { if (!pinned) showNote(id, null, false); });
+    note.addEventListener("mouseleave", scheduleHide);
+    note.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;        // let the quote / citation links do their own thing
+      showNote(id, null, true);
+      const mark = document.getElementById("mark-" + id);
+      if (mark) mark.scrollIntoView(scrollOpts);
+    });
+  });
+
+  // Hovering/focusing the card itself keeps it up (e.g. to click a citation); leaving re-arms the fade.
+  box.addEventListener("mouseenter", cancelHide);
+  box.addEventListener("mouseleave", scheduleHide);
+  box.addEventListener("focusin", cancelHide);
+  box.addEventListener("focusout", scheduleHide);
+  if (closeBtn) closeBtn.addEventListener("click", hide);
+
+  return { hide, isOpen: () => !box.hidden };
 }
 
 // ---------------------------------------------------------------------------
