@@ -3,7 +3,7 @@ import "../styles/portal.css";
 import coverImage from "../../vendor/standard-ebooks/herman-melville_moby-dick-master/images/cover.jpg";
 import { withBase } from "../lib/site.js";
 
-const { title, description = "A guided student edition of Herman Melville's Moby-Dick — read it at the depth you choose.", current = "" } = Astro.props;
+const { title, description = "A guided student edition of Herman Melville's Moby-Dick — read it at the depth you choose.", current = "", reader = false } = Astro.props;
 const fullTitle = title ? `${title} — Moby-Dick Portal` : "Moby-Dick — A Student Edition";
 
 const nav = [
@@ -25,14 +25,28 @@ const nav = [
     <meta name="description" content={description} />
     <link rel="icon" href={coverImage.src} />
     <script is:inline>
-      // No-flash theme: apply stored preference before first paint.
+      // No-flash: apply stored reading preferences before first paint to avoid a layout jump.
+      // Theme is global; focus mode and the --reader-* type vars are reader-page concerns, but
+      // applying them here is harmless elsewhere (CSS scopes focus to body.reader-page, and the
+      // --reader-* vars are only consumed by .prose).
       try {
         const t = localStorage.getItem("mdp-theme");
         if (t) document.documentElement.dataset.theme = t;
       } catch (e) {}
+      try {
+        const root = document.documentElement;
+        if (localStorage.getItem("mdp-focus") === "on") root.dataset.focus = "on";
+        const typo = JSON.parse(localStorage.getItem("mdp-typo") || "null");
+        if (typo && typeof typo === "object") {
+          if (typo.size) root.style.setProperty("--reader-size", typo.size);
+          if (typo.leading) root.style.setProperty("--reader-leading", typo.leading);
+          if (typo.measure) root.style.setProperty("--reader-measure", typo.measure);
+          if (typo.family) root.style.setProperty("--reader-font", typo.family);
+        }
+      } catch (e) {}
     </script>
   </head>
-  <body>
+  <body class={reader ? "reader-page" : undefined}>
     <header class="site-header">
       <div class="wrap nav">
         <a class="brand" href={withBase("")}>

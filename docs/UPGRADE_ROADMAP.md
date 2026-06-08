@@ -1,9 +1,10 @@
 # Upgrade Roadmap — The Immersive Moby-Dick Reader
 
-> **Status:** active plan. Phase 0 (the hover page-jump fix) is **shipped**. Phases 1–5 are the
-> reading-first immersive upgrade and are intended to be executed in fresh sessions, one phase per
-> session where practical. This is **not a content pass** — the scholarly content pipeline is
-> separate (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
+> **Status:** active plan. Phase 0 (the hover page-jump fix) and **Phase 1 (the Immersive Reading
+> Room)** are **shipped**. Phases 2–5 are the rest of the reading-first immersive upgrade and are
+> intended to be executed in fresh sessions, one phase per session where practical. This is **not a
+> content pass** — the scholarly content pipeline is separate (see the older `Agent.md` handoff +
+> `docs/CONTENT_STANDARDS.md`).
 
 ## North star
 
@@ -50,7 +51,16 @@ view (jarring). Fix: `showGloss(id, fromCard, scroll=false)` in `src/pages/read/
 a sidebar-card **click** scrolls the word into the prose. `src/pages/map/index.astro` `highlight()` hover/
 focus callers pass `scrollList:false`. ~6 lines, no new deps.
 
-### Phase 1 — The Immersive Reading Room  (vanilla)
+### Phase 1 — The Immersive Reading Room  (vanilla)  ✅ SHIPPED
+All five features below shipped, plus the refactor. The former inline reader `<script>` is now a
+processed `<script>import { initReader } from "../../lib/reader-ui.js"</script>` — Astro bundles it
+**once** into a hashed, base-path-correct chunk (~7.5KB / 2.6KB gzipped) shared across all 142 reader
+pages (no more per-page duplication). `--reader-*` vars + `data-focus` are applied pre-paint by the
+no-flash head script in `Layout.astro` (set on `<html>`; focus CSS scoped to `body.reader-page`, so
+non-reader pages are unaffected). Progress is computed from the prose rect each rAF (O(1), smooth on
+Cetology) and is `aria-hidden` (decorative). Resume sets `history.scrollRestoration = "manual"` and
+restores instantly past `scroll-behavior: smooth`, guarded by `!location.hash`. Verified in-browser
+(Paper + Night, clean console) and hardened against an 8-finding adversarial review.
 - **Focus / distraction-free mode**: hide sidebar/tools/badges, slim the nav; Escape exits; persist `mdp-focus`.
 - **Typography controls** (sticky bottom-right `<details>`/popover): font-size, line-height, measure,
   serif/sans, presets → bind to **scoped `--reader-*` CSS vars on `.prose`** (currently hardcoded around
@@ -64,7 +74,7 @@ focus callers pass `scrollList:false`. ~6 lines, no new deps.
 - **Refactor** the growing inline reader `<script>` into a shared **`src/lib/reader-ui.js`** so it isn't
   duplicated across 142 pages. a11y: aria-labels, focus-visible, `prefers-reduced-motion` on all motion.
 - Files: `src/pages/read/[unit].astro`, new `src/lib/reader-ui.js`, `src/styles/portal.css`.
-  localStorage: `mdp-focus`, `mdp-typo`, `mdp-resume-*`.
+  localStorage: `mdp-focus`, `mdp-typo`, `mdp-resume-*` (+ `mdp-resume-index` LRU cap).
 
 ### Phase 2 — Deep Search command palette  (vanilla; Preact only if state demands)
 - **Build-time inverted index**: `scripts/ingest/build-search-index.mjs` reusing `loadGuideData()` →
@@ -122,7 +132,8 @@ focus callers pass `scrollList:false`. ~6 lines, no new deps.
 
 - Existing: `mdp-theme` (Paper/Night), `mdp-gloss` (glossary-marks density toggle).
 - New: `mdp-focus` (focus mode), `mdp-typo` (typography JSON), `mdp-resume-<unit_id>` (scroll position),
-  `mdp-sound` (on/off/never). All must degrade gracefully when storage is unavailable (private mode).
+  `mdp-resume-index` (LRU list capping `mdp-resume-<unit_id>` entries at 50), `mdp-sound` (on/off/never).
+  All must degrade gracefully when storage is unavailable (private mode).
 
 ## File map (where each phase lives)
 

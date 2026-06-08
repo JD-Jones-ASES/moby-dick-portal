@@ -52,9 +52,12 @@ function noteCitations(a) {
 }
 ---
 
-<Layout title={`${kicker}: ${unit.title}`} current="read" description={unit.summaries?.one_breath}>
+<Layout title={`${kicker}: ${unit.title}`} current="read" reader description={unit.summaries?.one_breath}>
+  <div class="reading-progress" aria-hidden="true">
+    <span class="bar" id="reading-progress-bar"></span>
+  </div>
   <div class="wrap">
-    <article class="reader">
+    <article class="reader" data-unit-id={unit.unit_id}>
       <div class="reader-main">
         <p class="reader-kicker">{kicker}</p>
         <h1 class="reader-title">{unit.title}</h1>
@@ -153,127 +156,50 @@ function noteCitations(a) {
     </article>
   </div>
 
-  <script is:inline>
-    (function () {
-      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const scrollOpts = { block: "nearest", behavior: reduce ? "auto" : "smooth" };
+  <div class="reader-dock" aria-label="Reading controls">
+    <button type="button" class="dock-btn" id="focus-toggle" aria-pressed="false" title="Focus mode — hide the sidebar (Esc to exit)">
+      <span class="dock-ico" aria-hidden="true">⤢</span><span class="dock-txt">Focus</span>
+    </button>
+    <details class="dock-panel" id="typo-details">
+      <summary class="dock-btn" title="Reading typography" aria-label="Typography settings">Aa</summary>
+      <div class="typo-panel" role="group" aria-label="Typography">
+        <div class="typo-row">
+          <span class="typo-label">Size</span>
+          <div class="typo-ctl">
+            <button type="button" data-typo="size-dec" aria-label="Smaller text">A−</button>
+            <button type="button" data-typo="size-inc" aria-label="Larger text">A+</button>
+          </div>
+        </div>
+        <div class="typo-row">
+          <span class="typo-label">Spacing</span>
+          <div class="typo-ctl">
+            <button type="button" data-typo="lead-dec" aria-label="Tighter line spacing">−</button>
+            <button type="button" data-typo="lead-inc" aria-label="Looser line spacing">+</button>
+          </div>
+        </div>
+        <div class="typo-row">
+          <span class="typo-label">Width</span>
+          <div class="typo-seg">
+            <button type="button" data-typo="measure" data-val="60ch" aria-pressed="false">Narrow</button>
+            <button type="button" data-typo="measure" data-val="70ch" aria-pressed="true">Normal</button>
+            <button type="button" data-typo="measure" data-val="84ch" aria-pressed="false">Wide</button>
+          </div>
+        </div>
+        <div class="typo-row">
+          <span class="typo-label">Type</span>
+          <div class="typo-seg">
+            <button type="button" data-typo="family" data-val="var(--serif)" aria-pressed="true">Serif</button>
+            <button type="button" data-typo="family" data-val="var(--sans)" aria-pressed="false">Sans</button>
+          </div>
+        </div>
+        <button type="button" class="typo-reset" data-typo="reset">Reset to default</button>
+        <span class="sr-only" id="typo-status" aria-live="polite"></span>
+      </div>
+    </details>
+  </div>
 
-      // ---- Study-note <-> mark sync ----
-      function clearAnno() {
-        document.querySelectorAll(".anno-mark.active, .note.active").forEach((el) => el.classList.remove("active"));
-      }
-      function activateAnno(id) {
-        clearAnno();
-        const m = document.getElementById("mark-" + id);
-        const n = document.getElementById("note-" + id);
-        if (m) m.classList.add("active");
-        if (n) { n.classList.add("active"); }
-      }
-      document.querySelectorAll(".anno-mark").forEach((m) =>
-        m.addEventListener("click", () => activateAnno(m.dataset.note))
-      );
-      document.querySelectorAll(".note[id^='note-']").forEach((n) =>
-        n.addEventListener("click", () => activateAnno(n.id.replace(/^note-/, "")))
-      );
-
-      // ---- Glossary marks <-> cards + popover ----
-      // openMark = id of the currently shown popover; pinned = it was opened by an explicit
-      // click (mark or card) and should survive pointer-leave until Escape / outside / another open.
-      let openMark = null;
-      let pinned = false;
-      let popHovered = false;
-      function hideAllPops() {
-        document.querySelectorAll(".gloss-pop:not([hidden])").forEach((p) => {
-          p.hidden = true;
-          p.classList.remove("below", "flip-left");
-        });
-        document.querySelectorAll(".gloss-mark.active, .gloss.active").forEach((el) => el.classList.remove("active"));
-        openMark = null;
-        pinned = false;
-        popHovered = false;
-      }
-      function placePop(mark, pop) {
-        pop.hidden = false;
-        pop.classList.remove("below", "flip-left");
-        if (mark.getBoundingClientRect().top < 150) pop.classList.add("below");
-        if (pop.getBoundingClientRect().right > window.innerWidth - 8) pop.classList.add("flip-left");
-      }
-      // scroll defaults to false: hovering/focusing a term reveals its popover and highlights its
-      // sidebar card IN PLACE and never moves the page. Only an explicit click scrolls (a sidebar
-      // card click brings its word into view in the prose).
-      function showGloss(id, fromCard, scroll = false) {
-        const mark = document.getElementById("gmark-" + id);
-        const pop = document.getElementById("gpop-" + id);
-        const card = document.getElementById("gcard-" + id);
-        if (mark) mark.classList.add("active");
-        if (card) card.classList.add("active");
-        if (mark && pop) placePop(mark, pop);
-        if (scroll) {
-          if (fromCard && mark) mark.scrollIntoView(scrollOpts);
-          else if (!fromCard && card) card.scrollIntoView(scrollOpts);
-        }
-        openMark = id;
-      }
-      document.querySelectorAll(".gloss-mark").forEach((mark) => {
-        const id = mark.dataset.gloss;
-        const pop = document.getElementById("gpop-" + id);
-        mark.addEventListener("mouseenter", () => {
-          if (openMark === id) return;
-          if (openMark) hideAllPops();
-          showGloss(id, false);
-        });
-        mark.addEventListener("mouseleave", () => {
-          // defer so a move into the popover (which sets popHovered) can cancel the close
-          setTimeout(() => {
-            if (openMark === id && !pinned && !popHovered) hideAllPops();
-          }, 90);
-        });
-        mark.addEventListener("focus", () => { if (openMark !== id) { hideAllPops(); showGloss(id, false); } });
-        mark.addEventListener("blur", () => { if (openMark === id && !pinned) hideAllPops(); });
-        mark.addEventListener("click", (e) => {
-          e.preventDefault();
-          if (openMark === id && pinned) hideAllPops();
-          else { hideAllPops(); showGloss(id, false); pinned = true; }
-        });
-        if (pop) {
-          pop.addEventListener("mouseenter", () => { popHovered = true; openMark = id; });
-          pop.addEventListener("mouseleave", () => { popHovered = false; if (openMark === id && !pinned) hideAllPops(); });
-        }
-      });
-      document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
-        const id = card.dataset.gloss;
-        // Click a card -> scroll its word into view in the prose (explicit "find it"); focus alone
-        // (keyboard tab) only highlights, no scroll.
-        card.addEventListener("click", () => { hideAllPops(); showGloss(id, true, true); pinned = true; });
-        card.addEventListener("focus", () => { if (openMark === id) return; hideAllPops(); showGloss(id, true, false); pinned = true; });
-      });
-      document.addEventListener("keydown", (e) => { if (e.key === "Escape") hideAllPops(); });
-      document.addEventListener("click", (e) => {
-        if (!e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
-      });
-      document.addEventListener("focusin", (e) => {
-        if (openMark && !e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
-      });
-
-      // ---- Density toggle ----
-      const toggle = document.getElementById("gloss-toggle");
-      const prose = document.getElementById("prose");
-      if (toggle && prose) {
-        const KEY = "mdp-gloss";
-        function apply(on) {
-          prose.classList.toggle("gloss-quiet", !on);
-          toggle.setAttribute("aria-pressed", String(on));
-          toggle.textContent = "Glossary marks: " + (on ? "on" : "off");
-        }
-        let on = true;
-        try { if (localStorage.getItem(KEY) === "off") on = false; } catch (e) {}
-        apply(on);
-        toggle.addEventListener("click", () => {
-          on = !on;
-          apply(on);
-          try { localStorage.setItem(KEY, on ? "on" : "off"); } catch (e) {}
-        });
-      }
-    })();
+  <script>
+    import { initReader } from "../../lib/reader-ui.js";
+    initReader();
   </script>
 </Layout>

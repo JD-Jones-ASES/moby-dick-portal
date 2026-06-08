@@ -1154,3 +1154,57 @@
   `/chapter-1-loomings/`, not-for-profit → link out only, never embed).
 - Phases 1-5 (Immersive Reading Room → ⌘K Deep Search → nautical immersion + ambience → trails/entity/
   explorer/path-compare → QA+docs) are intentionally deferred to subsequent sessions per the user.
+
+## 2026-06-08 - Phase 1: The Immersive Reading Room (shipped)
+
+- Built Phase 1 of `docs/UPGRADE_ROADMAP.md` — the reading-first immersive upgrade — autonomously,
+  with an ultracode adversarial review between implementation and ship. Pure vanilla + localStorage,
+  no new deps, fully offline, base-path-correct. Build green (149 pages), verified in-browser in both
+  Paper and Night themes with a clean console.
+- **Refactor (the load-bearing change):** the former ~120-line inline reader `<script is:inline>`
+  (glossary popovers, note↔mark sync, density toggle) was duplicated into all 142 reader pages. It is
+  now a single **processed** module — `src/pages/read/[unit].astro` carries only
+  `<script>import { initReader } from "../../lib/reader-ui.js"; initReader();</script>`, and Astro's
+  build bundles `src/lib/reader-ui.js` **once** into a hashed, base-path-correct chunk
+  (`/moby-dick-portal/_astro/_unit_….js`, ~7.9KB raw / 2.8KB gzipped) shared + browser-cached across
+  every reader page. This is the first client-side ESM module in the repo (prior client scripts are
+  all `is:inline`; `voyage-map.js` is build-time only). CI runs only `npx astro build`, which performs
+  this bundling — no `prepare:data` dependency. `render.js`/`guide-data.js` untouched.
+- **Five features, all in `reader-ui.js`:**
+  - *Focus / distraction-free mode* — `data-focus="on"` on `<html>` (so the no-flash head script can
+    set it pre-paint); CSS hides sidebar/tools/badges, slims the nav to brand+theme, centers the
+    reading column. Scoped to `body.reader-page` (new `reader` prop on `Layout.astro`) so it never
+    touches other surfaces. Toggle in a fixed bottom-right dock; Escape exits (coordinated so an open
+    glossary popover wins Escape first). Persist `mdp-focus`.
+  - *Typography controls* — a `<details>` "Aa" popover in the dock: size, line-spacing, width
+    (60/70/84ch), serif/sans, reset. Writes scoped `--reader-*` vars on `<html>`; `.prose`/`.reader-main`
+    consume them with fallbacks, and the **no-flash head script in `Layout.astro`** applies saved values
+    + focus before first paint (no reflow flash). Persist JSON `mdp-typo`.
+  - *Per-chapter progress bar* — fixed 3px gradient bar above the sticky header, driven by an rAF-
+    throttled read of the **prose rect** (O(1), smooth on Cetology; deliberately not per-paragraph
+    IntersectionObserver). Decorative (`aria-hidden`).
+  - *Resume last position* — debounced scroll save to `mdp-resume-<unit_id>` (+ `mdp-resume-index`
+    LRU-capped at 50); instant restore past `scroll-behavior: smooth`; sets
+    `history.scrollRestoration = "manual"` so the saved jump wins over UA restoration; skipped when a
+    `#hash` deep link is present; saves on `pagehide`/`visibilitychange`.
+  - *Keyboard chapter nav* — `j`/`ArrowRight` → next, `k`/`ArrowLeft` → prev, reading hrefs from the
+    existing pager (no server data threaded into client JS); guarded against inputs / dock focus /
+    modifier keys.
+  - All localStorage access degrades silently in private mode; all motion honors `prefers-reduced-motion`.
+- **Default measure is now 70ch** (was effectively ~83ch full-column) — a deliberate readability
+  improvement; "Wide" (84ch) restores the old fuller width. The cap lives on `.reader-main` so title,
+  summary, prose, and pager share one left edge + measure (no ragged-right misalignment).
+- **Adversarial review** (4-dimension Workflow: correctness / a11y / constraint-compliance / CSS-cross-
+  theme → find → independently verify each finding) surfaced **8 confirmed** findings (4 others were
+  verified-and-rejected as hypothetical, incl. the LRU-on-restore and dock-vs-pager-overlap claims).
+  All 8 fixed: (1) `scrollRestoration="manual"` so resume wins on reload/back-forward; (2) progress
+  bar measured against the prose rect only (was inflated by a tall notes sidebar on short chapters);
+  (3) progress bar made `aria-hidden`, dropped the ~60Hz `aria-valuenow` thrash; (4) a polite live
+  region (`#typo-status`) announces size %/spacing/width/typeface + min-max clamp for the steppers;
+  (5) 44px touch targets for the typo panel on ≤560px; (6) `mdp-resume-index` registered in the
+  roadmap key registry; (7) the title/prose measure misalignment above; (8) pressed segmented button
+  now uses accent-on-tint (was white-on-accent → failed contrast against Night's light-blue accent).
+- Files: new `src/lib/reader-ui.js`; modified `src/pages/read/[unit].astro`, `src/styles/portal.css`,
+  `src/components/Layout.astro`; docs `UPGRADE_ROADMAP.md` (Phase 1 ✅ + registry), `Agent.md`. Added
+  `.claude/launch.json` (a `moby-dev` config on port 4330 for the preview server). Not yet committed/
+  pushed — held for the user, since a push to `main` triggers the live GitHub Pages deploy.

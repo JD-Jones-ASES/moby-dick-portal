@@ -107,13 +107,24 @@ best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-AP
   `scrollIntoView` was removed; context reveals in place; `showGloss(id, fromCard, scroll=false)` in
   `src/pages/read/[unit].astro` and the map `highlight()` hover callers pass no-scroll). Only an
   explicit click scrolls.
-- **Next:** Phase 1 (Immersive Reading Room) → Phase 2 (Deep Search ⌘K palette) → Phase 3 (nautical
-  immersion + in-browser ambience + Big Read external link) → Phase 4 (trails/entity/explorer/path-compare)
-  → Phase 5 (QA + docs). One phase per session where practical. See the roadmap for file map, the
-  **localStorage key registry**, and two load-bearing caveats: **(1)** `deploy.yml` runs only
-  `npx astro build` (not `prepare:data`), so the Phase-2 search index must be built during the Astro
-  build / committed / or added as a prebuild step; **(2)** only 14/55 trails have public notes, so build
-  trail/entity pages on **chapter-level membership**, never gate on public-note presence.
+- **Phase 1 (Immersive Reading Room) is SHIPPED:** focus/distraction-free mode, live typography
+  controls, a per-chapter reading-progress bar, resume-last-position, and `j`/`k`+arrow chapter nav.
+  The big structural change: the former inline reader `<script>` is now a **processed client module**,
+  `src/lib/reader-ui.js`, imported once (`<script>import { initReader } from "../../lib/reader-ui.js"</script>`)
+  and bundled by `npx astro build` into one hashed, base-path-correct, browser-cached chunk shared
+  across all 142 reader pages (the repo's first client-side ESM module). `--reader-*` type vars +
+  `data-focus` are applied pre-paint by the no-flash head script in `Layout.astro` (set on `<html>`;
+  focus CSS scoped to `body.reader-page` via a new `reader` prop). New localStorage keys: `mdp-focus`,
+  `mdp-typo`, `mdp-resume-<unit_id>`, `mdp-resume-index`. Default prose measure is now 70ch (capped on
+  `.reader-main`). Hardened against an 8-finding adversarial review. See the 2026-06-08 BUILD_LOG entry.
+- **Next:** Phase 2 (Deep Search ⌘K palette) → Phase 3 (nautical immersion + in-browser ambience +
+  Big Read external link) → Phase 4 (trails/entity/explorer/path-compare) → Phase 5 (QA + docs). One
+  phase per session where practical. See the roadmap for file map, the **localStorage key registry**,
+  and two load-bearing caveats: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`),
+  so the Phase-2 search index must be built during the Astro build / committed / or added as a prebuild
+  step; **(2)** only 14/55 trails have public notes, so build trail/entity pages on **chapter-level
+  membership**, never gate on public-note presence. For Phase 2, reuse the Phase-1 client-module
+  pattern (a processed `<script>import`) rather than re-introducing inline scripts.
 - Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
   search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
 
