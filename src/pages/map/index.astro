@@ -1,0 +1,68 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { withBase } from "../../lib/site.js";
+
+const data = await loadGuideData();
+const waypoints = [...(data.voyageMap.waypoints ?? [])].sort(
+  (a, b) => (a.chapter_start ?? 0) - (b.chapter_start ?? 0)
+);
+
+// Simple equirectangular plot of display-anchor coordinates [lon, lat].
+const W = 960, H = 480;
+const pts = waypoints
+  .filter((w) => Array.isArray(w.coordinates))
+  .map((w) => ({
+    ...w,
+    x: ((w.coordinates[0] + 180) / 360) * W,
+    y: ((90 - w.coordinates[1]) / 180) * H
+  }));
+---
+
+<Layout title="Voyage map" current="map" description="The Pequod's voyage as a stage guide — display anchors, not a charted route.">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Trace</p>
+      <h1>Voyage map</h1>
+      <p class="lede">
+        A stage guide to the Pequod's path from Manhattan out to the Pacific. These dots are
+        <strong>display anchors</strong> for orientation, not verified route coordinates — the novel
+        rarely fixes an exact position.
+      </p>
+    </div>
+
+    <div class="map-figure" style="padding:0.5rem;">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="Approximate voyage stages plotted on a world grid">
+        <rect x="0" y="0" width={W} height={H} style="fill: color-mix(in srgb, var(--accent) 6%, var(--paper-raised))" />
+        {[0.25, 0.5, 0.75].map((f) => <line x1="0" y1={H * f} x2={W} y2={H * f} style="stroke: var(--line); stroke-width:1" />)}
+        {[0.25, 0.5, 0.75].map((f) => <line x1={W * f} y1="0" x2={W * f} y2={H} style="stroke: var(--line); stroke-width:1" />)}
+        {pts.length > 1 && (
+          <polyline
+            points={pts.map((p) => `${p.x},${p.y}`).join(" ")}
+            style="fill:none; stroke: var(--accent-soft); stroke-width:2; stroke-dasharray:5 5; opacity:0.7" />
+        )}
+        {pts.map((p, i) => (
+          <Fragment>
+            <circle cx={p.x} cy={p.y} r="6" style="fill: var(--gold); stroke: var(--paper-raised); stroke-width:2" />
+            <text x={p.x + 9} y={p.y + 4} style="font-size:13px; fill: var(--ink-soft); font-family: var(--sans)">{i + 1}</text>
+          </Fragment>
+        ))}
+      </svg>
+    </div>
+
+    <h2 class="section-h">Stages</h2>
+    {waypoints.map((w, i) => (
+      <div class="waypoint">
+        <div class="wlabel">{Array.isArray(w.coordinates) ? `${i + 1}. ` : ""}{w.label}</div>
+        <div class="wmeta">
+          {w.chapter_start ? (w.chapter_end && w.chapter_end !== w.chapter_start ? `Chapters ${w.chapter_start}–${w.chapter_end}` : `Chapter ${w.chapter_start}`) : ""}
+        </div>
+        {w.student_note && <p style="margin:0.35rem 0 0; color:var(--ink-soft);">{w.student_note}</p>}
+      </div>
+    ))}
+
+    <p class="muted" style="margin-top:1.5rem;">
+      Place records and coordinate status live in the project data; see <a href={withBase("about/")}>About</a> for how evidence is tracked.
+    </p>
+  </div>
+</Layout>

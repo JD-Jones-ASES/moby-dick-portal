@@ -1,0 +1,82 @@
+---
+import "../styles/portal.css";
+import coverImage from "../../vendor/standard-ebooks/herman-melville_moby-dick-master/images/cover.jpg";
+import { withBase } from "../lib/site.js";
+
+const { title, description = "A reversible student edition of Herman Melville's Moby-Dick.", current = "" } = Astro.props;
+const fullTitle = title ? `${title} — Moby-Dick Portal` : "Moby-Dick — A Reversible Student Edition";
+
+const nav = [
+  { id: "read", label: "Read", href: withBase("chapters/") },
+  { id: "paths", label: "Paths", href: withBase("paths/") },
+  { id: "glossary", label: "Glossary", href: withBase("glossary/") },
+  { id: "sources", label: "Sources", href: withBase("sources/") },
+  { id: "map", label: "Map", href: withBase("map/") },
+  { id: "about", label: "About", href: withBase("about/") }
+];
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="paper">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={coverImage.src} />
+    <script is:inline>
+      // No-flash theme: apply stored preference before first paint.
+      try {
+        const t = localStorage.getItem("mdp-theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href={withBase("")}>
+          <img class="mark" src={coverImage.src} alt="" width="30" height="44" />
+          <span class="full">Moby-Dick</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={current === item.id ? "page" : undefined}>{item.label}</a>
+          ))}
+          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">◐</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          <strong>Moby-Dick: A Reversible Student Edition.</strong>
+          Full text from <a href="https://standardebooks.org/ebooks/herman-melville/moby-dick" rel="noopener">Standard Ebooks</a> (public domain).
+          Study notes are source-cited and student-reviewed.
+        </p>
+        <p class="muted">
+          Built with Astro. <a href="https://github.com/JD-Jones-ASES/moby-dick-portal" rel="noopener">Source on GitHub</a>.
+          A study tool, not a substitute for the book.
+        </p>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        const btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        btn.addEventListener("click", function () {
+          const root = document.documentElement;
+          const next = root.dataset.theme === "night" ? "paper" : "night";
+          root.dataset.theme = next;
+          try { localStorage.setItem("mdp-theme", next); } catch (e) {}
+        });
+      })();
+    </script>
+  </body>
+</html>

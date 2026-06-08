@@ -1,0 +1,166 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { renderUnit } from "../../lib/render.js";
+import {
+  unitHref, unitKicker, pathMeta, primaryClaim, claimInfo, externalCitations, sourceInfo
+} from "../../lib/site.js";
+
+export async function getStaticPaths() {
+  const data = await loadGuideData();
+  const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+
+  return ordered.map((unit, i) => {
+    const pack = data.annotationIndex.units[unit.unit_id];
+    const annotations = pack?.annotations ?? [];
+    const { html, placed } = renderUnit(unit.plain_text, annotations);
+    const byId = new Map(annotations.map((a) => [a.id, a]));
+    const notes = placed.map((id) => byId.get(id)).filter(Boolean);
+
+    // Glossary + reference cards that target this unit (sidebar context).
+    const glossary = data.glossary
+      .filter((g) => (g.targets ?? []).includes(unit.unit_id))
+      .slice(0, 12);
+    const references = data.referenceCards.filter((c) => (c.targets ?? []).includes(unit.unit_id));
+
+    const prev = i > 0 ? ordered[i - 1] : null;
+    const next = i < ordered.length - 1 ? ordered[i + 1] : null;
+
+    return {
+      params: { unit: unit.unit_id },
+      props: {
+        unit, html, notes, glossary, references,
+        prev: prev && { unit_id: prev.unit_id, title: prev.title, kicker: unitKicker(prev) },
+        next: next && { unit_id: next.unit_id, title: next.title, kicker: unitKicker(next) }
+      }
+    };
+  });
+}
+
+const { unit, html, notes, glossary, references, prev, next } = Astro.props;
+const kicker = unitKicker(unit);
+const paths = Object.entries(pathMeta)
+  .map(([id, meta]) => ({ id, meta, status: unit.paths?.[id] }))
+  .filter((p) => p.status && p.status !== "excluded");
+
+function noteCitations(a) {
+  return externalCitations(a).map((id) => {
+    const s = sourceInfo(id);
+    return { title: s.title, url: s.url };
+  });
+}
+---
+
+<Layout title={`${kicker}: ${unit.title}`} current="read" description={unit.summaries?.one_breath}>
+  <div class="wrap">
+    <article class="reader">
+      <div class="reader-main">
+        <p class="reader-kicker">{kicker}</p>
+        <h1 class="reader-title">{unit.title}</h1>
+        <div class="path-badges">
+          {paths.map((p) => (
+            <span class={`badge ${p.status === "required" ? "req" : ""}`}>{p.meta.short}{p.status === "required" ? "" : " (optional)"}</span>
+          ))}
+          {unit.word_count ? <span class="badge">{unit.word_count.toLocaleString()} words</span> : null}
+          {notes.length ? <span class="badge">{notes.length} study {notes.length === 1 ? "note" : "notes"}</span> : null}
+        </div>
+
+        {unit.summaries?.one_breath && (
+          <div class="summary-card">
+            <p class="one">{unit.summaries.one_breath}</p>
+            {unit.summaries.why_it_matters && (
+              <>
+                <span class="lbl">Why it matters</span>
+                <p class="why">{unit.summaries.why_it_matters}</p>
+              </>
+            )}
+          </div>
+        )}
+
+        <div class="prose" set:html={html} />
+
+        <nav class="pager">
+          {prev ? (
+            <a class="card" href={unitHref(prev.unit_id)}>
+              <span class="dir">← Previous</span>
+              <div class="t">{prev.kicker}: {prev.title}</div>
+            </a>
+          ) : <span />}
+          {next ? (
+            <a class="card next" href={unitHref(next.unit_id)}>
+              <span class="dir">Next →</span>
+              <div class="t">{next.kicker}: {next.title}</div>
+            </a>
+          ) : <span />}
+        </nav>
+      </div>
+
+      <aside class="reader-side">
+        {notes.length > 0 && (
+          <div class="notes">
+            <h2>Study notes</h2>
+            {notes.map((a) => {
+              const claim = claimInfo(primaryClaim(a));
+              const cites = noteCitations(a);
+              return (
+                <div class="note" id={`note-${a.id}`}>
+                  <span class={`claim ${claim.cls}`}>{claim.label}</span>
+                  <a class="anchor-q" href={`#mark-${a.id}`}>“{a.anchor}”</a>
+                  <p class="body">{a.note}</p>
+                  {cites.length > 0 && (
+                    <p class="cite">Source: {cites.map((c, idx) => (
+                      <>{idx > 0 ? ", " : ""}{c.url ? <a href={c.url} rel="noopener" target="_blank">{c.title}</a> : c.title}</>
+                    ))}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {(glossary.length > 0 || references.length > 0) && (
+          <div class="notes" style="margin-top:1.5rem;">
+            {glossary.length > 0 && (
+              <>
+                <h2>Glossary in this chapter</h2>
+                <dl style="margin:0 0 1rem;">
+                  {glossary.map((g) => (
+                    <div class="gloss"><dt>{g.term}</dt><dd>{g.definition}</dd></div>
+                  ))}
+                </dl>
+              </>
+            )}
+            {references.length > 0 && (
+              <>
+                <h2>Reference cards</h2>
+                {references.map((c) => (
+                  <div class="note"><span class="anchor-q">{c.title}</span><p class="body">{c.summary}</p></div>
+                ))}
+              </>
+            )}
+          </div>
+        )}
+      </aside>
+    </article>
+  </div>
+
+  <script is:inline>
+    (function () {
+      const marks = Array.from(document.querySelectorAll(".anno-mark"));
+      function clearActive() {
+        document.querySelectorAll(".anno-mark.active, .note.active").forEach((el) => el.classList.remove("active"));
+      }
+      function activate(id) {
+        clearActive();
+        const m = document.getElementById("mark-" + id);
+        const n = document.getElementById("note-" + id);
+        if (m) m.classList.add("active");
+        if (n) n.classList.add("active");
+      }
+      marks.forEach((m) => m.addEventListener("click", () => activate(m.dataset.note)));
+      document.querySelectorAll(".note").forEach((n) => {
+        n.addEventListener("click", () => activate(n.id.replace(/^note-/, "")));
+      });
+    })();
+  </script>
+</Layout>

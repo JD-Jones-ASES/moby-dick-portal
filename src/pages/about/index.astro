@@ -1,0 +1,60 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { withBase, unitHref } from "../../lib/site.js";
+
+const data = await loadGuideData();
+const chapters = data.units.filter((u) => u.section_type === "chapter").length;
+---
+
+<Layout title="About" current="about" description="What this reversible student edition of Moby-Dick is, and how its notes are held to standard.">
+  <div class="wrap narrow">
+    <div class="page-head">
+      <p class="eyebrow">Why</p>
+      <h1>About this edition</h1>
+      <p class="lede">A study tool built so a first-time reader can choose how much of Melville to carry at once — without ever losing the real book.</p>
+    </div>
+
+    <h2 class="section-h">Reversible abridgment</h2>
+    <p>
+      This project does not produce one permanent abridgment. It keeps the complete public-domain text
+      intact and expresses every shortening as <em>metadata</em>: reading paths, summaries, and optional
+      context layers. A short path is generated, not cut — so a skipped chapter is always one click away,
+      and you can switch lengths at any time.
+    </p>
+
+    <h2 class="section-h">How the notes are held to standard</h2>
+    <p>
+      The {data.annotations.length} public study notes follow a single discipline borrowed from a sibling
+      Shakespeare edition: a note should <strong>teach the knowledge a student lacks</strong> — what a word
+      meant, what a scripture or myth says, what a historical reference points to — and then show its work in
+      the passage. Any note making such a claim must cite a real source beyond Melville's own text
+      (a dictionary, the King James Bible, an encyclopedia, a whaling natural history). That rule is
+      enforced automatically in the build, not left to good intentions.
+    </p>
+    <p>
+      Difficult material — race, empire, religion, slavery, mental illness — is handled directly and
+      historically, with a source and a tone review, never sanitized and never turned into a warning label.
+    </p>
+
+    <h2 class="section-h">Evidence is visible</h2>
+    <p>
+      Each study note carries a claim-type badge (biblical, classical, historical, whaling, word) and its
+      source. The voyage map marks display anchors as display anchors, never as charted coordinates. The aim
+      is a tool you can trust because you can check it.
+    </p>
+
+    <h2 class="section-h">Sources & license</h2>
+    <p>
+      The full text is from <a href="https://standardebooks.org/ebooks/herman-melville/moby-dick" rel="noopener">Standard Ebooks</a>,
+      which places its editions in the public domain. Study notes, summaries, and apparatus are written for
+      this project. See the <a href={withBase("sources/")}>sources page</a> for the full bibliography and the
+      <a href="https://github.com/JD-Jones-ASES/moby-dick-portal" rel="noopener">repository</a> for the data and build.
+    </p>
+
+    <p style="margin-top:2rem;">
+      <a class="btn btn-primary" href={unitHref("chapter-001-loomings")}>Start reading →</a>
+      <a class="btn btn-ghost" href={withBase("chapters/")}>Browse {chapters} chapters</a>
+    </p>
+  </div>
+</Layout>

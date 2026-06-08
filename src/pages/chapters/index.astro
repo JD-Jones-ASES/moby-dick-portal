@@ -1,0 +1,94 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { unitHref, unitKicker, functionMeta } from "../../lib/site.js";
+
+const data = await loadGuideData();
+const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+
+const rows = ordered.map((u) => ({
+  unit_id: u.unit_id,
+  kicker: unitKicker(u),
+  title: u.title,
+  one: u.summaries?.one_breath ?? "",
+  functions: u.functions ?? [],
+  section: u.section_type,
+  notes: data.annotationIndex.units[u.unit_id]?.annotations?.length ?? 0,
+  paths: Object.entries(u.paths ?? {})
+    .filter(([, v]) => v === "required")
+    .map(([k]) => k)
+}));
+
+const allFunctions = [...new Set(rows.flatMap((r) => r.functions))]
+  .filter((f) => functionMeta[f])
+  .sort((a, b) => functionMeta[a].localeCompare(functionMeta[b]));
+---
+
+<Layout title="All chapters" current="read" description="Browse every reading unit of Moby-Dick with summaries and study-note counts.">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Read</p>
+      <h1>All chapters</h1>
+      <p class="lede">{rows.filter((r) => r.section !== "frontmatter").length} reading units. Filter by text, theme, or reading path; each links to the annotated chapter.</p>
+    </div>
+
+    <div class="toc-controls">
+      <input id="toc-search" type="search" placeholder="Search chapter titles and summaries…" aria-label="Search chapters" />
+      <select id="toc-path" aria-label="Filter by reading path">
+        <option value="">All paths</option>
+        <option value="narrative_core">Narrative Core</option>
+        <option value="classroom_standard">Classroom Standard</option>
+      </select>
+      <select id="toc-fn" aria-label="Filter by theme">
+        <option value="">All themes</option>
+        {allFunctions.map((f) => <option value={f}>{functionMeta[f]}</option>)}
+      </select>
+    </div>
+
+    <div id="toc-list">
+      {rows.map((r) => (
+        <div class="unit-row" data-row
+          data-text={`${r.kicker} ${r.title} ${r.one}`.toLowerCase()}
+          data-fn={r.functions.join(" ")}
+          data-paths={r.paths.join(" ")}>
+          <div class="num">{r.section === "chapter" ? r.kicker.replace("Chapter ", "") : (r.section === "epilogue" ? "Ep." : "—")}</div>
+          <div class="meta">
+            <a href={unitHref(r.unit_id)}>{r.title}</a>
+            {r.one && <p>{r.one}</p>}
+            <div class="tags">
+              {r.functions.filter((f) => functionMeta[f]).map((f) => <span class="tag">{functionMeta[f]}</span>)}
+            </div>
+          </div>
+          {r.notes > 0 && <div class="count-pill">{r.notes} {r.notes === 1 ? "note" : "notes"}</div>}
+        </div>
+      ))}
+    </div>
+    <p id="toc-empty" class="muted hide" style="padding:2rem 0;">No chapters match those filters.</p>
+  </div>
+
+  <script is:inline>
+    (function () {
+      const q = document.getElementById("toc-search");
+      const pathSel = document.getElementById("toc-path");
+      const fnSel = document.getElementById("toc-fn");
+      const rows = Array.from(document.querySelectorAll("[data-row]"));
+      const empty = document.getElementById("toc-empty");
+      function apply() {
+        const text = q.value.trim().toLowerCase();
+        const path = pathSel.value;
+        const fn = fnSel.value;
+        let shown = 0;
+        rows.forEach((row) => {
+          const okText = !text || row.dataset.text.includes(text);
+          const okPath = !path || row.dataset.paths.split(" ").includes(path);
+          const okFn = !fn || row.dataset.fn.split(" ").includes(fn);
+          const show = okText && okPath && okFn;
+          row.classList.toggle("hide", !show);
+          if (show) shown++;
+        });
+        empty.classList.toggle("hide", shown !== 0);
+      }
+      [q, pathSel, fnSel].forEach((el) => el.addEventListener("input", apply));
+    })();
+  </script>
+</Layout>

@@ -1,0 +1,58 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadGuideData } from "../../lib/guide-data.js";
+import { unitHref, unitKicker, pathMeta } from "../../lib/site.js";
+
+const data = await loadGuideData();
+const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
+
+const pathInfo = data.paths.reduce((m, p) => ((m[p.id] = p), m), {});
+
+function unitsForPath(pathId) {
+  if (pathId === "full_text") return ordered.filter((u) => u.section_type !== "frontmatter");
+  return ordered.filter((u) => u.paths?.[pathId] === "required");
+}
+---
+
+<Layout title="Reading paths" current="paths" description="Narrative Core, Classroom Standard, and Full Text routes through Moby-Dick.">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Choose</p>
+      <h1>Reading paths</h1>
+      <p class="lede">The same source text, four lengths. Nothing is deleted — shorter paths are generated from metadata, and skipped chapters stay one click away.</p>
+    </div>
+
+    {Object.entries(pathMeta).map(([id, meta]) => {
+      const info = pathInfo[id] ?? {};
+      const units = unitsForPath(id);
+      return (
+        <section id={id} style="margin-bottom:3rem; scroll-margin-top:76px;">
+          <h2 class="section-h" style="margin-top:1.5rem;">{meta.label}</h2>
+          {info.description && <p class="lede" style="font-size:1.05rem;">{info.description}</p>}
+          {Array.isArray(info.goals) && info.goals.length > 0 && (
+            <ul class="muted" style="margin:0.5rem 0 1rem;">
+              {info.goals.map((g) => <li>{g}</li>)}
+            </ul>
+          )}
+          <p class="count-pill" style="font-size:0.85rem;">
+            {id === "full_text" ? `${units.length} reading units` : `${units.length} core chapters`}
+            {id !== "full_text" && <> · <a href={unitHref(units[0]?.unit_id)}>start →</a></>}
+          </p>
+          {id !== "full_text" && (
+            <div style="margin-top:0.75rem;">
+              {units.map((u) => (
+                <div class="unit-row">
+                  <div class="num">{u.section_type === "chapter" ? u.number : "Ep."}</div>
+                  <div class="meta"><a href={unitHref(u.unit_id)}>{unitKicker(u)}: {u.title}</a></div>
+                </div>
+              ))}
+            </div>
+          )}
+          {id === "full_text" && (
+            <p><a class="btn btn-ghost" href={unitHref(ordered.find((u) => u.section_type === "chapter").unit_id)}>Open Chapter 1</a></p>
+          )}
+        </section>
+      );
+    })}
+  </div>
+</Layout>

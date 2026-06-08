@@ -1,0 +1,42 @@
+---
+import Layout from "../../components/Layout.astro";
+import { sourceMap } from "../../lib/site.js";
+
+const verified = [...sourceMap.values()]
+  .filter((s) => s.citation_status === "verified" && s.id !== "standard-ebooks-moby-dick")
+  .sort((a, b) => (a.author ?? a.title).localeCompare(b.author ?? b.title));
+
+const kindLabel = {
+  "encyclopedia": "Reference",
+  "classical-text": "Primary / literary text",
+  "historical-primary": "Historical & scientific",
+  "dictionary": "Dictionary",
+  "scripture": "Scripture",
+  "scholarship": "Scholarship",
+  "map": "Map / geography"
+};
+---
+
+<Layout title="Sources" current="sources" description="The verified bibliography behind every study note in the Moby-Dick portal.">
+  <div class="wrap narrow">
+    <div class="page-head">
+      <p class="eyebrow">Verify</p>
+      <h1>Sources</h1>
+      <p class="lede">
+        Every public study note that teaches outside knowledge cites at least one of these
+        {verified.length} sources — checked against the live page before it was marked verified.
+        The full text itself is from <a href="https://standardebooks.org/ebooks/herman-melville/moby-dick">Standard Ebooks</a>.
+      </p>
+    </div>
+
+    {verified.map((s) => (
+      <div class="src">
+        <h3>{s.url ? <a href={s.url} rel="noopener" target="_blank">{s.title}</a> : s.title}</h3>
+        <div class="who">
+          {s.author ? `${s.author} · ` : ""}{s.publisher ?? ""}{s.kind && kindLabel[s.kind] ? ` · ${kindLabel[s.kind]}` : ""}
+        </div>
+        {s.bibliographic_note && <p>{s.bibliographic_note}</p>}
+      </div>
+    ))}
+  </div>
+</Layout>
