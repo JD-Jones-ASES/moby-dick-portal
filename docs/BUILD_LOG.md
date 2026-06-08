@@ -1208,3 +1208,58 @@
   `src/components/Layout.astro`; docs `UPGRADE_ROADMAP.md` (Phase 1 ✅ + registry), `Agent.md`. Added
   `.claude/launch.json` (a `moby-dev` config on port 4330 for the preview server). Not yet committed/
   pushed — held for the user, since a push to `main` triggers the live GitHub Pages deploy.
+- Shipped: committed `c99b14a` and pushed to `main` (user approved); GitHub Actions deploy succeeded
+  (build 17s + deploy 11s) and the live site serves the Phase 1 markup + the shared module chunk.
+
+## 2026-06-08 - Phase 2: Deep Search ⌘K palette (shipped)
+
+- Built Phase 2 of `docs/UPGRADE_ROADMAP.md` — an instant, **offline** command palette over the whole
+  edition — autonomously, with an ultracode adversarial review between implementation and ship. Pure
+  vanilla (no Preact needed), no new deps, base-path-correct; build green (149 pages + the JSON
+  endpoint), verified in-browser in Paper + Night and at mobile width with a clean console.
+- **Build-time index, can-never-go-stale (resolves the roadmap's CRITICAL build-wiring caveat via
+  option a):** `src/lib/search-index.js` (`buildSearchIndex(data)`) is consumed by an Astro **static
+  endpoint** `src/pages/search-index.json.js` (GET → `loadGuideData()` → JSON). `npx astro build` (the
+  exact CI command, no `prepare:data`) emits `dist/search-index.json`, served at
+  `${BASE_URL}search-index.json`. It derives from the same data the pages render, so no committed
+  artifact and no staleness. **708 records** (142 chapters w/ full prose + 114 public glossary + 452
+  public notes), **960 KB raw / 339 KB gzipped** (under the 1 MB-gz target). Each record: `id`, `type`,
+  `title`, `snippet`, pre-baked absolute `path` (via `withBase`/`unitHref`), `terms` (space-padded
+  unique-token blob), `tt` (title tokens). Shared tokenizer `src/lib/search-tokenize.js` (used at build
+  AND on the client query so tokens line up): lowercase, strip diacritics, drop a small stoplist +
+  1-char tokens, dedupe.
+- **The palette** (`src/components/SearchOverlay.astro` + `src/lib/search-ui.js`, mounted globally in
+  `Layout.astro` with a header **Search** button): opens on ⌘/Ctrl-K, the button, or `/`; **lazy-loads
+  the index on first open (~216 ms to first results)** via `fetch(import.meta.env.BASE_URL +
+  "search-index.json")` — the only place client JS touches the base; record paths are already absolute.
+  In-memory scoring: exact (6) > prefix (4) > substring (2), ×1.5 title boost, **AND** across query
+  tokens; grouped by type (Chapters/Glossary/Study notes), 6 per group + "+N more", snippet + title
+  highlight. **No Web Worker** (708 records → instant). The client bundle imports **only**
+  `search-tokenize.js` — it must never import `site.js` (which pulls a big source-records JSON into the
+  browser); confirmed.
+- **Deep-links:** chapters → `…/#find=<query>` handed to new `src/lib/in-page-find.js`
+  (`runInPageFind()`): wraps the first single-text-node occurrence in `<mark class="find-hit">` (else
+  flashes the paragraph), scrolls into view, re-runs on `hashchange`, and **falls back to the first
+  significant token** when a multi-word AND match isn't contiguous. Wired into `reader-ui.js`
+  (`initReader()` + `hashchange`); the reader's `!location.hash` resume guard naturally yields to a
+  `#find` hash. Glossary → `/glossary/#g-<id>` (`:target` flash — `id` anchors added to the glossary
+  page). Notes → reader `#note-<id>`.
+- **A11y:** ARIA combobox + listbox with `aria-activedescendant` (focus stays in the input; options are
+  `tabindex=-1` and arrow-navigated); a **Tab focus-trap** (input ↔ close button); `inert` on
+  `header`/`main`/`footer` while open (confines screen-reader/swipe exploration, not just Tab); a polite
+  `#search-status` live region announcing result counts; `aria-expanded` tracks whether options exist;
+  groups use `role=group`/`aria-label` and decorative heads are `aria-hidden`; reduced-motion honored;
+  44px mobile touch targets; focus returns to the trigger on close.
+- **Adversarial review** (4-dimension Workflow → find → independently verify) confirmed **9 findings**
+  (0 rejected; two were the same badge-contrast issue from two dimensions). All fixed: (1) `highlight()`
+  rewritten to escape per-segment on the RAW text so a query token like "amp"/"lt" can't corrupt a
+  literal `&`/`<` entity (node-unit-tested, incl. an XSS-escape check); (2) result-type badges use dark
+  ink in Night (white-on-light-accent failed contrast — the same trap already fixed for the typo
+  buttons); (3) `aria-expanded` made dynamic; (4) the live region added; (5) background `inert` added;
+  (6) listbox group/option semantics cleaned up; (7) 44px touch targets for the close + collapsed search
+  buttons; (8) the multi-word `#find` first-token fallback above.
+- Files: new `src/lib/search-index.js`, `src/lib/search-tokenize.js`, `src/lib/search-ui.js`,
+  `src/lib/in-page-find.js`, `src/pages/search-index.json.js`, `src/components/SearchOverlay.astro`;
+  modified `src/components/Layout.astro`, `src/lib/reader-ui.js`, `src/styles/portal.css`,
+  `src/pages/glossary/index.astro`; docs `UPGRADE_ROADMAP.md` (Phase 2 ✅ + build-wiring decision),
+  `Agent.md`. Trails/entities deferred to Phase 4 (no pages yet → would be dead links).

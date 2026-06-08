@@ -1,10 +1,10 @@
 # Upgrade Roadmap — The Immersive Moby-Dick Reader
 
-> **Status:** active plan. Phase 0 (the hover page-jump fix) and **Phase 1 (the Immersive Reading
-> Room)** are **shipped**. Phases 2–5 are the rest of the reading-first immersive upgrade and are
-> intended to be executed in fresh sessions, one phase per session where practical. This is **not a
-> content pass** — the scholarly content pipeline is separate (see the older `Agent.md` handoff +
-> `docs/CONTENT_STANDARDS.md`).
+> **Status:** active plan. Phase 0 (the hover page-jump fix), **Phase 1 (the Immersive Reading Room)**,
+> and **Phase 2 (the Deep Search ⌘K palette)** are **shipped**. Phases 3–5 are the rest of the
+> reading-first immersive upgrade and are intended to be executed in fresh sessions, one phase per
+> session where practical. This is **not a content pass** — the scholarly content pipeline is separate
+> (see the older `Agent.md` handoff + `docs/CONTENT_STANDARDS.md`).
 
 ## North star
 
@@ -76,14 +76,31 @@ restores instantly past `scroll-behavior: smooth`, guarded by `!location.hash`. 
 - Files: `src/pages/read/[unit].astro`, new `src/lib/reader-ui.js`, `src/styles/portal.css`.
   localStorage: `mdp-focus`, `mdp-typo`, `mdp-resume-*` (+ `mdp-resume-index` LRU cap).
 
-### Phase 2 — Deep Search command palette  (vanilla; Preact only if state demands)
-- **Build-time inverted index**: `scripts/ingest/build-search-index.mjs` reusing `loadGuideData()` →
-  `data/search/search-index.json` (per record: `id`, `type` ∈ {chapter, glossary, note, trail}, `title`,
-  `snippet`, `path`, `terms`). Index 142 prose docs + 114 glossary + 452 public notes + 55 trails.
-- **⚠ CRITICAL build wiring:** `deploy.yml` runs only `npx astro build` (NOT `prepare:data`). Pick ONE and
-  document it here when chosen: **(a, recommended)** generate the index *during* the Astro build via a
-  build-time module/integration so it can never go stale; (b) commit `search-index.json` + an npm script;
-  (c) add an explicit prebuild step to `deploy.yml`. If you pick (b)/(c), a fresh session MUST know.
+### Phase 2 — Deep Search command palette  (vanilla)  ✅ SHIPPED
+Vanilla (no Preact needed — 708 records, simple in-memory string matching is instant). The palette
+opens on ⌘/Ctrl-K, a header **Search** button, or `/`; lazy-loads the index on first open (**~216 ms**
+to first results); scores exact > prefix > substring with a title boost and AND across query tokens;
+groups results by type with highlighted snippets; ARIA combobox + listbox with `aria-activedescendant`,
+arrow/Enter/Escape, a Tab focus-trap, `inert` background, and a polite live region. Deep-links: chapters
+→ `#find=<q>` handed to `src/lib/in-page-find.js` (scrolls + highlights the first occurrence, with a
+first-token fallback when a multi-word AND match isn't contiguous; re-runs on `hashchange`); glossary →
+`/glossary/#g-<id>` (`:target` flash — anchors added to the glossary page); notes → reader `#note-<id>`.
+Hardened against a 9-finding adversarial review. See the 2026-06-08 BUILD_LOG "Phase 2" entry.
+- **Build-time inverted index** — implemented as a shared `src/lib/search-index.js` (`buildSearchIndex(data)`)
+  consumed by the Astro static endpoint `src/pages/search-index.json.js`. Per record: `id`, `type` ∈
+  {chapter, glossary, note}, `title`, `snippet`, `path` (pre-baked absolute via `withBase`/`unitHref`),
+  `terms` (space-padded unique-token blob), `tt` (title tokens). Indexes 142 prose docs (full text) +
+  114 public glossary + 452 public notes = **708 records, 960 KB raw / 339 KB gzipped**.
+- **⚠ CRITICAL build wiring — RESOLVED via option (a):** the index is generated **during** `astro build`
+  by the `search-index.json.js` endpoint (GET → `loadGuideData()` → `buildSearchIndex()` → JSON), emitting
+  `dist/search-index.json` served at `${BASE_URL}search-index.json`. It derives from the same data the
+  pages render, so it **can never go stale**; there is **no committed artifact and no `prepare:data`
+  dependency** — plain `npx astro build` (the CI command) produces it. The client lazy-loads it with
+  `fetch(import.meta.env.BASE_URL + "search-index.json")` (the only place client JS touches the base).
+- **Trails/entities are NOT indexed yet** (scope decision): their pages don't exist until Phase 4, so
+  indexing them now would emit dead links. Phase 4 adds `trail`/`entity` records to `buildSearchIndex`
+  once `/trails/[id]/` + `/entity/[id]/` exist. The `client must not import site.js` rule holds —
+  `search-ui.js` imports only `search-tokenize.js` (no build-only JSON in the browser bundle).
 - **Palette overlay** (⌘/Ctrl-K + a header search affordance in `Layout.astro`): debounced live query,
   arrow/Enter/Escape, `role="dialog"` + focus trap, mobile slide-down input. **Lazy-load** the index JSON
   on first open (target < 1MB gzipped); search in-memory; Web Worker only if measured jank.

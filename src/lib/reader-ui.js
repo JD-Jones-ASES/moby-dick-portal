@@ -15,6 +15,8 @@
 // prefers-reduced-motion on every motion path. Each init guards for missing DOM so importing the
 // module on a page without a reader is harmless.
 
+import { runInPageFind } from "./in-page-find.js";
+
 const REDUCE = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ---- localStorage helpers (never throw; degrade in private mode) ----
@@ -30,6 +32,11 @@ export function initReader() {
   initProgressBar();
   initResume();
   initKeyboardNav();
+
+  // Deep-link from the search palette: scroll+highlight a prose term on load and on later
+  // same-page #find= changes.
+  runInPageFind();
+  window.addEventListener("hashchange", runInPageFind);
 
   // Single coordinated Escape handler: a glossary popover wins first, then focus mode exits.
   document.addEventListener("keydown", (e) => {

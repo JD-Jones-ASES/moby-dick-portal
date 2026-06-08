@@ -25,7 +25,7 @@ const categories = [...new Set(entries.map((e) => e.category))].sort();
 
     <dl class="gloss-grid" id="g-list">
       {entries.map((e) => (
-        <div class="gloss" data-g data-text={`${e.term} ${e.definition} ${(e.variants ?? []).join(" ")}`.toLowerCase()} data-cat={e.category}>
+        <div class="gloss" id={`g-${e.id}`} data-g data-text={`${e.term} ${e.definition} ${(e.variants ?? []).join(" ")}`.toLowerCase()} data-cat={e.category}>
           <dt>{e.term} <span class="cat">{e.category}</span></dt>
           <dd>{e.definition}{e.variants?.length ? <span class="muted"> · also: {e.variants.join(", ")}</span> : null}</dd>
         </div>

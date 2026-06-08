@@ -568,6 +568,90 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 
+/* ---- Deep Search palette (Phase 2) ---- */
+.search-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  border: 1px solid var(--line-strong); background: var(--paper-raised);
+  color: var(--ink-soft); border-radius: 8px; padding: 0.35rem 0.55rem;
+  font: inherit; font-size: 0.88rem; cursor: pointer;
+}
+.search-btn:hover { color: var(--ink); border-color: var(--accent); }
+.search-btn kbd {
+  font-family: var(--sans); font-size: 0.68rem; color: var(--ink-faint);
+  border: 1px solid var(--line-strong); border-radius: 4px; padding: 0.02rem 0.3rem; background: var(--paper);
+}
+
+.search-overlay { position: fixed; inset: 0; z-index: 100; display: none; }
+.search-overlay:not([hidden]) { display: block; }
+.search-backdrop {
+  position: absolute; inset: 0; background: color-mix(in srgb, var(--ink) 38%, transparent);
+  opacity: 0; transition: opacity 0.16s ease;
+}
+.search-overlay.open .search-backdrop { opacity: 1; }
+.search-dialog {
+  position: relative; margin: 9vh auto 0; width: min(640px, 92vw);
+  background: var(--paper-raised); border: 1px solid var(--line-strong);
+  border-radius: 14px; box-shadow: var(--shadow); overflow: hidden;
+  transform: translateY(-8px); opacity: 0; transition: transform 0.16s ease, opacity 0.16s ease;
+}
+.search-overlay.open .search-dialog { transform: translateY(0); opacity: 1; }
+.search-inputrow { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); }
+.search-ico { color: var(--ink-faint); flex: none; }
+#search-input {
+  flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 1.05rem;
+  color: var(--ink); outline: none;
+}
+#search-input::placeholder { color: var(--ink-faint); }
+.search-close {
+  flex: none; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink-faint);
+  border-radius: 6px; padding: 0.15rem 0.45rem; font: inherit; font-size: 0.74rem; cursor: pointer;
+}
+.search-close:hover { color: var(--ink); }
+
+.search-results { max-height: min(60vh, 560px); overflow-y: auto; padding: 0.4rem; }
+.sr-hint { color: var(--ink-faint); font-size: 0.9rem; padding: 1rem 0.75rem; margin: 0; }
+.sr-group { margin-bottom: 0.4rem; }
+.sr-grouphead {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint);
+  font-weight: 700; margin: 0.5rem 0 0.25rem; padding: 0 0.6rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.sr-count { color: var(--accent); font-weight: 700; }
+.sr-opt {
+  display: flex; gap: 0.7rem; align-items: baseline; padding: 0.5rem 0.6rem; border-radius: 8px;
+  color: inherit; cursor: pointer; scroll-margin: 0.5rem;
+}
+.sr-opt:hover { text-decoration: none; }
+.sr-opt.active, .sr-opt[aria-selected="true"] { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.sr-type {
+  flex: none; font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  color: #fff; border-radius: 5px; padding: 0.12rem 0.4rem; min-width: 2.6rem; text-align: center; margin-top: 0.15rem;
+}
+.sr-type-chapter { background: var(--accent); }
+.sr-type-glossary { background: var(--gold); }
+.sr-type-note { background: var(--c-textual); }
+/* Night's accent/gold/textual tokens are LIGHT, so white badge text fails contrast (the same trap
+   already fixed for the typo buttons). Use dark ink on the light badges in Night. */
+:root[data-theme="night"] .sr-type { color: var(--paper); }
+.sr-main { min-width: 0; }
+.sr-title { display: block; font-family: var(--serif); font-size: 1.02rem; color: var(--ink); line-height: 1.25; }
+.sr-snip { display: block; font-size: 0.85rem; color: var(--ink-soft); line-height: 1.4; margin-top: 0.1rem;
+  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.search-results mark { background: color-mix(in srgb, var(--gold) 30%, transparent); color: inherit; border-radius: 2px; }
+.sr-more { font-size: 0.78rem; color: var(--ink-faint); padding: 0.2rem 0.6rem 0.4rem; margin: 0; }
+body.search-lock { overflow: hidden; }
+
+/* In-page find highlight (search → prose deep-link) */
+mark.find-hit { background: color-mix(in srgb, var(--gold) 42%, transparent); color: inherit; border-radius: 2px; padding: 0 1px; box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 42%, transparent); }
+.find-hit-block { background: color-mix(in srgb, var(--gold) 12%, transparent); border-radius: 4px; }
+
+/* Glossary deep-link target flash */
+.gloss-grid .gloss { scroll-margin-top: 80px; }
+.gloss-grid .gloss:target { background: color-mix(in srgb, var(--accent) 9%, transparent); border-radius: 6px; box-shadow: -3px 0 0 var(--accent); padding-left: 0.5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .search-backdrop, .search-dialog { transition: none; }
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .reader { grid-template-columns: 1fr; }
@@ -575,4 +659,9 @@ html[data-focus="on"] .reader-page .site-header { background: transparent; backd
   .grid.cols-3, .grid.cols-2, .gloss-grid { grid-template-columns: 1fr; }
   .nav-links a { padding: 0.35rem 0.5rem; font-size: 0.85rem; }
   .brand span.full { display: none; }
+  .search-btn-txt, .search-btn kbd { display: none; }
+  .search-dialog { margin-top: 6vh; width: 94vw; }
+  /* Comfortable touch targets for the explicit controls on touch/narrow viewports. */
+  .search-btn { min-height: 44px; min-width: 44px; justify-content: center; }
+  .search-close { min-height: 44px; min-width: 44px; }
 }

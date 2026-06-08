@@ -1,0 +1,30 @@
+---
+// Deep Search palette overlay. Rendered (hidden) on every page via Layout.astro; driven by
+// src/lib/search-ui.js. Static markup only — results are injected client-side.
+---
+<div class="search-overlay" id="search-overlay" hidden aria-hidden="true">
+  <div class="search-backdrop" data-search-close></div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="Search this edition">
+    <div class="search-inputrow">
+      <svg class="search-ico" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="9" r="6"></circle>
+        <line x1="13.5" y1="13.5" x2="18" y2="18" stroke-linecap="round"></line>
+      </svg>
+      <input
+        id="search-input"
+        type="search"
+        role="combobox"
+        aria-expanded="false"
+        aria-controls="search-results"
+        aria-autocomplete="list"
+        aria-label="Search this edition"
+        placeholder="Search chapters, glossary, and study notes…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="button" class="search-close" data-search-close aria-label="Close search">Esc</button>
+    </div>
+    <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
+    <span class="sr-only" id="search-status" aria-live="polite"></span>
+  </div>
+</div>

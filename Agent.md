@@ -117,14 +117,24 @@ best in-browser Moby-Dick experience, staying pure-static / GitHub-Pages / no-AP
   focus CSS scoped to `body.reader-page` via a new `reader` prop). New localStorage keys: `mdp-focus`,
   `mdp-typo`, `mdp-resume-<unit_id>`, `mdp-resume-index`. Default prose measure is now 70ch (capped on
   `.reader-main`). Hardened against an 8-finding adversarial review. See the 2026-06-08 BUILD_LOG entry.
-- **Next:** Phase 2 (Deep Search ⌘K palette) → Phase 3 (nautical immersion + in-browser ambience +
-  Big Read external link) → Phase 4 (trails/entity/explorer/path-compare) → Phase 5 (QA + docs). One
-  phase per session where practical. See the roadmap for file map, the **localStorage key registry**,
-  and two load-bearing caveats: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`),
-  so the Phase-2 search index must be built during the Astro build / committed / or added as a prebuild
-  step; **(2)** only 14/55 trails have public notes, so build trail/entity pages on **chapter-level
-  membership**, never gate on public-note presence. For Phase 2, reuse the Phase-1 client-module
-  pattern (a processed `<script>import`) rather than re-introducing inline scripts.
+- **Phase 2 (Deep Search ⌘K palette) is SHIPPED:** an instant, offline command palette (⌘/Ctrl-K, a
+  header Search button, or `/`) over all 142 chapters' prose + 114 public glossary + 452 public notes.
+  The index is built **during `astro build`** by a static endpoint `src/pages/search-index.json.js`
+  (resolving the CRITICAL build-wiring caveat via option a — never stale, no committed artifact, no
+  `prepare:data`); the client lazy-loads `${BASE_URL}search-index.json` (708 records, 339 KB gz) and
+  searches in memory. Deep-links: chapters → `#find=` (new `src/lib/in-page-find.js` scroll+highlight,
+  token fallback), glossary → `/glossary/#g-<id>`, notes → `#note-<id>`. Vanilla; `search-ui.js` imports
+  only `search-tokenize.js` (never `site.js`, to keep build-only JSON out of the client). Hardened
+  against a 9-finding adversarial review. See the 2026-06-08 BUILD_LOG "Phase 2" entry.
+- **Next:** Phase 3 (nautical immersion + in-browser synthesized ambience + Big Read external link) →
+  Phase 4 (trails/entity/explorer/path-compare) → Phase 5 (QA + docs). One phase per session where
+  practical. See the roadmap for the file map and the **localStorage key registry**. Two load-bearing
+  notes still apply: **(1)** `deploy.yml` runs only `npx astro build` (not `prepare:data`) — the Phase-2
+  search index already honors this via the build-time endpoint; reuse that pattern for any new generated
+  artifact; **(2)** only 14/55 trails have public notes, so build Phase-4 trail/entity pages on
+  **chapter-level membership**, never gate on public-note presence, and add `trail`/`entity` records to
+  `buildSearchIndex` only once those pages exist. Reuse the client-module pattern (processed
+  `<script>import`); don't reintroduce inline scripts.
 - Direction confirmed with the user: ambitious-immersive; nautical aesthetic; reading experience >
   search > guided exploration; ambience off by default; **no self-hosted audio** (Big Read = link out).
 
