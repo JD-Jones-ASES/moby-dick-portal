@@ -1058,3 +1058,36 @@
   data/authored/needs-source-backlog.json (Actium, Porus, Vidocq, Paracelsus, Kanaris, Pompey's Pillar,
   Didius Julianus, Zoroaster, Tarquin, the tone-lane slavery refs, etc.) for the next source pass.
   Note: the Britannica Battle-of-Actium /event/ and /topic/ slugs both 404'd on 2026-06-08.
+
+## 2026-06-08 - GitHub Pages Deployment + Multi-Page Portal Redesign
+
+- New mandate: with GitHub access available (account `JD-Jones-ASES`, scopes repo+workflow), stand up
+  the public site and redesign the reader, making sure the prior single-page prototype does not
+  interfere.
+- **Phase A - deploy pipeline (live first to de-risk).** Set `site`/`base`/`trailingSlash` in
+  astro.config.mjs (base `/moby-dick-portal`); fixed the one absolute link (`href="/"` ->
+  `import.meta.env.BASE_URL`); added `.github/workflows/deploy.yml` (npm ci + `npx astro build` +
+  upload-pages-artifact + deploy-pages) and `public/.nojekyll`; hardened `.gitignore` to keep
+  node_modules/dist/`.claude`/screenshots, the source `.zip`, and third-party `*.pdf` out of the
+  public repo. `git init`, committed, `gh repo create moby-dick-portal --public --source=. --push`,
+  enabled Pages with `gh api ... -f build_type=workflow`. First run failed (Node 20 < Astro 6's
+  >=22.12) -> bumped CI to Node 22; second run green. Verified https://jd-jones-ases.github.io/moby-dick-portal/
+  serves 200 with base-correct assets.
+- **Phase B - multi-page portal.** Replaced the single-page client reader (embedded-payload + heavy
+  client JS) with static, server-rendered routes:
+  - `src/lib/site.js` (base-aware hrefs, claim-type display meta, source-record lookups, path/function
+    labels) and `src/lib/render.js` (server-side unit renderer: wraps validated annotation selector
+    positions as inline marks, splits into paragraphs).
+  - `src/components/Layout.astro` (base-aware nav, Paper/Night no-flash theme toggle, footer) and
+    `src/styles/portal.css` (variable-driven themes, literary serif reader, semantic claim-type colors).
+  - Routes: `/` landing dashboard (thesis, live stats, path chooser, explore tiles); `/read/[unit]/`
+    for all 142 units (text + inline source-cited Study marks + notes sidebar with claim badges and
+    citation links + summary card + path badges + prev/next); `/chapters/` filterable TOC;
+    `/paths/`; `/glossary/`; `/sources/` (verified bibliography); `/map/` (voyage stages, display-anchor
+    SVG plot); `/about/`.
+  - 149 pages build green; pushed; deploy succeeded; browser-verified the landing and the Loomings
+    reader render correctly (drop-cap prose, gold inline marks, BIBLICAL/CLOSE READING note cards with
+    a live King James Bible source link). Removed the now-dead `src/styles/global.css`.
+- Result: a live, public, multi-page student portal that rebuilds on every push. Content unchanged
+  this phase (452 public Study notes / 41 verified sources). Next: source-verification backlog and
+  the tone queue continue to deepen the apparatus; the portal redeploys automatically as data grows.

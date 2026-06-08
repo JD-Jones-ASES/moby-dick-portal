@@ -96,13 +96,24 @@ Completed:
 - `docs/ACADEMIC_RECOVERY_PLAN.md` records the strategic reset: freeze content expansion, purge or hide weak annotations, pilot scholarly review on representative chapters, and scale only after the notes meet the Shakespeare Portal standard.
 - The reader now shows public Study cards only for annotations with `display.surfaces` including `reader`, `status.content_status: "student-ready"`, and verified citations. Public glossary and reference cards are gated the same way. Current audit truth: 2,234 total annotations, 285 public Study annotations, 114 public glossary entries, 80 public reference cards, 24 public source records, 24 public sources ready, 0 public sources needing bibliographic review, 0 blocked public sources, 0 teacher packets in the public payload, 0 public draft leaks, 0 public glossary unit gaps, 0 public reference unit gaps, 0 ordinary public annotation promotion candidates, and 0 overlapping public Study anchors.
 
-## Session Handoff — 2026-06-08 (read this first)
+## Session Handoff — 2026-06-08 (Phase 2 shipped: the portal is LIVE)
 
-The academic recovery is complete. The project has moved into **scholarly content scale-up to the
-Shakespeare-Portal bar**, with a multi-page Astro portal as the eventual Phase 2. Before doing
-anything, read `docs/BUILD_LOG.md` (the three 2026-06-08 entries) and `docs/CONTENT_STANDARDS.md`
-(the "Shakespeare-Grade External-Source Rule"). The user's direction: **content first, strict
-quality-gated** (no coverage floors), then the portal.
+**The site is deployed and public:** https://jd-jones-ases.github.io/moby-dick-portal/
+(repo https://github.com/JD-Jones-ASES/moby-dick-portal, account `JD-Jones-ASES`). It is a
+multi-page Astro portal — landing dashboard, per-chapter reader at `/read/[unit]/` with inline
+source-cited Study marks + a notes sidebar, filterable chapters index, paths page, glossary,
+sources bibliography, voyage map, about — that **rebuilds and redeploys on every push to `main`**
+via `.github/workflows/deploy.yml` (Node 22 required; Pages source = GitHub Actions). Base path is
+`/moby-dick-portal`; in-app links use `import.meta.env.BASE_URL`. The old single-page reader and its
+`global.css`/`scripts/dev/cdp-*` smoke selectors are retired — the CDP smoke scripts target the
+removed reader and are not in CI. New page components live in `src/pages/**`, `src/components/`,
+`src/lib/{site,render}.js`, `src/styles/portal.css`. See the 2026-06-08 BUILD_LOG entries.
+
+The whole book is annotated to the **Shakespeare-Portal bar** (452 public Study notes, 193 teaching
+outside knowledge, 41 verified sources, 0 rule failures). Before content work, read
+`docs/CONTENT_STANDARDS.md` (the "Shakespeare-Grade External-Source Rule"). Next content lever: the
+source-verification backlog in `data/authored/needs-source-backlog.json` and the tone-and-source
+queue. Direction remains **content first, strict quality-gated**.
 
 What is now true:
 

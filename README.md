@@ -1,6 +1,8 @@
-# Moby-Dick Student Guide
+# Moby-Dick — A Reversible Student Edition
 
-A data-first student guide to Herman Melville's *Moby-Dick; or, The Whale*, designed around reversible abridgment.
+**Live site → https://jd-jones-ases.github.io/moby-dick-portal/**
+
+A data-first student edition of Herman Melville's *Moby-Dick; or, The Whale*, designed around reversible abridgment.
 
 The project goal is not to make one shortened edition. It is to preserve the full public-domain source while building metadata, reading paths, summaries, glossary help, and contextual annotations that let a student choose a manageable route through the book.
 
@@ -13,11 +15,21 @@ The project goal is not to make one shortened edition. It is to preserve the ful
 
 ## Current Status
 
-Reader v1 prototype complete. The repository has an agent entry guide, documentation, schemas, a vendored Standard Ebooks source, generated reading-unit/path data, source records, validation scripts, and an Astro reader under `src/`.
+**Live as a multi-page Astro portal**, deployed to GitHub Pages on every push to `main`
+(`.github/workflows/deploy.yml`). The site has a landing dashboard, a per-chapter reader at
+`/read/[unit]/` (server-rendered text with inline, source-cited Study-note marks and a notes
+sidebar), a filterable chapters index, a reading-paths page, a glossary browser, a verified-sources
+bibliography, a voyage-stage map, and an about page. A Paper/Night theme toggle and base-aware links
+keep it correct under the Pages subpath.
 
-The current reader includes reversible path controls, full-source recovery, story-map navigation, trail lenses, guide/study depth modes, glossary/reference panels, Study annotations, and a voyage-stage display. Every numbered chapter and the epilogue has a student-facing summary seed.
+The **whole book** is annotated to the sibling Shakespeare Portal's standard: each public Study note
+teaches the outside knowledge a student lacks (a biblical name, a classical myth, a whaling term, a
+historical reference) and cites a verified source beyond Melville's own text — a rule enforced in
+`scripts/validate/validate-basic.mjs`. Current public apparatus: **452 Study notes** (193 teaching
+outside knowledge), **114 glossary entries**, and **41 verified sources**, with 0 rule failures and
+0 unreviewed-draft leaks into the reader.
 
-The project is now in a **scholarly content scale-up** phase: public Study notes are being authored to the standard of the sibling Shakespeare Portal — each teaching the outside knowledge a student lacks (a biblical name, a classical myth, a whaling term) with a verified source — enforced by a rubric in `docs/CONTENT_STANDARDS.md` and `scripts/validate/validate-basic.mjs`. The opening chapters through roughly Chapter 65 now carry this apparatus. See [Agent.md](Agent.md#session-handoff--2026-06-08-read-this-first) for the current handoff and next steps.
+See [Agent.md](Agent.md) for the working map and handoff.
 
 ## Repository Layout
 
@@ -26,13 +38,15 @@ See [Agent.md](Agent.md#repo-map) for the working map.
 ## First Useful Commands
 
 ```powershell
-node scripts/ingest/build-chapter-manifest.mjs
-node scripts/ingest/build-reading-paths.mjs
-node scripts/validate/validate-basic.mjs
-npm.cmd run dev
+npm.cmd ci                 # install (Node >= 22.12 required by Astro 6)
+npm.cmd run prepare:data   # regenerate manifest, paths, selectors, indexes; validate
+npm.cmd run build          # build the static portal into dist/
+npm.cmd run dev            # local dev server
 ```
 
-These commands regenerate the manifest, regenerate reading paths, validate the data, and run the Astro reader locally. On this Windows workspace, use `npm.cmd` if PowerShell blocks the `npm.ps1` shim.
+After any content change, run `prepare:data` (so the committed generated data is current), then
+`build`. Pushing to `main` rebuilds and redeploys the live site via GitHub Actions. On this Windows
+workspace, use `npm.cmd` if PowerShell blocks the `npm.ps1` shim.
 
 For persistent preview and browser-control notes, see [docs/LOCAL_PREVIEW_AND_BROWSER.md](docs/LOCAL_PREVIEW_AND_BROWSER.md).
 
