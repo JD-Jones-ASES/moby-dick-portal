@@ -1091,3 +1091,41 @@
 - Result: a live, public, multi-page student portal that rebuilds on every push. Content unchanged
   this phase (452 public Study notes / 41 verified sources). Next: source-verification backlog and
   the tone queue continue to deepen the apparatus; the portal redeploys automatically as data grows.
+
+## 2026-06-08 - Interactive Voyage Map + Text↔Glossary Connection (ultracode pass)
+
+- User asked to make the map genuinely good (React island allowed) and to visually connect the
+  reading text with the sidebar glossary; also to drop the "reversible" framing (done in a prior
+  commit). Ran two background Workflow judge/review panels (design panel → implement → adversarial
+  review → fix), per ultracode.
+- **Design panel** (6 proposals + critic + judge) chose, for the map, a SELF-CONTAINED interactive
+  SVG world map over a Leaflet/tile island (offline-first ethos, zero runtime deps, auto-themes);
+  for the glossary, build-time marks merged into render.js + a hover/focus popover + two-way card
+  sync + a density toggle. Installed build-only deps `world-atlas` + `topojson-client`.
+- **Map** (`src/lib/voyage-map.js` + `src/pages/map/index.astro`): Natural Earth 110m land projected
+  equirectangular at build time into one static `<path>` (rounded ints, seam-broken), longitude
+  recentered into the route's largest empty gap, programmatic viewBox cropped to the route, 41 stages
+  at real coords, graticule + ocean labels, per-stage hit areas linking to chapters, two-way hover/
+  focus sync with the numbered stage list, theming tokens (--ocean/--land), a11y (role=group so the
+  stage buttons stay in the tree), reduced-motion, honesty caption. Decisions from the data: the
+  waypoint coords zig-zag by chapter (display anchors, not a track), so the connecting route polyline
+  was DROPPED (a chapter-ordered line criss-crosses and would mislead, incl. an antimeridian streak);
+  the map now reads as honest regional dot-clusters + ordered list.
+- **Glossary** (`src/lib/render.js` + reader + `portal.css`): unified annotation+glossary span pass —
+  annotations authoritative, glossary admitted only if non-overlapping; one mark per entry at the
+  first valid occurrence (all occurrences considered); canonical-term beats variant on tied spans
+  (fixes 'abaft' variant 'aft' hijacking the word 'aft'); dotted-accent `<button>` marks vs solid-gold
+  annotation marks; aria-described tooltip popover with a transparent hover bridge, click-to-pin,
+  hover-transfer, Escape/outside/focus-out dismiss; two-way highlight with focusable sidebar cards;
+  'Glossary marks' density toggle (localStorage). Same glossary array feeds marks + cards.
+- **Adversarial review** (6 dimensions → find → verify) confirmed 17 findings; all fixed: the
+  abaft/aft hijack, epilogue stages mis-linking to ch135 (now → /read/epilogue-epilogue/, labeled
+  Epilogue), role=img pruning the stage buttons (→ role=group), active-dot radius shrinking instead
+  of growing (per-class --wp-active-r), jitter that could slam a dot onto a neighbor (now clears
+  against placed final positions; verified 0 overlaps, min sep 13px), the click-pin/hover-bridge/
+  stuck-open popover issues, the route seam-streak (mooted by dropping the route), plus several nits
+  (dead selector, redundant width, unescaped ids, double scrollIntoView, list→map keyboard sync).
+- Verified live in both Paper and Night themes, no console errors; functional checks confirmed the
+  abaft→aft fix, 0 dot overlaps, the popover hover-bridge, and Escape/outside dismissal. 149 pages
+  build green; deploys succeeded. Per the user, the map + glossary completing brings the portal to
+  its intended bar. Stray `..npm-cache` blobs (a mangled cache-flag) were removed and ignored.
