@@ -1,83 +1,128 @@
 ---
 import Layout from "../../components/Layout.astro";
 import { loadGuideData } from "../../lib/guide-data.js";
-import { withBase } from "../../lib/site.js";
+import { withBase, unitHref } from "../../lib/site.js";
+import { buildVoyageMap } from "../../lib/voyage-map.js";
 
 const data = await loadGuideData();
-const waypoints = [...(data.voyageMap.waypoints ?? [])].sort(
-  (a, b) => (a.chapter_start ?? 0) - (b.chapter_start ?? 0)
+const map = buildVoyageMap(data.voyageMap.waypoints);
+
+// chapter number -> unit_id, so each stage links to its reader route.
+const chapterByNumber = new Map(
+  data.units.filter((u) => u.section_type === "chapter").map((u) => [u.number, u.unit_id])
 );
+function hrefFor(chapterStart) {
+  const id = chapterByNumber.get(chapterStart) ?? "epilogue-epilogue";
+  return unitHref(id);
+}
+function chapterLabel(w) {
+  if (!w.chapter_start) return "Epilogue";
+  if (w.chapter_end && w.chapter_end !== w.chapter_start) return `Chapters ${w.chapter_start}–${w.chapter_end}`;
+  return `Chapter ${w.chapter_start}`;
+}
 
-// Honest "stage guide": lay the ordered stages along a serpentine voyage line.
-// No geographic coordinates implied — just sequence, evenly spaced so nothing collides.
-const cols = 6;
-const W = 960;
-const padX = 70;
-const padY = 54;
-const rowH = 82;
-const step = (W - padX * 2) / (cols - 1);
-const rows = Math.ceil(waypoints.length / cols);
-const H = padY * 2 + (rows - 1) * rowH;
-
-const nodes = waypoints.map((w, i) => {
-  const row = Math.floor(i / cols);
-  const inRow = i % cols;
-  const col = row % 2 === 0 ? inRow : cols - 1 - inRow; // serpentine
-  return {
-    n: i + 1,
-    label: w.label,
-    x: padX + col * step,
-    y: padY + row * rowH
-  };
-});
-const linePoints = nodes.map((p) => `${p.x},${p.y}`).join(" ");
-const first = nodes[0];
-const last = nodes[nodes.length - 1];
+const byId = new Map(map.nodes.map((n) => [n.id, n]));
+const stages = data.voyageMap.waypoints
+  .filter((w) => byId.has(w.id))
+  .map((w) => ({ ...w, node: byId.get(w.id), href: hrefFor(w.chapter_start), clabel: chapterLabel(w) }))
+  .sort((a, b) => a.node.n - b.node.n);
 ---
 
-<Layout title="Voyage map" current="map" description="The Pequod's voyage as an ordered stage guide.">
+<Layout title="Voyage map" current="map" description="An interactive geographic guide to the stages of the Pequod's voyage.">
   <div class="wrap">
     <div class="page-head">
       <p class="eyebrow">Trace</p>
       <h1>Voyage map</h1>
       <p class="lede">
-        The Pequod's path as a <strong>stage guide</strong> — the voyage in order, from the Manhattan
-        shore out to the killing grounds of the Pacific. The novel rarely fixes an exact position, so
-        these are sequence markers, not charted coordinates.
+        The Pequod's path from the Manhattan shore, down the Atlantic, around the Cape of Good Hope,
+        and out to the Pacific. Hover or tap a stage to find it in the list and jump to its chapter.
       </p>
     </div>
 
-    <div class="map-figure" style="padding:0.75rem;">
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="The ordered stages of the Pequod's voyage, connected as a line">
-        <rect x="0" y="0" width={W} height={H} rx="10" style="fill: color-mix(in srgb, var(--accent) 8%, var(--paper-raised))" />
-        <polyline points={linePoints} style="fill:none; stroke: var(--accent-soft); stroke-width:2.5; stroke-dasharray:2 7; stroke-linecap:round; opacity:0.85" />
-        {nodes.map((p) => (
+    <div class="voyage-map">
+      <svg viewBox={map.viewBox} preserveAspectRatio="xMidYMid meet" role="img"
+        aria-label="Geographic map of the 41 ordered stages of the Pequod's voyage">
+        <path class="map-land" d={map.landPath} vector-effect="non-scaling-stroke" aria-hidden="true" />
+        <path class="map-graticule" d={map.graticule} vector-effect="non-scaling-stroke" aria-hidden="true" />
+        {map.oceans.map((o) => (
+          <text class="ocean-label" x={o.x} y={o.y} text-anchor="middle" style={`font-size:${map.fontSize}px`} aria-hidden="true">{o.t}</text>
+        ))}
+        <polyline class="map-route" points={map.route} vector-effect="non-scaling-stroke" aria-hidden="true" />
+        {map.nodes.filter((n) => n.jittered).map((n) => (
+          <line class="map-connector" x1={n.tx} y1={n.ty} x2={n.x} y2={n.y} vector-effect="non-scaling-stroke" aria-hidden="true" />
+        ))}
+        {stages.map((s) => (
           <Fragment>
-            <circle cx={p.x} cy={p.y} r={p.n === 1 || p.n === nodes.length ? 9 : 6}
-              style={`fill: ${p.n === 1 || p.n === nodes.length ? "var(--accent)" : "var(--gold)"}; stroke: var(--paper-raised); stroke-width:2.5`}>
-              <title>{`${p.n}. ${p.label}`}</title>
+            <circle class="wp-hit" id={`hit-${s.node.id}`} cx={s.node.x} cy={s.node.y} r={map.hitR}
+              tabindex="0" role="button" data-card={s.node.id} data-href={s.href}
+              aria-label={`Stage ${s.node.n}: ${s.label}, ${s.clabel}`}>
+              <title>{`${s.node.n}. ${s.label} — ${s.clabel}`}</title>
             </circle>
-            <text x={p.x} y={p.y - 13} text-anchor="middle" style="font-size:12px; font-weight:700; fill: var(--ink-soft); font-family: var(--sans)">{p.n}</text>
+            <circle class={`wp-dot ${s.node.n === 1 || s.node.n === map.nodes.length ? "endpoint" : ""}`}
+              id={`dot-${s.node.id}`} cx={s.node.x} cy={s.node.y}
+              r={s.node.n === 1 || s.node.n === map.nodes.length ? map.endR : map.dotR} />
           </Fragment>
         ))}
-        <text x={first.x} y={first.y + 26} text-anchor="middle" style="font-size:11px; fill: var(--ink-faint); font-family: var(--sans)">start</text>
-        <text x={last.x} y={last.y + 26} text-anchor="middle" style="font-size:11px; fill: var(--ink-faint); font-family: var(--sans)">end</text>
       </svg>
     </div>
+    <p class="map-caption">{data.voyageMap.note ?? "Coordinates are approximate display anchors for orientation, not charted positions."}</p>
 
     <h2 class="section-h">Stages</h2>
-    {waypoints.map((w, i) => (
-      <div class="waypoint">
-        <div class="wlabel"><span style="color:var(--gold); font-weight:700;">{i + 1}.</span> {w.label}</div>
-        <div class="wmeta">
-          {w.chapter_start ? (w.chapter_end && w.chapter_end !== w.chapter_start ? `Chapters ${w.chapter_start}–${w.chapter_end}` : `Chapter ${w.chapter_start}`) : ""}
-        </div>
-        {w.student_note && <p style="margin:0.35rem 0 0; color:var(--ink-soft);">{w.student_note}</p>}
-      </div>
-    ))}
+    <ol style="list-style:none; padding:0; margin:0;">
+      {stages.map((s) => (
+        <li class="waypoint" id={`stage-${s.node.id}`} data-card={s.node.id}>
+          <div class="wlabel">
+            <span style="color:var(--gold); font-weight:700;">{s.node.n}.</span>
+            <a class="wlink" href={s.href}>{s.label}</a>
+          </div>
+          <div class="wmeta">{s.clabel}</div>
+          {s.student_note && <p style="margin:0.35rem 0 0; color:var(--ink-soft);">{s.student_note}</p>}
+        </li>
+      ))}
+    </ol>
 
     <p class="muted" style="margin-top:1.5rem;">
-      Place records and coordinate status live in the project data; see <a href={withBase("about/")}>About</a> for how evidence is tracked.
+      Place and coordinate evidence status lives in the project data; see <a href={withBase("about/")}>About</a>.
     </p>
   </div>
+
+  <script is:inline>
+    (function () {
+      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let active = null;
+      function clear() {
+        document.querySelectorAll(".wp-dot.wp-active").forEach((d) => d.classList.remove("wp-active"));
+        document.querySelectorAll(".waypoint.stage-active").forEach((s) => s.classList.remove("stage-active"));
+        active = null;
+      }
+      function highlight(id, scrollList) {
+        if (active === id) return;
+        clear();
+        const dot = document.getElementById("dot-" + id);
+        const li = document.getElementById("stage-" + id);
+        if (dot) dot.classList.add("wp-active");
+        if (li) {
+          li.classList.add("stage-active");
+          if (scrollList) li.scrollIntoView({ block: "nearest", behavior: reduce ? "auto" : "smooth" });
+        }
+        active = id;
+      }
+      function go(href) { if (href) window.location.href = href; }
+
+      document.querySelectorAll(".wp-hit").forEach((hit) => {
+        const id = hit.dataset.card;
+        hit.addEventListener("mouseenter", () => highlight(id, true));
+        hit.addEventListener("focus", () => highlight(id, true));
+        hit.addEventListener("click", () => go(hit.dataset.href));
+        hit.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(hit.dataset.href); }
+        });
+      });
+      document.querySelectorAll(".waypoint[data-card]").forEach((li) => {
+        const id = li.dataset.card;
+        li.addEventListener("mouseenter", () => highlight(id, false));
+      });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") clear(); });
+    })();
+  </script>
 </Layout>

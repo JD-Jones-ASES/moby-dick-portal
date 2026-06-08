@@ -91,6 +91,8 @@
     "prepare:data": "node scripts/ingest/build-chapter-manifest.mjs && node scripts/ingest/build-reading-paths.mjs && node scripts/ingest/build-annotation-selectors.mjs && node scripts/ingest/build-annotation-indexes.mjs && node scripts/ingest/build-public-annotation-candidates.mjs && node scripts/ingest/build-public-apparatus-candidates.mjs && node scripts/ingest/build-public-source-readiness.mjs && node scripts/validate/validate-basic.mjs"
   },
   "dependencies": {
-    "astro": "^6.4.4"
+    "astro": "^6.4.4",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   }
 }

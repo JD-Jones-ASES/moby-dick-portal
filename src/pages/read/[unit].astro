@@ -11,16 +11,17 @@ export async function getStaticPaths() {
   const ordered = [...data.units].sort((a, b) => a.sequence - b.sequence);
 
   return ordered.map((unit, i) => {
-    const pack = data.annotationIndex.units[unit.unit_id];
-    const annotations = pack?.annotations ?? [];
-    const { html, placed } = renderUnit(unit.plain_text, annotations);
-    const byId = new Map(annotations.map((a) => [a.id, a]));
-    const notes = placed.map((id) => byId.get(id)).filter(Boolean);
+    const annotations = data.annotationIndex.units[unit.unit_id]?.annotations ?? [];
 
-    // Glossary + reference cards that target this unit (sidebar context).
+    // One glossary array, used for BOTH the inline marks and the sidebar cards, so every
+    // marked term is guaranteed a card to link to (mark-set is a subset of card-set).
     const glossary = data.glossary
       .filter((g) => (g.targets ?? []).includes(unit.unit_id))
-      .slice(0, 12);
+      .slice(0, 30);
+
+    const { html, placed } = renderUnit(unit.plain_text, annotations, glossary);
+    const byId = new Map(annotations.map((a) => [a.id, a]));
+    const notes = placed.map((id) => byId.get(id)).filter(Boolean);
     const references = data.referenceCards.filter((c) => (c.targets ?? []).includes(unit.unit_id));
 
     const prev = i > 0 ? ordered[i - 1] : null;
@@ -77,7 +78,15 @@ function noteCitations(a) {
           </div>
         )}
 
-        <div class="prose" set:html={html} />
+        {glossary.length > 0 && (
+          <div class="reader-tools">
+            <span class="legend"><span class="swatch anno"></span> study note</span>
+            <span class="legend"><span class="swatch gloss"></span> glossary term</span>
+            <button class="tool-toggle" id="gloss-toggle" type="button" aria-pressed="true">Glossary marks: on</button>
+          </div>
+        )}
+
+        <div class="prose" id="prose" set:html={html} />
 
         <nav class="pager">
           {prev ? (
@@ -118,26 +127,26 @@ function noteCitations(a) {
           </div>
         )}
 
-        {(glossary.length > 0 || references.length > 0) && (
-          <div class="notes" style="margin-top:1.5rem;">
-            {glossary.length > 0 && (
-              <>
-                <h2>Glossary in this chapter</h2>
-                <dl style="margin:0 0 1rem;">
-                  {glossary.map((g) => (
-                    <div class="gloss"><dt>{g.term}</dt><dd>{g.definition}</dd></div>
-                  ))}
-                </dl>
-              </>
-            )}
-            {references.length > 0 && (
-              <>
-                <h2>Reference cards</h2>
-                {references.map((c) => (
-                  <div class="note"><span class="anchor-q">{c.title}</span><p class="body">{c.summary}</p></div>
-                ))}
-              </>
-            )}
+        {glossary.length > 0 && (
+          <div class="notes">
+            <h2>Glossary in this chapter</h2>
+            <dl class="gloss-list">
+              {glossary.map((g) => (
+                <div class="gloss" id={`gcard-${g.id}`} data-gloss={g.id} tabindex="0">
+                  <dt>{g.term} <span class="cat">{g.category}</span></dt>
+                  <dd>{g.definition}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        )}
+
+        {references.length > 0 && (
+          <div class="notes">
+            <h2>Reference cards</h2>
+            {references.map((c) => (
+              <div class="note"><span class="anchor-q">{c.title}</span><p class="body">{c.summary}</p></div>
+            ))}
           </div>
         )}
       </aside>
@@ -146,21 +155,99 @@ function noteCitations(a) {
 
   <script is:inline>
     (function () {
-      const marks = Array.from(document.querySelectorAll(".anno-mark"));
-      function clearActive() {
+      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const scrollOpts = { block: "nearest", behavior: reduce ? "auto" : "smooth" };
+
+      // ---- Study-note <-> mark sync ----
+      function clearAnno() {
         document.querySelectorAll(".anno-mark.active, .note.active").forEach((el) => el.classList.remove("active"));
       }
-      function activate(id) {
-        clearActive();
+      function activateAnno(id) {
+        clearAnno();
         const m = document.getElementById("mark-" + id);
         const n = document.getElementById("note-" + id);
         if (m) m.classList.add("active");
-        if (n) n.classList.add("active");
+        if (n) { n.classList.add("active"); }
       }
-      marks.forEach((m) => m.addEventListener("click", () => activate(m.dataset.note)));
-      document.querySelectorAll(".note").forEach((n) => {
-        n.addEventListener("click", () => activate(n.id.replace(/^note-/, "")));
+      document.querySelectorAll(".anno-mark").forEach((m) =>
+        m.addEventListener("click", () => activateAnno(m.dataset.note))
+      );
+      document.querySelectorAll(".note[id^='note-']").forEach((n) =>
+        n.addEventListener("click", () => activateAnno(n.id.replace(/^note-/, "")))
+      );
+
+      // ---- Glossary marks <-> cards + popover ----
+      let openMark = null;
+      function hideAllPops() {
+        document.querySelectorAll(".gloss-pop:not([hidden])").forEach((p) => {
+          p.hidden = true;
+          p.classList.remove("below", "flip-left");
+        });
+        document.querySelectorAll(".gloss-mark.active, .gloss.active").forEach((el) => el.classList.remove("active"));
+        openMark = null;
+      }
+      function placePop(mark, pop) {
+        pop.hidden = false;
+        pop.classList.remove("below", "flip-left");
+        const r = mark.getBoundingClientRect();
+        if (r.top < 150) pop.classList.add("below");
+        // measure after reveal
+        const pr = pop.getBoundingClientRect();
+        if (pr.right > window.innerWidth - 8) pop.classList.add("flip-left");
+      }
+      function showGloss(id, fromCard) {
+        const mark = document.getElementById("gmark-" + id);
+        const pop = document.getElementById("gpop-" + id);
+        const card = document.getElementById("gcard-" + id);
+        if (mark) mark.classList.add("active");
+        if (card) card.classList.add("active");
+        if (mark && pop) placePop(mark, pop);
+        if (fromCard && mark) mark.scrollIntoView(scrollOpts);
+        else if (!fromCard && card) card.scrollIntoView(scrollOpts);
+        openMark = id;
+      }
+      document.querySelectorAll(".gloss-mark").forEach((mark) => {
+        const id = mark.dataset.gloss;
+        mark.addEventListener("mouseenter", () => { if (!openMark) showGloss(id, false); });
+        mark.addEventListener("mouseleave", () => { if (openMark === id) hideAllPops(); });
+        mark.addEventListener("focus", () => { hideAllPops(); showGloss(id, false); });
+        mark.addEventListener("blur", () => { if (openMark === id) hideAllPops(); });
+        mark.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (openMark === id) hideAllPops();
+          else { hideAllPops(); showGloss(id, false); }
+        });
       });
+      document.querySelectorAll(".gloss[data-gloss]").forEach((card) => {
+        const id = card.dataset.gloss;
+        const act = () => { hideAllPops(); showGloss(id, true); };
+        card.addEventListener("click", act);
+        card.addEventListener("focus", act);
+      });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") hideAllPops(); });
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".gloss-wrap") && !e.target.closest(".gloss[data-gloss]")) hideAllPops();
+      });
+
+      // ---- Density toggle ----
+      const toggle = document.getElementById("gloss-toggle");
+      const prose = document.getElementById("prose");
+      if (toggle && prose) {
+        const KEY = "mdp-gloss";
+        function apply(on) {
+          prose.classList.toggle("gloss-quiet", !on);
+          toggle.setAttribute("aria-pressed", String(on));
+          toggle.textContent = "Glossary marks: " + (on ? "on" : "off");
+        }
+        let on = true;
+        try { if (localStorage.getItem(KEY) === "off") on = false; } catch (e) {}
+        apply(on);
+        toggle.addEventListener("click", () => {
+          on = !on;
+          apply(on);
+          try { localStorage.setItem(KEY, on ? "on" : "off"); } catch (e) {}
+        });
+      }
     })();
   </script>
 </Layout>

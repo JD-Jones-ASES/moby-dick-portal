@@ -14,6 +14,9 @@
   --accent: #1f5673;        /* deep sea blue */
   --accent-soft: #3d7c9a;
   --gold: #9a6a2f;          /* doubloon */
+  --gloss: var(--accent);   /* glossary mark / link role */
+  --ocean: color-mix(in srgb, var(--accent) 9%, var(--paper-raised));
+  --land: color-mix(in srgb, var(--accent) 20%, var(--paper-raised));
 
   /* Semantic annotation colors */
   --c-biblical: #8a5a2b;
@@ -321,11 +324,105 @@ a.card:hover { text-decoration: none; border-color: var(--accent); transform: tr
 .src .who { color: var(--ink-faint); font-size: 0.85rem; }
 .src p { margin: 0.45rem 0 0; color: var(--ink-soft); font-size: 0.9rem; }
 
-/* Map */
-.map-figure { position: relative; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper-raised); }
-.waypoint { border-bottom: 1px solid var(--line); padding: 0.8rem 0; }
+/* ---- Voyage map ---- */
+.voyage-map {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--ocean);
+  box-shadow: var(--shadow);
+}
+.voyage-map svg { display: block; width: 100%; height: auto; min-height: 300px; }
+.map-land { fill: var(--land); stroke: color-mix(in srgb, var(--accent) 38%, transparent); stroke-width: 0.5; }
+.map-graticule { stroke: var(--line); stroke-width: 0.5; opacity: 0.5; }
+.map-graticule, .map-route, .map-land, .ocean-label { pointer-events: none; }
+.map-route { fill: none; stroke: var(--accent-soft); stroke-width: 1.6; stroke-dasharray: 3 5; stroke-linecap: round; opacity: 0.7; }
+.map-connector { stroke: color-mix(in srgb, var(--gold) 60%, transparent); stroke-width: 0.8; }
+.ocean-label { fill: var(--ink-faint); opacity: 0.5; font-family: var(--sans); letter-spacing: 0.18em; text-transform: uppercase; }
+.wp-dot { fill: var(--gold); stroke: var(--paper-raised); stroke-width: 2; transition: r 0.12s ease, fill 0.12s ease; cursor: pointer; }
+.wp-dot.endpoint { fill: var(--accent); }
+.wp-hit { fill: transparent; cursor: pointer; outline: none; }
+.wp-hit:focus-visible + .wp-dot, .wp-hit.wp-active + .wp-dot, .wp-dot.wp-active { fill: var(--accent); r: 8; }
+.wp-hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 50%; }
+.map-caption { margin: 0.6rem 0 0; font-size: 0.85rem; font-style: italic; color: var(--ink-faint); }
+
+.waypoint { border-bottom: 1px solid var(--line); padding: 0.8rem 0; scroll-margin-top: 76px; border-radius: 6px; }
 .waypoint .wlabel { font-family: var(--serif); font-weight: 700; }
 .waypoint .wmeta { font-size: 0.8rem; color: var(--ink-faint); }
+.waypoint.stage-active { background: color-mix(in srgb, var(--accent) 8%, transparent); box-shadow: -3px 0 0 var(--accent); padding-left: 0.6rem; }
+.waypoint a.wlink { color: var(--ink); }
+.waypoint a.wlink:hover { color: var(--accent); }
+
+/* ---- Inline glossary marks + popover ---- */
+.gloss-wrap { position: relative; }
+.gloss-mark {
+  all: unset;
+  display: inline;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: color-mix(in srgb, var(--gloss) 55%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: background 0.12s ease;
+  border-radius: 2px;
+}
+.gloss-mark:hover, .gloss-mark:focus-visible, .gloss-mark.active {
+  background: color-mix(in srgb, var(--gloss) 14%, transparent);
+  text-decoration-color: var(--gloss);
+}
+.gloss-mark:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.prose.gloss-quiet .gloss-mark { text-decoration-color: transparent; }
+.prose.gloss-quiet .gloss-mark:hover, .prose.gloss-quiet .gloss-mark:focus-visible, .prose.gloss-quiet .gloss-mark.active {
+  text-decoration-color: var(--gloss);
+}
+
+.gloss-pop {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 7px);
+  z-index: 200;
+  width: max-content;
+  max-width: min(320px, 90vw);
+  background: var(--paper-raised);
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  box-shadow: var(--shadow);
+  padding: 0.6rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  white-space: normal;
+}
+.gloss-pop.below { bottom: auto; top: calc(100% + 7px); }
+.gloss-pop.flip-left { left: auto; right: 0; }
+.gloss-pop .gp-term { font-family: var(--serif); font-weight: 700; font-size: 0.98rem; color: var(--ink); margin-right: 0.4rem; }
+.gloss-pop .gp-cat { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gold); font-weight: 700; }
+.gloss-pop .gp-def { display: block; margin-top: 0.3rem; }
+
+/* Reader tools row + legend */
+.reader-tools { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin: 0 0 1.25rem; font-size: 0.8rem; color: var(--ink-faint); }
+.reader-tools .legend { display: inline-flex; align-items: center; gap: 0.35rem; }
+.reader-tools .swatch { width: 18px; height: 0; border-bottom: 2px solid; display: inline-block; }
+.reader-tools .swatch.anno { border-bottom-color: var(--gold); }
+.reader-tools .swatch.gloss { border-bottom-style: dotted; border-bottom-width: 2px; border-bottom-color: var(--gloss); }
+.tool-toggle {
+  margin-left: auto; border: 1px solid var(--line-strong); background: var(--paper-raised);
+  color: var(--ink-soft); border-radius: 7px; padding: 0.3rem 0.6rem; font: inherit; font-size: 0.8rem; cursor: pointer;
+}
+.tool-toggle:hover { color: var(--ink); border-color: var(--accent); }
+.tool-toggle[aria-pressed="false"] { opacity: 0.7; }
+
+/* Sidebar glossary cards: focusable + active state mirrors note cards */
+.gloss-list .gloss { cursor: pointer; padding-left: 0.5rem; border-left: 3px solid transparent; outline: none; }
+.gloss-list .gloss:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gloss-list .gloss.active { border-left-color: var(--gloss); background: color-mix(in srgb, var(--gloss) 7%, transparent); }
+
+@media (prefers-reduced-motion: reduce) {
+  .wp-dot, .gloss-mark { transition: none; }
+}
 
 /* Section heading */
 .section-h { font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 1rem; }
